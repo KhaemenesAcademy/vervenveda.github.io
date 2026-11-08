@@ -1,5 +1,11 @@
 name: VNV Incremental Migration — Wave 01 Source Audit
 on:
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'scripts/wave-01-public-gateway-audit.mjs'
+      - '.github/workflows/vnv-incremental-wave-01.yml'
+      - 'MIGRATION_WAVES.md'
   workflow_dispatch:
 permissions:
   contents: read
