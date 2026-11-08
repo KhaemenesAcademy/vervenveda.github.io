@@ -20,10 +20,14 @@ The Node VM suite exercises isolated legacy-core behaviors and simulated canonic
 
 The tests prove these code paths only. They do not certify all user input, live-browser behavior, third-party translation, Linguistics review quality, storage integrity, or any STOS service.
 
+## Browser-local trust adapter (implemented, inactive)
+
+The proposed `assets/khaemenes-interlingual-trust-adapter.js` exposes `KhaemenesInterlingualTrust.lookup()` and `interpret()` for a future, explicitly opted-in presentation layer. It preserves the translation text and recognizes a personal local review as `locallyReviewed:true`, while returning `verified:false`, `publisherReviewed:false`, `sovereignApproved:false`, and `authoritative:false`. It does not alter, clear, or rewrite `khaemenes_interlingual_library_v2` or the original legacy core. Four isolated tests cover this non-elevation rule. **The existing homepage does not yet load or use this adapter. Existing legacy consumers of `verified:true` are not hardened by merely storing this file.**
+
 ## Subsequent hardening (distinct, reviewed change)
 
 1. Preserve the legacy core and user library unchanged as evidence.
-2. Introduce separate, origin-local presentation trust metadata: `user-reviewed-local` is **not** `publisher-reviewed` nor `sovereign-approved`. Avoid changing the library key/schema or deleting its contents.
+2. Integrate and exercise the staged presentation adapter in an isolated browser preview; ensure each consumer uses the normalized non-authoritative result, preserving local user preferences without promoting them to trusted review. Avoid changing the library key/schema or deleting its contents.
 3. Test full newer Linguistics core and optional resources, plus load failure, using a live-browser staging test.
 4. Do not activate the copied script in a second `index.html` until each integration scenario passes.
 5. Only sovereign-side authenticated import/release policy can grant STOS data authority.
