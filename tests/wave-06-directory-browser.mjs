@@ -37,6 +37,7 @@ const browser=await chromium.launch({headless:true});
 const report={schema:"vnv-wave-06-directory-browser-v1",sourceCommit:"836bdb78769f70b255e5c0bc7773b6f6de61a28d",candidateRelease:release,scenarios:[],publicPromotionAuthorized:false};
 async function scenario(name,viewport,shardOutage=false){
   unavailableShard=shardOutage;
+  served.clear();
   const context=await browser.newContext({viewport,serviceWorkers:"block"});
   const page=await context.newPage();
   const errors=[],external=[],httpFailures=[];
@@ -52,8 +53,7 @@ async function scenario(name,viewport,shardOutage=false){
   try{
     await page.goto(base+"/",{waitUntil:"domcontentloaded",timeout:30000});
     await check("canonical master and two shard HTTP requests",async()=>{
-      await page.waitForResponse(res=>res.url().includes("master-ecosystem-directory.json"),{timeout:20000}).catch(()=>{});
-      await page.waitForTimeout(850);
+      await page.waitForTimeout(900);
       assert.ok(served.has("/ecosystem/master-ecosystem-directory.json"));
       assert.ok(served.has("/registry/ecosystem-pages-a.json"));
       if(!shardOutage)assert.ok(served.has("/registry/ecosystem-pages-b.json"));
