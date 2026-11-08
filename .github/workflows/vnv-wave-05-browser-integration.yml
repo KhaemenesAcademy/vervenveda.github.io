@@ -1,0 +1,39 @@
+name: VNV Wave 05 — Isolated Chromium Browser Integration
+on:
+  pull_request:
+    paths:
+      - 'tests/wave-05-browser-integration.mjs'
+      - 'tests/fixtures/**'
+      - 'assets/khaemenes-interlingual-core.js'
+      - 'assets/khaemenes-interlingual-trust-adapter.js'
+      - '.github/workflows/vnv-wave-05-browser-integration.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned Playwright and browser
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Check browser integration test syntax
+        run: node --check tests/wave-05-browser-integration.mjs
+      - name: Run real Chromium localhost-only scenarios
+        run: node tests/wave-05-browser-integration.mjs
+      - name: State deployment boundary
+        if: always()
+        run: |
+          echo "SOURCE_ONLY_TEST=YES"
+          echo "PRODUCTION_HOMEPAGE=UNCHANGED"
+          echo "STOS_COMMISSIONING=UNVERIFIED"
+          echo "BROWSER_ACTIVATION=HOLD"
+          echo "DOMAIN_CUTOVER=HOLD"
