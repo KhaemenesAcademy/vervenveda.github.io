@@ -42,3 +42,26 @@ The proposed `assets/khaemenes-interlingual-trust-adapter.js` exposes `Khaemenes
 - Workaround for unsupported Ubuntu 26.04 browser installer: use pinned Ubuntu 24.04 workflow runner.
 - Limit: isolated fixture is **not** an end-to-end test of all scripts in the actual 6,556-line homepage. Live on-page integration, responsive presentation, and shared header/ticker/toolbar conflict checks remain pending.
 - Existing `index.html` references the legacy core path, so merging this draft PR would activate it; until the complete-page test passes, **PR #5 must stay draft and unmerged**.
+
+## Full-gateway Chromium canary (2026-11-08)
+
+- Passing run: https://github.com/KhaemenesAcademy/vervenveda.github.io/actions/runs/42521937445
+- Tested actual unchanged 6,556-line `index.html` with pinned local copies of both CSS files, migrated campus phrase seed, legacy core, VNV language controller, auto-ticker, toolbar, canonical translator loader and its core; external requests were intercepted to prevent production traffic.
+- Desktop (1440×900), mobile (390×844) and absent canonical dictionary all passed the **chrome and translation layout gate**. Exactly one native 333 ticker, auto-ticker, header, menu overlay, translation rail/selector and toolbar; all 13 interface languages exposed. Canonical upgrade occurs when resources load and safely stays on legacy when the dictionary fails.
+- Full-page checks include known source-dependent missing registry assets `registry/ecosystem-pages-a.json` (~1.99 MB) and `registry/ecosystem-pages-b.json` (~2.02 MB). They remain **unmigrated**, and all three test scenarios reported the directory dependency hold. These assets were NOT mocked as successfully installed.
+- Browser logs contained a service-worker exception caused by a sandbox lacking `allow-same-origin`; this was recorded and is an explicitly known exception, not general proof of absence of errors in other contexts.
+- Browser tests inspect existence, uniqueness, bootstrap geometry and script initialization. They are not comprehensive click-by-click navigation, accessibility, production CDN or HTTPS tests.
+- `tests/fixtures/` snapshots are for testing only; they are not a replacement public asset server. The new repo does **not** yet contain every dependency for independent operation.
+- **Wave 05 PR stays DRAFT and UNMERGED**. Merging the existing legacy core path into `main` would activate it in the simplified homepage. Before merge, verify actual browser UI interactions (menu open/close, keyboard controls, cross-browser/mobile), full public route assets, and independently reachable protected resources. No STOS authorization is implied.
+
+### Acceptance ledger
+
+| Gate | Status |
+| --- | --- |
+| Source integrity and isolated Node regressions | PASS |
+| Isolated translator browser scenarios | PASS |
+| Full homepage chrome and translator canary | PASS with known exception |
+| Directory registry completeness | HOLD (two missing large assets) |
+| Cross-browser, interaction, accessibility, real public HTTPS | NOT VERIFIED |
+| Full source import / STOS commissioning | NOT VERIFIED |
+| Activation, domain transfer, source privatization | NOT AUTHORIZED |
