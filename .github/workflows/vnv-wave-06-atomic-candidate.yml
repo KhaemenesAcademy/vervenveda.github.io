@@ -1,0 +1,66 @@
+name: VNV Wave 06 — Atomic Registry Candidate (Unpublished)
+on:
+  pull_request:
+    paths:
+      - 'scripts/wave-06-atomic-candidate.mjs'
+      - '.github/workflows/vnv-wave-06-atomic-candidate.yml'
+      - 'WAVE_06_REGISTRY_AUDIT.md'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build-candidate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Checkout simplified gateway PR
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Checkout immutable canonical public source
+        uses: actions/checkout@v4
+        with:
+          repository: vervenveda/vervenveda.github.io
+          ref: 836bdb78769f70b255e5c0bc7773b6f6de61a28d
+          path: source-pinned
+          persist-credentials: false
+      - name: Verify original commit, not floating branch
+        run: test "$(git -C source-pinned rev-parse HEAD)" = "836bdb78769f70b255e5c0bc7773b6f6de61a28d"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Stage all canonical files under immutable generation path
+        run: |
+          node --check scripts/wave-06-atomic-candidate.mjs
+          node scripts/wave-06-atomic-candidate.mjs
+      - name: Verify staged full pair and manifest (no public promotion)
+        run: |
+          test -s wave-06-candidate/candidate-manifest.json
+          test -s wave-06-candidate/registry/releases/2026-11-08T17-21-17Z/ecosystem/master-ecosystem-directory.json
+          test -s wave-06-candidate/registry/releases/2026-11-08T17-21-17Z/registry/ecosystem-pages-a.json
+          test -s wave-06-candidate/registry/releases/2026-11-08T17-21-17Z/registry/ecosystem-pages-b.json
+          node -e 'const m=require("./wave-06-candidate/candidate-manifest.json"); if(m.publicPublicationApproved || m.stosImportApproved || m.files.length!==3)process.exit(1);'
+      - name: Preserve complete versioned candidate as Actions artifact only
+        uses: actions/upload-artifact@v4
+        with:
+          name: vnv-wave-06-atomic-candidate-NOT-PUBLISHED
+          path: wave-06-candidate/
+          if-no-files-found: error
+          retention-days: 30
+      - name: Preserve smaller forensic report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vnv-wave-06-candidate-report
+          path: wave-06-candidate-report.json
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Fail-closed release boundary
+        if: always()
+        run: |
+          echo "GITHUB_PAGES_DEPLOY=NO"
+          echo "ACTIVE_MANIFEST_POINTER=UNCHANGED"
+          echo "PUBLIC_ASSETS_ADDED_TO_BRANCH=NO"
+          echo "MANUAL_PRIVACY_REVIEW=REQUIRED"
+          echo "STOS_IMPORT=NO"
+          echo "CUTOVER=HOLD"
