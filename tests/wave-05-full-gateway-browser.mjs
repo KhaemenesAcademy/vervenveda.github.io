@@ -15,6 +15,8 @@ const pinned={
  "tests/fixtures/vnv-language.source-snapshot.js":"b65ef766cfbd0adcd88b4e7cc970a1e3ee35bd7c",
  "tests/fixtures/vnv-ticker-autopopulate.source-snapshot.js":"0bd454d19f16dc7d253c3ef37c86449d57d4e213",
  "tests/fixtures/vnv-ecosystem-toolbar.source-snapshot.js":"1018290c6c29ca4ed527df1febbd8b718e97c7bd",
+ "tests/fixtures/master-ecosystem-directory.source-snapshot.json":"239d87575b9019741efb77eb44455e3494c2af2d",
+ "tests/fixtures/vnv-gateway-chrome-forensic-probe.source-snapshot.js":"a08e530938e64995c55a71b93ba25a9fdea7d838",
  "tests/fixtures/khaemenes-translator-loader.v1.1.js":"1ebfa3c7e427cc416695cb45f935ba56a456c9b8"
 };
 for(const [name,sha] of Object.entries(pinned))assert.equal(gitBlob(file(name)),sha,"upstream source hash changed: "+name);
@@ -27,13 +29,15 @@ const assets=new Map([
  ["/assets/khaemenes-campus-phrases.js","assets/khaemenes-campus-phrases.js"],
  ["/assets/khaemenes-interlingual-core.js","assets/khaemenes-interlingual-core.js"],
  ["/assets/vnv-language.js","tests/fixtures/vnv-language.source-snapshot.js"],
- ["/assets/vnv-ticker-autopopulate.js","tests/fixtures/vnv-ticker-autopopulate.source-snapshot.js"]
+ ["/assets/vnv-ticker-autopopulate.js","tests/fixtures/vnv-ticker-autopopulate.source-snapshot.js"],
+ ["/assets/vnv-gateway-chrome-forensic-probe.js","tests/fixtures/vnv-gateway-chrome-forensic-probe.source-snapshot.js"],
+ ["/ecosystem/master-ecosystem-directory.json","tests/fixtures/master-ecosystem-directory.source-snapshot.json"]
 ]);
 const server=createServer((req,res)=>{
  const pathname=new URL(req.url,"http://127.0.0.1").pathname;
  const path=assets.get(pathname);
  if(!path){res.writeHead(404);res.end("isolated staging missing: "+pathname);return;}
- res.writeHead(200,{"Cache-Control":"no-store","Content-Type":pathname.endsWith(".css")?"text/css":pathname.endsWith(".js")?"text/javascript":"text/html; charset=utf-8"});
+ res.writeHead(200,{"Cache-Control":"no-store","Content-Type":pathname.endsWith(".css")?"text/css":pathname.endsWith(".js")?"text/javascript":pathname.endsWith(".json")?"application/json":"text/html; charset=utf-8"});
  res.end(file(path));
 });
 await new Promise(resolve=>server.listen(0,"127.0.0.1",resolve));
@@ -99,6 +103,10 @@ async function scenario(viewport,label,blockDictionary=false){
    };
   });
   console.log("FULL_PAGE_EVIDENCE "+label+" "+JSON.stringify({result,errors,blocked:blocked.slice(0,15),missing:missing.slice(0,15)}));
+  assert.deepEqual(missing,[],"Unexpected missing staging resources in "+label);
+  const knownSandboxOnly=errors.filter(msg=>msg.includes("serviceWorker")&&msg.includes("sandboxed")&&msg.includes("allow-same-origin"));
+  assert.equal(knownSandboxOnly.length,errors.length,"Unexpected page exceptions in "+label);
+  if(knownSandboxOnly.length)console.log("KNOWN_BASELINE_SANDBOX_WARNING="+knownSandboxOnly.length+" "+label);
   assert.equal(result.gateway,1,label+" gateway");
   assert.equal(result.header,1,label+" header");
   assert.equal(result.tickers.native,1,label+" native ticker");
