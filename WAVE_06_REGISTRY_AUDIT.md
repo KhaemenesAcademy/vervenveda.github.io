@@ -99,3 +99,17 @@ An authorized source owner must approve the three access classifications (or reg
 ### Authorization still missing
 
 Manual owner review of all three destinations; authenticated privacy tests involving test-only accounts (never real students); complete route and linked script exposure audit; an independently reachable isolated HTTPS staging site; and an actual previous-deployment retention and rollback rehearsal. Only then may a separate promotion PR request authorization. STOS commissioning, domain transfer and repo privatization are independent future decisions.
+
+## Stage E — Synthetic guest access and restricted browser preview (2026-11-08)
+
+- Guest access run: https://github.com/KhaemenesAcademy/vervenveda.github.io/actions/runs/42527956393 — **PASS**, six scenarios with purely synthetic browser-local identity or queue data and external scripts intercepted.
+- Both High School and Higher Learning math evidence-vault pages correctly show no learner evidence and disable export without a selected browser learner. However, a synthetic local family-registry/learner selection enables the learner UI/export button **without verified server authentication**. This is a trust-boundary limitation, not evidence of external account access.
+- Academy teacher-admin displays a synthetic browser-local evidence-review record without a verified teacher login. This is local state visibility under the same browser origin, not proof of server or cross-device disclosure. Browser tests blocked dependencies, and source traces found missing global ticker/header errors in the teacher page under that constraint; no production end-to-end assertion is made.
+- Three `HOLD` classifications remain enforced through `policy/wave-06-directory-access-review.json`. No source-owner approval inferred.
+- Restricted candidate build: https://github.com/KhaemenesAcademy/vervenveda.github.io/actions/runs/42528190926 — **PASS**. Derived `registry/previews/2026-11-08-restricted/` with all three held deep-search links excluded: **11,021** pages. Source original **11,024** pages and source immutable commit unchanged. No automatic source modifications or live publication.
+- Restricted Chromium test: https://github.com/KhaemenesAcademy/vervenveda.github.io/actions/runs/42528285284 — **PASS** for desktop, mobile, catalog count, search, education category and 35-repository filtering, absent held links, menu keyboard, and fail-closed missing shard.
+- Browser recorded a sandbox-origin service worker warning; outbound network calls were blocked, so the gate is not proof of public HTTPS endpoint availability or cross-origin shared script behavior.
+- A restricted deep-search index **does not revoke direct access** to any original public route and does not independently secure their underlying local-storage workflows.
+- Next: independent HTTPS staging with no production DNS/Pages changes, complete accessible UI and link verification, then explicit owner decisions for sensitive routes, true deploy rollback retention and separate go/no-go approval.
+
+**Release disposition:** source audit and isolated staging checks PASS. **PUBLIC_PROMOTION=HOLD**, Wave 05 and Wave 06 PRs remain DRAFT and UNMERGED, native STOS and student records untouched.
