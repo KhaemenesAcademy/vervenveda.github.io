@@ -122,6 +122,19 @@ async function run(engine,name,viewport,shardUnavailable=false){
    });
    report.accessibility.push({engine:name,viewport,violations});
    console.log("ACCESSIBILITY_BASELINE "+name+" "+viewport.width+" "+JSON.stringify(violations));
+   const baseline=violations.find(v=>v.id==="color-contrast");
+   assert.ok(baseline?.samples?.some(s=>s.target.includes("#completePageIndex > .kicker")),
+    "Expected pinned source contrast issue changed; review selectors before adapting");
+   await page.addStyleTag({content:"#completePageIndex > .kicker { color: #674923 !important; }"});
+   const after=await page.evaluate(async()=>{
+     const result=await window.axe.run(document.querySelector("#completePageIndex"),
+       {runOnly:{type:"rule",values:["color-contrast"]}});
+     return result.violations.map(v=>({id:v.id,nodes:v.nodes.length,samples:v.nodes.slice(0,3).map(n=>n.target)}));
+   });
+   assert.equal(after.length,0,"Scoped preview contrast rule failed in "+name);
+   report.accessibility.at(-1).previewContrastPass=true;
+   report.accessibility.at(-1).previewCss="#completePageIndex > .kicker { color: #674923 !important; }";
+   console.log("ACCESSIBILITY_CONTRAST_PREVIEW=PASS "+name+" "+viewport.width+" BASELINE_ISSUE_RECORDED=YES SOURCE_CSS_UNCHANGED=YES");
   }
   const knownWarnings=errors.filter(e=>/service\s*worker/i.test(e)&&e.includes("sandboxed")&&e.includes("allow-same-origin"));
   const unexpected=errors.filter(e=>!knownWarnings.includes(e));
