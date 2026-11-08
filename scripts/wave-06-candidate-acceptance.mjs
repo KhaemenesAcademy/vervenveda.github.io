@@ -10,7 +10,7 @@ const m=JSON.parse(fs.readFileSync(path.join(basedir,"candidate-manifest.json"),
 const load=relative=>fs.readFileSync(path.join(basedir,relative));
 function openCandidate(entryOverrides={}){
  const files=m.files.map(f=>{
-   const raw=entryOverrides[f.path]??load(f.path);
+   const raw=Object.prototype.hasOwnProperty.call(entryOverrides,f.path)?entryOverrides[f.path]:load(f.path);
    if(!Buffer.isBuffer(raw))throw Error("Missing candidate blob: "+f.path);
    const sha=createHash("sha256").update(raw).digest("hex");
    if(sha!==f.sha256)throw Error("Hash mismatch: "+f.path);
