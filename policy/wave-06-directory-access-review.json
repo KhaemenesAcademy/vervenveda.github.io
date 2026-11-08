@@ -1,0 +1,61 @@
+{
+  "schema": "vnv-wave-06-public-discovery-review-v1",
+  "purpose": "Prevent automatic directory publication of review-required administrative or learner evidence destinations",
+  "default": "require-source-owner-evidence-for-sensitive-surfaces",
+  "releaseAuthorized": false,
+  "decisions": [
+    {
+      "repository": "Khaemenes_Academy.github.io",
+      "path": "teacher-admin/index.html",
+      "reviewStatus": "HOLD",
+      "reason": "Teacher-facing evidence workflow and browser-local review records; confirm public discovery and authenticated storage boundaries",
+      "requiredEvidence": [
+        "Source-owner classification",
+        "Authorization model for teacher actions",
+        "Learner data non-disclosure verification",
+        "Public preview behavior"
+      ]
+    },
+    {
+      "repository": "Khaemenes_High.github.io",
+      "path": "courses/mathematics/evidence-vault/index.html",
+      "reviewStatus": "HOLD",
+      "reason": "Learner-specific academic records accessed through browser-local state and export operations; publication classification pending",
+      "requiredEvidence": [
+        "Source-owner classification",
+        "Learner data boundary review",
+        "Public visitor no-account behavior",
+        "Evidence export privacy review"
+      ]
+    },
+    {
+      "repository": "Khaemenes_Higher_Learning.github.io",
+      "path": "courses/mathematics/evidence-vault/index.html",
+      "reviewStatus": "HOLD",
+      "reason": "Higher learning evidence workflow accesses learner-scoped academic state and supports exports",
+      "requiredEvidence": [
+        "Source-owner classification",
+        "Learner data boundary review",
+        "Public visitor no-account behavior",
+        "Evidence export privacy review"
+      ]
+    }
+  ],
+  "conditions": {
+    "approvalRequires": [
+      "reviewStatus=APPROVED_PUBLIC_DISCOVERY",
+      "reviewer",
+      "reviewDate",
+      "evidenceUrls",
+      "authorizationScope"
+    ],
+    "defaultOnUnreviewed": "HOLD",
+    "onDeny": "REGENERATE_CANONICAL_SHARDS_AND_RETEST",
+    "allowAutomaticPublication": false
+  },
+  "notes": [
+    "These routes are already present in pinned original public catalog. HOLD prevents new release promotion; it does not remove existing public links.",
+    "Local browser storage is not server-side authentication or protected persistent memory.",
+    "No endpoint or STOS commissioning inference is permitted."
+  ]
+}
