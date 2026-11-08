@@ -1,0 +1,326 @@
+/*
+  Verve N Veda · Shared Public Presentation Standard · v3
+  Applies only to public GitHub-facing pages that opt in.
+  Dormant STOS, archive, disabled, diagnostic, and source-snippet surfaces are intentionally excluded.
+*/
+:root{
+  --vnv-radius:7px;
+  --vnv-body-size:14px;
+  --vnv-h1-size:44px;
+  --vnv-h2-size:33px;
+  --vnv-descriptor-size:24px;
+  --vnv-breath:clamp(18px,3vw,33px);
+}
+
+html{font-size:16px}
+
+body{
+  font-size:var(--vnv-body-size)!important;
+  line-height:1.65!important;
+  text-align:center;
+}
+
+h1{
+  font-size:var(--vnv-h1-size)!important;
+  line-height:1.12!important;
+  text-align:center;
+  overflow-wrap:normal;
+  word-break:normal;
+  text-wrap:balance;
+}
+
+h2{
+  font-size:var(--vnv-h2-size)!important;
+  line-height:1.18!important;
+  text-align:center;
+  overflow-wrap:normal;
+  word-break:normal;
+  text-wrap:balance;
+}
+
+h3,
+.descriptor,
+.subtitle,
+.subhead,
+.hero-subtitle,
+.section-intro,
+.lead{
+  max-width:900px;
+  margin-inline:auto;
+  font-size:var(--vnv-descriptor-size)!important;
+  line-height:1.35!important;
+  text-align:center;
+  overflow-wrap:normal;
+  word-break:normal;
+  text-wrap:balance;
+}
+
+p,
+li,
+label,
+input,
+select,
+textarea{
+  font-size:var(--vnv-body-size);
+}
+
+button,
+.button,
+.btn,
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"]{
+  border-radius:var(--vnv-radius)!important;
+}
+
+[class*="card"],
+.card,
+.tile,
+.doorway,
+.panel,
+.notice,
+.callout{
+  border-radius:var(--vnv-radius)!important;
+  text-align:center;
+}
+
+[class*="card"] > .actions,
+.card > .actions,
+.tile > .actions,
+.doorway > .actions,
+.panel > .actions{
+  margin-top:auto;
+  justify-content:center;
+}
+
+.actions,
+.hero-actions,
+.button-row,
+.button-group,
+.cta-row,
+.controls{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:stretch;
+  gap:11px;
+}
+
+.actions > a,
+.actions > button,
+.hero-actions > a,
+.hero-actions > button,
+.button-row > a,
+.button-row > button,
+.button-group > a,
+.button-group > button,
+.cta-row > a,
+.cta-row > button{
+  min-height:44px;
+  flex:1 1 180px;
+  max-width:280px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.card-grid,
+.cards,
+.resource-grid,
+.portal-grid,
+.tool-grid,
+.app-grid,
+.course-grid,
+.directory-grid,
+.ecosystem-category-grid,
+.ecosystem-panel-grid,
+.pillar-grid,
+.feature-grid{
+  align-items:stretch!important;
+  grid-auto-rows:1fr;
+  gap:var(--vnv-breath)!important;
+}
+
+.card-grid > *,
+.cards > *,
+.resource-grid > *,
+.portal-grid > *,
+.tool-grid > *,
+.app-grid > *,
+.course-grid > *,
+.directory-grid > *,
+.ecosystem-category-grid > *,
+.ecosystem-panel-grid > *,
+.pillar-grid > *,
+.feature-grid > *{
+  min-width:0;
+  height:100%;
+}
+
+section,
+.section,
+main > article{
+  scroll-margin-top:96px;
+}
+
+@media (max-width:720px){
+  h1{font-size:clamp(36px,10vw,var(--vnv-h1-size))!important}
+  h2{font-size:clamp(28px,8vw,var(--vnv-h2-size))!important}
+  h3,
+  .descriptor,
+  .subtitle,
+  .subhead,
+  .hero-subtitle,
+  .section-intro,
+  .lead{font-size:clamp(20px,6vw,var(--vnv-descriptor-size))!important}
+}
+
+
+/* Complete ecosystem page index */
+.complete-page-index{
+  margin-top:33px;
+  padding:33px;
+  border:1px solid var(--line,rgba(18,23,19,.14));
+  border-radius:var(--vnv-radius);
+  background:var(--paper-bright,#fbf9f4);
+  text-align:center;
+}
+.complete-page-index h3{margin:7px auto 10px;max-width:900px}
+.complete-index-copy{max-width:900px;margin:0 auto 24px;color:var(--ink-soft,#30413d)}
+.complete-index-controls{
+  display:grid;
+  grid-template-columns:minmax(240px,2fr) minmax(180px,1fr) minmax(220px,1fr);
+  gap:11px;
+  align-items:stretch;
+  max-width:1100px;
+  margin:0 auto 18px;
+}
+.complete-index-controls input,
+.complete-index-controls select{
+  width:100%;
+  min-height:46px;
+  padding:10px 12px;
+  border:1px solid var(--line-strong,rgba(18,23,19,.25));
+  border-radius:var(--vnv-radius);
+  background:#fff;
+  color:var(--ink,#080b0f);
+  text-align:center;
+}
+.complete-index-status{
+  min-height:24px;
+  margin:0 auto 16px;
+  color:var(--ink-soft,#30413d);
+  font-size:12px;
+}
+.complete-index-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:11px;
+  align-items:stretch;
+}
+.complete-index-card{
+  min-width:0;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:7px;
+  padding:16px;
+  border:1px solid var(--line,rgba(18,23,19,.14));
+  border-radius:var(--vnv-radius);
+  background:#fff;
+  text-align:center;
+}
+.complete-index-card:hover,
+.complete-index-card:focus-visible{
+  border-color:var(--gold,#b48b45);
+  box-shadow:0 8px 24px rgba(27,34,29,.08);
+}
+.complete-index-card strong{
+  display:block;
+  font-size:14px;
+  line-height:1.35;
+  overflow-wrap:normal;
+  word-break:normal;
+  text-wrap:balance;
+}
+.complete-index-card small{
+  display:block;
+  color:var(--ink-soft,#30413d);
+  font-size:11px;
+  line-height:1.45;
+  overflow-wrap:anywhere;
+}
+.complete-index-badge{
+  display:inline-flex;
+  align-self:center;
+  justify-content:center;
+  padding:4px 8px;
+  border:1px solid var(--line,rgba(18,23,19,.14));
+  border-radius:var(--vnv-radius);
+  color:var(--forest,#243d33);
+  background:var(--paper,#f4f0e7);
+  font-size:9px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.menu-page-results{margin-top:18px}
+.menu-page-results .menu-group{margin-top:16px}
+.menu-page-note{margin:10px 0 0;color:var(--ink-soft,#30413d);font-size:11px;line-height:1.5;text-align:center}
+
+
+/* v3 balance pass — preserve page identity while enforcing the shared Verve N Veda rhythm. */
+h1,h2,h3,
+.descriptor,.subtitle,.subhead,.hero-subtitle,.section-intro,.lead,
+button,.button,.btn,[role="button"]{
+  hyphens:none;
+  -webkit-hyphens:none;
+  word-break:normal;
+}
+
+.section-heading,
+.hero-copy,
+.page-heading,
+.intro-wrap{
+  width:min(100%,960px);
+  margin-inline:auto;
+  text-align:center;
+}
+
+.complete-index-grid{
+  grid-auto-rows:1fr;
+  gap:var(--vnv-breath)!important;
+}
+
+.complete-index-card,
+[class*="card"]{
+  align-content:center;
+  justify-items:center;
+}
+
+.actions > a,
+.actions > button,
+.hero-actions > a,
+.hero-actions > button,
+.button-row > a,
+.button-row > button,
+.button-group > a,
+.button-group > button,
+.cta-row > a,
+.cta-row > button{
+  padding-inline:16px;
+}
+
+@media(max-width:900px){
+  .complete-index-controls{grid-template-columns:1fr 1fr}
+  .complete-index-controls input{grid-column:1/-1}
+  .complete-index-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:620px){
+  .complete-page-index{padding:24px 14px}
+  .complete-index-controls{grid-template-columns:1fr}
+  .complete-index-controls input{grid-column:auto}
+  .complete-index-grid{grid-template-columns:1fr}
+}
