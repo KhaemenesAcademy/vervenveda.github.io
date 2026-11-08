@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'scripts/wave-06-atomic-candidate.mjs'
+      - 'scripts/wave-06-candidate-acceptance.mjs'
       - '.github/workflows/vnv-wave-06-atomic-candidate.yml'
       - 'WAVE_06_REGISTRY_AUDIT.md'
   workflow_dispatch:
@@ -33,6 +34,10 @@ jobs:
         run: |
           node --check scripts/wave-06-atomic-candidate.mjs
           node scripts/wave-06-atomic-candidate.mjs
+      - name: Test catalog search, filters and fail-closed partial upload
+        run: |
+          node --check scripts/wave-06-candidate-acceptance.mjs
+          node scripts/wave-06-candidate-acceptance.mjs
       - name: Verify staged full pair and manifest (no public promotion)
         run: |
           test -s wave-06-candidate/candidate-manifest.json
@@ -52,7 +57,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: vnv-wave-06-candidate-report
-          path: wave-06-candidate-report.json
+          path: |
+            wave-06-candidate-report.json
+            wave-06-candidate-acceptance.json
           if-no-files-found: warn
           retention-days: 30
       - name: Fail-closed release boundary
