@@ -84,3 +84,18 @@ The code preview showed no explicit network `fetch()` call in these page sources
 ### Remaining promotion gates
 
 An authorized source owner must approve the three access classifications (or regenerate the full two-shard catalog to exclude any denied entries); verify a real public staging URL including CSP, assets and application routing; run non-Chromium/mobile accessibility checks; preserve previous deployed-generation bytes and rehearse actual rollback; and approve a single-pointer release. Domain/visibility changes and any STOS import remain separate, later approvals. Wave 05 and Wave 06 are still drafts.
+
+## Stage D — Explicit public-discovery access holds (2026-11-08)
+
+- Policy: `policy/wave-06-directory-access-review.json`, which identifies the three review-required entries by exact canonical repository and relative path. Each begins in `HOLD`.
+- Gate: `scripts/wave-06-access-classification-gate.mjs`, executed in the atomic candidate CI. It verifies all three entries exist exactly once in the *pinned full catalog*, refuses silent approval, and requires reviewer, date, scope and at least two HTTPS evidence references even for a proposed approval. This evidence shape is a prerequisite, not independent validation of an approver's authority.
+- Passing source-only access gate: https://github.com/KhaemenesAcademy/vervenveda.github.io/actions/runs/42527286442 — `ACCESS_CLASSIFICATION=HOLD`, three pending entries, public promotion prohibited.
+- Source trace:
+  - Teacher administration page loads family registry/mentor scripts, reads and writes a local evidence-review list, and supports a local JSON export. This is a teacher-facing workflow; no server authority has been verified.
+  - High School math vault reads learner-scoped local progress and supports local export/verify of math evidence; protected student identity/access controls require review.
+  - Higher Learning math vault includes learner-scoped local coursework references and exports; protected student evidence remains out of scope for public catalog authority.
+- **Current decision is not deletion and not approval**. Existing public source pages stay in place, but no new directory publication may rely on these entries while classification is pending. A future `DENY` requires fresh generated shards and exact integrity/browser acceptance, not an ad hoc removal from the staged files.
+
+### Authorization still missing
+
+Manual owner review of all three destinations; authenticated privacy tests involving test-only accounts (never real students); complete route and linked script exposure audit; an independently reachable isolated HTTPS staging site; and an actual previous-deployment retention and rollback rehearsal. Only then may a separate promotion PR request authorization. STOS commissioning, domain transfer and repo privatization are independent future decisions.
