@@ -40,6 +40,15 @@ for(const viewport of [{width:1440,height:900},{width:390,height:844}]){
  try{
   await page.goto(origin+"/",{waitUntil:"domcontentloaded",timeout:30000});
   await page.waitForFunction(()=>document.querySelector("#ecosystemPageStatus")?.textContent.includes("11,021"),null,{timeout:20000});
+  const upgrade=await page.evaluate(async()=>{
+    const loader=window.KhaemenesTranslatorLoader;
+    if(!loader)return {present:false,canonical:false,records:[]};
+    const result=await loader.ensure({full:true,upgradeLegacyCore:true});
+    return {present:true,canonical:result.canonicalCore,records:result.records.map(x=>({key:x.key,state:x.state}))};
+  });
+  assert.equal(upgrade.present,true,"Canonical loader missing from quarantined bundle");
+  assert.equal(upgrade.canonical,true,"Canonical core did not activate after local dependencies");
+  assert.equal(upgrade.records.some(x=>x.state==="unavailable"),false,"Missing Linguistics dependency in staging bundle");
   const state=await page.evaluate(()=>({
    pageIndex:document.querySelectorAll("#completePageIndex").length,
    nativeTicker:document.querySelectorAll("#networkTicker").length,
@@ -59,11 +68,12 @@ for(const viewport of [{width:1440,height:900},{width:390,height:844}]){
   assert.equal(state.toolbar,1);
   assert.equal(state.languageCount,13);
   assert.equal(state.translatorCore,true);
+  assert.equal(state.canonicalCore,true);
   assert.deepEqual(externalExecutable,[],"Staging bundle attempted external executable/data requests");
   const blocking=errors.filter(s=>!/Service\s*Worker|serviceWorker/.test(s));
   assert.deepEqual(blocking,[],"Unexpected homepage script errors");
   assert.deepEqual(fails.filter(x=>x.url.startsWith("/assets/")||x.url.startsWith("/registry/")||x.url.startsWith("/Khaemenes_Linguistics.github.io/")||x.url.startsWith("/ecosystem/")),[],"Missing staging assets");
-  const item={viewport,success:true,state,externalBlocked:requests,externalExecutable,errors,missingAssetResponses:fails};
+  const item={viewport,success:true,state,upgrade,externalBlocked:requests,externalExecutable,errors,missingAssetResponses:fails};
   evidence.push(item);
   console.log("QUARANTINE_BROWSER=PASS "+JSON.stringify(item).slice(0,1700));
  }finally{await context.close();}
