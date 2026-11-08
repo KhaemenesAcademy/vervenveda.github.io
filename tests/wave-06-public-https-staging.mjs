@@ -76,8 +76,8 @@ try {
  const entries=[...members[0].pages,...members[1].pages];
  assert.equal(entries.length,11021);
  for(const item of entries){
-  const p=String(item.path||"").toLowerCase();
-  assert.ok(!p.includes("/teacher-admin/index.html")&&!p.includes("/courses/mathematics/evidence-vault/index.html"),
+  const p=String(item.path||"").toLowerCase().replace(/^\/+/, "");
+  assert.ok(!p.includes("teacher-admin/index.html")&&!p.includes("courses/mathematics/evidence-vault/index.html"),
    "Held route must not appear in new directory index");
  }
  const variants=[["chromium",chromium],["firefox",firefox],["webkit",webkit]];
@@ -112,6 +112,15 @@ try {
       await page.locator("#ecosystemPageSearch").fill(held);
       assert.equal(await page.locator("#ecosystemPageResults a").count(),0,"Held route visible in search");
      }
+     // Scoped WCAG baseline: record failures without claiming full-site compliance.
+     await page.addScriptTag({path:"node_modules/axe-core/axe.min.js"});
+     const wcag=await page.evaluate(async()=>{
+       const target=document.querySelector("#completePageIndex");
+       if(!target)return [{id:"index-absent",nodes:1,impact:"critical"}];
+       const findings=await window.axe.run(target,{runOnly:{type:"tag",values:["wcag2a","wcag2aa","wcag21a","wcag21aa"]}});
+       return findings.violations.map(v=>({id:v.id,nodes:v.nodes.length,impact:v.impact}));
+     });
+     report.violations.push({engine:name,viewport,findings:wcag});
      assert.deepEqual(outbound,[],"Unexpected production/external executable request");
      const unexpected=jsErrors.filter(e=>!(/service\s*worker/i.test(e)&&/sandboxed/i.test(e)));
      assert.deepEqual(unexpected,[],"Unexpected script exception on independent stage");
