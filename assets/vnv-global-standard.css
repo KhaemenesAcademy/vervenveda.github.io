@@ -1,0 +1,77 @@
+/*
+  Verve N Veda · Global Presentation Standard
+  2026-10-14
+  Public GitHub presentation layer only.
+  STOS migration surfaces remain dormant and are not activated by this file.
+*/
+:root{
+  --vnv-radius:7px;
+  --vnv-h1:44px;
+  --vnv-h2:33px;
+  --vnv-descriptor:24px;
+  --vnv-body:14px;
+}
+html body{font-size:var(--vnv-body)!important;line-height:1.65}
+html body h1{font-size:var(--vnv-h1)!important;line-height:1.08!important;font-weight:400!important;text-align:center!important;text-wrap:balance;overflow-wrap:normal;word-break:normal}
+html body h2{font-size:var(--vnv-h2)!important;line-height:1.16!important;font-weight:400!important;text-align:center!important;text-wrap:balance;overflow-wrap:normal;word-break:normal}
+html body .descriptor,
+html body .lede,
+html body .hero-lede,
+html body .hero-subtitle,
+html body .subtitle,
+html body .subhead,
+html body .section-intro,
+html body .intro{max-width:900px;margin-left:auto;margin-right:auto;font-size:var(--vnv-descriptor)!important;line-height:1.45!important;text-align:center!important;text-wrap:pretty}
+html body button,
+html body .button,
+html body .btn,
+html body [role="button"]{border-radius:var(--vnv-radius)!important;min-height:44px;display:inline-flex;align-items:center;justify-content:center;text-align:center;white-space:normal}
+html body .card,
+html body .site-card,
+html body .feature-card,
+html body .pillar-card,
+html body .assessment-card,
+html body .resource-card,
+html body .course-card,
+html body .metric,
+html body .stat,
+html body .tile,
+html body .hall,
+html body .trace-node{border-radius:var(--vnv-radius)!important;text-align:center!important;height:100%}
+html body .grid,
+html body .cards,
+html body .card-grid,
+html body .directory-grid,
+html body .featured-grid,
+html body .pillar-grid,
+html body .hall-grid,
+html body .trace-grid,
+html body .metrics,
+html body .resource-grid,
+html body .course-grid{align-items:stretch!important;grid-auto-rows:1fr}
+html body .grid>*,
+html body .cards>*,
+html body .card-grid>*,
+html body .directory-grid>*,
+html body .featured-grid>*,
+html body .pillar-grid>*,
+html body .hall-grid>*,
+html body .trace-grid>*,
+html body .metrics>*,
+html body .resource-grid>*,
+html body .course-grid>*{min-width:0;height:100%}
+html body .actions,
+html body .hero-actions,
+html body .button-row,
+html body .button-group{justify-content:center!important;align-items:stretch!important}
+html body .actions>button,
+html body .actions>.button,
+html body .actions>.btn,
+html body .hero-actions>button,
+html body .hero-actions>.button,
+html body .hero-actions>.btn{min-width:min(100%,180px)}
+html body form,
+html body label,
+html body input,
+html body textarea,
+html body select{text-align:left}

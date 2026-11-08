@@ -1,0 +1,39 @@
+name: VNV Migration Wave 03 — Second Stylesheet Integrity
+on:
+  pull_request:
+    paths:
+      - 'assets/vnv-global-standard.css'
+      - '.github/workflows/vnv-migration-wave-03-second-style.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  second-stylesheet:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Verify exact stylesheet from pinned VNV source
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f assets/vnv-global-standard.css
+          actual="$(git hash-object assets/vnv-global-standard.css)"
+          expected="4a1639543b3a96d9d756f88e13b8e7a26d8db0a2"
+          printf 'SOURCE_BLOB=%s\nGATEWAY_BLOB=%s\n' "$expected" "$actual"
+          test "$actual" = "$expected"
+      - name: Verify prior stylesheet and homepage remain unchanged
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git hash-object assets/vervenveda-global-standard.css)" = "0f2846e2de3a938c939e60ee6e8807726cf267db"
+          test "$(git hash-object index.html)" = "a883f035329a89e55d526160c54ffdac3c7af2f9"
+      - name: Record protected boundaries
+        run: |
+          echo "BOTH_STYLESHEETS=SOURCE_PARITY_PASS"
+          echo "HOMEPAGE=UNCHANGED"
+          echo "STOS_IMPORT=NOT_STARTED"
+          echo "DNS_CNAME=UNTOUCHED"
+          echo "CUTOVER=HOLD"
