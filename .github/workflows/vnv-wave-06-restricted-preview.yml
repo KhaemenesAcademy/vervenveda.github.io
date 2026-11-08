@@ -1,0 +1,64 @@
+name: VNV Wave 06 — Restricted Directory Preview Artifact
+on:
+  pull_request:
+    paths:
+      - 'scripts/wave-06-restricted-preview.mjs'
+      - 'tests/wave-06-restricted-preview-acceptance.mjs'
+      - 'policy/wave-06-directory-access-review.json'
+      - '.github/workflows/vnv-wave-06-restricted-preview.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  restricted-preview:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: vervenveda/vervenveda.github.io
+          ref: 836bdb78769f70b255e5c0bc7773b6f6de61a28d
+          path: source-pinned
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate immutable original source
+        run: test "$(git -C source-pinned rev-parse HEAD)" = "836bdb78769f70b255e5c0bc7773b6f6de61a28d"
+      - name: Build exact-source atomic original candidate in temporary Actions workspace
+        run: node scripts/wave-06-atomic-candidate.mjs
+      - name: Derive preview excluding only three pending owner-review links
+        run: |
+          node --check scripts/wave-06-restricted-preview.mjs
+          node scripts/wave-06-restricted-preview.mjs
+      - name: Verify adjusted public catalog and preserve original
+        run: |
+          node --check tests/wave-06-restricted-preview-acceptance.mjs
+          node tests/wave-06-restricted-preview-acceptance.mjs
+      - name: Preserve unpublished preview for audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: vnv-wave-06-restricted-preview-NOT-PUBLISHED
+          path: wave-06-restricted-preview/
+          if-no-files-found: error
+          retention-days: 30
+      - name: Preserve evidence summary
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vnv-wave-06-restricted-preview-evidence
+          path: wave-06-restricted-preview-evidence.json
+          if-no-files-found: warn
+          retention-days: 30
+      - name: No publication or authorization
+        if: always()
+        run: |
+          echo "STAGING_PREVIEW=ARTIFACT_ONLY"
+          echo "SOURCE_OWNER_REVIEW=PENDING"
+          echo "PUBLIC_GITHUB_PAGES_DEPLOY=NONE"
+          echo "ACTIVE_POINTER=UNCHANGED"
+          echo "STOS_WRITE=NONE"
+          echo "CUTOVER=HOLD"
