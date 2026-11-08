@@ -33,3 +33,12 @@ The proposed `assets/khaemenes-interlingual-trust-adapter.js` exposes `Khaemenes
 5. Only sovereign-side authenticated import/release policy can grant STOS data authority.
 
 **HOLD:** No automatic STOS import, source repository privatization, domain transfer, or privileged account sync is allowed through this PR.
+
+## Isolated real-browser gate (2026-11-08)
+
+- Chromium workflow: https://github.com/KhaemenesAcademy/vervenveda.github.io/actions/runs/42520760587 — **PASS**.
+- Four localhost-only browser scenarios: language rail + 13-language controller; preserved browser-local preference with zero publisher/STOS privilege; canonical loader resource upgrade; safe fallback when the dictionary request fails.
+- Browser tests run pinned, exact-source `vnv-language.js`, canonical Linguistics core, and loader fixtures from `tests/fixtures/`; they do not execute external network requests or publish a new gateway.
+- Workaround for unsupported Ubuntu 26.04 browser installer: use pinned Ubuntu 24.04 workflow runner.
+- Limit: isolated fixture is **not** an end-to-end test of all scripts in the actual 6,556-line homepage. Live on-page integration, responsive presentation, and shared header/ticker/toolbar conflict checks remain pending.
+- Existing `index.html` references the legacy core path, so merging this draft PR would activate it; until the complete-page test passes, **PR #5 must stay draft and unmerged**.
