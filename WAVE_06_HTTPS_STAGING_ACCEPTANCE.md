@@ -1,0 +1,31 @@
+# Wave 06 — Public HTTPS staging acceptance and no-cutover contract
+
+**State: HOLD.** This file is an operator handoff specification, not a deployment authorization or evidence of a publicly reachable site.
+
+## What is already verified
+
+- Original public source commit: `836bdb78769f70b255e5c0bc7773b6f6de61a28d`.
+- Original canonical directory: 11,024 public pages from 35 source repositories, split into two generated shards.
+- Restricted preview: 11,021 pages; only three held deep-search entries excluded. The original source remains byte-for-byte intact.
+- A preview-only master directory points to both immutable restricted shards under `/registry/previews/2026-11-08-restricted/`.
+- Browser tests have exercised isolated localhost routing, directory search, filters, keyboard menu and missing-shard fail-closed behavior.
+- The curated master navigation contains no matches for the three sensitive teacher/evidence-vault paths, so they require no curated-entry deletions.
+- Separate source-owner reviews for the three held entries are pending. An unapproved source page may still exist at its old direct URL even when it is absent from this proposed searchable index.
+
+## Independent staging deployment requirements (not yet satisfied)
+
+1. Use a *separate staging origin* with a valid publicly trusted HTTPS certificate. Do **not** change `vervenveda.com`, its DNS, GitHub Pages production settings or the original full source repository.
+2. Do not connect the staging origin to real student, teacher, parent, administrative or STOS systems. Use synthetic records and never copy browser storage or source secrets.
+3. Serve the unchanged original homepage at staging root `/`, with only the restricted preview master directory mapped at `/ecosystem/master-ecosystem-directory.json` and both restricted shards at their exact immutable `/registry/previews/2026-11-08-restricted/registry/` paths. Other public-only assets must resolve safely; the server must prevent directory traversal, serve proper JSON/MIME types and not expose source control or build internals.
+4. Confirm all three staged assets match the SHA-256 values in `restricted-preview-manifest.json`, including the preview master pointer. A correct artifact build alone does not certify the hosting server.
+5. Require a private-release review of the three held routes and confirm no link or in-page search result resurrects them. **Do not assume a search-index exclusion revokes any old direct link.**
+6. Test on desktop, small/mobile viewport and Chromium/Firefox/WebKit; test search, category filter, all 35 repository filters, keyboard menu close/focus, no-results, 503 for either shard, generation mismatch and hash-corruption handling. Existing homepage validates matching generation and count; an HTTP host may require external manifest/checksum enforcement.
+7. Record WCAG 2.1 AA accessibility findings, categorize known baseline defects versus changes introduced by staging and fix any release-blocking regressions.
+8. Preserve a verified previous immutable *deployed* generation and exercise an actual pointer rollback over staging HTTPS. A temporary local file swap is insufficient.
+9. Release requires signed source-owner review, repository approval, tested staging URL, evidence links, and a separate go/no-go authorization. A green source or browser test does not itself grant permission to merge Waves 05/06.
+
+## Available controls and limitations
+
+The connected GitHub capability can create and test PR/branch files and inspect Actions runs, but does not currently expose a supported GitHub Pages administration or independent staging-host deployment operation. Accordingly, our workflow only spins up ephemeral **self-signed localhost HTTPS**, and `ignoreHTTPSErrors=true` is limited to that test. This is *not* a real public CA certificate, an internet-reachable staging deployment, or a staging roll-forward/rollback acceptance.
+
+**Boundaries:** No main-branch merge, no live domain cutover, no remote public staging claim, no student account cloud import, no T01/T02/T03 modifications, no source repository privatization.
