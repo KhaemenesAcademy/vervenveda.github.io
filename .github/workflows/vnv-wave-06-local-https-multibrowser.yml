@@ -1,0 +1,65 @@
+name: VNV Wave 06 — Local HTTPS Multi-Browser and Accessibility Gate
+on:
+  pull_request:
+    paths:
+      - 'tests/wave-06-https-multibrowser.mjs'
+      - '.github/workflows/vnv-wave-06-local-https-multibrowser.yml'
+      - 'scripts/wave-06-restricted-preview.mjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  locally-isolated-https:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: vervenveda/vervenveda.github.io
+          ref: 836bdb78769f70b255e5c0bc7773b6f6de61a28d
+          path: source-pinned
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify pinned source repository
+        run: test "$(git -C source-pinned rev-parse HEAD)" = "836bdb78769f70b255e5c0bc7773b6f6de61a28d"
+      - name: Install pinned browser engines and accessibility audit
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1 axe-core@4.10.3
+          npx playwright install --with-deps chromium firefox webkit
+      - name: Generate ephemeral self-signed localhost TLS certificate
+        shell: bash
+        run: |
+          set -euo pipefail
+          openssl req -x509 -newkey rsa:2048 -sha256 -nodes -days 1 -keyout staging-local-key.pem -out staging-local-cert.pem -subj "/CN=localhost" -addext "subjectAltName=DNS:localhost,IP:127.0.0.1"
+          chmod 600 staging-local-key.pem
+      - name: Assemble restricted catalog without public promotion
+        run: |
+          node scripts/wave-06-atomic-candidate.mjs
+          node scripts/wave-06-restricted-preview.mjs
+          node tests/wave-06-restricted-preview-acceptance.mjs
+      - name: Run HTTPS Chromium Firefox WebKit and scoped WCAG checks
+        run: |
+          node --check tests/wave-06-https-multibrowser.mjs
+          node tests/wave-06-https-multibrowser.mjs
+      - name: Preserve anonymized browser evidence only
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vnv-wave-06-local-https-multibrowser-evidence
+          path: wave-06-https-browser-evidence.json
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Destroy ephemeral TLS certificate files
+        if: always()
+        run: |
+          rm -f staging-local-key.pem staging-local-cert.pem
+          echo "SELF_SIGNED_TEST_TLS=EPHEMERAL"
+          echo "PUBLIC_HTTPS_STAGING=NOT_PERFORMED"
+          echo "PUBLIC_ASSET_PROMOTION=NOT_PERFORMED"
+          echo "STOS_WRITE=NONE"
+          echo "CUTOVER=HOLD"
