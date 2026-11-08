@@ -40,3 +40,21 @@ The connected GitHub capability can create and test PR/branch files and inspect 
 - One previously documented sandbox-only service-worker console warning appeared. This is an isolation limitation; no production service worker was registered.
 - **The quarantined bundle has not been published** or tested as a publicly reachable, CA-trusted HTTPS site. Its external navigation links remain part of the original homepage and are not treated as proof of standalone ecosystem-route availability. This is a self-contained *gateway asset preview*, not all 11,021 destination applications.
 - **Actual HTTPS staging hosting, CA certificate, external source-owner access approval, full bundle multi-engine UI test, actual deployed-generation rollback and explicit release signoff remain outstanding.** No main merge, no domain/DNS/STOS/student data modifications.
+
+## Phase F — Independent staging workflow prepared (2026-11-08)
+
+A new **read-only manual audit** now exists at `.github/workflows/vnv-wave-06-public-https-stage.yml`; its syntax is validated on every Wave 06 PR change. The workflow's manual `staging_url` input deliberately requires an entirely separate root-level, publicly resolvable `https://` staging/preview/sandbox/canary hostname. Known production and GitHub source hosts are disallowed. Its manual job **does not deploy**.
+
+A hosting operator must first establish and explicitly authorize a separate static host (dedicated domain/origin, valid publicly trusted certificate, no site data/credentials/production binding), then upload the exact checked `vnv-wave-06-quarantined-site-NOT-PUBLISHED` artifact **to that isolated staging root only**. The artifact contains the generated manifest, `index.html`, 21 pinned gateway/translator/icon/registry assets, and the restricted 11,021-entry catalog; verify its contents against manifest hashes. Set `Cache-Control: no-store` for the active pointer and use immutable caching only for versioned shard routes. Keep old generations until rollback validation finishes.
+
+After the host is reachable, run the manual workflow with the staged root URL; it will verify:
+- valid system-verified HTTPS certificate (no `ignoreHTTPSErrors`), no redirects, complete versioned 21-file SHA-256 integrity and required MIME types;
+- original source homepage's exact **staging** hash, and full restricted 11,021-entry catalog with two matching shard generations and no held teacher/evidence-vault routes;
+- desktop/mobile Chromium, Firefox and WebKit chrome/translation navigation and search behavior;
+- no unexpected external executable/data requests, and scoped WCAG 2.1 AA `axe-core` accessibility findings with violations recorded instead of silently suppressed.
+
+**Deployment blocking facts:** No independent root-hosting service with matching deploy permissions is currently connected; the Academy GitHub connector can edit PRs and run checks but cannot create/configure a separate Pages host. A default *project* GitHub Pages site at a `/repository/` subpath is **not compatible** with the current bundle's absolute-root URLs without a separately audited path-rewrite and browser gate. Do not upload this archive to the current `KhaemenesAcademy/vervenveda.github.io` Pages deployment or its `main` branch; doing so could activate live functionality.
+
+### Release and rollback authority
+
+The remote manual audit is **non-mutating** and is only one acceptance gate. No user, teacher, administrative, student or STOS data may be copied to stage. The three sensitive source routes stay on owner-review HOLD and must not become new searchable entries. Passing remote checks does not authorize public production release: preserve and validate the previous *deployed* staging generation, run a real pointer rollback, review accessibility findings (including gold eyebrow contrast) and obtain explicit source-owner approval before any main branch merge or production cutover. Live `vervenveda.com` and STOS remain unchanged.
