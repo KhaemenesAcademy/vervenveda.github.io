@@ -123,7 +123,7 @@ async function run(engine,name,viewport,shardUnavailable=false){
    report.accessibility.push({engine:name,viewport,violations});
    console.log("ACCESSIBILITY_BASELINE "+name+" "+viewport.width+" "+JSON.stringify(violations));
   }
-  const knownWarnings=errors.filter(e=>e.includes("serviceWorker")&&e.includes("sandboxed"));
+  const knownWarnings=errors.filter(e=>/service\s*worker/i.test(e)&&e.includes("sandboxed")&&e.includes("allow-same-origin"));
   const unexpected=errors.filter(e=>!knownWarnings.includes(e));
   assert.deepEqual(unexpected,[],"Unexpected page exceptions");
   const entry={engine:name,viewport,shardUnavailable,assertions:checks,knownSandboxWarnings:knownWarnings.length,externalRequestCount:outbound.length,localFailures:failed,pass:true};
