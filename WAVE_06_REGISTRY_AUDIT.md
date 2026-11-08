@@ -29,3 +29,27 @@ The manually executable workflow checks out the pinned public source in a tempor
 5. Preserve original domain, source visibility, Wave 05 PR draft state and native STOS boundaries until independent cutover acceptance.
 
 **This branch adds only audit scripts, a manually auditable workflow and documentation. No registry data is published to the simplified repository by this PR.**
+
+## Stage B — Atomic candidate evidence and privacy review
+
+The candidate builder temporarily copies **all three files** from the pinned public original into an immutable generation folder `registry/releases/2026-11-08T17-21-17Z/` on a GitHub Actions runner. It retains a complete candidate as an Actions artifact, **not** as GitHub Pages files on this branch, and a separate summary report with SHA-256 hashes. The manifest explicitly records publication and STOS approval as `false`.
+
+The release is a **single logical unit**: a master directory and its two public-page shards (5,512 records each). Neither `registry/ecosystem-pages-a.json` nor `registry/ecosystem-pages-b.json` may be independently promoted; one active immutable version pointer must be advanced only after both have been validated and a previously working generation is retained for rollback. **The current live domain is a fallback, not an immutable local rollback artifact.** No previous-generation copy has yet been commissioned in the simplified gateway.
+
+### Review-required source paths
+
+The broader keyword screen flagged exactly three catalog entries for manual review:
+
+| Source repository | Path | Why held |
+| --- | --- | --- |
+| `vervenveda/Khaemenes_Academy.github.io` | `teacher-admin/index.html` | Teacher-facing administrative surface; public discoverability requires authorization review |
+| `vervenveda/Khaemenes_High.github.io` | `courses/mathematics/evidence-vault/index.html` | Educational evidence vault; distinguish public reference UI from protected student evidence |
+| `vervenveda/Khaemenes_Higher_Learning.github.io` | `courses/mathematics/evidence-vault/index.html` | Parallel evidence-vault surface; same access-policy concern |
+
+Initial read-only GitHub source previews show static public HTML and browser-local storage references, but they **do not establish whether the full pages or reachable child routes expose privileged state or account data**. Do not auto-approve or automatically delete these entries. A later source-owner classification must explicitly say whether they are appropriate public discovery links. A listing is not proof of server-side access control.
+
+### Functional gates
+
+The candidate data test checks combined generation, unique URLs, complete page count, a sample search, category and repository filtering, and refusal to adopt a missing/corrupted shard. The test uses a simulated active-pointer value; **it does not install a production atomic publisher** or test live user-interface behavior. Even a fully green run is a staging result, not authorization to publish.
+
+**Wave 05 and Wave 06 remain draft and unmerged.** No DNS, repository visibility, original website, STOS or student data changes.
