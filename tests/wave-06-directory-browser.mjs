@@ -8,16 +8,16 @@ const source=resolve("source-pinned");
 const candidate=resolve("wave-06-candidate");
 const release="registry/releases/2026-11-08T17-21-17Z/";
 const routes=new Map([
- ["/ecosystem/master-ecosystem-directory.json",join(candidate,release,"ecosystem/master-ecosystem-directory.json")],
- ["/registry/ecosystem-pages-a.json",join(candidate,release,"registry/ecosystem-pages-a.json")],
- ["/registry/ecosystem-pages-b.json",join(candidate,release,"registry/ecosystem-pages-b.json")]
+ ["/ecosystem/master-ecosystem-directory.json",join(candidate,"atomic-pointer-preview.json")],
+ ["/"+release+"registry/ecosystem-pages-a.json",join(candidate,release,"registry/ecosystem-pages-a.json")],
+ ["/"+release+"registry/ecosystem-pages-b.json",join(candidate,release,"registry/ecosystem-pages-b.json")]
 ]);
 const contentType=(p)=>({".html":"text/html; charset=utf-8",".js":"text/javascript; charset=utf-8",".json":"application/json; charset=utf-8",".css":"text/css; charset=utf-8",".png":"image/png",".svg":"image/svg+xml",".webmanifest":"application/manifest+json"})[extname(p)]||"application/octet-stream";
 let unavailableShard=false;
 const served=new Set();
 const server=createServer((req,res)=>{
   const pathname=new URL(req.url,"http://localhost").pathname;
-  if(unavailableShard&&pathname==="/registry/ecosystem-pages-b.json"){res.writeHead(503);res.end("simulated shard outage");return;}
+  if(unavailableShard&&pathname==="/"+release+"registry/ecosystem-pages-b.json"){res.writeHead(503);res.end("simulated shard outage");return;}
   let file=routes.get(pathname);
   if(!file){
     const relative=pathname==="/index.html"||pathname==="/"?"/index.html":pathname;
@@ -34,7 +34,7 @@ const server=createServer((req,res)=>{
 await new Promise(ok=>server.listen(0,"127.0.0.1",ok));
 const base="http://127.0.0.1:"+server.address().port;
 const browser=await chromium.launch({headless:true});
-const report={schema:"vnv-wave-06-directory-browser-v1",sourceCommit:"836bdb78769f70b255e5c0bc7773b6f6de61a28d",candidateRelease:release,scenarios:[],publicPromotionAuthorized:false};
+const report={schema:"vnv-wave-06-directory-browser-atomic-preview-v2",sourceCommit:"836bdb78769f70b255e5c0bc7773b6f6de61a28d",candidateRelease:release,scenarios:[],publicPromotionAuthorized:false};
 async function scenario(name,viewport,shardOutage=false){
   unavailableShard=shardOutage;
   served.clear();
@@ -55,8 +55,8 @@ async function scenario(name,viewport,shardOutage=false){
     await check("canonical master and two shard HTTP requests",async()=>{
       await page.waitForTimeout(900);
       assert.ok(served.has("/ecosystem/master-ecosystem-directory.json"));
-      assert.ok(served.has("/registry/ecosystem-pages-a.json"));
-      if(!shardOutage)assert.ok(served.has("/registry/ecosystem-pages-b.json"));
+      assert.ok(served.has("/"+release+"registry/ecosystem-pages-a.json"));
+      if(!shardOutage)assert.ok(served.has("/"+release+"registry/ecosystem-pages-b.json"));
     });
     const status=page.locator("#ecosystemPageStatus");
     if(!shardOutage){
@@ -69,6 +69,13 @@ async function scenario(name,viewport,shardOutage=false){
         await page.waitForTimeout(130);
         assert.match(await status.innerText(),/11,024/);
         assert.ok(await page.locator("#ecosystemPageResults a").count()>0);
+      });
+      await check("category filter narrows educational catalog",async()=>{
+        await page.locator("#ecosystemPageSearch").fill("mathematics");
+        await page.locator("#ecosystemPageCategory").selectOption("education");
+        await page.waitForTimeout(130);
+        assert.ok(await page.locator("#ecosystemPageResults a").count()>0);
+        await page.locator("#ecosystemPageCategory").selectOption("");
       });
       await check("repository filter limits result set",async()=>{
         const options=await page.locator("#ecosystemPageRepo option").evaluateAll(nodes=>nodes.map(x=>x.value).filter(Boolean));
@@ -90,7 +97,7 @@ async function scenario(name,viewport,shardOutage=false){
         await page.waitForFunction(()=>document.querySelector("#ecosystemPageStatus")?.textContent.includes("temporarily unavailable"),{timeout:20000});
         assert.match(await status.innerText(),/temporarily unavailable/);
         assert.equal(await page.locator("#ecosystemPageResults a").count(),0);
-        assert.ok(httpFailures.some(x=>x.path.startsWith("/registry/ecosystem-pages-b.json")&&x.status===503));
+        assert.ok(httpFailures.some(x=>x.path.startsWith("/"+release+"registry/ecosystem-pages-b.json")&&x.status===503));
       });
     }
     await check("hamburger opens and closes with keyboard",async()=>{
@@ -105,7 +112,7 @@ async function scenario(name,viewport,shardOutage=false){
     result.errors=errors;
     result.httpFailures=httpFailures.filter(x=>x.path.startsWith("/ecosystem/")||x.path.startsWith("/registry/"));
     result.externalHosts=[...new Set(external)].slice(0,20);
-    assert.equal(result.assertions.length,shardOutage?3:6);
+    assert.equal(result.assertions.length,shardOutage?3:7);
     console.log("DIRECTORY_BROWSER_SCENARIO=PASS "+JSON.stringify(result));
     report.scenarios.push(result);
   }finally{await context.close();}
