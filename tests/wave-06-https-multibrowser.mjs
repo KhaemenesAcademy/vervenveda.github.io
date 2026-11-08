@@ -118,7 +118,7 @@ async function run(engine,name,viewport,shardUnavailable=false){
    const violations=await page.evaluate(async()=>{
     const results=await window.axe.run(document.querySelector("#completePageIndex"),
      {runOnly:{type:"tag",values:["wcag2a","wcag2aa","wcag21a","wcag21aa"]}});
-    return results.violations.map(v=>({id:v.id,impact:v.impact,nodes:v.nodes.length,description:v.help}));
+    return results.violations.map(v=>({id:v.id,impact:v.impact,nodes:v.nodes.length,description:v.help,samples:v.nodes.slice(0,3).map(n=>({target:n.target,html:n.html.slice(0,220),failureSummary:(n.failureSummary||"").slice(0,420)}))}));
    });
    report.accessibility.push({engine:name,viewport,violations});
    console.log("ACCESSIBILITY_BASELINE "+name+" "+viewport.width+" "+JSON.stringify(violations));
