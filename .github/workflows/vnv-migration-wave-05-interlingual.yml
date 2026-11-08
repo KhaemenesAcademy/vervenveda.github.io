@@ -5,6 +5,8 @@ on:
       - 'assets/khaemenes-interlingual-core.js'
       - 'tests/fixtures/khaemenes-translator-loader.v1.1.js'
       - 'tests/wave-05-interlingual-core.test.mjs'
+      - 'assets/khaemenes-interlingual-trust-adapter.js'
+      - 'tests/wave-05-interlingual-trust.test.mjs'
       - '.github/workflows/vnv-migration-wave-05-interlingual.yml'
   workflow_dispatch:
 permissions:
@@ -25,8 +27,10 @@ jobs:
           node --check assets/khaemenes-interlingual-core.js
           node --check tests/fixtures/khaemenes-translator-loader.v1.1.js
           node --check tests/wave-05-interlingual-core.test.mjs
+          node --check assets/khaemenes-interlingual-trust-adapter.js
+          node --check tests/wave-05-interlingual-trust.test.mjs
       - name: Execute isolated read-only forensic regressions
-        run: node --test tests/wave-05-interlingual-core.test.mjs
+        run: node --test tests/wave-05-interlingual-core.test.mjs tests/wave-05-interlingual-trust.test.mjs
       - name: Hold live activation and STOS promotion
         if: always()
         run: |
