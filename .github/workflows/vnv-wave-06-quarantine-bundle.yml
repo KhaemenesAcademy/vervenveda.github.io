@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'scripts/wave-06-quarantined-staging-bundle.mjs'
+      - 'tests/wave-06-quarantine-site-browser.mjs'
       - '.github/workflows/vnv-wave-06-quarantine-bundle.yml'
   workflow_dispatch:
 permissions:
@@ -56,12 +57,35 @@ jobs:
           if(!html.includes("script-src 'self'"))process.exit(1);
           console.log("QUARANTINE_SOURCE_TAGS=PASS ASSETS=21 PUBLIC_RELEASE=HOLD");
           NODE
+      - name: Install isolated Chromium test runtime
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Generate temporary local HTTPS certificate
+        run: |
+          openssl req -x509 -newkey rsa:2048 -sha256 -nodes -days 1 -keyout staging-local-key.pem -out staging-local-cert.pem -subj "/CN=localhost" -addext "subjectAltName=DNS:localhost,IP:127.0.0.1"
+          chmod 600 staging-local-key.pem
+      - name: Exercise assembled quarantine bundle over isolated HTTPS
+        run: |
+          node --check tests/wave-06-quarantine-site-browser.mjs
+          node tests/wave-06-quarantine-site-browser.mjs
+      - name: Destroy test-only certificate
+        if: always()
+        run: rm -f staging-local-key.pem staging-local-cert.pem
       - name: Preserve quarantined bundle as private Actions artifact only
         uses: actions/upload-artifact@v4
         with:
           name: vnv-wave-06-quarantined-site-NOT-PUBLISHED
           path: wave-06-quarantine-site/
           if-no-files-found: error
+          retention-days: 30
+      - name: Preserve smoke test report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vnv-wave-06-quarantine-browser-evidence
+          path: wave-06-quarantine-browser-evidence.json
+          if-no-files-found: warn
           retention-days: 30
       - name: Preserve audit summary
         if: always()
