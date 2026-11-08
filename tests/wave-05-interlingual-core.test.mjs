@@ -102,7 +102,7 @@ function loadCanonicalLoader({unavailable=[],legacy=true}={}){
   const root={
     KhaemenesSovereignTranslate:legacy?{lookupLocal(){return null;}}:undefined,
     KhaemenesSovereignSeeds:{phrases:{}},
-    KhaemenesSovereignDictionary:{entries:[]},
+    KhaemenesSovereignDictionary:unavailable.includes("sovereign-dictionary.generated.js")?undefined:{entries:[]},
     KhaemenesLexiconExpansion:{entries:[]},
     KhaemenesTransliteration:{},
     KhaemenesReviewPolicy:{},
