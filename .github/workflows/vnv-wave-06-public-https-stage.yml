@@ -1,0 +1,66 @@
+name: VNV Wave 06 — Independent HTTPS Staging Audit (Manual, Read Only)
+on:
+  pull_request:
+    paths:
+      - 'tests/wave-06-public-https-staging.mjs'
+      - '.github/workflows/vnv-wave-06-public-https-stage.yml'
+  workflow_dispatch:
+    inputs:
+      staging_url:
+        description: 'Separate authorized staging hostname (CA-trusted HTTPS, root path; never vervenveda.com)'
+        type: string
+        required: true
+permissions:
+  contents: read
+jobs:
+  syntax-only-on-pr:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check read-only auditor syntax
+        run: node --check tests/wave-06-public-https-staging.mjs
+      - name: Confirm no staging access was attempted
+        run: echo 'PUBLIC_HTTPS_STAGE=NOT_TESTED; MANUAL_TRIGGER_REQUIRED=YES; DEPLOYMENT=NO'
+  remote-staging-audit:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser engines (read-only stage validation)
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium firefox webkit
+      - name: Audit approved externally deployed HTTPS staging origin
+        env:
+          VNV_STAGING_URL: ${{ inputs.staging_url }}
+        run: |
+          node --check tests/wave-06-public-https-staging.mjs
+          node tests/wave-06-public-https-staging.mjs
+      - name: Archive staging evidence, no deployment
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vnv-wave-06-remote-https-staging-evidence
+          path: wave-06-public-https-stage-report.json
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Release boundary
+        if: always()
+        run: |
+          echo "REMOTE_STAGE_AUDIT=READ_ONLY"
+          echo "PAGES_DEPLOY=NO"
+          echo "LIVE_GATEWAY=UNMODIFIED"
+          echo "STOS_WRITE=NONE"
+          echo "MERGE_AUTHORIZATION=HOLD"
