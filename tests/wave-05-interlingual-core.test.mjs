@@ -20,8 +20,7 @@ function loadCore({storageValue=null,seed=true,dictionary=null}={}) {
     KhaemenesSovereignDictionary:dictionary || {entries:[],creativeVocabulary:[]}
   };
   root.window=root;
-  vm.runInNewContext(seedSource,root,{timeout:3000});
-  if(!seed)delete root.KhaemenesSovereignSeeds;
+  if(seed)vm.runInNewContext(seedSource,root,{timeout:3000});
   vm.runInNewContext(core,root,{timeout:3000});
   return {api:root.KhaemenesSovereignTranslate,root,storageReads};
 }
