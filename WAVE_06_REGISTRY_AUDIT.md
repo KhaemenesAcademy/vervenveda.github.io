@@ -63,3 +63,24 @@ The candidate data test checks combined generation, unique URLs, complete page c
 - Initial automated review flagged exactly three paths listed above. Source previews show browser-local storage in each and administrative/evidence-oriented presentation; **no authorization finding or permission to expose data was established**.
 - Remaining HOLD: manual owner approval of the three destination classifications; full browser directory interaction test with actual shards, URL/access review and an immutable previous-release rollback target.
 - Neither Wave 06 nor Wave 05 may be merged just because this archive built successfully. The existing live site remains canonical.
+
+## Stage C — Versioned pointer browser acceptance + simulated rollback (2026-11-08)
+
+Evidence:
+- [Versioned full directory Chromium test](https://github.com/KhaemenesAcademy/vervenveda.github.io/actions/runs/42526524939) — **PASS**, three scenarios. Desktop and mobile: 11,024 pages, mathematics search, education-category filter, 35-repository dropdown/filter, empty-search fallback, keyboard-operated hamburger. Simulated single-shard 503: full index remains unavailable, not partially loaded.
+- [Atomic candidate and rollback rehearsal](https://github.com/KhaemenesAcademy/vervenveda.github.io/actions/runs/42526726032) — **PASS**, source hash checks, missing/corrupt shard rejected, candidate `atomic-pointer-preview.json`, simulation of master pointer advance and rollback in an ephemeral local directory.
+- Existing production `/ecosystem/master-ecosystem-directory.json` was **not** replaced. The preview master changes `pageCatalog.parts` to an immutable `/registry/releases/2026-11-08T17-21-17Z/registry/` two-part generation, compatible with the existing homepage's validated path format.
+- The old/master bytes are retained in the source pinned checkout and in the candidate archive. The simulation does **not** prove production release authorizations, service durability, deployment operations, or a live rollback.
+- Browser warnings: origin-specific service-worker sandbox warning present; external requests intercepted. Actual production HTTPS, real linked page behavior and cross-browser accessibility still unverified.
+
+### Source-level classification of three keyword flags
+
+1. `Khaemenes_Academy.github.io/teacher-admin/index.html`: publicly stored HTML; teacher-facing hub that imports family registry, mentor and continuity scripts. Requires source-owner approval for search indexing, permission/access review and confirmation no learner data leaks in the public application. **HOLD**.
+2. `Khaemenes_High.github.io/courses/mathematics/evidence-vault/index.html`: public HTML with local browser storage calls, but source inspection alone cannot establish records as publicly safe. **HOLD**.
+3. `Khaemenes_Higher_Learning.github.io/courses/mathematics/evidence-vault/index.html`: public HTML with local browser storage and student/evidence references. Do not infer that its public code authorizes disclosure of user evidence. **HOLD**.
+
+The code preview showed no explicit network `fetch()` call in these page sources, but that alone cannot attest to dynamically loaded scripts or linked routes. All three entries were already indexed in the original public directory; the staged candidate must not broaden that exposure, and classification remains pending.
+
+### Remaining promotion gates
+
+An authorized source owner must approve the three access classifications (or regenerate the full two-shard catalog to exclude any denied entries); verify a real public staging URL including CSP, assets and application routing; run non-Chromium/mobile accessibility checks; preserve previous deployed-generation bytes and rehearse actual rollback; and approve a single-pointer release. Domain/visibility changes and any STOS import remain separate, later approvals. Wave 05 and Wave 06 are still drafts.
