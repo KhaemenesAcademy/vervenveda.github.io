@@ -1,0 +1,42 @@
+name: VNV Migration Wave 02 — First Stylesheet Integrity
+on:
+  pull_request:
+    paths:
+      - 'assets/vervenveda-global-standard.css'
+      - '.github/workflows/vnv-migration-wave-02-first-style.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  first-stylesheet:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Verify exact public stylesheet from pinned full source
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f assets/vervenveda-global-standard.css
+          actual="$(git hash-object assets/vervenveda-global-standard.css)"
+          expected="0f2846e2de3a938c939e60ee6e8807726cf267db"
+          printf 'SOURCE_ASSET_BLOB=%s\nGATEWAY_ASSET_BLOB=%s\n' "$expected" "$actual"
+          test "$actual" = "$expected"
+      - name: Verify homepage remains unchanged
+        shell: bash
+        run: |
+          set -euo pipefail
+          actual="$(git hash-object index.html)"
+          expected="a883f035329a89e55d526160c54ffdac3c7af2f9"
+          printf 'INDEX_BLOB=%s\n' "$actual"
+          test "$actual" = "$expected"
+      - name: Preserve audit-only outcome
+        shell: bash
+        run: |
+          echo "STYLESHEET=PASS"
+          echo "HOMEPAGE=UNCHANGED"
+          echo "STOS_IMPORT=NOT_STARTED"
+          echo "DOMAIN_TRANSFER=NOT_STARTED"
+          echo "CUTOVER=HOLD"
