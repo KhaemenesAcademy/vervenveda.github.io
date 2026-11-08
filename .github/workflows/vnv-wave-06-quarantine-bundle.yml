@@ -44,16 +44,18 @@ jobs:
           node --check scripts/wave-06-quarantined-staging-bundle.mjs
           node scripts/wave-06-quarantined-staging-bundle.mjs
       - name: Assert no external executable script tags and release stays held
+        shell: bash
         run: |
-          node --input-type=module -e '
-            import fs from "node:fs";
-            const root="wave-06-quarantine-site/";
-            const a=JSON.parse(fs.readFileSync(root+"staging-bundle-manifest.json"));
-            const html=fs.readFileSync(root+"index.html","utf8");
-            if(a.publicDeploymentAuthorized!==false || a.restrictedPages!==11021 || a.files.length<20)process.exit(1);
-            if(/<script\b[^>]*src=["\x27]https?:\/\//i.test(html))process.exit(1);
-            if(!html.includes("script-src &#39;self&#39;") && !html.includes("script-src &apos;self&apos;") && !html.includes("script-src 'self'"))process.exit(1);
-          '
+          node --input-type=module <<'NODE'
+          import fs from "node:fs";
+          const root="wave-06-quarantine-site/";
+          const a=JSON.parse(fs.readFileSync(root+"staging-bundle-manifest.json"));
+          const html=fs.readFileSync(root+"index.html","utf8");
+          if(a.publicDeploymentAuthorized!==false || a.restrictedPages!==11021 || a.files.length!==21)process.exit(1);
+          if(/<script\b[^>]*src=["']https?:\/\//i.test(html))process.exit(1);
+          if(!html.includes("script-src 'self'"))process.exit(1);
+          console.log("QUARANTINE_SOURCE_TAGS=PASS ASSETS=21 PUBLIC_RELEASE=HOLD");
+          NODE
       - name: Preserve quarantined bundle as private Actions artifact only
         uses: actions/upload-artifact@v4
         with:
