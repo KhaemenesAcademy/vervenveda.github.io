@@ -86,6 +86,13 @@ const manifest={
  previousLiveFallback:"https://vervenveda.com/",
  rollbackRule:"Do not update active directory manifest/pointer until complete immutable pair and read-only browser tests pass"
 };
+const preview=structuredClone(master);
+preview.pageCatalog.parts=paths.map(route=>"/"+root+route);
+preview.pageCatalog.releaseCandidate=Object.freeze({id:generation,status:"preview-only",sourcePinnedCommit:manifest.sourceCommit});
+const previewBytes=Buffer.from(JSON.stringify(preview,null,2)+"\n");
+fs.writeFileSync(path.join(out,"atomic-pointer-preview.json"),previewBytes);
+manifest.atomicPointerPreview={path:"atomic-pointer-preview.json",sha256:hex(previewBytes),originalMasterUntouched:true,
+  versionedParts:preview.pageCatalog.parts,approved:false};
 fs.writeFileSync(path.join(out,"candidate-manifest.json"),JSON.stringify(manifest,null,2)+"\n");
 fs.writeFileSync("wave-06-candidate-report.json",JSON.stringify({
   ...manifest,files:manifest.files,topRepositoryCounts:Object.entries(repoCounts).sort((a,b)=>b[1]-a[1]).slice(0,15),
