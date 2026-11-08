@@ -1,0 +1,37 @@
+name: VNV Migration Wave 05 — Interlingual Core Forensic Tests
+on:
+  pull_request:
+    paths:
+      - 'assets/khaemenes-interlingual-core.js'
+      - 'tests/fixtures/khaemenes-translator-loader.v1.1.js'
+      - 'tests/wave-05-interlingual-core.test.mjs'
+      - '.github/workflows/vnv-migration-wave-05-interlingual.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  isolated-core-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax check original module, pinned loader and regression suite
+        run: |
+          node --check assets/khaemenes-interlingual-core.js
+          node --check tests/fixtures/khaemenes-translator-loader.v1.1.js
+          node --check tests/wave-05-interlingual-core.test.mjs
+      - name: Execute isolated read-only forensic regressions
+        run: node --test tests/wave-05-interlingual-core.test.mjs
+      - name: Hold live activation and STOS promotion
+        if: always()
+        run: |
+          echo "SOURCE_MODULE_STAGE_ONLY=YES"
+          echo "LIVE_GATEWAY_INDEX_UNCHANGED=REQUIRED_BY_TESTS"
+          echo "STOS_WRITE=NEVER"
+          echo "CANONICAL_APPROVAL=NOT_VERIFIED_BY_BROWSER"
+          echo "CUTOVER=HOLD"
