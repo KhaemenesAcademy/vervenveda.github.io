@@ -5,6 +5,8 @@ on:
       - 'scripts/wave-06-atomic-candidate.mjs'
       - 'scripts/wave-06-candidate-acceptance.mjs'
       - 'scripts/wave-06-pointer-rollback-rehearsal.mjs'
+      - 'scripts/wave-06-access-classification-gate.mjs'
+      - 'policy/wave-06-directory-access-review.json'
       - '.github/workflows/vnv-wave-06-atomic-candidate.yml'
       - 'WAVE_06_REGISTRY_AUDIT.md'
   workflow_dispatch:
@@ -43,6 +45,10 @@ jobs:
         run: |
           node --check scripts/wave-06-pointer-rollback-rehearsal.mjs
           node scripts/wave-06-pointer-rollback-rehearsal.mjs
+      - name: Enforce source-owner access classification HOLD
+        run: |
+          node --check scripts/wave-06-access-classification-gate.mjs
+          node scripts/wave-06-access-classification-gate.mjs
       - name: Verify staged full pair and manifest (no public promotion)
         run: |
           test -s wave-06-candidate/candidate-manifest.json
@@ -66,6 +72,7 @@ jobs:
             wave-06-candidate-report.json
             wave-06-candidate-acceptance.json
             wave-06-rollback-rehearsal.json
+            wave-06-access-classification.json
           if-no-files-found: warn
           retention-days: 30
       - name: Fail-closed release boundary
