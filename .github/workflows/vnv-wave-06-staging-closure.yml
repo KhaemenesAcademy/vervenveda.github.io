@@ -1,0 +1,53 @@
+name: VNV Wave 06 — Staging Asset Closure Preflight (No Deploy)
+on:
+  pull_request:
+    paths:
+      - 'scripts/wave-06-staging-asset-closure.mjs'
+      - '.github/workflows/vnv-wave-06-staging-closure.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  staging-closure:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: vervenveda/vervenveda.github.io
+          ref: 836bdb78769f70b255e5c0bc7773b6f6de61a28d
+          path: source-pinned
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Require pinned source
+        run: test "$(git -C source-pinned rev-parse HEAD)" = "836bdb78769f70b255e5c0bc7773b6f6de61a28d"
+      - name: Assemble restricted preview in Actions workspace only
+        run: |
+          node scripts/wave-06-atomic-candidate.mjs
+          node scripts/wave-06-restricted-preview.mjs
+      - name: Inventory direct resources and cross-origin executable dependencies
+        run: |
+          node --check scripts/wave-06-staging-asset-closure.mjs
+          node scripts/wave-06-staging-asset-closure.mjs
+      - name: Keep staging deployment blocked until dependency closure
+        run: |
+          node --input-type=module -e 'import fs from "node:fs"; const r=JSON.parse(fs.readFileSync("wave-06-staging-closure-evidence.json")); if(r.publicHttpsStagingReady!==false||r.liveGatewayModified!==false||r.pagesPublished!==false) process.exit(1);'
+      - name: Retain compact audit evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: vnv-wave-06-staging-closure-preflight
+          path: wave-06-staging-closure-evidence.json
+          if-no-files-found: error
+          retention-days: 30
+      - name: Explicit no-deployment boundary
+        if: always()
+        run: |
+          echo "PUBLIC_HTTPS_STAGING=UNCONFIGURED"
+          echo "STAGING_ASSET_CLOSURE=NOT_AUTHORIZED"
+          echo "STOS_WRITE=NONE"
+          echo "PRODUCTION_CUTOVER=HOLD"

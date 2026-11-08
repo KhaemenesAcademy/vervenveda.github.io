@@ -1,0 +1,105 @@
+name: VNV Wave 06 — Quarantined Staging Bundle (Never Deploy)
+on:
+  pull_request:
+    paths:
+      - 'scripts/wave-06-quarantined-staging-bundle.mjs'
+      - 'tests/wave-06-quarantine-site-browser.mjs'
+      - '.github/workflows/vnv-wave-06-quarantine-bundle.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  quarantined-bundle:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: vervenveda/vervenveda.github.io
+          ref: 836bdb78769f70b255e5c0bc7773b6f6de61a28d
+          path: source-pinned
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: vervenveda/Khaemenes_Linguistics.github.io
+          ref: ebd5e8053a9fa07c3a3ca0865501ced339621916
+          path: source-linguistics
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify immutable original and Linguistics source trees
+        run: |
+          test "$(git -C source-pinned rev-parse HEAD)" = "836bdb78769f70b255e5c0bc7773b6f6de61a28d"
+          test "$(git -C source-linguistics rev-parse HEAD)" = "ebd5e8053a9fa07c3a3ca0865501ced339621916"
+      - name: Assemble immutable restricted candidate
+        run: |
+          node scripts/wave-06-atomic-candidate.mjs
+          node scripts/wave-06-restricted-preview.mjs
+          node tests/wave-06-restricted-preview-acceptance.mjs
+      - name: Assemble quarantined site bundle and assert source hashes
+        run: |
+          node --check scripts/wave-06-quarantined-staging-bundle.mjs
+          node scripts/wave-06-quarantined-staging-bundle.mjs
+      - name: Assert no external executable script tags and release stays held
+        shell: bash
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from "node:fs";
+          const root="wave-06-quarantine-site/";
+          const a=JSON.parse(fs.readFileSync(root+"staging-bundle-manifest.json"));
+          const html=fs.readFileSync(root+"index.html","utf8");
+          if(a.publicDeploymentAuthorized!==false || a.restrictedPages!==11021 || a.files.length!==21)process.exit(1);
+          if(/<script\b[^>]*src=["']https?:\/\//i.test(html))process.exit(1);
+          if(!html.includes("script-src 'self'"))process.exit(1);
+          console.log("QUARANTINE_SOURCE_TAGS=PASS ASSETS=21 PUBLIC_RELEASE=HOLD");
+          NODE
+      - name: Install isolated Chromium test runtime
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Generate temporary local HTTPS certificate
+        run: |
+          openssl req -x509 -newkey rsa:2048 -sha256 -nodes -days 1 -keyout staging-local-key.pem -out staging-local-cert.pem -subj "/CN=localhost" -addext "subjectAltName=DNS:localhost,IP:127.0.0.1"
+          chmod 600 staging-local-key.pem
+      - name: Exercise assembled quarantine bundle over isolated HTTPS
+        run: |
+          node --check tests/wave-06-quarantine-site-browser.mjs
+          node tests/wave-06-quarantine-site-browser.mjs
+      - name: Destroy test-only certificate
+        if: always()
+        run: rm -f staging-local-key.pem staging-local-cert.pem
+      - name: Preserve quarantined bundle as private Actions artifact only
+        uses: actions/upload-artifact@v4
+        with:
+          name: vnv-wave-06-quarantined-site-NOT-PUBLISHED
+          path: wave-06-quarantine-site/
+          if-no-files-found: error
+          retention-days: 30
+      - name: Preserve smoke test report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vnv-wave-06-quarantine-browser-evidence
+          path: wave-06-quarantine-browser-evidence.json
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Preserve audit summary
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vnv-wave-06-quarantine-evidence
+          path: wave-06-quarantine-evidence.json
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Confirm deployment hold
+        if: always()
+        run: |
+          echo "INDEPENDENT_PUBLIC_HTTPS=NOT_TESTED"
+          echo "ACTIONS_ARTIFACT_ONLY=YES"
+          echo "LIVE_SITE_AND_DNS=UNTOUCHED"
+          echo "STOS_WRITE=NONE"
+          echo "CUTOVER=HOLD"
