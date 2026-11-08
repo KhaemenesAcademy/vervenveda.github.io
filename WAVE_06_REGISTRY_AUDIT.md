@@ -53,3 +53,13 @@ Initial read-only GitHub source previews show static public HTML and browser-loc
 The candidate data test checks combined generation, unique URLs, complete page count, a sample search, category and repository filtering, and refusal to adopt a missing/corrupted shard. The test uses a simulated active-pointer value; **it does not install a production atomic publisher** or test live user-interface behavior. Even a fully green run is a staging result, not authorization to publish.
 
 **Wave 05 and Wave 06 remain draft and unmerged.** No DNS, repository visibility, original website, STOS or student data changes.
+
+### Verified candidate acceptance (2026-11-08)
+
+- [GitHub Actions candidate build and data acceptance](https://github.com/KhaemenesAcademy/vervenveda.github.io/actions/runs/42524584520): **PASS**.
+- Created archived immutable candidate with `candidate-manifest.json`, one master directory and both shards under `registry/releases/2026-11-08T17-21-17Z/` — **artifact only**, not the live `/registry` path.
+- Independent post-download ZIP inspection confirmed all four archive entries, total 11,024 pages, all three SHA-256 values and the manifest's `publicPublicationApproved=false`.
+- Candidate acceptance: search/filter smoke tests **PASS**; simulated missing-shard and hash-corruption checks **FAIL CLOSED**; simulated active pointer unchanged.
+- Initial automated review flagged exactly three paths listed above. Source previews show browser-local storage in each and administrative/evidence-oriented presentation; **no authorization finding or permission to expose data was established**.
+- Remaining HOLD: manual owner approval of the three destination classifications; full browser directory interaction test with actual shards, URL/access review and an immutable previous-release rollback target.
+- Neither Wave 06 nor Wave 05 may be merged just because this archive built successfully. The existing live site remains canonical.
