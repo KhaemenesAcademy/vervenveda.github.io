@@ -1,0 +1,57 @@
+name: VNV Migration Wave 04 — Campus Phrase Source Integrity
+on:
+  pull_request:
+    paths:
+      - 'assets/khaemenes-campus-phrases.js'
+      - '.github/workflows/vnv-migration-wave-04-campus-phrases.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify exact pinned phrase-seed source
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git hash-object assets/khaemenes-campus-phrases.js)" = "2a7c6c8030df3d62df7312cb9111acfe7a5534f6"
+          node --check assets/khaemenes-campus-phrases.js
+      - name: Verify gateway and prior assets unchanged
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git hash-object index.html)" = "a883f035329a89e55d526160c54ffdac3c7af2f9"
+          test "$(git hash-object assets/vervenveda-global-standard.css)" = "0f2846e2de3a938c939e60ee6e8807726cf267db"
+          test "$(git hash-object assets/vnv-global-standard.css)" = "4a1639543b3a96d9d756f88e13b8e7a26d8db0a2"
+      - name: Audit source-only boundary
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const s=fs.readFileSync('assets/khaemenes-campus-phrases.js','utf8');
+          const checks=[
+            ['No browser storage',/\b(?:localStorage|sessionStorage|indexedDB)\b/],
+            ['No network entry points',/\b(?:fetch\s*\(|WebSocket|XMLHttpRequest)\b/],
+            ['No dynamic evaluation',/\b(?:eval\s*\(|new\s+Function\s*\()\b/]
+          ];
+          for(const [name,re] of checks){if(re.test(s))throw Error(name+' flagged');}
+          if(!s.includes('curated-draft'))throw Error('Missing draft translation status');
+          if(!s.includes('KhaemenesSovereignSeeds'))throw Error('Missing expected public seed export');
+          console.log('SOURCE_ONLY_CHECK=PASS');
+          console.log('TRANSLATION_CERTIFICATION=NOT_ASSERTED');
+          NODE
+      - name: Confirm no release or STOS promotion
+        run: |
+          echo "SCRIPT_ACTIVATION=NOT_PERFORMED"
+          echo "STOS_IMPORT=NOT_STARTED"
+          echo "DOMAIN_TRANSFER=NOT_STARTED"
+          echo "CUTOVER=HOLD"
