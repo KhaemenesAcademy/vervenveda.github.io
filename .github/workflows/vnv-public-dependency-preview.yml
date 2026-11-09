@@ -1,0 +1,61 @@
+name: VNV Public Dependency Preview (Artifact Only)
+
+on:
+  pull_request:
+    paths:
+      - "scripts/build_public_dependency_preview.py"
+      - "tests/test_public_dependency_preview.py"
+      - ".github/workflows/vnv-public-dependency-preview.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-preview-no-deployment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Test allowlist and fail-closed staging
+        run: |
+          python3 -m unittest discover -s tests -p "test_public_dependency_preview.py" -v
+          python3 -m py_compile scripts/build_public_dependency_preview.py
+      - name: Clone authoritative VNV public master read-only
+        run: |
+          set -euo pipefail
+          git clone --quiet --depth 1 --branch main \
+            https://github.com/vervenveda/vervenveda.github.io.git \
+            "$RUNNER_TEMP/vnv-public-master"
+          git -C "$RUNNER_TEMP/vnv-public-master" rev-parse HEAD
+      - name: Build preview without modifying either repository
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/public-preview"
+          python3 scripts/build_public_dependency_preview.py \
+            --gateway "$GITHUB_WORKSPACE" \
+            --master "$RUNNER_TEMP/vnv-public-master" \
+            --output "$RUNNER_TEMP/public-preview" \
+            > "$RUNNER_TEMP/public-preview-receipt.json"
+          python3 - "$RUNNER_TEMP/public-preview-receipt.json" <<'PY'
+          import json, sys
+          data=json.load(open(sys.argv[1]))
+          assert data["repositoryWrites"] == 0
+          assert data["stosOperations"] == 0
+          assert data["domainCutoverApproved"] is False
+          assert len(data["publicMasterDependencies"]) == 11
+          print("PUBLIC_PREVIEW=STAGED_ONLY")
+          print("PUBLIC_DEPENDENCIES="+str(len(data["publicMasterDependencies"])))
+          print("GATEWAY_REPOSITORY=UNCHANGED")
+          print("MASTER_REPOSITORY=UNCHANGED")
+          PY
+      - name: Preserve preview and receipt (not deployed)
+        uses: actions/upload-artifact@v4
+        with:
+          name: vnv-public-dependency-preview-review-only
+          path: |
+            ${{ runner.temp }}/public-preview/
+            ${{ runner.temp }}/public-preview-receipt.json
+          retention-days: 14
