@@ -13,80 +13,25 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  index-only-receiver:
+  receive-master:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - name: Checkout only gateway repository
+      - name: Checkout gateway main
         uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 0
-          persist-credentials: true
-      - name: Compare full index with read-only GitHub master
+      - name: Read-only master checkout
         shell: bash
-        env:
-          MASTER_REPO: vervenveda/vervenveda.github.io
         run: |
           set -euo pipefail
-          git clone --quiet --branch main --single-branch \
-            "https://github.com/${MASTER_REPO}.git" "$RUNNER_TEMP/vnv-master"
-          python3 - <<'PY'
-          import os
-          import subprocess
-          import sys
-          from pathlib import Path
-
-          master = Path(os.environ["RUNNER_TEMP"]) / "vnv-master"
-          gateway = Path.cwd()
-
-          def git(where, *args):
-              return subprocess.check_output(
-                  ["git", "-C", str(where), *args], text=True).strip()
-
-          def index_history(where):
-              commits = git(where, "log", "-n", "1000", "--format=%H", "--", "index.html").splitlines()
-              return [git(where, "rev-parse", f"{commit}:index.html") for commit in commits]
-
-          master_blob = git(master, "rev-parse", "HEAD:index.html")
-          gateway_blob = git(gateway, "rev-parse", "HEAD:index.html")
-          print("MASTER_INDEX_BLOB=" + master_blob)
-          print("GATEWAY_INDEX_BLOB=" + gateway_blob)
-
-          if master_blob == gateway_blob:
-              print("MATCH: no changes")
-              sys.exit(0)
-
-          known_gateway = set(index_history(gateway))
-          common = next((blob for blob in index_history(master)
-                         if blob in known_gateway), None)
-          if common is None:
-              raise SystemExit("HOLD: no provable common index.html baseline")
-          if gateway_blob != common:
-              raise SystemExit("HOLD: gateway has independent edits; no overwrite")
-          if master_blob == common:
-              raise SystemExit("HOLD: gateway diverged from current master")
-
-          data = (master / "index.html").read_bytes()
-          if not data:
-              raise SystemExit("HOLD: master index.html is empty")
-          if git(master, "hash-object", "index.html") != master_blob:
-              raise SystemExit("HOLD: master byte hash mismatch")
-
-          (gateway / "index.html").write_bytes(data)
-          if git(gateway, "hash-object", "index.html") != master_blob:
-              raise SystemExit("HOLD: received index.html differs from master")
-
-          subprocess.run(["git", "config", "user.name", "VNV Master Index Receiver"], check=True)
-          subprocess.run(["git", "config", "user.email",
-                          "github-actions[bot]@users.noreply.github.com"], check=True)
-          subprocess.run(["git", "add", "--", "index.html"], check=True)
-          staged = git(gateway, "diff", "--cached", "--name-only").splitlines()
-          if staged != ["index.html"]:
-              raise SystemExit("HOLD: attempted to stage non-index content")
-          subprocess.run(["git", "commit", "-m",
-                          "chore(sync): receive full index.html from VNV master"], check=True)
-          subprocess.run(["git", "push", "origin", "HEAD:main"], check=True)
-          print("SYNCED: complete index.html only; master untouched")
-          PY
+          git clone --quiet --single-branch --branch main \
+            https://github.com/vervenveda/vervenveda.github.io.git "$RUNNER_TEMP/vnv-master"
+      - name: Confirm gateway-side receipt decision
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/vnv-master-index-receiver.py \
+            --master "$RUNNER_TEMP/vnv-master" --gateway . --apply
