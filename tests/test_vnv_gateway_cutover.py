@@ -35,6 +35,12 @@ class GatewayCutoverTests(unittest.TestCase):
         self.assertEqual(result["missingGatewayDependencyCount"], 0)
         self.assertEqual(result["directDependencyCount"], 1)
 
+    def test_literal_javascript_src_assignment_is_a_dependency(self):
+        html = '<script>probe.src="/assets/optional-diagnostic.js?v=1";</script>'
+        result = audit.inspect(html, set(), {"assets/optional-diagnostic.js"})
+        self.assertIn("assets/optional-diagnostic.js",
+                      result["missingGatewayDependencies"])
+
     def test_unverified_does_not_mean_cutover_ready(self):
         html = '<script src="assets/app.js"></script>'
         result = audit.inspect(html, {"assets/app.js"}, {"assets/app.js"})
