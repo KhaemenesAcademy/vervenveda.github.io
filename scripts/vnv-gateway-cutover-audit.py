@@ -23,7 +23,7 @@ FETCH_LITERAL = re.compile(r'\bfetch\s*\(\s*["\x27](/[^"\x27]+)["\x27]', re.I)
 SOURCE_LITERAL = re.compile(r'\bconst\s+source\s*=\s*["\x27](/[^"\x27]+)["\x27]')
 SHARD_FALLBACK = re.compile(r'/registry/ecosystem-pages-[ab]\.json')
 
-JS_SRC_LITERAL = re.compile(r'\\b[A-Za-z_$][\\w$]*\\.src\\s*=\\s*["\\x27](/[^"\\x27]+)["\\x27]')
+JS_SRC_LITERAL = re.compile(r'\b[A-Za-z_$][\w$]*\.src\s*=\s*["\x27](/[^"\x27]+)["\x27]')
 
 
 class DirectRefs(HTMLParser):
