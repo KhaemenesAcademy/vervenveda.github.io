@@ -35,7 +35,7 @@ class DirectRefs(HTMLParser):
         attributes = dict(attrs)
         for attr in ("src", "href"):
             value = attributes.get(attr)
-            if value and not any(t in value for t in ("\\x24{", "{{", "<%")):
+            if value and not any(t in value for t in ("${", "{{", "<%")):
                 self.refs.add(value)
 
 
