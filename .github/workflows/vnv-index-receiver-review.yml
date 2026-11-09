@@ -1,0 +1,43 @@
+name: VNV Index Receiver Review (No Writes)
+
+on:
+  pull_request:
+    paths:
+      - "scripts/vnv-master-index-receiver.py"
+      - "tests/test_vnv_master_index_receiver.py"
+      - ".github/workflows/vnv-master-index-receiver.yml"
+      - ".github/workflows/vnv-index-receiver-review.yml"
+      - "INDEX_SYNC_REVIEW.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-receiver-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Regression and compilation
+        run: |
+          python3 -m unittest discover -s tests -p 'test_vnv_master_index_receiver.py' -v
+          python3 -m py_compile scripts/vnv-master-index-receiver.py
+      - name: Verify required safety contract
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          source=Path('scripts/vnv-master-index-receiver.py').read_text()
+          assert 'HOLD_GATEWAY_EDITED' in source
+          assert 'HOLD_NO_COMMON_BASELINE' in source
+          assert 'HEAD:main' in source
+          assert 'index.html' in source
+          workflow=Path('.github/workflows/vnv-master-index-receiver.yml').read_text()
+          assert 'if: github.ref' in workflow
+          assert '--apply' in workflow
+          assert 'vervenveda/vervenveda.github.io.git' in workflow
+          print('RECEIVER_REVIEW=PASS')
+          print('LIVE_SYNCHRONIZATION=NOT_ATTEMPTED')
+          PY

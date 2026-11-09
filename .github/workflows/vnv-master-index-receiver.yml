@@ -1,0 +1,37 @@
+name: Receive VNV master index.html only
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17,47 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vnv-master-index-receiver-main
+  cancel-in-progress: false
+
+jobs:
+  receive-master:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout gateway main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Read-only master checkout
+        shell: bash
+        run: |
+          set -euo pipefail
+          git clone --quiet --single-branch --branch main \
+            https://github.com/vervenveda/vervenveda.github.io.git "$RUNNER_TEMP/vnv-master"
+      - name: Confirm gateway-side receipt decision
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/vnv-master-index-receiver.py \
+            --master "$RUNNER_TEMP/vnv-master" --gateway . --apply

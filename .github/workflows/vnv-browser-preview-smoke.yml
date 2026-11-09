@@ -1,0 +1,64 @@
+name: VNV Isolated Browser Preview (No Deployment)
+
+on:
+  pull_request:
+    paths:
+      - "scripts/vnv-browser-preview-smoke.mjs"
+      - ".github/workflows/vnv-browser-preview-smoke.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  preview-browser:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Offline preview stage
+        run: |
+          set -euo pipefail
+          git clone --depth 1 --branch main --quiet \
+            https://github.com/vervenveda/vervenveda.github.io.git "$RUNNER_TEMP/vnv-master"
+          python3 scripts/build_public_dependency_preview.py \
+            --gateway "$GITHUB_WORKSPACE" \
+            --master "$RUNNER_TEMP/vnv-master" \
+            --output "$RUNNER_TEMP/vnv-preview" \
+            > "$RUNNER_TEMP/vnv-preview-stage.json"
+      - name: Install isolated browser runtime on runner
+        run: |
+          npm install --no-save --no-package-lock playwright@1.58.2
+          npx playwright install --with-deps chromium
+      - name: Inspect local preview in desktop and mobile Chromium
+        shell: bash
+        env:
+          VNV_PREVIEW_ORIGIN: http://127.0.0.1:8765
+          VNV_PREVIEW_EVIDENCE: ${{ runner.temp }}/vnv-browser-evidence
+        run: |
+          set -euo pipefail
+          python3 -m http.server 8765 --bind 127.0.0.1 --directory "$RUNNER_TEMP/vnv-preview" \
+            > "$RUNNER_TEMP/preview-server.log" 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID" 2>/dev/null || true' EXIT
+          for attempt in 1 2 3 4 5 6 7 8 9 10; do
+            if curl --fail --silent http://127.0.0.1:8765/index.html -o /dev/null; then break; fi
+            sleep 1
+          done
+          node scripts/vnv-browser-preview-smoke.mjs
+      - name: Archive receipts and failures (never publish)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vnv-browser-preview-local-only
+          path: |
+            ${{ runner.temp }}/vnv-browser-evidence/
+            ${{ runner.temp }}/vnv-preview-stage.json
+            ${{ runner.temp }}/preview-server.log
+          if-no-files-found: warn
+          retention-days: 14
