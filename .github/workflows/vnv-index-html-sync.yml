@@ -1,0 +1,84 @@
+name: Mirror only index.html between VNV gateways
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
+  push:
+    branches: [main]
+    paths:
+      - index.html
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vnv-index-html-sync
+  cancel-in-progress: false
+
+jobs:
+  sync-index-only:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Fetch opposite public gateway read-only
+        run: git clone --quiet --single-branch --branch main https://github.com/vervenveda/vervenveda.github.io.git "$RUNNER_TEMP/other-gateway"
+      - name: Reconcile index.html with last common file revision
+        env:
+          OTHER_REPO: vervenveda/vervenveda.github.io
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import os
+          import subprocess
+          import sys
+          from pathlib import Path
+
+          remote = Path(os.environ["RUNNER_TEMP"]) / "other-gateway"
+          local = Path.cwd()
+          def git(repo, *args):
+              return subprocess.check_output(["git", "-C", str(repo), *args], text=True).strip()
+          def history(repo):
+              commits = git(repo, "log", "-n", "500", "--format=%H", "--", "index.html").splitlines()
+              return [git(repo, "rev-parse", f"{commit}:index.html") for commit in commits]
+          local_hash = git(local, "rev-parse", "HEAD:index.html")
+          remote_hash = git(remote, "rev-parse", "HEAD:index.html")
+          print("Local index blob:", local_hash)
+          print("Remote index blob:", remote_hash)
+          if local_hash == remote_hash:
+              print("IN_SYNC: identical complete index.html; no changes.")
+              sys.exit(0)
+          local_history = history(local)
+          remote_history = history(remote)
+          common = next((h for h in remote_history if h in set(local_history)), None)
+          if not common:
+              raise SystemExit("HOLD: no common index.html revision in the inspected history.")
+          if local_hash != common and remote_hash != common:
+              raise SystemExit("HOLD: both index.html copies changed independently; human reconciliation required.")
+          if remote_hash == common:
+              print("AHEAD: local index.html differs; opposite repository will pull it on its next check.")
+              sys.exit(0)
+          if local_hash != common:
+              raise SystemExit("HOLD: unexpected index.html synchronization state.")
+          source_bytes = (remote / "index.html").read_bytes()
+          if not source_bytes or git(remote, "hash-object", "index.html") != remote_hash:
+              raise SystemExit("HOLD: remote index.html integrity verification failed.")
+          (local / "index.html").write_bytes(source_bytes)
+          if git(local, "hash-object", "index.html") != remote_hash:
+              raise SystemExit("HOLD: transferred index.html hash differs.")
+          subprocess.run(["git", "config", "user.name", "VNV Index Sync"], check=True)
+          subprocess.run(["git", "config", "user.email", "github-actions[bot]@users.noreply.github.com"], check=True)
+          subprocess.run(["git", "add", "--", "index.html"], check=True)
+          staged = git(local, "diff", "--cached", "--name-only").splitlines()
+          if staged != ["index.html"]:
+              raise SystemExit("HOLD: synchronization attempted to stage an unexpected path.")
+          subprocess.run(["git", "commit", "-m", f"chore(sync): mirror index.html from {os.environ['OTHER_REPO']} [index-sync]"], check=True)
+          subprocess.run(["git", "push", "origin", "HEAD:main"], check=True)
+          print("SYNCED: only the full index.html file was changed.")
+          PY
