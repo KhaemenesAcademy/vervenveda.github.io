@@ -17,7 +17,7 @@ const repoUrl=/https?:\/\/(?:www\.)?(?:github\.com|github\.dev|raw\.githubuserco
 const publishedHosts=new Set(["vervenveda.github.io","vervenveda.com","www.vervenveda.com","artist1970.github.io","jenniferpearl2028.github.io"]);
 test("front door preserves repaired hamburger, hall browsing and civic navigation",()=>{
  assert.match(html,/\$\("menuButton"\)\.addEventListener\("click",\(\) => openMenu\(""\)\)/);
- assert.match(html,/\$\("menuButton"\)\.addEventListener\("click",\(\) => openMenu\(""\)\)/);
+ assert.match(html,/src="assets\/vnv-ecosystem-toolbar\.js/);
  assert.doesNotMatch(html,/href="#campaign"/);
  assert.match(html,/data-group-browse="Public Service"/);
  assert.match(html,/renderMenuBranch\(target\)/);
@@ -27,7 +27,7 @@ test("front door uses project-relative root dependencies",()=>{
  for(const asset of [
   "assets/vervenveda-global-standard.css","assets/vnv-global-standard.css",
   "assets/khaemenes-campus-phrases.js","assets/khaemenes-interlingual-core.js",
-  "assets/vnv-language.js","assets/vnv-ticker-autopopulate.js",
+  "assets/vnv-language.js","assets/vnv-ticker-autopopulate.js","assets/vnv-ecosystem-toolbar.js",
   "assets/vnv-gateway-chrome-forensic-probe.js","assets/vnv-ecosystem-menu.css",
   "assets/vnv-beta-link.js","admin/index.html","privacy-policy.html","site.webmanifest"
  ])assert.ok(fs.existsSync(path.join(root,asset)),asset+" is missing");
