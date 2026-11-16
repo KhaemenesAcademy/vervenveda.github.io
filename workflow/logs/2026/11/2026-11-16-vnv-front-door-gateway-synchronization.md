@@ -10,7 +10,7 @@
 
 The KhaemenesAcademy repository is the new public **front-door mirror** of the canonical Verve N Veda gateway. It is a GitHub Pages project site until a later, explicitly approved custom-domain cutover. **Do not add or change `CNAME`, DNS, or `vervenveda.com` ownership during this session.** The canonical main gateway is kept intact.
 
-The front-door `index.html` mirrors the exact source contents apart from 13 confirmed GitHub Pages project-path adaptations (relative scripts, CSS, manifest, privacy link, directory fetch, catalog shard fetch, home menu and local admin route). Exact in-memory source-to-target comparison was **PASS** after applying only these adaptations.
+The front-door `index.html` mirrors the exact source contents apart from 14 deliberate GitHub Pages project-path and dependency adaptations (relative scripts, CSS, manifest, privacy link, directory fetch, catalog shard fetch, home menu and local admin route). Exact in-memory source-to-target comparison was **PASS** after applying only the original 13 path adaptations before the final local-toolbar improvement; the subsequent toolbar change is separately logged below.
 
 ## Repaired public controls inherited from main gateway
 
@@ -22,7 +22,7 @@ The front-door `index.html` mirrors the exact source contents apart from 13 conf
 
 ## Mirrored support assets and dependencies
 
-- JavaScript: `assets/khaemenes-interlingual-core.js`, `assets/vnv-language.js`, `assets/vnv-ticker-autopopulate.js`, `assets/vnv-gateway-chrome-forensic-probe.js`, `assets/vnv-beta-link.js`
+- JavaScript: `assets/khaemenes-interlingual-core.js`, `assets/vnv-language.js`, `assets/vnv-ticker-autopopulate.js`, `assets/vnv-gateway-chrome-forensic-probe.js`, `assets/vnv-beta-link.js`, plus the local `assets/vnv-ecosystem-toolbar.js`
 - CSS: `assets/vnv-ecosystem-menu.css`; existing `assets/vervenveda-global-standard.css` and `assets/vnv-global-standard.css` already matched the canonical source
 - Existing `assets/khaemenes-campus-phrases.js` already matched the source
 - Navigation: `ecosystem/master-ecosystem-directory.json`, `registry/ecosystem-pages-a.json`, `registry/ecosystem-pages-b.json`
@@ -57,3 +57,11 @@ This mirror does not grant student/admin authorization; the gateway's local admi
 - [ ] Inspect GitHub Actions `Front Door Synchronization Audit` results.
 - [ ] Confirm all advertised external `github.io` Pages destinations resolve to actual published applications.
 - [ ] Plan the separate `vervenveda.com` cutover only after live/browser, canonical URL, TLS, SEO, privacy and rollback checks pass.
+
+## Addendum · Local ecosystem toolbar and automated CI confirmation
+
+- [3d7afc5](https://github.com/KhaemenesAcademy/vervenveda.github.io/commit/3d7afc57c1f6118a04b3703b16a8685648a510f0) mirrors the canonical ecosystem utility toolbar but routes its **Home** control to the current front-door project base instead of forcing visitors back to `vervenveda.com`.
+- [69d5d0c](https://github.com/KhaemenesAcademy/vervenveda.github.io/commit/69d5d0c2ed1806ba016fc68fef408416e0663b87) switches the front-door `index.html` to load this local toolbar. This is the additional (fourteenth) intentional source-to-mirror adaptation.
+- [3566485](https://github.com/KhaemenesAcademy/vervenveda.github.io/commit/35664858b5d9bb656eb13affdf81f338f922b675) creates the read-only Node GitHub Actions audit; [6cc665e](https://github.com/KhaemenesAcademy/vervenveda.github.io/commit/6cc665e067648ccad236b3f6cabccc12f9aa2ad5) adds explicit local-toolbar coverage.
+- The [Front Door Synchronization Audit run](https://github.com/KhaemenesAcademy/vervenveda.github.io/actions/runs/43924530664) **PASSED** on a previous commit with the local toolbar asset in place; a newer run after the final index/test edits was still pending at last check. The GitHub Pages build also reported a previous successful deployment, but that is **not** proof that live browser interactions are fully verified.
+- The pre-migration `vervenveda.com` canonical link, OpenGraph site URL, and links to other currently hosted ecosystem sites were intentionally **not migrated**. Do not change the custom-domain bindings until separately approved.
