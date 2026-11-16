@@ -1,0 +1,36 @@
+name: Front Door Synchronization Audit
+
+on:
+  push:
+    paths:
+      - index.html
+      - site.webmanifest
+      - assets/**
+      - ecosystem/master-ecosystem-directory.json
+      - registry/**
+      - tests/front-door-synchronization.test.mjs
+      - .github/workflows/front-door-validation.yml
+  pull_request:
+    paths:
+      - index.html
+      - site.webmanifest
+      - assets/**
+      - ecosystem/master-ecosystem-directory.json
+      - registry/**
+      - tests/front-door-synchronization.test.mjs
+      - .github/workflows/front-door-validation.yml
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Inspect published front-door dependencies and navigation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Verify front-door assets, directory catalog, and public navigation
+        run: node --test tests/front-door-synchronization.test.mjs
