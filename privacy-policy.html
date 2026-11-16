@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Privacy Policy for the Verve N Veda ecosystem, including Khaemenes Academy, children's privacy, AI mentors, creative services, and connected infrastructure.">
+  <meta name="theme-color" content="#f4f0e7">
+  <meta name="color-scheme" content="light">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index,follow">
+  <title>Privacy Policy | Verve N Veda</title>
+
+  <link rel="canonical" href="https://vervenveda.com/privacy-policy.html">
+
+  <style>
+    :root{
+      --paper:#f4f0e7;
+      --paper-bright:#fbf9f4;
+      --white:#ffffff;
+      --ink:#080b0f;
+      --ink-soft:#30413d;
+      --forest:#243d33;
+      --forest-deep:#15251f;
+      --gold:#b48b45;
+      --gold-pale:#e7d7b6;
+      --line:rgba(18,23,19,.14);
+      --line-strong:rgba(18,23,19,.25);
+      --shadow:0 22px 55px rgba(27,34,29,.09);
+      --max:960px;
+      --radius:7px;
+      --display:"Iowan Old Style","Palatino Linotype",Palatino,Baskerville,Georgia,serif;
+      --ceremonial:Cinzel,Aboreto,"Times New Roman",serif;
+      --sans:"Avenir Next",Avenir,Montserrat,"Segoe UI",Arial,sans-serif;
+    }
+
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      min-width:300px;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 50% -10%,rgba(180,139,69,.12),transparent 34rem),
+        var(--paper);
+      font-family:var(--sans);
+      font-size:16px;
+      line-height:1.72;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+    a{color:inherit}
+    a:hover{text-decoration-thickness:2px}
+    :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+    ::selection{background:var(--gold-pale);color:var(--ink)}
+    .shell{width:min(calc(100% - 36px),var(--max));margin-inline:auto}
+    .skip-link{
+      position:fixed;top:10px;left:10px;z-index:2000;
+      transform:translateY(-170%);
+      padding:9px 14px;
+      border-radius:var(--radius);
+      color:#fff;background:var(--ink);
+    }
+    .skip-link:focus{transform:none}
+
+    header{
+      border-bottom:1px solid var(--line);
+      background:rgba(244,240,231,.96);
+    }
+    .topbar{
+      min-height:72px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+    }
+    .brand{
+      display:inline-flex;
+      align-items:center;
+      gap:11px;
+      color:var(--ink);
+      text-decoration:none;
+    }
+    .brand-mark{
+      width:44px;height:36px;
+      display:grid;place-items:center;
+      border:1px solid var(--ink);
+      border-radius:var(--radius);
+      color:#fff;background:var(--ink);
+      font-family:var(--ceremonial);
+      font-size:17px;
+      letter-spacing:.07em;
+    }
+    .brand-copy{
+      font-family:var(--ceremonial);
+      font-size:14px;
+      letter-spacing:.1em;
+      text-transform:uppercase;
+    }
+    .home-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:42px;
+      padding:9px 14px;
+      border:1px solid var(--line-strong);
+      border-radius:var(--radius);
+      color:var(--ink);
+      background:var(--white);
+      font-size:11px;
+      font-weight:600;
+      letter-spacing:.08em;
+      text-decoration:none;
+      text-transform:uppercase;
+    }
+    .home-link:hover{border-color:var(--ink);background:var(--gold-pale)}
+
+    .hero{
+      padding:clamp(68px,9vw,108px) 0 clamp(54px,7vw,82px);
+      text-align:center;
+    }
+    .kicker{
+      margin:0;
+      color:var(--gold);
+      font-family:var(--ceremonial);
+      font-size:11px;
+      font-weight:600;
+      letter-spacing:.19em;
+      text-transform:uppercase;
+    }
+    h1,h2,h3{
+      font-family:var(--display);
+      color:var(--forest-deep);
+      font-weight:500;
+      text-wrap:balance;
+    }
+    h1{
+      margin:16px auto 0;
+      font-size:clamp(52px,7vw,86px);
+      line-height:.95;
+    }
+    .hero p{
+      max-width:720px;
+      margin:24px auto 0;
+      color:var(--ink-soft);
+      font-family:var(--display);
+      font-size:clamp(17px,2vw,21px);
+    }
+    .effective{
+      display:inline-block;
+      margin-top:24px;
+      padding:7px 11px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:rgba(255,255,255,.65);
+      color:var(--ink-soft);
+      font-size:11px;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+    }
+
+    main{padding-bottom:86px}
+    .notice{
+      margin-bottom:26px;
+      padding:22px 24px;
+      border:1px solid rgba(180,139,69,.34);
+      border-left:3px solid var(--gold);
+      border-radius:var(--radius);
+      background:#fffdf8;
+      color:var(--ink-soft);
+    }
+    .notice strong{color:var(--forest-deep)}
+
+    .toc{
+      margin:0 0 28px;
+      padding:26px;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background:rgba(255,255,255,.66);
+    }
+    .toc h2{margin:0 0 14px;font-size:25px}
+    .toc-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:8px 18px;
+    }
+    .toc a{
+      color:var(--ink-soft);
+      font-size:13px;
+      text-underline-offset:3px;
+    }
+
+    .policy-section{
+      margin:18px 0;
+      padding:clamp(24px,4vw,38px);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background:var(--white);
+      box-shadow:0 12px 34px rgba(27,34,29,.045);
+    }
+    .policy-section h2{
+      margin:0 0 16px;
+      font-size:clamp(29px,4vw,40px);
+      line-height:1.08;
+    }
+    .policy-section h3{
+      margin:24px 0 8px;
+      font-size:21px;
+    }
+    .policy-section p{margin:12px 0;color:var(--ink-soft)}
+    .policy-section ul{
+      margin:12px 0;
+      padding-left:22px;
+      color:var(--ink-soft);
+    }
+    .policy-section li{margin:8px 0}
+    .policy-section a{
+      color:var(--forest);
+      font-weight:600;
+      text-underline-offset:3px;
+    }
+    .policy-section code{
+      padding:2px 5px;
+      border-radius:4px;
+      background:#f1eee7;
+      color:var(--forest-deep);
+      font-size:.92em;
+    }
+
+    .provider-card{
+      margin-top:18px;
+      padding:18px;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background:var(--paper-bright);
+    }
+    .provider-card strong{
+      display:block;
+      color:var(--forest-deep);
+      font-family:var(--display);
+      font-size:20px;
+      font-weight:500;
+    }
+    .provider-card p{margin:6px 0 0}
+
+    .final-card{
+      text-align:center;
+      background:var(--gold-pale);
+    }
+    .final-card p{max-width:720px;margin-inline:auto}
+    .button-row{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:22px;
+    }
+    .button{
+      min-height:44px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:10px 16px;
+      border:1px solid transparent;
+      border-radius:var(--radius);
+      font-size:11px;
+      font-weight:650;
+      letter-spacing:.08em;
+      text-decoration:none;
+      text-transform:uppercase;
+    }
+    .button-primary{color:#fff;background:var(--ink)}
+    .button-secondary{color:var(--ink);background:#fff;border-color:var(--line-strong)}
+
+    footer{
+      padding:38px 18px;
+      color:rgba(255,255,255,.72);
+      background:#0a1511;
+      text-align:center;
+      font-size:12px;
+    }
+    footer a{color:#fff;text-underline-offset:3px}
+
+    @media(max-width:680px){
+      .topbar{min-height:64px}
+      .brand-copy{font-size:12px}
+      .home-link{padding-inline:11px;font-size:10px}
+      .toc-grid{grid-template-columns:1fr}
+      .policy-section{padding:24px 20px}
+    }
+    @media(max-width:450px){
+      .brand-copy{display:none}
+      .home-link{max-width:180px}
+      .button{width:100%}
+    }
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+    }
+    .toc a,.home-link,.kicker,.effective,.button,footer{font-size:16px}
+  .policy-section h2{font-family:var(--ceremonial)}
+  </style>
+  <link rel="stylesheet" href="/assets/vervenveda-global-standard.css">
+  <link rel="stylesheet" href="/assets/vnv-global-standard.css" data-vnv-standard="2026-10-14">
+  <link rel="stylesheet" href="/assets/vnv-ecosystem-menu.css">
+</head>
+
+<body id="top">
+  <details class="vnv-ecosystem-nav" data-vnv-ecosystem-menu>
+    <summary aria-label="Open Verve N Veda ecosystem menu" title="Verve N Veda ecosystem menu">
+      <span class="vnv-ecosystem-lines" aria-hidden="true"><span></span><span></span><span></span></span>
+    </summary>
+    <nav class="vnv-ecosystem-dropdown" aria-label="Verve N Veda ecosystem">
+      <p class="vnv-ecosystem-kicker">Verve N Veda</p>
+      <a class="vnv-ecosystem-primary" href="https://vervenveda.com/#directory">Ecosystem Directory</a>
+      <a href="https://vervenveda.com/">Verve N Veda Home</a>
+    </nav>
+  </details>
+
+  <a class="skip-link" href="#main">Skip to privacy policy</a>
+
+  <header>
+    <div class="shell topbar">
+      <a class="brand" href="https://vervenveda.com/" aria-label="Verve N Veda public gateway">
+        <span class="brand-mark" aria-hidden="true">V</span>
+        <span class="brand-copy">Verve N Veda</span>
+      </a>
+      <a class="home-link" href="https://vervenveda.com/">← Back to Public Gateway</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="shell">
+      <p class="kicker">Privacy &amp; Ecosystem Stewardship</p>
+      <h1>Privacy Policy</h1>
+      <p>
+        Our privacy framework covers the Verve N Veda ecosystem, with additional protections and specific notices for students, families, and connected applications.
+      </p>
+      <span class="effective">Updated November 14, 2026</span>
+    </div>
+  </section>
+
+  <main id="main" class="shell">
+    <div class="notice">
+      <strong>Plain-language summary:</strong> This policy covers the Verve N Veda ecosystem. The public gateway can be browsed without creating an account and uses some browser-local settings; GitHub Pages hosts it and Stripe supports contributions. Connected services may collect different information. Portals serving minors must provide their own specific notices and obtain required guardian consent, with qualified attorney review of their practices before activating or materially changing covered collection. Planned systems are not described as deployed. </div>
+
+    <nav class="toc" aria-label="Privacy policy contents">
+      <h2>Contents</h2>
+      <div class="toc-grid">
+        <a href="#scope">1. Scope</a>
+        <a href="#gateway-data">2. Data on the public gateway</a>
+        <a href="#local-storage">3. Browser-local storage</a>
+        <a href="#hosting">4. GitHub Pages hosting</a>
+        <a href="#stripe">5. Stripe contributions</a>
+        <a href="#connected">6. Connected applications and links</a>
+        <a href="#children">7. Children and learning spaces</a>
+        <a href="#sale">8. Sale of personal information</a>
+        <a href="#retention">9. Retention and deletion</a>
+        <a href="#choices">10. Your choices</a>
+        <a href="#security">11. Security</a>
+        <a href="#changes">12. Changes to this policy</a>
+        <a href="#ecosystem">13. Ecosystem coverage and responsible services</a>
+        <a href="#information">14. Categories of information and purposes</a>
+        <a href="#guardian">15. Children, guardian consent, and portal-specific notices</a>
+        <a href="#academic">16. Student records and family access</a>
+        <a href="#ai">17. AI mentors, conversations, memory, and learning</a>
+        <a href="#storage">18. Family Clouds, STOS, and synchronization</a>
+        <a href="#creative">19. Art, portfolios, communities, and communications</a>
+        <a href="#special">20. Sensitive subjects, research, and external resources</a>
+        <a href="#rights">21. Privacy choices, access, correction, and deletion</a>
+        <a href="#retention-details">22. Retention schedules and children's information</a>
+        <a href="#provider-disclosures">23. Third-party providers and international access</a>
+        <a href="#oversight">24. Security incidents, changes, and accountability</a>
+        <a href="#contact">25. Privacy questions and requests</a>
+      </div>
+    </nav>
+
+    <section class="policy-section" id="scope"><h2>1. Scope</h2><p>This is the universal privacy framework for the Verve N Veda public gateway and Verve N Veda-operated ecosystem services. It must be read together with any additional application-specific privacy notice. Independent third-party services govern their own processing.</p><p>Not every application is active, integrated, or collecting the same information. The detailed technical gateway disclosures below describe this public gateway; sections covering education, AI, communications, and clouds set requirements for the relevant connected services.</p></section>
+
+    <section class="policy-section" id="gateway-data">
+      <h2>2. Data on the public gateway</h2>
+      <p>
+        The main public gateway is designed so that ordinary browsing does not require a Verve N Veda
+        account, sign-in, or public form submission.
+      </p>
+      <p>
+        The gateway does not include a Verve N Veda advertising tracker or a first-party analytics
+        form in the current page code. However, the hosting provider and embedded service providers
+        described below may receive technical information when your browser connects to their systems.
+      </p>
+      <p>
+        Search terms entered into the gateway's public directory are used in the browser to filter the
+        displayed destinations. The current gateway code does not send those directory search terms to
+        a Verve N Veda server.
+      </p>
+    </section>
+
+    <section class="policy-section" id="local-storage">
+      <h2>3. Browser-local storage</h2>
+      <p>
+        The gateway uses browser storage for limited local functions. Depending on the feature you use,
+        this may include:
+      </p>
+      <ul>
+        <li>the paused or playing state of the 333 Network ticker;</li>
+        <li>a locally stored administrator-gate record;</li>
+        <li>temporary administrator session state in <code>sessionStorage</code>; and</li>
+        <li>local preferences or workspace information used by individual connected applications.</li>
+      </ul>
+      <p>
+        The administrator gate stores a derived local record rather than intentionally transmitting the
+        gate code from this public page. It is a browser-local convenience gate and is not a substitute
+        for server-side authentication for protected services.
+      </p>
+      <p>
+        Browser-local information normally remains on the device and browser profile where it was created
+        until it is changed, cleared, or removed through browser controls. Private-browsing modes and
+        browser settings can affect whether local storage is available or retained.
+      </p>
+    </section>
+
+    <section class="policy-section" id="hosting">
+      <h2>4. GitHub Pages hosting</h2>
+      <p>
+        The Verve N Veda public gateway is published using GitHub Pages infrastructure, including when
+        accessed through the custom Verve N Veda domain.
+      </p>
+      <p>
+        GitHub states that when a GitHub Pages site is visited, the visitor's IP address is logged and
+        stored for security purposes, whether or not the visitor is signed into GitHub. GitHub may also
+        process website-usage and technical information according to its own privacy practices.
+      </p>
+      <div class="provider-card">
+        <strong>GitHub</strong>
+        <p>
+          Provider privacy information:
+          <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+             target="_blank" rel="noopener noreferrer">GitHub General Privacy Statement ↗</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="policy-section" id="stripe">
+      <h2>5. Stripe contributions</h2>
+      <p>
+        The Verve N Veda gateway includes a Stripe-powered contribution button. The browser connects to
+        Stripe to load the embedded payment component. If you choose to begin or complete a contribution,
+        Stripe processes the information necessary to provide payment services and fraud prevention.
+      </p>
+      <p>
+        Depending on your interaction and the payment method used, Stripe may process information such as
+        transaction details, name, email address, billing information, payment-method information, IP
+        address, device or browser information, cookies or similar identifiers, and other information
+        described in Stripe's privacy materials.
+      </p>
+      <p>
+        Verve N Veda does not receive your full card number through the public HTML page. Payment handling
+        is performed through the connected Stripe payment service.
+      </p>
+      <div class="provider-card">
+        <strong>Stripe</strong>
+        <p>
+          Provider privacy information:
+          <a href="https://stripe.com/privacy"
+             target="_blank" rel="noopener noreferrer">Stripe Privacy Policy / Privacy Center ↗</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="policy-section" id="connected">
+      <h2>6. Connected applications and external links</h2>
+      <p>
+        Verve N Veda is a connected public campus. The gateway links to separate Halls and applications,
+        including educational, research, health, civic, creative, communication, and professional tools.
+      </p>
+      <p>
+        Some connected applications are intentionally local-first and store voluntary workspace data in
+        the visitor's browser. Others may connect to outside services when their purpose requires it.
+        A connected application should be read together with any privacy notice presented by that
+        application or service.
+      </p>
+      <p>
+        When you follow a link to another domain or third-party service, that destination's privacy terms
+        govern its own collection and processing practices.
+      </p>
+    </section>
+
+    <section class="policy-section" id="children"><h2>7. Children and learning spaces</h2><p>Verve N Veda offers educational resources for children and families. The public gateway does not require a child to create an account merely to browse its links. Individual learning portals may process student data and need accurate, specific privacy notices and legally required parent or guardian consent before covered collection.</p><p>Children's educational records, accounts, conversations, and creative publications require heightened protection. The mandatory minor-facing portal requirements are detailed below.</p></section>
+
+    <section class="policy-section" id="sale">
+      <h2>8. Sale of personal information</h2>
+      <p>
+        Verve N Veda does not operate this public gateway as a data-broker or advertising-data marketplace,
+        and it does not sell personal information collected through the gateway itself.
+      </p>
+      <p>
+        Independent providers such as GitHub and Stripe maintain their own privacy practices and legal
+        obligations. Their handling of information is described in their respective privacy notices.
+      </p>
+    </section>
+
+    <section class="policy-section" id="retention">
+      <h2>9. Retention and deletion</h2>
+      <p>
+        Browser-local preferences and records remain subject to the storage behavior of your browser.
+        You can remove them by clearing site data, local storage, cookies, or other browser data for the
+        relevant site.
+      </p>
+      <p>
+        Information processed by GitHub, Stripe, or another connected provider is retained according to
+        that provider's own policies, legal obligations, and service requirements.
+      </p>
+    </section>
+
+    <section class="policy-section" id="choices">
+      <h2>10. Your choices</h2>
+      <p>You can control several aspects of your privacy directly:</p>
+      <ul>
+        <li>browse the public gateway without creating a Verve N Veda account;</li>
+        <li>clear browser-local data through your browser settings;</li>
+        <li>avoid the contribution feature if you do not want to interact with Stripe;</li>
+        <li>review the privacy notice of a connected application before using features that leave the browser;</li>
+        <li>use browser privacy, cookie, or tracking controls available on your device; and</li>
+        <li>contact Verve N Veda about a privacy concern involving the gateway itself.</li>
+      </ul>
+    </section>
+
+    <section class="policy-section" id="security">
+      <h2>11. Security</h2>
+      <p>
+        Verve N Veda uses HTTPS-based public hosting and seeks to minimize unnecessary collection on the
+        gateway itself. Browser-local storage is used for several lightweight functions so that those
+        functions do not require a Verve N Veda server account.
+      </p>
+      <p>
+        No website, browser-storage mechanism, network connection, or third-party service can guarantee
+        absolute security. Sensitive or protected account systems should use separate server-side
+        authentication and security controls rather than relying on the public gateway's local Admin Gate.
+      </p>
+    </section>
+
+    <section class="policy-section" id="changes">
+      <h2>12. Changes to this policy</h2>
+      <p>
+        This policy may be updated as Verve N Veda adds, removes, or changes connected services and
+        applications. When the policy changes materially, the effective date at the top of this page
+        should be updated as well.
+      </p>
+      <p>
+        The version published at <strong>/privacy-policy.html</strong> supplies the common framework for the wider ecosystem. A service-specific notice is still required wherever its processing needs additional explanation.
+      </p>
+    </section>
+
+    <section class="policy-section" id="ecosystem">
+      <h2>13. Ecosystem coverage and responsible services</h2>
+      <p>This policy provides a common privacy framework for websites and applications operated by Verve N Veda, including Khaemenes Academy and Higher Learning, parent and student portals, KlasaiPeer and AI mentors, AIPCore and Creative Spark, PLERASearch, Arshif Archives, The Verifier, One Nation For All, the 333 Network, Bazaar Art, The Refrain, FleaPit, ProReSources Hub, Firmament Law, and associated tools where operated by Verve N Veda.</p><p>Family Clouds, STOS account services, communication tools, and other proposed services are covered by this framework <strong>if and when they are activated</strong>. Listing a service does not mean it is currently operational, has a shared account database, or uses a particular security technology. Independently operated websites retain responsibility for their own processing and notices.</p>
+    </section>
+
+    <section class="policy-section" id="information">
+      <h2>14. Categories of information and purposes</h2>
+      <p>Depending on the application and choices made, information may include account identifiers, contact details, authorized family relationships, enrollment and course selections, assignments, assessment answers and grades, progress and completion records, student portfolios, uploaded artwork and media, AI prompts and responses, saved preferences, technical access and security records, and transaction records handled by payment providers.</p><p>Information is used only as appropriate to provide requested education, accounts, family permissions, creative and community functions, support, security, authorized payments, and applicable legal compliance. The precise categories, purposes, recipients, and required versus optional fields must be identified by any portal that collects them. This general description is not a claim that every application collects each category.</p>
+    </section>
+
+    <section class="policy-section" id="guardian">
+      <h2>15. Children, guardian consent, and portal-specific notices</h2>
+      <p><strong>Mandatory portal notice:</strong> Any application collecting, using, storing, or disclosing personal information about minors must display an accessible, specific notice before the relevant processing begins. It must explain the information and technical identifiers involved; why they are needed; storage locations and service providers; access by guardians, staff, and others; AI or cross-application transfers; retention and deletion; public visibility; parental rights; and how to submit requests.</p><p>Where the Children's Online Privacy Protection Act (COPPA) applies, operators must provide required direct notice and obtain verifiable parental consent before covered collection, use, or disclosure of information from children under 13, except where a lawful exception applies. A general site policy or ordinary checkbox does not itself satisfy all COPPA notice or consent requirements. Consent for one service must not be assumed to authorize a new, unrelated purpose.</p><p><strong>Legal-review requirement:</strong> Before activating or materially changing collection involving minors, each responsible portal must have its notice, consent process, retention and deletion procedures, vendors, and security practices reviewed by a qualified attorney familiar with children's privacy law, including COPPA, applicable state law, and FERPA where relevant. The review should be documented and renewed when material processing changes occur. Publication of this policy does not mean attorney review has already taken place.</p>
+    </section>
+
+    <section class="policy-section" id="academic">
+      <h2>16. Student records and family access</h2>
+      <p>Private educational records—including enrollment, schedules, assessments, grades, progress, teacher feedback, and academic history—must not be made public merely because they are saved in an account. Parent, student, teacher, and administrator access must reflect verified authorization and the service's actual permissions. Parents or eligible students may have additional access, correction, or other rights under applicable law.</p><p>FERPA applies only where its legal requirements are met; it is not automatically applicable to every independent educational website. School-official, institutional, and other applicable educational-data relationships must be assessed separately. The details of any parent portal, export, or account-deletion feature must be described accurately and cannot be promised before implementation.</p>
+    </section>
+
+    <section class="policy-section" id="ai">
+      <h2>17. AI mentors, conversations, memory, and learning</h2>
+      <p>AI mentors and learning assistants may process user-entered questions, uploaded content, responses, and relevant course context to deliver requested functions. A portal must clearly disclose whether conversations are stored, who may access them, whether memory persists, whether information is shared between applications or with model providers, and how to manage or remove records.</p><p>Conversation persistence, personalization, and use of information to train or improve a model are separate purposes and require distinct disclosures and any necessary permissions. Children's personal information must not be used for optional model training or unrelated development without the legally required authorization. Users should not assume a chat is encrypted, private to their device, or permanently retained without a service-specific explanation.</p>
+    </section>
+
+    <section class="policy-section" id="storage">
+      <h2>18. Family Clouds, STOS, and synchronization</h2>
+      <p>Cloud storage, account syncing, backups, and sovereign STOS infrastructure are subject to the same privacy requirements when operational. Each service must disclose its hosting arrangement, storage practices, roles and access controls, transfers, backup and recovery practices, retention, and deletion. Connecting two applications does not automatically authorize transfer of private student records.</p><p>Security claims such as end-to-end encryption, cross-device continuity, irreversible deletion, or sovereign storage must reflect verified deployed implementations. A design proposal, test result, or future terminal commissioning is not proof that a feature already protects live user records.</p>
+    </section>
+
+    <section class="policy-section" id="creative">
+      <h2>19. Art, portfolios, communities, and communications</h2>
+      <p>Creative materials uploaded to ecosystem tools may remain private, be shared with selected people, or be published. The service must clearly distinguish those states and request appropriate permission before making private projects public. Uploading original work does not, by itself, transfer copyright ownership; any rights needed for hosting or display must be explained in applicable terms.</p><p>Community discussions, messaging, conferencing, video, and media sharing may expose information to other participants. A service must disclose visibility, recording or transcription, moderation, retention, and any outside provider. Public content may be copied by others even after the original is removed. Minor-facing community tools require appropriate age and guardian safeguards.</p>
+    </section>
+
+    <section class="policy-section" id="special">
+      <h2>20. Sensitive subjects, research, and external resources</h2>
+      <p>Searches, archives, public research, civic resources, or specialized wellbeing, health, legal, and financial tools may involve sensitive topics. Individual applications should minimize sensitive data, explain any disclosures to providers, and avoid suggesting professional confidentiality or legal privilege unless it actually applies. The fact that a record is publicly accessible does not make every use of personal information in it appropriate.</p>
+    </section>
+
+    <section class="policy-section" id="rights">
+      <h2>21. Privacy choices, access, correction, and deletion</h2>
+      <p>Depending on the applicable law and the service, users or authorized guardians may request access, correction, export, deletion, withdrawal of consent, or other legally available controls. Requests involving children's or academic information may require verification of identity and authority. Some information may be retained where necessary for security, legal obligations, or other permitted reasons.</p><p>Controls available in one app do not necessarily delete information held by other providers or separate authorized services. A portal should identify its actual request process, any appeal or opt-out rights where required, and the limitations of browser-local deletion. The main gateway's established contact route is available through <a href="https://vervenveda.com/">the Verve N Veda home page</a> until a dedicated privacy contact is published.</p>
+    </section>
+
+    <section class="policy-section" id="retention-details">
+      <h2>22. Retention schedules and children's information</h2>
+      <p>Each collecting service must establish and publish appropriate retention periods or clear deletion criteria for account records, academic history, AI conversations, uploaded media, guardian consent, security logs, and backups as applicable. This gateway policy cannot supply one accurate period for unlike applications without verifying their operations.</p><p>For personal information about children covered by COPPA, the responsible service must maintain a written retention policy, keep information no longer than reasonably necessary for its specific disclosed purpose, and delete it with reasonable measures against unauthorized access or use. A portal that cannot yet demonstrate its collection, retention, and consent controls must not present those protections as completed.</p>
+    </section>
+
+    <section class="policy-section" id="provider-disclosures">
+      <h2>23. Third-party providers and international access</h2>
+      <p>GitHub Pages and Stripe are identified above for their current gateway functions. A connected portal must also name or describe its actual processors and independent providers as required, identify transfers of personal information and relevant choices, and provide links to applicable external notices. If international transfers or regional laws apply, the responsible service must determine and communicate the necessary protections. No claim is made that every service is authorized for use in every jurisdiction.</p>
+    </section>
+
+    <section class="policy-section" id="oversight">
+      <h2>24. Security incidents, changes, and accountability</h2>
+      <p>Appropriate controls should be implemented for authentication, role permissions, secure transport, limited administrative access, monitoring, and incident response according to the service and risk. No internet system can guarantee absolute security. If an incident affects personal information, the operator must assess and carry out applicable notification duties.</p><p>Material changes to data uses, vendors, or minor-facing services require updated notices and additional consent where required. The effective date and any material revisions should be identified. This is an operational privacy framework and not a representation that every listed feature has passed legal or security review.</p>
+    </section>
+
+    <section class="policy-section final-card" id="contact">
+      <h2>25. Privacy questions and requests</h2>
+      <p>
+        For privacy questions about Verve N Veda-operated services, including children's information and requests to exercise rights, use the current contact pathway
+        published through the Verve N Veda home page. Questions about payment data handled by Stripe or
+        hosting data handled by GitHub may also need to be directed to those providers.
+      </p>
+      <div class="button-row">
+        <a class="button button-primary" href="https://vervenveda.com/">Return to Verve N Veda</a>
+        <a class="button button-secondary" href="#top">Back to Top</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Verve N Veda · Jennifer Kay Pearl</p>
+    <p><a href="https://vervenveda.com/">Public Gateway</a></p>
+  </footer>
+
+<script src="/assets/vnv-ecosystem-menu.js" defer></script>
+<script src="https://vervenveda.com/assets/vnv-ecosystem-toolbar.js"></script>
+</body>
+</html>
