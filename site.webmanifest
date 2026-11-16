@@ -1,0 +1,31 @@
+{
+  "name": "Verve N Veda",
+  "short_name": "Verve N Veda",
+  "description": "The Verve N Veda digital home and gateway to its connected halls, tools, learning spaces, and public resources.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F4EBDD",
+  "theme_color": "#151A22",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
