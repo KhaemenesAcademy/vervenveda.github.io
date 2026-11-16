@@ -1,0 +1,325 @@
+/* Verve N Veda · Global Ecosystem Hamburger
+   Public GitHub navigation only. No STOS runtime dependency. */
+.vnv-ecosystem-nav{
+  position:fixed;
+  top:max(14px,env(safe-area-inset-top));
+  right:max(14px,env(safe-area-inset-right));
+  z-index:2147482000;
+  margin:0;
+  font-family:"Brandon Grotesque","Avenir Next","Segoe UI",Arial,sans-serif;
+  font-size:14px;
+  color:#172331;
+}
+.vnv-ecosystem-nav summary{
+  width:44px;
+  height:44px;
+  display:grid;
+  place-items:center;
+  margin-left:auto;
+  padding:0;
+  list-style:none;
+  cursor:pointer;
+  border:1px solid rgba(183,148,82,.72);
+  border-radius:7px;
+  color:#fff8e9;
+  background:#202724;
+  box-shadow:0 8px 24px rgba(8,21,34,.14);
+  -webkit-tap-highlight-color:transparent;
+}
+.vnv-ecosystem-nav summary::-webkit-details-marker{display:none}
+.vnv-ecosystem-nav summary::marker{content:""}
+.vnv-ecosystem-nav summary:hover,
+.vnv-ecosystem-nav summary:focus-visible{
+  border-color:#80642f;
+  outline:3px solid rgba(183,148,82,.28);
+  outline-offset:3px;
+}
+.vnv-ecosystem-lines{
+  width:21px;
+  display:grid;
+  gap:4px;
+}
+.vnv-ecosystem-lines span{
+  display:block;
+  width:21px;
+  height:2px;
+  border-radius:7px;
+  background:#fff8e9;
+  transition:transform .18s ease,opacity .18s ease;
+}
+.vnv-ecosystem-nav[open] .vnv-ecosystem-lines span:nth-child(1){
+  transform:translateY(6px) rotate(45deg);
+}
+.vnv-ecosystem-nav[open] .vnv-ecosystem-lines span:nth-child(2){
+  opacity:0;
+}
+.vnv-ecosystem-nav[open] .vnv-ecosystem-lines span:nth-child(3){
+  transform:translateY(-6px) rotate(-45deg);
+}
+.vnv-ecosystem-dropdown{
+  width:min(320px,calc(100vw - 28px));
+  margin-top:7px;
+  padding:14px;
+  display:grid;
+  gap:7px;
+  border:1px solid rgba(16,34,56,.16);
+  border-radius:7px;
+  background:#fcf9f2;
+  box-shadow:0 18px 44px rgba(8,21,34,.16);
+}
+.vnv-ecosystem-dropdown .vnv-ecosystem-kicker{
+  margin:0 0 2px;
+  text-align:center;
+  color:#80642f;
+  font-size:11px;
+  font-weight:500;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.vnv-ecosystem-dropdown a{
+  min-height:44px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px 14px;
+  text-align:center;
+  text-decoration:none;
+  color:#172331;
+  border:1px solid rgba(16,34,56,.15);
+  border-radius:7px;
+  background:#fffdf8;
+  font-size:14px;
+  font-weight:500;
+  line-height:1.35;
+}
+.vnv-ecosystem-dropdown a:hover,
+.vnv-ecosystem-dropdown a:focus-visible{
+  border-color:#b79452;
+  background:#f5f0e4;
+  outline:2px solid rgba(183,148,82,.25);
+  outline-offset:2px;
+}
+.vnv-ecosystem-dropdown a.vnv-ecosystem-primary{
+  color:#fffdf8;
+  border-color:#102238;
+  background:#102238;
+}
+.vnv-ecosystem-dropdown a.vnv-ecosystem-primary:hover,
+.vnv-ecosystem-dropdown a.vnv-ecosystem-primary:focus-visible{
+  background:#1a314b;
+}
+@media (prefers-color-scheme:dark){
+  .vnv-ecosystem-nav{color:#eee5d5}
+  .vnv-ecosystem-nav summary{background:#202724;border-color:rgba(232,225,209,.22)}
+  .vnv-ecosystem-dropdown{background:#101d2a;border-color:rgba(232,225,209,.22)}
+  .vnv-ecosystem-lines span{background:#eee5d5}
+  .vnv-ecosystem-dropdown a{color:#eee5d5;background:#142536;border-color:rgba(232,225,209,.16)}
+  .vnv-ecosystem-dropdown a:hover,
+  .vnv-ecosystem-dropdown a:focus-visible{background:#1a3144}
+  .vnv-ecosystem-dropdown a.vnv-ecosystem-primary{background:#b79452;border-color:#b79452;color:#101820}
+}
+@media (max-width:520px){
+  .vnv-ecosystem-nav{
+    top:max(8px,env(safe-area-inset-top));
+    right:max(8px,env(safe-area-inset-right));
+  }
+  .vnv-ecosystem-dropdown{width:min(300px,calc(100vw - 16px))}
+}
+@media print{.vnv-ecosystem-nav{display:none!important}}
+@media (prefers-reduced-motion:reduce){
+  .vnv-ecosystem-lines span{transition:none}
+}
+
+
+/* Canonical directory enhancement · 2026-10-14 */
+.vnv-ecosystem-dropdown{
+  width:min(420px,calc(100vw - 28px));
+  max-height:min(78vh,680px);
+  overflow:auto;
+  overscroll-behavior:contain;
+}
+.vnv-ecosystem-search-wrap{
+  display:grid;
+  gap:7px;
+  margin:2px 0 4px;
+}
+.vnv-ecosystem-search{
+  width:100%;
+  min-height:44px;
+  padding:10px 12px;
+  border:1px solid rgba(16,34,56,.18);
+  border-radius:7px;
+  background:#fffdf8;
+  color:#172331;
+  font:500 14px/1.35 "Brandon Grotesque","Avenir Next","Segoe UI",Arial,sans-serif;
+  text-align:center;
+}
+.vnv-ecosystem-search:focus-visible{
+  border-color:#b79452;
+  outline:2px solid rgba(183,148,82,.25);
+  outline-offset:2px;
+}
+.vnv-ecosystem-status{
+  margin:0;
+  color:#59646d;
+  font-size:11px;
+  line-height:1.45;
+  text-align:center;
+}
+.vnv-ecosystem-results{
+  display:grid;
+  gap:11px;
+  margin-top:2px;
+}
+.vnv-ecosystem-group{
+  display:grid;
+  gap:7px;
+  padding-top:7px;
+  border-top:1px solid rgba(16,34,56,.10);
+}
+.vnv-ecosystem-group:first-child{
+  padding-top:0;
+  border-top:0;
+}
+.vnv-ecosystem-group-title{
+  margin:0;
+  color:#80642f;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.08em;
+  text-align:center;
+  text-transform:uppercase;
+}
+.vnv-ecosystem-result{
+  min-height:44px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:3px;
+  padding:9px 12px;
+  text-align:center;
+}
+.vnv-ecosystem-result strong{
+  font-size:14px;
+  font-weight:600;
+  line-height:1.25;
+}
+.vnv-ecosystem-result small{
+  color:#66717a;
+  font-size:10.5px;
+  font-weight:400;
+  line-height:1.35;
+}
+.vnv-ecosystem-result[aria-current="page"]{
+  border-color:#b79452;
+  background:#f5f0e4;
+}
+.vnv-ecosystem-empty{
+  margin:7px 0 2px;
+  color:#59646d;
+  font-size:12px;
+  line-height:1.5;
+  text-align:center;
+}
+@media (prefers-color-scheme:dark){
+  .vnv-ecosystem-search{
+    color:#eee5d5;
+    background:#142536;
+    border-color:rgba(232,225,209,.18);
+  }
+  .vnv-ecosystem-status,
+  .vnv-ecosystem-result small,
+  .vnv-ecosystem-empty{color:#b8c2c9}
+  .vnv-ecosystem-group{border-top-color:rgba(232,225,209,.11)}
+  .vnv-ecosystem-result[aria-current="page"]{background:#1a3144}
+}
+@media(max-width:520px){
+  .vnv-ecosystem-dropdown{width:min(340px,calc(100vw - 16px));max-height:82vh}
+}
+
+
+/* Shared JS drawer presentation · v1.2.0
+   Canonical presentation for assets/vnv-ecosystem-menu.js.
+   The legacy <details> rules above remain for backward compatibility while
+   repository pages migrate to the shared runtime. */
+
+      #vnvEcosystemMenuButton{
+        min-height:34px;display:inline-flex;align-items:center;justify-content:center;gap:8px;
+        padding:6px 10px;border:1px solid rgba(49,73,62,.24);border-radius:7px;
+        color:#fff8e9!important;background:#202724!important;
+        box-shadow:none;font:500 10px/1.1 "Avenir Next","Segoe UI",Arial,sans-serif;
+        letter-spacing:.075em;text-transform:uppercase;white-space:nowrap;cursor:pointer;
+      }
+      #vnvEcosystemMenuButton:hover,#vnvEcosystemMenuButton:focus-visible{background:#344148!important;color:#fff8e9!important;border-color:#b48b45;outline:2px solid #b48b45;outline-offset:2px}
+      #vnvEcosystemMenuButton.vnv-eco-text-only{
+        min-height:34px;padding:6px 9px;letter-spacing:.03em;
+        white-space:normal;text-align:center;
+      }
+      #vnvEcosystemMenuButton .vnv-eco-lines{width:14px;height:10px;display:grid;align-content:space-between}
+      #vnvEcosystemMenuButton .vnv-eco-lines::before,#vnvEcosystemMenuButton .vnv-eco-lines::after,#vnvEcosystemMenuButton .vnv-eco-lines span{
+        content:"";display:block;height:1px;background:#fff8e9!important
+      }
+      #vnvEcosystemMenuOverlay{
+        position:fixed;inset:0;z-index:2147483500;display:grid;justify-items:end;overflow:hidden;contain:layout paint;
+        visibility:hidden;opacity:0;background:rgba(9,15,13,.34);backdrop-filter:blur(4px);
+        transition:opacity .18s ease,visibility .18s ease
+      }
+      #vnvEcosystemMenuOverlay[data-open="true"]{visibility:visible;opacity:1}
+      #vnvEcosystemMenuOverlay:not([data-open="true"]) #vnvEcosystemMenuDrawer{display:none}
+      #vnvEcosystemMenuDrawer{
+        width:min(92vw,420px);max-width:100vw;height:100%;overflow:auto;box-sizing:border-box;padding:24px 20px 30px;
+        transform:translateX(102%);transition:transform .2s ease;
+        color:#202d28;background:#fbf8ef;border-left:1px solid rgba(49,73,62,.18);
+        box-shadow:-20px 0 54px rgba(20,30,25,.15)
+      }
+      #vnvEcosystemMenuOverlay[data-open="true"] #vnvEcosystemMenuDrawer{transform:none}
+      .vnv-eco-top{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
+      .vnv-eco-kicker{margin:0 0 5px;color:#91733f;font:500 10px/1.2 "Avenir Next","Segoe UI",Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase}
+      #vnvEcosystemMenuDrawer h2{margin:0;color:#233b32;font:500 29px/1.05 Georgia,"Times New Roman",serif}
+      .vnv-eco-close{width:38px;height:38px;flex:0 0 38px;border:1px solid rgba(49,73,62,.22);border-radius:7px;background:#fff;color:#243a32;font-size:21px;cursor:pointer}
+      .vnv-eco-intro{margin:13px 0 0;color:#69736e;font:400 12px/1.6 "Avenir Next","Segoe UI",Arial,sans-serif}
+      #vnvEcosystemMenuSearch{width:100%;min-height:42px;margin:17px 0 5px;padding:0 12px;border:1px solid rgba(49,73,62,.22);border-radius:7px;background:#fff;color:#202d28;font:400 13px/1.2 "Avenir Next","Segoe UI",Arial,sans-serif}
+      #vnvEcosystemMenuStatus{min-height:20px;margin:6px 0 0;color:#7b837f;font:400 10px/1.45 "Avenir Next","Segoe UI",Arial,sans-serif}
+      .vnv-eco-home{display:flex;justify-content:center;margin:12px 0 2px}
+      .vnv-eco-home a{min-height:34px;display:inline-flex;align-items:center;justify-content:center;padding:7px 11px;border:1px solid rgba(145,115,63,.28);border-radius:7px;color:#6f5935;background:#fff;text-decoration:none;font:500 10px/1.1 "Avenir Next","Segoe UI",Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase}
+      .vnv-eco-group{margin:20px 0 7px;color:#92743f;font:500 10px/1.2 "Avenir Next","Segoe UI",Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+      .vnv-eco-list{display:grid;gap:6px}
+      .vnv-eco-link{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:9px;align-items:center;padding:10px 11px;border:1px solid rgba(49,73,62,.12);border-radius:7px;color:#25362f;background:#fff;text-decoration:none}
+      .vnv-eco-link:hover,.vnv-eco-link:focus-visible{border-color:rgba(145,115,63,.46);background:#fffefb}
+      .vnv-eco-link strong{display:block;font:500 12px/1.3 "Avenir Next","Segoe UI",Arial,sans-serif}
+      .vnv-eco-link small{display:block;margin-top:2px;color:#7b837f;font:400 9px/1.35 "Avenir Next","Segoe UI",Arial,sans-serif}
+      .vnv-eco-arrow{color:#9a7b43;font-size:12px}
+      #vnvEcosystemMenuButton.vnv-eco-fixed{position:fixed;right:12px;top:12px;z-index:2147482500;box-shadow:0 6px 18px rgba(20,30,25,.08)}
+      @media(max-width:620px){
+        #vnvEcosystemMenuButton{font-size:9px;padding:6px 8px}
+        #vnvEcosystemMenuButton .vnv-eco-label{display:none}
+        #vnvEcosystemMenuButton .vnv-eco-lines{width:17px;height:12px}
+        #vnvEcosystemMenuDrawer{width:min(94vw,390px);padding:20px 15px 26px}
+      }
+      @media(prefers-reduced-motion:reduce){#vnvEcosystemMenuOverlay,#vnvEcosystemMenuDrawer{transition:none!important}}
+      @media print{#vnvEcosystemMenuButton,#vnvEcosystemMenuOverlay{display:none!important}}
+    
+
+/* Explicit header slot: icon-only, normal-flow placement.
+   Fixed positioning is reserved for pages without a recognized header slot. */
+[data-vnv-ecosystem-slot]{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  justify-self:end;
+}
+[data-vnv-ecosystem-slot] #vnvEcosystemMenuButton.vnv-eco-icon-only{
+  width:44px;
+  height:44px;
+  min-height:44px;
+  padding:0;
+  border-radius:7px;
+}
+@media(max-width:560px){
+  [data-vnv-ecosystem-slot] #vnvEcosystemMenuButton.vnv-eco-icon-only{
+    width:40px;
+    height:40px;
+    min-height:40px;
+  }
+}
