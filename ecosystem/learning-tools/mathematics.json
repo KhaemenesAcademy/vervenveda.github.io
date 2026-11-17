@@ -1,0 +1,3755 @@
+{
+  "schema_version": "1.0.0",
+  "id": "vnv-learning-tools-mathematics",
+  "title": "Verve N Veda Mathematics Learning Tools Archive",
+  "generated_from": "vervenveda/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/game-registry.json",
+  "generated_date": "2026-11-17",
+  "purpose": "Canonical discovery index for mathematics lesson companions and shared mathematics tools. Navigation/practice only; no grading or mastery authority.",
+  "game_count": 83,
+  "placement_count": 344,
+  "games": [
+    {
+      "id": "number-family",
+      "title": "Number Family",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/number-family/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "01",
+          "lesson": "01",
+          "lesson_title": "Number Families & the Real Number System",
+          "mode": "real-foundations",
+          "query": "?course=prealgebra&unit=01&lesson=01"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "01",
+          "lesson": "02",
+          "lesson_title": "The Real Number System & Interval Representations",
+          "mode": "real-exact-forms",
+          "query": "?course=algebra1&unit=01&lesson=02"
+        },
+        {
+          "course": "geometry",
+          "unit": "01",
+          "lesson": "03",
+          "lesson_title": "Distance, Midpoint & Segment Partition",
+          "mode": "exact-measurement",
+          "query": "?course=geometry&unit=01&lesson=03"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "01",
+          "lesson_title": "Pythagorean Theorem & Its Converse",
+          "mode": "pythagorean-exact-lengths",
+          "query": "?course=geometry&unit=06&lesson=u06-l01"
+        }
+      ]
+    },
+    {
+      "id": "factors-and-multiples",
+      "title": "Factor Structure Lab",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/factors-and-multiples/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "01",
+          "lesson": "02",
+          "lesson_title": "Factors, Multiples & Number Structure",
+          "mode": "factors-multiples",
+          "query": "?course=prealgebra&unit=01&lesson=02"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "09",
+          "lesson": "06",
+          "lesson_title": "Factoring Trinomials & Difference of Squares",
+          "mode": "product-sum-factoring",
+          "query": "?course=algebra1&unit=09&lesson=06"
+        },
+        {
+          "course": "geometry",
+          "unit": "10",
+          "lesson": "07",
+          "lesson_title": "Optimization with Perimeter and Area Constraints",
+          "mode": "rectangle-area-optimization",
+          "query": "?course=geometry&unit=10&lesson=u10-l07"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "03",
+          "lesson": "04",
+          "lesson_title": "Rational Root Theorem & Candidate Zeros",
+          "mode": "rational-root-candidates",
+          "query": "?course=algebra2&unit=03&lesson=u03-l04"
+        }
+      ]
+    },
+    {
+      "id": "prime-spy-composite",
+      "title": "Prime Spy / Composite Catch",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/prime-spy-composite/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "01",
+          "lesson": "03",
+          "lesson_title": "Prime Numbers, Divisibility & Prime Factorization",
+          "mode": "prime-structure",
+          "query": "?course=prealgebra&unit=01&lesson=03&mode=prime-structure"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "02",
+          "lesson": "07",
+          "lesson_title": "Multiplying Monomials & Factoring the GCF",
+          "mode": "gcf-factor-structure",
+          "query": "?course=algebra1&unit=02&lesson=07&mode=gcf-factor-structure"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "11",
+          "lesson": "02",
+          "lesson_title": "Simplifying & Operating with Radicals",
+          "mode": "radical-factor-structure",
+          "query": "?course=algebra1&unit=11&lesson=02&mode=radical-factor-structure"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "05",
+          "lesson": "02",
+          "lesson_title": "Simplifying Radical Expressions",
+          "mode": "radical-factor-structure-advanced",
+          "query": "?course=algebra2&unit=05&lesson=u05-l02&mode=radical-factor-structure-advanced"
+        }
+      ]
+    },
+    {
+      "id": "gcf-lcm-challenge",
+      "title": "GCF / LCM Challenge",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/gcf-lcm-challenge/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "01",
+          "lesson": "04",
+          "lesson_title": "Greatest Common Factor & Least Common Multiple",
+          "mode": "integer-gcf-lcm",
+          "query": "?course=prealgebra&unit=01&lesson=04"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "09",
+          "lesson": "05",
+          "lesson_title": "Factoring the Greatest Common Factor",
+          "mode": "polynomial-gcf",
+          "query": "?course=algebra1&unit=09&lesson=05"
+        },
+        {
+          "course": "geometry",
+          "unit": "02",
+          "lesson": "06",
+          "lesson_title": "Line, Rotational & Point Symmetry",
+          "mode": "rotation-cycle-lcm",
+          "query": "?course=geometry&unit=02&lesson=u02-l06"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "03",
+          "lesson_title": "Adding and Subtracting Rational Expressions",
+          "mode": "least-common-denominator",
+          "query": "?course=algebra2&unit=04&lesson=u04-l03"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "04",
+          "lesson_title": "Solving Rational Equations & Extraneous Solutions",
+          "mode": "lcd-rational-equations",
+          "query": "?course=algebra2&unit=04&lesson=u04-l04"
+        }
+      ]
+    },
+    {
+      "id": "operation-stepper",
+      "title": "Operation Stepper",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/operation-stepper/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "01",
+          "lesson": "05",
+          "lesson_title": "Order of Operations & Evaluating Expressions",
+          "mode": "order-of-operations",
+          "query": "?course=prealgebra&unit=01&lesson=05"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "02",
+          "lesson": "02",
+          "lesson_title": "Evaluating Expressions & Formula Substitution",
+          "mode": "formula-evaluation",
+          "query": "?course=algebra1&unit=02&lesson=02"
+        },
+        {
+          "course": "geometry",
+          "unit": "10",
+          "lesson": "03",
+          "lesson_title": "Heron’s Formula and Coordinate Area",
+          "mode": "geometry-formulas",
+          "query": "?course=geometry&unit=10&lesson=u10-l03"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "01",
+          "lesson": "04",
+          "lesson_title": "Function Composition & Decomposition",
+          "mode": "function-composition",
+          "query": "?course=algebra2&unit=01&lesson=u01-l04"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "07",
+          "lesson": "03",
+          "lesson_title": "Evaluating Expressions & Substitution",
+          "mode": "expression-substitution",
+          "query": "?course=prealgebra&unit=07&lesson=03"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "01",
+          "lesson": "03",
+          "lesson_title": "Operations, Properties & Order of Operations",
+          "mode": "algebra-order-properties",
+          "query": "?course=algebra1&unit=01&lesson=03"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "05",
+          "lesson": "02",
+          "lesson_title": "Function Notation & Evaluation",
+          "mode": "function-evaluation",
+          "query": "?course=algebra1&unit=05&lesson=02"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "01",
+          "lesson": "01",
+          "lesson_title": "Function Language, Notation & Evaluation",
+          "mode": "advanced-function-evaluation",
+          "query": "?course=algebra2&unit=01&lesson=u01-l01"
+        }
+      ]
+    },
+    {
+      "id": "estimate-defender",
+      "title": "Estimate Defender",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/estimate-defender/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "01",
+          "lesson": "06",
+          "lesson_title": "Estimation, Compatible Numbers & Reasonableness",
+          "mode": "reasonableness",
+          "query": "?course=prealgebra&unit=01&lesson=06"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "01",
+          "lesson": "05",
+          "lesson_title": "Precision, Rounding, Significant Figures & Percent Error",
+          "mode": "precision-error",
+          "query": "?course=algebra1&unit=01&lesson=05&mode=precision-error"
+        },
+        {
+          "course": "geometry",
+          "unit": "10",
+          "lesson": "05",
+          "lesson_title": "Units, Precision, Error & Significant Figures",
+          "mode": "measurement-precision",
+          "query": "?course=geometry&unit=10&lesson=u10-l05&mode=measurement-precision"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "07",
+          "lesson": "06",
+          "lesson_title": "Change of Base, Technology & Estimation",
+          "mode": "technology-estimation",
+          "query": "?course=algebra2&unit=07&lesson=u07-l06&mode=technology-estimation"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "05",
+          "lesson": "06",
+          "lesson_title": "Radical Models, Geometry & Measurement Error",
+          "mode": "radical-model-measurement-error",
+          "query": "?course=algebra2&unit=05&lesson=u05-l06"
+        }
+      ]
+    },
+    {
+      "id": "integer-compass",
+      "title": "Integer Compass",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/integer-compass/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "02",
+          "lesson": "01",
+          "lesson_title": "Integers in Context",
+          "mode": "signed-contexts",
+          "query": "?course=prealgebra&unit=02&lesson=01"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "01",
+          "lesson_title": "Rate of Change & Slope",
+          "mode": "signed-rate-slope",
+          "query": "?course=algebra1&unit=06&lesson=01"
+        },
+        {
+          "course": "geometry",
+          "unit": "02",
+          "lesson": "01",
+          "lesson_title": "Translations on the Coordinate Plane",
+          "mode": "translation-vectors",
+          "query": "?course=geometry&unit=02&lesson=u02-l01"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "10",
+          "lesson_title": "Vectors, Bearings & Component Models",
+          "mode": "vector-components",
+          "query": "?course=algebra2&unit=10&lesson=u10-l10"
+        }
+      ]
+    },
+    {
+      "id": "opposite-mirror",
+      "title": "Opposite Mirror",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/opposite-mirror/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "02",
+          "lesson": "02",
+          "lesson_title": "Opposites & Absolute Value",
+          "mode": "opposites-absolute-value",
+          "query": "?course=prealgebra&unit=02&lesson=02"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "04",
+          "lesson": "05",
+          "lesson_title": "Absolute Value Equations",
+          "mode": "absolute-value-equations",
+          "query": "?course=algebra1&unit=04&lesson=05"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "04",
+          "lesson": "06",
+          "lesson_title": "Absolute Value Inequalities & Contextual Constraints",
+          "mode": "absolute-value-constraints",
+          "query": "?course=algebra1&unit=04&lesson=06"
+        },
+        {
+          "course": "geometry",
+          "unit": "02",
+          "lesson": "02",
+          "lesson_title": "Reflections Across Axes and Lines",
+          "mode": "coordinate-reflections",
+          "query": "?course=geometry&unit=02&lesson=u02-l02"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "01",
+          "lesson": "06",
+          "lesson_title": "Piecewise, Absolute-Value & Step Functions",
+          "mode": "absolute-value-functions",
+          "query": "?course=algebra2&unit=01&lesson=u01-l06"
+        }
+      ]
+    },
+    {
+      "id": "integer-rank",
+      "title": "Integer Rank",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/integer-rank/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "02",
+          "lesson": "03",
+          "lesson_title": "Compare & Order Integers",
+          "mode": "integer-order",
+          "query": "?course=prealgebra&unit=02&lesson=03"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "04",
+          "lesson": "01",
+          "lesson_title": "Inequality Meaning, Number Lines & Interval Notation",
+          "mode": "inequalities-intervals",
+          "query": "?course=algebra1&unit=04&lesson=01&mode=inequalities-intervals"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "06",
+          "lesson_title": "Triangle Inequality & Feasible Construction",
+          "mode": "triangle-feasibility",
+          "query": "?course=geometry&unit=03&lesson=u03-l06&mode=triangle-feasibility"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "01",
+          "lesson": "02",
+          "lesson_title": "Domain, Range, Intervals & Constraints",
+          "mode": "domain-interval-constraints",
+          "query": "?course=algebra2&unit=01&lesson=u01-l02&mode=domain-interval-constraints"
+        }
+      ]
+    },
+    {
+      "id": "integer-sum-lab",
+      "title": "Integer Sum Lab",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/integer-sum-lab/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "02",
+          "lesson": "04",
+          "lesson_title": "Adding Integers",
+          "mode": "integer-addition",
+          "query": "?course=prealgebra&unit=02&lesson=04"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "02",
+          "lesson": "04",
+          "lesson_title": "Distributive Property & Combining Like Terms",
+          "mode": "signed-coefficients",
+          "query": "?course=algebra1&unit=02&lesson=04&mode=signed-coefficients"
+        }
+      ]
+    },
+    {
+      "id": "opposite-shift",
+      "title": "Opposite Shift",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/opposite-shift/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "02",
+          "lesson": "05",
+          "lesson_title": "Subtracting Integers",
+          "mode": "integer-subtraction",
+          "query": "?course=prealgebra&unit=02&lesson=05&mode=integer-subtraction"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "02",
+          "lesson": "06",
+          "lesson_title": "Adding & Subtracting Polynomials",
+          "mode": "polynomial-subtraction",
+          "query": "?course=algebra1&unit=02&lesson=06&mode=polynomial-subtraction"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "02",
+          "lesson": "02",
+          "lesson_title": "Polynomial Operations & Equivalent Forms",
+          "mode": "structural-polynomial-difference",
+          "query": "?course=algebra2&unit=02&lesson=u02-l02&mode=structural-polynomial-difference"
+        }
+      ]
+    },
+    {
+      "id": "sign-forge",
+      "title": "Sign Forge",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/sign-forge/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "02",
+          "lesson": "06",
+          "lesson_title": "Multiplying & Dividing Integers",
+          "mode": "integer-products-quotients",
+          "query": "?course=prealgebra&unit=02&lesson=06"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "02",
+          "lesson": "07",
+          "lesson_title": "Multiplying Monomials & Factoring the GCF",
+          "mode": "signed-monomials",
+          "query": "?course=algebra1&unit=02&lesson=07"
+        },
+        {
+          "course": "geometry",
+          "unit": "04",
+          "lesson": "04",
+          "lesson_title": "Parallel and Perpendicular Slopes",
+          "mode": "signed-slopes-negative-reciprocals",
+          "query": "?course=geometry&unit=04&lesson=u04-l04"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "02",
+          "lesson_title": "Multiplying and Dividing Rational Expressions",
+          "mode": "rational-products-quotients",
+          "query": "?course=algebra2&unit=04&lesson=u04-l02"
+        }
+      ]
+    },
+    {
+      "id": "dividing-integers",
+      "title": "Quotient Check · Dividing Integers",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/dividing-integers/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "02",
+          "lesson": "07",
+          "lesson_title": "Dividing Integers",
+          "mode": "integer-division",
+          "query": "?course=prealgebra&unit=02&lesson=07&mode=integer-division"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "03",
+          "lesson": "01",
+          "lesson_title": "Equality, Inverse Operations & Solution Verification",
+          "mode": "inverse-operations",
+          "query": "?course=algebra1&unit=03&lesson=01&mode=inverse-operations"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "01",
+          "lesson_title": "Simplifying Rational Expressions & Restrictions",
+          "mode": "rational-restrictions",
+          "query": "?course=algebra2&unit=04&lesson=u04-l01&mode=rational-restrictions"
+        }
+      ]
+    },
+    {
+      "id": "coordinated-mission-control",
+      "title": "Coordinated Mission Control",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/coordinated-mission-control/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "02",
+          "lesson": "08",
+          "lesson_title": "Coordinate Plane & Multi-Step Integer Applications",
+          "mode": "coordinate-integer-applications",
+          "query": "?course=prealgebra&unit=02&lesson=08&mode=coordinate-integer-applications"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "02",
+          "lesson_title": "Slope from Tables, Graphs & Points",
+          "mode": "coordinate-change-slope",
+          "query": "?course=algebra1&unit=06&lesson=02&mode=coordinate-change-slope"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "11",
+          "lesson": "05",
+          "lesson_title": "Midpoint, Coordinate Geometry & Geometric Constraints",
+          "mode": "coordinate-geometry",
+          "query": "?course=algebra1&unit=11&lesson=11-05&mode=coordinate-geometry"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "08",
+          "lesson_title": "Bearings, Vectors & Multi-Step Navigation",
+          "mode": "vector-navigation",
+          "query": "?course=geometry&unit=06&lesson=u06-l08&mode=vector-navigation"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "11",
+          "lesson": "08",
+          "lesson_title": "Navigation, Vectors & Multi-Step Triangle Models",
+          "mode": "advanced-vector-navigation",
+          "query": "?course=algebra2&unit=11&lesson=u11-l08&mode=advanced-vector-navigation"
+        },
+        {
+          "course": "geometry",
+          "unit": "04",
+          "lesson": "05",
+          "lesson_title": "Coordinate Proof with Distance, Midpoint & Slope",
+          "mode": "coordinate-proof",
+          "query": "?course=geometry&unit=04&lesson=u04-l05"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "01",
+          "lesson_title": "Coordinate Plane, Ordered Pairs & Quadrants",
+          "mode": "coordinate-foundations",
+          "query": "?course=prealgebra&unit=10&lesson=01"
+        },
+        {
+          "course": "geometry",
+          "unit": "09",
+          "lesson": "04",
+          "lesson_title": "Coordinate Intersections and Geometric Systems",
+          "mode": "geometry-intersections",
+          "query": "?course=geometry&unit=09&lesson=u09-l04"
+        }
+      ]
+    },
+    {
+      "id": "common-ground",
+      "title": "Common Ground",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/common-ground/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "03",
+          "lesson": "04",
+          "lesson_title": "",
+          "mode": "prealgebra",
+          "query": ""
+        }
+      ]
+    },
+    {
+      "id": "decimal-signal",
+      "title": "Decimal Signal",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/decimal-signal/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "03",
+          "lesson": "07",
+          "lesson_title": "",
+          "mode": "prealgebra",
+          "query": ""
+        }
+      ]
+    },
+    {
+      "id": "fraction-forge",
+      "title": "Fraction Forge",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/fraction-forge/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "03",
+          "lesson": "02",
+          "lesson_title": "",
+          "mode": "prealgebra",
+          "query": ""
+        }
+      ]
+    },
+    {
+      "id": "fraction-quotient",
+      "title": "Fraction Quotient",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/fraction-quotient/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "03",
+          "lesson": "01",
+          "lesson_title": "",
+          "mode": "prealgebra",
+          "query": ""
+        }
+      ]
+    },
+    {
+      "id": "group-or-cycle",
+      "title": "Group Or Cycle",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/group-or-cycle/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "01",
+          "lesson": "04",
+          "lesson_title": "",
+          "mode": "prealgebra",
+          "query": ""
+        }
+      ]
+    },
+    {
+      "id": "ratio-atelier",
+      "title": "Ratio Atelier",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/ratio-atelier/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "01",
+          "lesson_title": "",
+          "mode": "prealgebra",
+          "query": ""
+        }
+      ]
+    },
+    {
+      "id": "rational-navigator",
+      "title": "Rational Navigator",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/rational-navigator/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "03",
+          "lesson": "08",
+          "lesson_title": "",
+          "mode": "prealgebra",
+          "query": ""
+        }
+      ]
+    },
+    {
+      "id": "rational-rank",
+      "title": "Rational Rank",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/rational-rank/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "03",
+          "lesson": "03",
+          "lesson_title": "",
+          "mode": "prealgebra",
+          "query": ""
+        }
+      ]
+    },
+    {
+      "id": "reciprocal-relay",
+      "title": "Reciprocal Relay",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/reciprocal-relay/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "03",
+          "lesson": "06",
+          "lesson_title": "",
+          "mode": "prealgebra",
+          "query": ""
+        }
+      ]
+    },
+    {
+      "id": "scale-forge",
+      "title": "Scale Forge",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/scale-forge/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "03",
+          "lesson": "05",
+          "lesson_title": "",
+          "mode": "prealgebra",
+          "query": ""
+        }
+      ]
+    },
+    {
+      "id": "equation-balance-lab",
+      "title": "Equation Balance Lab",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v2",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/equation-balance-lab/",
+      "placements": [
+        {
+          "course": "algebra-1",
+          "unit": "03",
+          "lesson": "02",
+          "lesson_title": "One-Step & Two-Step Linear Equations",
+          "mode": "one-two-step",
+          "query": "?course=algebra1&unit=03&lesson=02&mode=one-two-step"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "03",
+          "lesson": "03",
+          "lesson_title": "Multi-Step Equations with Distribution & Like Terms",
+          "mode": "multi-step",
+          "query": "?course=algebra1&unit=03&lesson=03&mode=multi-step"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "02",
+          "lesson_title": "One-Step Equations: Addition & Subtraction",
+          "mode": "one-step",
+          "query": "?course=prealgebra&unit=08&lesson=02&mode=one-step"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "03",
+          "lesson_title": "One-Step Equations: Multiplication & Division",
+          "mode": "one-step",
+          "query": "?course=prealgebra&unit=08&lesson=03&mode=one-step"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "04",
+          "lesson_title": "Two-Step Equations & Operation Order",
+          "mode": "two-step",
+          "query": "?course=prealgebra&unit=08&lesson=04&mode=two-step"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "05",
+          "lesson_title": "Multi-Step Equations: Distribution & Like Terms",
+          "mode": "multi-step",
+          "query": "?course=prealgebra&unit=08&lesson=05&mode=multi-step"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "01",
+          "lesson_title": "Equality, Solutions & the Balance Model",
+          "mode": "balance-foundations",
+          "query": "?course=prealgebra&unit=08&lesson=01"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "09",
+          "lesson": "05",
+          "lesson_title": "Multistep Inequalities with Variables on Both Sides",
+          "mode": "multi-step-balance-transfer",
+          "query": "?course=prealgebra&unit=09&lesson=05"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "03",
+          "lesson": "05",
+          "lesson_title": "Literal Equations & Rearranging Formulas",
+          "mode": "literal-formulas",
+          "query": "?course=algebra1&unit=03&lesson=05&mode=literal-formulas"
+        }
+      ]
+    },
+    {
+      "id": "inequality-number-line",
+      "title": "Inequality Number Line",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/inequality-number-line/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "09",
+          "lesson": "01",
+          "lesson_title": "Inequality Meaning, Symbols & Solution Sets",
+          "mode": "graph",
+          "query": "?course=prealgebra&unit=09&lesson=01&mode=graph"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "09",
+          "lesson": "02",
+          "lesson_title": "Number-Line Graphs & Interval Descriptions",
+          "mode": "graph",
+          "query": "?course=prealgebra&unit=09&lesson=02&mode=graph"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "09",
+          "lesson": "03",
+          "lesson_title": "One-Step Inequalities & Order Preservation",
+          "mode": "solve",
+          "query": "?course=prealgebra&unit=09&lesson=03&mode=solve"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "09",
+          "lesson": "04",
+          "lesson_title": "Negative Multipliers & Reversal",
+          "mode": "negative",
+          "query": "?course=prealgebra&unit=09&lesson=04&mode=negative"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "04",
+          "lesson": "01",
+          "lesson_title": "Inequality Meaning, Number Lines & Interval Notation",
+          "mode": "graph",
+          "query": "?course=algebra1&unit=04&lesson=01&mode=graph"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "04",
+          "lesson": "02",
+          "lesson_title": "One-Step & Multi-Step Linear Inequalities",
+          "mode": "solve",
+          "query": "?course=algebra1&unit=04&lesson=02&mode=solve"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "04",
+          "lesson": "03",
+          "lesson_title": "Negative Multipliers & Sign Reversal",
+          "mode": "negative",
+          "query": "?course=algebra1&unit=04&lesson=03&mode=negative"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "09",
+          "lesson": "06",
+          "lesson_title": "Compound Inequalities: AND / OR",
+          "mode": "compound-inequalities",
+          "query": "?course=prealgebra&unit=09&lesson=06"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "09",
+          "lesson": "07",
+          "lesson_title": "Contextual Constraints & Discrete Solutions",
+          "mode": "contextual-constraints",
+          "query": "?course=prealgebra&unit=09&lesson=07"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "04",
+          "lesson": "04",
+          "lesson_title": "Compound Inequalities: AND, OR & Intersections",
+          "mode": "compound-intervals",
+          "query": "?course=algebra1&unit=04&lesson=04"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "07",
+          "lesson": "06",
+          "lesson_title": "Systems of Linear Inequalities",
+          "mode": "systems-inequalities",
+          "query": "?course=algebra1&unit=07&lesson=06"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "07",
+          "lesson": "07",
+          "lesson_title": "Feasible Regions, Constraints & Introductory Optimization",
+          "mode": "feasible-regions",
+          "query": "?course=algebra1&unit=07&lesson=07"
+        }
+      ]
+    },
+    {
+      "id": "slope-and-rate-studio",
+      "title": "Slope & Rate Studio",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/slope-and-rate-studio/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "03",
+          "lesson_title": "Rates, Unit Rates & Fair Comparisons",
+          "mode": "unit-rate",
+          "query": "?course=prealgebra&unit=04&lesson=03&mode=unit-rate"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "04",
+          "lesson_title": "Proportional Tables, Graphs & Equations",
+          "mode": "table",
+          "query": "?course=prealgebra&unit=04&lesson=04&mode=table"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "05",
+          "lesson_title": "Rate of Change from Tables, Graphs & Contexts",
+          "mode": "slope",
+          "query": "?course=prealgebra&unit=10&lesson=05&mode=slope"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "06",
+          "lesson_title": "Slope, Intercepts & Linear Equations",
+          "mode": "intercept",
+          "query": "?course=prealgebra&unit=10&lesson=06&mode=intercept"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "01",
+          "lesson": "04",
+          "lesson_title": "Units, Rates & Dimensional Analysis",
+          "mode": "unit-rate",
+          "query": "?course=algebra1&unit=01&lesson=04&mode=unit-rate"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "01",
+          "lesson_title": "Rate of Change & Slope",
+          "mode": "slope",
+          "query": "?course=algebra1&unit=06&lesson=01&mode=slope"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "02",
+          "lesson_title": "Slope from Tables, Graphs & Points",
+          "mode": "two-points",
+          "query": "?course=algebra1&unit=06&lesson=02&mode=two-points"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "03",
+          "lesson_title": "Slope-Intercept Form",
+          "mode": "intercept",
+          "query": "?course=algebra1&unit=06&lesson=03&mode=intercept"
+        },
+        {
+          "course": "geometry",
+          "unit": "04",
+          "lesson": "03",
+          "lesson_title": "Slope as Direction and Rate",
+          "mode": "geometric-slope-direction",
+          "query": "?course=geometry&unit=04&lesson=u04-l03"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "07",
+          "lesson_title": "Proportional vs. Nonproportional Relationships",
+          "mode": "proportional-vs-nonproportional",
+          "query": "?course=prealgebra&unit=04&lesson=07"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "08",
+          "lesson_title": "Conversions & Multistep Proportional Modelling",
+          "mode": "proportional-modelling",
+          "query": "?course=prealgebra&unit=04&lesson=08"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "04",
+          "lesson_title": "Point-Slope & Standard Form",
+          "mode": "point-slope-standard-form",
+          "query": "?course=algebra1&unit=06&lesson=04"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "05",
+          "lesson_title": "Parallel & Perpendicular Lines",
+          "mode": "parallel-perpendicular-slopes",
+          "query": "?course=algebra1&unit=06&lesson=05"
+        },
+        {
+          "course": "geometry",
+          "unit": "04",
+          "lesson": "06",
+          "lesson_title": "Equations of Lines in Geometric Context",
+          "mode": "geometry-line-equations",
+          "query": "?course=geometry&unit=04&lesson=u04-l06"
+        }
+      ]
+    },
+    {
+      "id": "linear-systems-mission",
+      "title": "Linear Systems Mission",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/linear-systems-mission/",
+      "placements": [
+        {
+          "course": "algebra-1",
+          "unit": "07",
+          "lesson": "01",
+          "lesson_title": "Systems as Intersections & Number of Solutions",
+          "mode": "classify",
+          "query": "?course=algebra1&unit=07&lesson=01&mode=classify"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "07",
+          "lesson": "02",
+          "lesson_title": "Solving Systems by Graphing",
+          "mode": "graph",
+          "query": "?course=algebra1&unit=07&lesson=02&mode=graph"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "07",
+          "lesson": "03",
+          "lesson_title": "Solving Systems by Substitution",
+          "mode": "substitution",
+          "query": "?course=algebra1&unit=07&lesson=03&mode=substitution"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "07",
+          "lesson": "04",
+          "lesson_title": "Solving Systems by Elimination",
+          "mode": "elimination",
+          "query": "?course=algebra1&unit=07&lesson=04&mode=elimination"
+        }
+      ]
+    },
+    {
+      "id": "polynomial-factoring-forge",
+      "title": "Polynomial Factoring Forge",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/polynomial-factoring-forge/",
+      "placements": [
+        {
+          "course": "algebra-1",
+          "unit": "09",
+          "lesson": "03",
+          "lesson_title": "Multiplying Monomials & Polynomials",
+          "mode": "expand",
+          "query": "?course=algebra1&unit=09&lesson=03&mode=expand"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "09",
+          "lesson": "06",
+          "lesson_title": "Factoring Trinomials & Difference of Squares",
+          "mode": "factor",
+          "query": "?course=algebra1&unit=09&lesson=06&mode=factor"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "09",
+          "lesson": "07",
+          "lesson_title": "Zeros, Factors & Polynomial Modelling",
+          "mode": "zeros",
+          "query": "?course=algebra1&unit=09&lesson=07&mode=zeros"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "03",
+          "lesson_title": "Factored Form, Zeros & Graphs",
+          "mode": "zeros",
+          "query": "?course=algebra1&unit=10&lesson=03&mode=zeros"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "04",
+          "lesson_title": "Solving Quadratics by Factoring",
+          "mode": "zeros",
+          "query": "?course=algebra1&unit=10&lesson=04&mode=zeros"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "09",
+          "lesson": "04",
+          "lesson_title": "Binomial Products & Special Products",
+          "mode": "special-products",
+          "query": "?course=algebra1&unit=09&lesson=04"
+        }
+      ]
+    },
+    {
+      "id": "quadratic-graph-lab",
+      "title": "Quadratic Graph Lab",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/quadratic-graph-lab/",
+      "placements": [
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "01",
+          "lesson_title": "Quadratic Functions, Parabolas & Key Features",
+          "mode": "parabola",
+          "query": "?course=algebra1&unit=10&lesson=01&mode=parabola"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "02",
+          "lesson_title": "Vertex, Axis of Symmetry & Transformations",
+          "mode": "transform",
+          "query": "?course=algebra1&unit=10&lesson=02&mode=transform"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "03",
+          "lesson_title": "Factored Form, Zeros & Graphs",
+          "mode": "roots",
+          "query": "?course=algebra1&unit=10&lesson=03&mode=roots"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "07",
+          "lesson_title": "Quadratic Modelling, Projectiles & Optimization",
+          "mode": "vertex",
+          "query": "?course=algebra1&unit=10&lesson=07&mode=vertex"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "05",
+          "lesson_title": "Solving by Square Roots & Completing the Square",
+          "mode": "quadratic-solution-methods",
+          "query": "?course=algebra1&unit=10&lesson=05"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "06",
+          "lesson_title": "Quadratic Formula & Discriminant",
+          "mode": "quadratic-formula-discriminant",
+          "query": "?course=algebra1&unit=10&lesson=06"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "08",
+          "lesson_title": "Linear-Quadratic Systems & Model Comparison",
+          "mode": "linear-quadratic-comparison",
+          "query": "?course=algebra1&unit=10&lesson=08"
+        }
+      ]
+    },
+    {
+      "id": "proof-path-builder",
+      "title": "Proof Path Builder",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/proof-path-builder/",
+      "placements": [
+        {
+          "course": "geometry",
+          "unit": "01",
+          "lesson": "02",
+          "lesson_title": "Segments, Rays, Angles & Notation",
+          "mode": "angles",
+          "query": "?course=geometry&unit=01&lesson=02&mode=angles"
+        },
+        {
+          "course": "geometry",
+          "unit": "01",
+          "lesson": "06",
+          "lesson_title": "Two-Column, Flow & Paragraph Proofs",
+          "mode": "proof",
+          "query": "?course=geometry&unit=01&lesson=06&mode=proof"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "02",
+          "lesson_title": "SSS and SAS Congruence",
+          "mode": "triangles",
+          "query": "?course=geometry&unit=03&lesson=02&mode=triangles"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "03",
+          "lesson_title": "ASA, AAS and HL Congruence",
+          "mode": "triangles",
+          "query": "?course=geometry&unit=03&lesson=03&mode=triangles"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "04",
+          "lesson_title": "CPCTC and Multi-Step Triangle Proofs",
+          "mode": "triangles",
+          "query": "?course=geometry&unit=03&lesson=04&mode=triangles"
+        },
+        {
+          "course": "geometry",
+          "unit": "04",
+          "lesson": "01",
+          "lesson_title": "Parallel Lines Cut by a Transversal",
+          "mode": "parallel",
+          "query": "?course=geometry&unit=04&lesson=01&mode=parallel"
+        },
+        {
+          "course": "geometry",
+          "unit": "04",
+          "lesson": "02",
+          "lesson_title": "Proving Lines Parallel from Angle Relationships",
+          "mode": "parallel",
+          "query": "?course=geometry&unit=04&lesson=02&mode=parallel"
+        },
+        {
+          "course": "geometry",
+          "unit": "01",
+          "lesson": "05",
+          "lesson_title": "Conditional Statements, Converses & Counterexamples",
+          "mode": "conditional-proof-reasoning",
+          "query": "?course=geometry&unit=01&lesson=u01-l05"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "01",
+          "lesson_title": "Triangle Classification & Angle Relationships",
+          "mode": "triangle-angle-reasoning",
+          "query": "?course=geometry&unit=03&lesson=u03-l01"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "05",
+          "lesson_title": "Isosceles and Equilateral Triangle Theorems",
+          "mode": "isosceles-equilateral-proof",
+          "query": "?course=geometry&unit=03&lesson=u03-l05"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "07",
+          "lesson_title": "Perpendicular Bisectors, Angle Bisectors & Centers",
+          "mode": "bisectors-centers-proof",
+          "query": "?course=geometry&unit=03&lesson=u03-l07"
+        }
+      ]
+    },
+    {
+      "id": "transformation-plane",
+      "title": "Transformation Plane",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/transformation-plane/",
+      "placements": [
+        {
+          "course": "geometry",
+          "unit": "02",
+          "lesson": "01",
+          "lesson_title": "Translations on the Coordinate Plane",
+          "mode": "translate",
+          "query": "?course=geometry&unit=02&lesson=01&mode=translate"
+        },
+        {
+          "course": "geometry",
+          "unit": "02",
+          "lesson": "02",
+          "lesson_title": "Reflections Across Axes and Lines",
+          "mode": "reflect",
+          "query": "?course=geometry&unit=02&lesson=02&mode=reflect"
+        },
+        {
+          "course": "geometry",
+          "unit": "02",
+          "lesson": "03",
+          "lesson_title": "Rotations About the Origin and Other Centers",
+          "mode": "rotate",
+          "query": "?course=geometry&unit=02&lesson=03&mode=rotate"
+        },
+        {
+          "course": "geometry",
+          "unit": "02",
+          "lesson": "04",
+          "lesson_title": "Compositions of Transformations",
+          "mode": "mixed",
+          "query": "?course=geometry&unit=02&lesson=04&mode=mixed"
+        },
+        {
+          "course": "geometry",
+          "unit": "02",
+          "lesson": "05",
+          "lesson_title": "Rigid Motion Definition of Congruence",
+          "mode": "mixed",
+          "query": "?course=geometry&unit=02&lesson=05&mode=mixed"
+        },
+        {
+          "course": "geometry",
+          "unit": "02",
+          "lesson": "07",
+          "lesson_title": "Tessellations, Frieze Patterns & Design Rules",
+          "mode": "tessellation-transformations",
+          "query": "?course=geometry&unit=02&lesson=u02-l07"
+        }
+      ]
+    },
+    {
+      "id": "congruence-similarity-lab",
+      "title": "Congruence & Similarity Lab",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/congruence-similarity-lab/",
+      "placements": [
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "02",
+          "lesson_title": "SSS and SAS Congruence",
+          "mode": "congruence",
+          "query": "?course=geometry&unit=03&lesson=02&mode=congruence"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "03",
+          "lesson_title": "ASA, AAS and HL Congruence",
+          "mode": "congruence",
+          "query": "?course=geometry&unit=03&lesson=03&mode=congruence"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "04",
+          "lesson_title": "CPCTC and Multi-Step Triangle Proofs",
+          "mode": "correspondence",
+          "query": "?course=geometry&unit=03&lesson=04&mode=correspondence"
+        },
+        {
+          "course": "geometry",
+          "unit": "05",
+          "lesson": "01",
+          "lesson_title": "Dilations from a Center",
+          "mode": "scale",
+          "query": "?course=geometry&unit=05&lesson=01&mode=scale"
+        },
+        {
+          "course": "geometry",
+          "unit": "05",
+          "lesson": "02",
+          "lesson_title": "Similarity Through Transformations",
+          "mode": "similarity",
+          "query": "?course=geometry&unit=05&lesson=02&mode=similarity"
+        },
+        {
+          "course": "geometry",
+          "unit": "05",
+          "lesson": "03",
+          "lesson_title": "AA Similarity and Triangle Proportions",
+          "mode": "similarity",
+          "query": "?course=geometry&unit=05&lesson=03&mode=similarity"
+        },
+        {
+          "course": "geometry",
+          "unit": "05",
+          "lesson": "04",
+          "lesson_title": "SSS and SAS Similarity",
+          "mode": "similarity",
+          "query": "?course=geometry&unit=05&lesson=04&mode=similarity"
+        },
+        {
+          "course": "geometry",
+          "unit": "05",
+          "lesson": "05",
+          "lesson_title": "Side-Splitter and Proportional Segments",
+          "mode": "scale",
+          "query": "?course=geometry&unit=05&lesson=05&mode=scale"
+        },
+        {
+          "course": "geometry",
+          "unit": "05",
+          "lesson": "06",
+          "lesson_title": "Scale Drawings, Maps & Models",
+          "mode": "scale",
+          "query": "?course=geometry&unit=05&lesson=06&mode=scale"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "06",
+          "lesson_title": "Scale Drawings, Maps & Similar Figures",
+          "mode": "scale-similarity-foundations",
+          "query": "?course=prealgebra&unit=04&lesson=06"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "05",
+          "lesson_title": "Scale Drawings, Similarity & Dilations",
+          "mode": "scale-dilations",
+          "query": "?course=prealgebra&unit=11&lesson=05"
+        },
+        {
+          "course": "geometry",
+          "unit": "05",
+          "lesson": "07",
+          "lesson_title": "Indirect Measurement, Shadows & Mirrors",
+          "mode": "indirect-measurement-similarity",
+          "query": "?course=geometry&unit=05&lesson=u05-l07"
+        }
+      ]
+    },
+    {
+      "id": "circle-theorem-studio",
+      "title": "Circle Theorem Studio",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/circle-theorem-studio/",
+      "placements": [
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "01",
+          "lesson_title": "Circle Vocabulary, Radius, Diameter & Chords",
+          "mode": "mixed",
+          "query": "?course=geometry&unit=08&lesson=01&mode=mixed"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "02",
+          "lesson_title": "Central Angles, Arcs & Arc Length",
+          "mode": "central",
+          "query": "?course=geometry&unit=08&lesson=02&mode=central"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "03",
+          "lesson_title": "Inscribed Angles & Intercepted Arcs",
+          "mode": "inscribed",
+          "query": "?course=geometry&unit=08&lesson=03&mode=inscribed"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "04",
+          "lesson_title": "Chords, Perpendicular Bisectors & Distances",
+          "mode": "chords",
+          "query": "?course=geometry&unit=08&lesson=04&mode=chords"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "05",
+          "lesson_title": "Tangents and Radius Relationships",
+          "mode": "tangent",
+          "query": "?course=geometry&unit=08&lesson=05&mode=tangent"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "06",
+          "lesson_title": "Secant, Chord & Tangent Power Theorems",
+          "mode": "circle-power-theorems",
+          "query": "?course=geometry&unit=08&lesson=u08-l06"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "11",
+          "lesson": "06",
+          "lesson_title": "Circle Equations, Radical Models & Verification",
+          "mode": "circle-equation-verification",
+          "query": "?course=algebra1&unit=11&lesson=06"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "07",
+          "lesson_title": "Sector Area, Segment Area & Annuli",
+          "mode": "sector-segment-area",
+          "query": "?course=geometry&unit=08&lesson=u08-l07"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "08",
+          "lesson_title": "Equation of a Circle & Coordinate Applications",
+          "mode": "circle-equation-coordinate",
+          "query": "?course=geometry&unit=08&lesson=u08-l08"
+        }
+      ]
+    },
+    {
+      "id": "right-triangle-trig",
+      "title": "Right Triangle Trig",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/right-triangle-trig/",
+      "placements": [
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "01",
+          "lesson_title": "Pythagorean Theorem & Its Converse",
+          "mode": "pythagorean",
+          "query": "?course=geometry&unit=06&lesson=01&mode=pythagorean"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "05",
+          "lesson_title": "Sine, Cosine & Tangent Ratios",
+          "mode": "ratios",
+          "query": "?course=geometry&unit=06&lesson=05&mode=ratios"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "06",
+          "lesson_title": "Inverse Trigonometry & Angle Measure",
+          "mode": "angles",
+          "query": "?course=geometry&unit=06&lesson=06&mode=angles"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "07",
+          "lesson_title": "Angles of Elevation and Depression",
+          "mode": "sides",
+          "query": "?course=geometry&unit=06&lesson=07&mode=sides"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "08",
+          "lesson_title": "Bearings, Vectors & Multi-Step Navigation",
+          "mode": "mixed",
+          "query": "?course=geometry&unit=06&lesson=08&mode=mixed"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "02",
+          "lesson_title": "Special Right Triangles: 45-45-90",
+          "mode": "special-right-45-45-90",
+          "query": "?course=geometry&unit=06&lesson=u06-l02"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "03",
+          "lesson_title": "Special Right Triangles: 30-60-90",
+          "mode": "special-right-30-60-90",
+          "query": "?course=geometry&unit=06&lesson=u06-l03"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "11",
+          "lesson": "04",
+          "lesson_title": "Pythagorean Theorem & Distance",
+          "mode": "pythagorean-distance",
+          "query": "?course=algebra1&unit=11&lesson=04"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "04",
+          "lesson_title": "Geometric Mean & Right-Triangle Altitudes",
+          "mode": "right-triangle-altitudes",
+          "query": "?course=geometry&unit=06&lesson=u06-l04"
+        }
+      ]
+    },
+    {
+      "id": "function-transformation-studio",
+      "title": "Function Transformation Studio",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/function-transformation-studio/",
+      "placements": [
+        {
+          "course": "algebra-1",
+          "unit": "05",
+          "lesson": "05",
+          "lesson_title": "Transformations of Parent Functions",
+          "mode": "transforms-basic",
+          "query": "?course=algebra1&unit=05&lesson=05&mode=transforms-basic"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "01",
+          "lesson": "03",
+          "lesson_title": "Transformations of Parent Functions",
+          "mode": "transforms-advanced",
+          "query": "?course=algebra2&unit=01&lesson=u01-l03&mode=transforms-advanced"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "01",
+          "lesson": "05",
+          "lesson_title": "Inverse Functions & One-to-One Relationships",
+          "mode": "inverse-linear",
+          "query": "?course=algebra2&unit=01&lesson=u01-l05&mode=inverse-linear"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "05",
+          "lesson_title": "Reciprocal Functions, Asymptotes & Holes",
+          "mode": "reciprocal-function-features",
+          "query": "?course=algebra2&unit=04&lesson=u04-l05"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "06",
+          "lesson_title": "Transformations and Features of Rational Functions",
+          "mode": "rational-function-transformations",
+          "query": "?course=algebra2&unit=04&lesson=u04-l06"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "05",
+          "lesson": "05",
+          "lesson_title": "Radical Functions, Domains & Transformations",
+          "mode": "radical-function-transformations",
+          "query": "?course=algebra2&unit=05&lesson=u05-l05"
+        }
+      ]
+    },
+    {
+      "id": "exponential-logarithm-lab",
+      "title": "Exponential & Logarithm Lab",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/exponential-logarithm-lab/",
+      "placements": [
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "01",
+          "lesson_title": "Exponential Function Structure & Parameters",
+          "mode": "growth",
+          "query": "?course=algebra2&unit=06&lesson=u06-l01&mode=growth"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "02",
+          "lesson_title": "Growth, Decay & Percent Change",
+          "mode": "growth",
+          "query": "?course=algebra2&unit=06&lesson=u06-l02&mode=growth"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "03",
+          "lesson_title": "Compound Interest & Effective Rates",
+          "mode": "finance",
+          "query": "?course=algebra2&unit=06&lesson=u06-l03&mode=finance"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "04",
+          "lesson_title": "Continuous Growth, Decay & the Constant e",
+          "mode": "continuous",
+          "query": "?course=algebra2&unit=06&lesson=u06-l04&mode=continuous"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "05",
+          "lesson_title": "Solving Exponential Equations by Common Bases",
+          "mode": "exp-common",
+          "query": "?course=algebra2&unit=06&lesson=u06-l05&mode=exp-common"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "06",
+          "lesson_title": "Exponential Regression & Data Modelling",
+          "mode": "model-compare",
+          "query": "?course=algebra2&unit=06&lesson=u06-l06&mode=model-compare"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "07",
+          "lesson_title": "Comparing Linear, Quadratic & Exponential Models",
+          "mode": "model-compare",
+          "query": "?course=algebra2&unit=06&lesson=u06-l07&mode=model-compare"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "07",
+          "lesson": "01",
+          "lesson_title": "Logarithms as Inverses of Exponentials",
+          "mode": "log-inverse",
+          "query": "?course=algebra2&unit=07&lesson=u07-l01&mode=log-inverse"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "07",
+          "lesson": "02",
+          "lesson_title": "Common, Natural & Other Logarithmic Bases",
+          "mode": "log-inverse",
+          "query": "?course=algebra2&unit=07&lesson=u07-l02&mode=log-inverse"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "07",
+          "lesson": "03",
+          "lesson_title": "Product, Quotient & Power Properties",
+          "mode": "log-laws",
+          "query": "?course=algebra2&unit=07&lesson=u07-l03&mode=log-laws"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "07",
+          "lesson": "04",
+          "lesson_title": "Solving Exponential Equations with Logarithms",
+          "mode": "exp-log",
+          "query": "?course=algebra2&unit=07&lesson=u07-l04&mode=exp-log"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "07",
+          "lesson": "05",
+          "lesson_title": "Solving Logarithmic Equations & Domain Checks",
+          "mode": "log-domain",
+          "query": "?course=algebra2&unit=07&lesson=u07-l05&mode=log-domain"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "07",
+          "lesson": "06",
+          "lesson_title": "Change of Base, Technology & Estimation",
+          "mode": "change-base",
+          "query": "?course=algebra2&unit=07&lesson=u07-l06&mode=change-base"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "07",
+          "lesson": "07",
+          "lesson_title": "Logarithmic Scales, Data & Model Interpretation",
+          "mode": "model-compare",
+          "query": "?course=algebra2&unit=07&lesson=u07-l07&mode=model-compare"
+        }
+      ]
+    },
+    {
+      "id": "polynomial-zeros-explorer",
+      "title": "Polynomial Zeros Explorer",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/polynomial-zeros-explorer/",
+      "placements": [
+        {
+          "course": "algebra-2",
+          "unit": "02",
+          "lesson": "01",
+          "lesson_title": "Polynomial Vocabulary, Degree & Structure",
+          "mode": "structure",
+          "query": "?course=algebra2&unit=02&lesson=u02-l01&mode=structure"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "02",
+          "lesson": "02",
+          "lesson_title": "Polynomial Operations & Equivalent Forms",
+          "mode": "expand",
+          "query": "?course=algebra2&unit=02&lesson=u02-l02&mode=expand"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "02",
+          "lesson": "03",
+          "lesson_title": "Power Functions & End Behavior",
+          "mode": "end",
+          "query": "?course=algebra2&unit=02&lesson=u02-l03&mode=end"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "02",
+          "lesson": "06",
+          "lesson_title": "Quadratic Equations with Complex Solutions",
+          "mode": "complex",
+          "query": "?course=algebra2&unit=02&lesson=u02-l06&mode=complex"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "02",
+          "lesson": "07",
+          "lesson_title": "Conjugates, Modulus & the Complex Plane",
+          "mode": "conjugate",
+          "query": "?course=algebra2&unit=02&lesson=u02-l07&mode=conjugate"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "02",
+          "lesson": "08",
+          "lesson_title": "Fundamental Theorem of Algebra & Complete Factorization",
+          "mode": "fta",
+          "query": "?course=algebra2&unit=02&lesson=u02-l08&mode=fta"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "03",
+          "lesson": "01",
+          "lesson_title": "Long Division of Polynomials",
+          "mode": "division",
+          "query": "?course=algebra2&unit=03&lesson=u03-l01&mode=division"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "03",
+          "lesson": "02",
+          "lesson_title": "Synthetic Division & Efficient Evaluation",
+          "mode": "division",
+          "query": "?course=algebra2&unit=03&lesson=u03-l02&mode=division"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "03",
+          "lesson": "03",
+          "lesson_title": "Remainder and Factor Theorems",
+          "mode": "remainder",
+          "query": "?course=algebra2&unit=03&lesson=u03-l03&mode=remainder"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "03",
+          "lesson": "04",
+          "lesson_title": "Rational Root Theorem & Candidate Zeros",
+          "mode": "rational",
+          "query": "?course=algebra2&unit=03&lesson=u03-l04&mode=rational"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "03",
+          "lesson": "05",
+          "lesson_title": "Solving Higher-Degree Polynomial Equations",
+          "mode": "roots",
+          "query": "?course=algebra2&unit=03&lesson=u03-l05&mode=roots"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "03",
+          "lesson": "06",
+          "lesson_title": "Zeros, Multiplicity & Graph Behavior",
+          "mode": "multiplicity",
+          "query": "?course=algebra2&unit=03&lesson=u03-l06&mode=multiplicity"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "03",
+          "lesson": "07",
+          "lesson_title": "Polynomial Regression, Interpolation & Model Limits",
+          "mode": "model",
+          "query": "?course=algebra2&unit=03&lesson=u03-l07&mode=model"
+        }
+      ]
+    },
+    {
+      "id": "matrix-mission-control",
+      "title": "Matrix Mission Control",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/matrix-mission-control/",
+      "placements": [
+        {
+          "course": "algebra-2",
+          "unit": "08",
+          "lesson": "01",
+          "lesson_title": "Graphical Solutions of Linear–Nonlinear Systems",
+          "mode": "graph",
+          "query": "?course=algebra2&unit=08&lesson=u08-l01&mode=graph"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "08",
+          "lesson": "02",
+          "lesson_title": "Solving Nonlinear Systems by Substitution",
+          "mode": "substitution",
+          "query": "?course=algebra2&unit=08&lesson=u08-l02&mode=substitution"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "08",
+          "lesson": "03",
+          "lesson_title": "Polynomial, Rational & Radical Systems",
+          "mode": "radical",
+          "query": "?course=algebra2&unit=08&lesson=u08-l03&mode=radical"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "08",
+          "lesson": "04",
+          "lesson_title": "Matrix Vocabulary, Dimensions & Operations",
+          "mode": "operations",
+          "query": "?course=algebra2&unit=08&lesson=u08-l04&mode=operations"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "08",
+          "lesson": "05",
+          "lesson_title": "Matrix Equations, Row Reduction & Systems",
+          "mode": "rows",
+          "query": "?course=algebra2&unit=08&lesson=u08-l05&mode=rows"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "08",
+          "lesson": "06",
+          "lesson_title": "Determinants, Inverses & Transformation Models",
+          "mode": "det-inverse",
+          "query": "?course=algebra2&unit=08&lesson=u08-l06&mode=det-inverse"
+        }
+      ]
+    },
+    {
+      "id": "sequence-series-studio",
+      "title": "Sequence & Series Studio",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/sequence-series-studio/",
+      "placements": [
+        {
+          "course": "algebra-2",
+          "unit": "09",
+          "lesson": "01",
+          "lesson_title": "Arithmetic Sequences: Explicit & Recursive Forms",
+          "mode": "arithmetic",
+          "query": "?course=algebra2&unit=09&lesson=u09-l01&mode=arithmetic"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "09",
+          "lesson": "02",
+          "lesson_title": "Geometric Sequences: Growth, Decay & Recursion",
+          "mode": "geometric",
+          "query": "?course=algebra2&unit=09&lesson=u09-l02&mode=geometric"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "09",
+          "lesson": "03",
+          "lesson_title": "General Sequences, Patterns & Difference Tables",
+          "mode": "patterns",
+          "query": "?course=algebra2&unit=09&lesson=u09-l03&mode=patterns"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "09",
+          "lesson": "04",
+          "lesson_title": "Finite Arithmetic & Geometric Series",
+          "mode": "finite",
+          "query": "?course=algebra2&unit=09&lesson=u09-l04&mode=finite"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "09",
+          "lesson": "05",
+          "lesson_title": "Infinite Geometric Series & Convergence",
+          "mode": "infinite",
+          "query": "?course=algebra2&unit=09&lesson=u09-l05&mode=infinite"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "09",
+          "lesson": "06",
+          "lesson_title": "Sigma Notation & Summation Properties",
+          "mode": "sigma",
+          "query": "?course=algebra2&unit=09&lesson=u09-l06&mode=sigma"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "09",
+          "lesson": "07",
+          "lesson_title": "Pascal’s Triangle & the Binomial Theorem",
+          "mode": "binomial",
+          "query": "?course=algebra2&unit=09&lesson=u09-l07&mode=binomial"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "08",
+          "lesson": "04",
+          "lesson_title": "Arithmetic & Geometric Sequences",
+          "mode": "patterns",
+          "query": "?course=algebra1&unit=08&lesson=04&mode=patterns"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "08",
+          "lesson": "05",
+          "lesson_title": "Exponential Functions: Growth & Decay",
+          "mode": "growth",
+          "query": "?course=algebra1&unit=08&lesson=05&mode=growth"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "02",
+          "lesson_title": "Patterns, Sequences & Rules",
+          "mode": "sequence-pattern-foundations",
+          "query": "?course=prealgebra&unit=10&lesson=02"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "05",
+          "lesson": "07",
+          "lesson_title": "Arithmetic Sequences as Functions & Inverse Thinking",
+          "mode": "arithmetic-sequence-functions",
+          "query": "?course=algebra1&unit=05&lesson=07"
+        }
+      ]
+    },
+    {
+      "id": "complex-plane-lab",
+      "title": "Complex Plane Lab",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/complex-plane-lab/",
+      "placements": [
+        {
+          "course": "algebra-2",
+          "unit": "02",
+          "lesson": "04",
+          "lesson_title": "The Imaginary Unit & Powers of i",
+          "mode": "powers",
+          "query": "?course=algebra2&unit=02&lesson=u02-l04&mode=powers"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "02",
+          "lesson": "05",
+          "lesson_title": "Operations with Complex Numbers",
+          "mode": "add",
+          "query": "?course=algebra2&unit=02&lesson=u02-l05&mode=add"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "02",
+          "lesson": "06",
+          "lesson_title": "Quadratic Equations with Complex Solutions",
+          "mode": "quadratic",
+          "query": "?course=algebra2&unit=02&lesson=u02-l06&mode=quadratic"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "02",
+          "lesson": "07",
+          "lesson_title": "Conjugates, Modulus & the Complex Plane",
+          "mode": "conjugate",
+          "query": "?course=algebra2&unit=02&lesson=u02-l07&mode=conjugate"
+        }
+      ]
+    },
+    {
+      "id": "statistics-detective",
+      "title": "Statistics Detective",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/statistics-detective/",
+      "placements": [
+        {
+          "course": "algebra-1",
+          "unit": "12",
+          "lesson": "01",
+          "lesson_title": "Statistical Questions, Study Design & Data Ethics",
+          "mode": "design",
+          "query": "?course=algebra1&unit=12&lesson=01&mode=design"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "12",
+          "lesson": "02",
+          "lesson_title": "Distributions, Center, Spread & Standard Deviation",
+          "mode": "center",
+          "query": "?course=algebra1&unit=12&lesson=02&mode=center"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "12",
+          "lesson": "03",
+          "lesson_title": "Box Plots, Histograms & Comparing Groups",
+          "mode": "box",
+          "query": "?course=algebra1&unit=12&lesson=03&mode=box"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "12",
+          "lesson": "04",
+          "lesson_title": "Bivariate Data, Correlation, Causation & Residuals",
+          "mode": "regression",
+          "query": "?course=algebra1&unit=12&lesson=04&mode=regression"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "12",
+          "lesson": "05",
+          "lesson_title": "Two-Way Tables, Conditional Relative Frequency & Probability",
+          "mode": "conditional",
+          "query": "?course=algebra1&unit=12&lesson=05&mode=conditional"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "12",
+          "lesson": "07",
+          "lesson_title": "Evaluating Quantitative Claims & Communicating Evidence",
+          "mode": "claims",
+          "query": "?course=algebra1&unit=12&lesson=07&mode=claims"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "12",
+          "lesson": "05",
+          "lesson_title": "Normal Distributions, z-Scores & Percentiles",
+          "mode": "zscore",
+          "query": "?course=algebra2&unit=12&lesson=u12-l05&mode=zscore"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "12",
+          "lesson": "06",
+          "lesson_title": "Sampling, Bias, Margin of Error & Study Design",
+          "mode": "sampling",
+          "query": "?course=algebra2&unit=12&lesson=u12-l06&mode=sampling"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "12",
+          "lesson": "07",
+          "lesson_title": "Evaluating Statistical Claims & Communicating Uncertainty",
+          "mode": "claims",
+          "query": "?course=algebra2&unit=12&lesson=u12-l07&mode=claims"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "08",
+          "lesson_title": "Linear Modelling, Prediction & Residuals",
+          "mode": "residuals-model-fit",
+          "query": "?course=prealgebra&unit=10&lesson=08"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "12",
+          "lesson": "01",
+          "lesson_title": "Data Questions, Variables, Populations & Samples",
+          "mode": "statistical-questions",
+          "query": "?course=prealgebra&unit=12&lesson=01"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "12",
+          "lesson": "02",
+          "lesson_title": "Frequency Tables, Dot Plots, Histograms & Box Plots",
+          "mode": "data-displays",
+          "query": "?course=prealgebra&unit=12&lesson=02"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "12",
+          "lesson": "03",
+          "lesson_title": "Measures of Center",
+          "mode": "measures-center",
+          "query": "?course=prealgebra&unit=12&lesson=03"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "12",
+          "lesson": "04",
+          "lesson_title": "Variability, IQR, MAD & Outliers",
+          "mode": "variability-outliers",
+          "query": "?course=prealgebra&unit=12&lesson=04"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "12",
+          "lesson": "05",
+          "lesson_title": "Comparing Distributions & Misleading Displays",
+          "mode": "distribution-comparison",
+          "query": "?course=prealgebra&unit=12&lesson=05"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "12",
+          "lesson": "08",
+          "lesson_title": "Sampling, Bias, Association & Evidence Decisions",
+          "mode": "sampling-bias-evidence",
+          "query": "?course=prealgebra&unit=12&lesson=08"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "06",
+          "lesson_title": "Scatterplots, Correlation & Lines of Fit",
+          "mode": "scatterplots-correlation",
+          "query": "?course=algebra1&unit=06&lesson=06"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "07",
+          "lesson_title": "Regression, Residuals & Model Limitations",
+          "mode": "regression-residuals",
+          "query": "?course=algebra1&unit=06&lesson=07"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "08",
+          "lesson_title": "Linear Modelling, Prediction & Decision-Making",
+          "mode": "linear-model-decisions",
+          "query": "?course=algebra1&unit=06&lesson=08"
+        }
+      ]
+    },
+    {
+      "id": "probability-quest",
+      "title": "Probability Quest",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/probability-quest/",
+      "placements": [
+        {
+          "course": "algebra-2",
+          "unit": "12",
+          "lesson": "01",
+          "lesson_title": "Fundamental Counting Principle, Permutations & Combinations",
+          "mode": "counting",
+          "query": "?course=algebra2&unit=12&lesson=u12-l01&mode=counting"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "12",
+          "lesson": "02",
+          "lesson_title": "Probability Rules, Complements & Unions",
+          "mode": "union",
+          "query": "?course=algebra2&unit=12&lesson=u12-l02&mode=union"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "12",
+          "lesson": "03",
+          "lesson_title": "Conditional Probability, Independence & Bayes Reasoning",
+          "mode": "bayes",
+          "query": "?course=algebra2&unit=12&lesson=u12-l03&mode=bayes"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "12",
+          "lesson": "04",
+          "lesson_title": "Binomial Experiments & Expected Value",
+          "mode": "binomial",
+          "query": "?course=algebra2&unit=12&lesson=u12-l04&mode=binomial"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "12",
+          "lesson": "06",
+          "lesson_title": "Probability Models, Sample Spaces & Relative Frequency",
+          "mode": "probability-foundations",
+          "query": "?course=prealgebra&unit=12&lesson=06"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "12",
+          "lesson": "07",
+          "lesson_title": "Compound Probability, Tree Diagrams & Simulation",
+          "mode": "compound-probability",
+          "query": "?course=prealgebra&unit=12&lesson=07"
+        }
+      ]
+    },
+    {
+      "id": "unit-circle-navigator",
+      "title": "Unit Circle Navigator",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/unit-circle-navigator/",
+      "placements": [
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "01",
+          "lesson_title": "Angle Measure, Radians & Coterminal Angles",
+          "mode": "radians",
+          "query": "?course=algebra2&unit=10&lesson=u10-l01&mode=radians"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "02",
+          "lesson_title": "The Unit Circle & Coordinate Definitions",
+          "mode": "coordinates",
+          "query": "?course=algebra2&unit=10&lesson=u10-l02&mode=coordinates"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "03",
+          "lesson_title": "Exact Trigonometric Values & Reference Angles",
+          "mode": "reference",
+          "query": "?course=algebra2&unit=10&lesson=u10-l03&mode=reference"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "04",
+          "lesson_title": "Six Trigonometric Functions & Reciprocal Relationships",
+          "mode": "reciprocal",
+          "query": "?course=algebra2&unit=10&lesson=u10-l04&mode=reciprocal"
+        }
+      ]
+    },
+    {
+      "id": "trigonometric-wave-studio",
+      "title": "Trigonometric Wave Studio",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/trigonometric-wave-studio/",
+      "placements": [
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "05",
+          "lesson_title": "Graphs of Sine and Cosine",
+          "mode": "waves",
+          "query": "?course=algebra2&unit=10&lesson=u10-l05&mode=waves"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "06",
+          "lesson_title": "Amplitude, Period, Phase & Vertical Shifts",
+          "mode": "amplitude",
+          "query": "?course=algebra2&unit=10&lesson=u10-l06&mode=amplitude"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "07",
+          "lesson_title": "Graphs of Tangent, Cotangent, Secant & Cosecant",
+          "mode": "asymptotes",
+          "query": "?course=algebra2&unit=10&lesson=u10-l07&mode=asymptotes"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "08",
+          "lesson_title": "Inverse Trigonometric Functions & Restricted Domains",
+          "mode": "inverse",
+          "query": "?course=algebra2&unit=10&lesson=u10-l08&mode=inverse"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "09",
+          "lesson_title": "Sinusoidal Regression & Periodic Data",
+          "mode": "fit",
+          "query": "?course=algebra2&unit=10&lesson=u10-l09&mode=fit"
+        }
+      ]
+    },
+    {
+      "id": "trigonometric-identity-forge",
+      "title": "Trigonometric Identity Forge",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/trigonometric-identity-forge/",
+      "placements": [
+        {
+          "course": "algebra-2",
+          "unit": "11",
+          "lesson": "01",
+          "lesson_title": "Fundamental, Reciprocal & Pythagorean Identities",
+          "mode": "fundamental",
+          "query": "?course=algebra2&unit=11&lesson=u11-l01&mode=fundamental"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "11",
+          "lesson": "02",
+          "lesson_title": "Verifying Identities with Equivalent Transformations",
+          "mode": "proof",
+          "query": "?course=algebra2&unit=11&lesson=u11-l02&mode=proof"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "11",
+          "lesson": "03",
+          "lesson_title": "Sum and Difference Identities",
+          "mode": "sum",
+          "query": "?course=algebra2&unit=11&lesson=u11-l03&mode=sum"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "11",
+          "lesson": "04",
+          "lesson_title": "Double-Angle and Half-Angle Identities",
+          "mode": "double",
+          "query": "?course=algebra2&unit=11&lesson=u11-l04&mode=double"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "11",
+          "lesson": "05",
+          "lesson_title": "Solving Trigonometric Equations on Intervals",
+          "mode": "equations",
+          "query": "?course=algebra2&unit=11&lesson=u11-l05&mode=equations"
+        }
+      ]
+    },
+    {
+      "id": "triangle-law-expedition",
+      "title": "Triangle Law Expedition",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/triangle-law-expedition/",
+      "placements": [
+        {
+          "course": "algebra-2",
+          "unit": "11",
+          "lesson": "06",
+          "lesson_title": "Law of Sines, Ambiguous Case & Applications",
+          "mode": "sines",
+          "query": "?course=algebra2&unit=11&lesson=u11-l06&mode=sines"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "11",
+          "lesson": "07",
+          "lesson_title": "Law of Cosines & Heron-Type Area Reasoning",
+          "mode": "cosine-sas",
+          "query": "?course=algebra2&unit=11&lesson=u11-l07&mode=cosine-sas"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "11",
+          "lesson": "08",
+          "lesson_title": "Navigation, Vectors & Multi-Step Triangle Models",
+          "mode": "navigation",
+          "query": "?course=algebra2&unit=11&lesson=u11-l08&mode=navigation"
+        }
+      ]
+    },
+    {
+      "id": "algebra-evidence-interval-lab",
+      "title": "Evidence & Interval Studio",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/algebra-evidence-interval-lab/",
+      "placements": [
+        {
+          "course": "algebra-1",
+          "unit": "01",
+          "lesson": "01",
+          "lesson_title": "Algebraic Habits, Notation & Mathematical Argument",
+          "mode": "argument",
+          "query": "?course=algebra1&unit=01&lesson=01&mode=argument"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "01",
+          "lesson": "02",
+          "lesson_title": "The Real Number System & Interval Representations",
+          "mode": "interval",
+          "query": "?course=algebra1&unit=01&lesson=02&mode=interval"
+        }
+      ]
+    },
+    {
+      "id": "exponent-pattern-explorer",
+      "title": "Exponent Pattern Explorer",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-unplaced",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/exponent-pattern-explorer/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "06",
+          "lesson": "02",
+          "lesson_title": "Zero & Negative Exponents Through Patterns",
+          "mode": "zero-negative-exponents",
+          "query": "?course=prealgebra&unit=06&lesson=02"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "08",
+          "lesson": "02",
+          "lesson_title": "Zero, Negative & Rational Exponents",
+          "mode": "zero-negative-rational-exponents",
+          "query": "?course=algebra1&unit=08&lesson=02"
+        }
+      ]
+    },
+    {
+      "id": "exponent-properties-lab",
+      "title": "Exponent Properties Lab",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-unplaced",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/exponent-properties-lab/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "06",
+          "lesson": "03",
+          "lesson_title": "Exponent Properties & Equivalent Expressions",
+          "mode": "exponent-properties",
+          "query": "?course=prealgebra&unit=06&lesson=03"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "08",
+          "lesson": "01",
+          "lesson_title": "Exponent Laws & Equivalent Forms",
+          "mode": "algebra1-exponent-laws",
+          "query": "?course=algebra1&unit=08&lesson=01"
+        }
+      ]
+    },
+    {
+      "id": "interest-fees-decision-lab",
+      "title": "Interest Fees Decision Lab",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-unplaced",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/interest-fees-decision-lab/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "05",
+          "lesson": "07",
+          "lesson_title": "Simple Interest, Fees & Financial Comparisons",
+          "mode": "interest-fee-comparisons",
+          "query": "?course=prealgebra&unit=05&lesson=07"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "08",
+          "lesson": "06",
+          "lesson_title": "Compound Interest, Half-Life & Exponential Modelling",
+          "mode": "compound-interest-comparison",
+          "query": "?course=algebra1&unit=08&lesson=06"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "12",
+          "lesson": "06",
+          "lesson_title": "Financial Mathematics: Growth, Loans, Taxes & Risk",
+          "mode": "financial-risk-comparisons",
+          "query": "?course=algebra1&unit=12&lesson=06"
+        }
+      ]
+    },
+    {
+      "id": "irrational-root-estimation-quest",
+      "title": "Irrational Root Estimation Quest",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-unplaced",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/irrational-root-estimation-quest/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "06",
+          "lesson": "05",
+          "lesson_title": "Estimating Irrational Roots",
+          "mode": "irrational-root-estimation",
+          "query": "?course=prealgebra&unit=06&lesson=05"
+        }
+      ]
+    },
+    {
+      "id": "market-math-mission",
+      "title": "Market Math Mission",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-unplaced",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/market-math-mission/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "05",
+          "lesson": "05",
+          "lesson_title": "Discounts, Tax, Tips & Commission",
+          "mode": "market-percent-decisions",
+          "query": "?course=prealgebra&unit=05&lesson=05"
+        }
+      ]
+    },
+    {
+      "id": "percent-benchmark-studio",
+      "title": "Percent Benchmark Studio",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/percent-benchmark-studio/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "05",
+          "lesson": "01",
+          "lesson_title": "Percent Meaning, Benchmarks & Equivalent Forms",
+          "mode": "prealgebra-practice",
+          "query": "?course=prealgebra&unit=5&lesson=1"
+        }
+      ]
+    },
+    {
+      "id": "percent-change-mission",
+      "title": "Percent Change Mission",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/percent-change-mission/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "05",
+          "lesson": "04",
+          "lesson_title": "Percent Increase, Decrease & Relative Change",
+          "mode": "prealgebra-practice",
+          "query": "?course=prealgebra&unit=5&lesson=4"
+        }
+      ]
+    },
+    {
+      "id": "percent-of-quantity-lab",
+      "title": "Percent Of Quantity Lab",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/percent-of-quantity-lab/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "05",
+          "lesson": "02",
+          "lesson_title": "Finding Percent of a Quantity",
+          "mode": "prealgebra-practice",
+          "query": "?course=prealgebra&unit=5&lesson=2"
+        }
+      ]
+    },
+    {
+      "id": "percent-rate-whole-detective",
+      "title": "Percent Rate Whole Detective",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/percent-rate-whole-detective/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "05",
+          "lesson": "03",
+          "lesson_title": "Finding Percent, Rate or Whole",
+          "mode": "prealgebra-practice",
+          "query": "?course=prealgebra&unit=5&lesson=3"
+        }
+      ]
+    },
+    {
+      "id": "percentage-point-change-studio",
+      "title": "Percentage Point Change Studio",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-unplaced",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/percentage-point-change-studio/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "05",
+          "lesson": "08",
+          "lesson_title": "Percentage Points, Repeated Change & Decisions",
+          "mode": "percentage-points-repeated-change",
+          "query": "?course=prealgebra&unit=05&lesson=08"
+        }
+      ]
+    },
+    {
+      "id": "perfect-powers-roots-quest",
+      "title": "Perfect Powers Roots Quest",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-unplaced",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/perfect-powers-roots-quest/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "06",
+          "lesson": "04",
+          "lesson_title": "Square & Cube Roots; Perfect Powers",
+          "mode": "perfect-powers-roots",
+          "query": "?course=prealgebra&unit=06&lesson=04"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "11",
+          "lesson": "01",
+          "lesson_title": "Radical Expressions & Principal Roots",
+          "mode": "principal-roots-radicals",
+          "query": "?course=algebra1&unit=11&lesson=01"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "05",
+          "lesson": "01",
+          "lesson_title": "Rational Exponents & Radical Equivalence",
+          "mode": "rational-exponents-radicals",
+          "query": "?course=algebra2&unit=05&lesson=u05-l01"
+        }
+      ]
+    },
+    {
+      "id": "power-grouping-quest",
+      "title": "Power Grouping Quest",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-unplaced",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/power-grouping-quest/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "06",
+          "lesson": "01",
+          "lesson_title": "Exponent Meaning, Powers & Grouping",
+          "mode": "powers-grouping",
+          "query": "?course=prealgebra&unit=06&lesson=01"
+        }
+      ]
+    },
+    {
+      "id": "proportion-solver-mission",
+      "title": "Proportion Solver Mission",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/proportion-solver-mission/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "05",
+          "lesson_title": "Solving Proportions & Direct Variation",
+          "mode": "prealgebra-practice",
+          "query": "?course=prealgebra&unit=4&lesson=5"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "07",
+          "lesson_title": "Direct, Inverse, Joint & Combined Variation",
+          "mode": "variation-proportions",
+          "query": "?course=algebra2&unit=04&lesson=u04-l07"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "03",
+          "lesson": "06",
+          "lesson_title": "Proportions, Direct Variation & Percent Equations",
+          "mode": "algebra1-proportion-equations",
+          "query": "?course=algebra1&unit=03&lesson=06"
+        }
+      ]
+    },
+    {
+      "id": "ratio-table-trail",
+      "title": "Ratio Table Trail",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v3",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/ratio-table-trail/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "02",
+          "lesson_title": "Ratio Tables & Double Number Lines",
+          "mode": "equivalent-ratio-tables",
+          "query": "?course=prealgebra&unit=4&lesson=2"
+        }
+      ]
+    },
+    {
+      "id": "scientific-notation-operations-mission",
+      "title": "Scientific Notation Operations Mission",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-unplaced",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/scientific-notation-operations-mission/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "06",
+          "lesson": "07",
+          "lesson_title": "Operations with Scientific Notation & Applications",
+          "mode": "scientific-notation-operations",
+          "query": "?course=prealgebra&unit=06&lesson=07"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "08",
+          "lesson": "03",
+          "lesson_title": "Scientific Notation & Operations",
+          "mode": "algebra1-scientific-notation",
+          "query": "?course=algebra1&unit=08&lesson=03"
+        }
+      ]
+    },
+    {
+      "id": "scientific-notation-signal-lab",
+      "title": "Scientific Notation Signal Lab",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-unplaced",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/scientific-notation-signal-lab/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "06",
+          "lesson": "06",
+          "lesson_title": "Scientific Notation & Powers of Ten",
+          "mode": "scientific-notation-forms",
+          "query": "?course=prealgebra&unit=06&lesson=06"
+        }
+      ]
+    },
+    {
+      "id": "small-business-math-lab",
+      "title": "Small Business Math Lab",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-unplaced",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/small-business-math-lab/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "05",
+          "lesson": "06",
+          "lesson_title": "Markup, Profit, Loss & Break-Even",
+          "mode": "small-business-decisions",
+          "query": "?course=prealgebra&unit=05&lesson=06"
+        }
+      ]
+    },
+    {
+      "id": "algebra-reasoning-foundations",
+      "title": "Algebra Reasoning Foundations",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-unplaced",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/algebra-reasoning-foundations/",
+      "placements": [
+        {
+          "course": "algebra-1",
+          "unit": "01",
+          "lesson": "06",
+          "lesson_title": "Algebra Readiness Synthesis & Error Analysis",
+          "mode": "reasoning-readiness-synthesis",
+          "query": "?course=algebra1&unit=01&lesson=06"
+        }
+      ]
+    },
+    {
+      "id": "algebra-structure-balance-challenge",
+      "title": "Algebra Structure and Balance Challenge",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-unplaced",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/algebra-structure-balance-challenge/",
+      "placements": [
+        {
+          "course": "algebra-1",
+          "unit": "03",
+          "lesson": "04",
+          "lesson_title": "Variables on Both Sides; Identities & Contradictions",
+          "mode": "equation-structure-balance",
+          "query": "?course=algebra1&unit=03&lesson=04"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "06",
+          "lesson_title": "Variables on Both Sides; Identities & Contradictions",
+          "mode": "variables-both-sides",
+          "query": "?course=prealgebra&unit=08&lesson=06"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "08",
+          "lesson_title": "Context Equations, Verification & Error Analysis",
+          "mode": "equation-error-analysis",
+          "query": "?course=prealgebra&unit=08&lesson=08"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "02",
+          "lesson": "03",
+          "lesson_title": "Properties, Equivalence & Structural Reasoning",
+          "mode": "structural-equivalence",
+          "query": "?course=algebra1&unit=02&lesson=03"
+        }
+      ]
+    },
+    {
+      "id": "algebra-functions-systems-challenge",
+      "title": "Algebra Functions and Systems Challenge",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-unplaced",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/algebra-functions-systems-challenge/",
+      "placements": [
+        {
+          "course": "algebra-1",
+          "unit": "07",
+          "lesson": "05",
+          "lesson_title": "Systems from Contexts: Cost, Mixture & Motion",
+          "mode": "contextual-systems",
+          "query": "?course=algebra1&unit=07&lesson=05"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "03",
+          "lesson_title": "Relations, Inputs, Outputs & Functions",
+          "mode": "function-foundations",
+          "query": "?course=prealgebra&unit=10&lesson=03"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "07",
+          "lesson_title": "Linear / Nonlinear & Function Notation",
+          "mode": "linear-nonlinear-functions",
+          "query": "?course=prealgebra&unit=10&lesson=07"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "05",
+          "lesson": "01",
+          "lesson_title": "Relations, Inputs, Outputs & Function Tests",
+          "mode": "function-tests",
+          "query": "?course=algebra1&unit=05&lesson=01"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "05",
+          "lesson": "03",
+          "lesson_title": "Domain & Range from Tables, Graphs & Contexts",
+          "mode": "domain-range-functions",
+          "query": "?course=algebra1&unit=05&lesson=03"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "05",
+          "lesson": "04",
+          "lesson_title": "Multiple Representations & Function Rules",
+          "mode": "multiple-representations",
+          "query": "?course=algebra1&unit=05&lesson=04"
+        }
+      ]
+    },
+    {
+      "id": "algebra-exponents-radicals-challenge",
+      "title": "Algebra Exponents to Radicals Challenge",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-unplaced",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/algebra-exponents-radicals-challenge/",
+      "placements": [
+        {
+          "course": "algebra-1",
+          "unit": "11",
+          "lesson": "03",
+          "lesson_title": "Rational Exponents & Equivalent Radical Forms",
+          "mode": "exponents-radicals-bridge",
+          "query": "?course=algebra1&unit=11&lesson=03"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "05",
+          "lesson": "03",
+          "lesson_title": "Operations with Radicals & Rationalizing",
+          "mode": "radical-operations",
+          "query": "?course=algebra2&unit=05&lesson=u05-l03"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "05",
+          "lesson": "04",
+          "lesson_title": "Solving Radical Equations & Checking Solutions",
+          "mode": "radical-equations-checking",
+          "query": "?course=algebra2&unit=05&lesson=u05-l04"
+        }
+      ]
+    },
+    {
+      "id": "algebra-evidence-modelling-challenge",
+      "title": "Algebra Evidence and Modelling Challenge",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-unplaced",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/algebra-evidence-modelling-challenge/",
+      "placements": [
+        {
+          "course": "algebra-1",
+          "unit": "13",
+          "lesson": "05",
+          "lesson_title": "Present, Defend & Reflect on Algebra I Readiness",
+          "mode": "modelling-defense-reflection",
+          "query": "?course=algebra1&unit=13&lesson=05"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "13",
+          "lesson": "05",
+          "lesson_title": "Present, Defend, Revise & Reflect",
+          "mode": "advanced-model-defense",
+          "query": "?course=algebra2&unit=13&lesson=u13-l05"
+        }
+      ]
+    },
+    {
+      "id": "algebra-language-lab",
+      "title": "Algebra Language Lab",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/algebra-language-lab/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "07",
+          "lesson": "01",
+          "lesson_title": "Variables, Terms, Coefficients & Constants",
+          "mode": "algebra-vocabulary-foundations",
+          "query": "?course=prealgebra&unit=07&lesson=01&mode=algebra-vocabulary-foundations"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "02",
+          "lesson": "01",
+          "lesson_title": "Variables, Terms, Factors, Coefficients & Degree",
+          "mode": "algebra1-structure-vocabulary",
+          "query": "?course=algebra1&unit=02&lesson=01&mode=algebra1-structure-vocabulary"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "02",
+          "lesson": "05",
+          "lesson_title": "Monomials & Introductory Polynomial Classification",
+          "mode": "monomial-polynomial-classification",
+          "query": "?course=algebra1&unit=02&lesson=05&mode=monomial-polynomial-classification"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "09",
+          "lesson": "01",
+          "lesson_title": "Polynomial Vocabulary & Standard Form",
+          "mode": "polynomial-vocabulary-standard-form",
+          "query": "?course=algebra1&unit=09&lesson=01&mode=polynomial-vocabulary-standard-form"
+        }
+      ]
+    },
+    {
+      "id": "expression-translator-studio",
+      "title": "Expression Translator Studio",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/expression-translator-studio/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "07",
+          "lesson": "02",
+          "lesson_title": "Translating Words & Contexts into Expressions",
+          "mode": "words-to-expressions",
+          "query": "?course=prealgebra&unit=07&lesson=02&mode=words-to-expressions"
+        }
+      ]
+    },
+    {
+      "id": "equivalence-forge",
+      "title": "Equivalence Forge",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/equivalence-forge/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "07",
+          "lesson": "04",
+          "lesson_title": "Properties of Operations & Equivalent Structure",
+          "mode": "properties-equivalence",
+          "query": "?course=prealgebra&unit=07&lesson=04&mode=properties-equivalence"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "07",
+          "lesson": "05",
+          "lesson_title": "Distributive Property & Factoring",
+          "mode": "distribution-factoring",
+          "query": "?course=prealgebra&unit=07&lesson=05&mode=distribution-factoring"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "07",
+          "lesson": "06",
+          "lesson_title": "Combining Like Terms & Simplifying",
+          "mode": "combine-like-terms",
+          "query": "?course=prealgebra&unit=07&lesson=06&mode=combine-like-terms"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "09",
+          "lesson": "02",
+          "lesson_title": "Adding & Subtracting Polynomials",
+          "mode": "polynomial-add-subtract",
+          "query": "?course=algebra1&unit=09&lesson=02&mode=polynomial-add-subtract"
+        }
+      ]
+    },
+    {
+      "id": "angle-polygon-studio",
+      "title": "Angle & Polygon Studio",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/angle-polygon-studio/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "02",
+          "lesson_title": "Angles Lines Transversals Polygons",
+          "mode": "angles-transversals-polygons",
+          "query": "?course=prealgebra&unit=11&lesson=02"
+        },
+        {
+          "course": "geometry",
+          "unit": "07",
+          "lesson": "01",
+          "lesson_title": "Interior and Exterior Angles of Polygons",
+          "mode": "polygon-angle-sums",
+          "query": "?course=geometry&unit=07&lesson=u07-l01"
+        },
+        {
+          "course": "geometry",
+          "unit": "07",
+          "lesson": "06",
+          "lesson_title": "Regular Polygons, Apothem & Central Angles",
+          "mode": "regular-polygon-angle-structure",
+          "query": "?course=geometry&unit=07&lesson=u07-l06"
+        }
+      ]
+    },
+    {
+      "id": "boundary-area-lab",
+      "title": "Boundary & Area Lab",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/boundary-area-lab/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "03",
+          "lesson_title": "Perimeter Circumference Composite Boundaries",
+          "mode": "boundary-measurement",
+          "query": "?course=prealgebra&unit=11&lesson=03"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "04",
+          "lesson_title": "Area Polygons Circles Composite Figures",
+          "mode": "area-composite-figures",
+          "query": "?course=prealgebra&unit=11&lesson=04"
+        },
+        {
+          "course": "geometry",
+          "unit": "10",
+          "lesson": "01",
+          "lesson_title": "Area of Triangles, Parallelograms & Trapezoids",
+          "mode": "polygon-area",
+          "query": "?course=geometry&unit=10&lesson=u10-l01"
+        },
+        {
+          "course": "geometry",
+          "unit": "10",
+          "lesson": "02",
+          "lesson_title": "Area of Regular Polygons and Composite Figures",
+          "mode": "regular-composite-area",
+          "query": "?course=geometry&unit=10&lesson=u10-l02"
+        },
+        {
+          "course": "geometry",
+          "unit": "10",
+          "lesson": "04",
+          "lesson_title": "Effects of Scale on Perimeter and Area",
+          "mode": "scale-perimeter-area",
+          "query": "?course=geometry&unit=10&lesson=u10-l04"
+        }
+      ]
+    },
+    {
+      "id": "pythagorean-distance-mission",
+      "title": "Pythagorean Distance Mission",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/pythagorean-distance-mission/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "06",
+          "lesson_title": "Right Triangles Pythagorean Distance",
+          "mode": "pythagorean-distance",
+          "query": "?course=prealgebra&unit=11&lesson=06"
+        }
+      ]
+    },
+    {
+      "id": "surface-volume-studio",
+      "title": "Surface & Volume Studio",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/surface-volume-studio/",
+      "placements": [
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "07",
+          "lesson_title": "Surface Area Nets Volume",
+          "mode": "surface-area-volume",
+          "query": "?course=prealgebra&unit=11&lesson=07"
+        }
+      ]
+    },
+    {
+      "id": "piecewise-boundary-lab",
+      "title": "Piecewise Boundary Lab",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/piecewise-boundary-lab/",
+      "placements": [
+        {
+          "course": "algebra-1",
+          "unit": "05",
+          "lesson": "06",
+          "lesson_title": "Piecewise Functions & Discrete Models",
+          "mode": "piecewise-boundaries-discrete",
+          "query": "?course=algebra1&unit=05&lesson=06"
+        }
+      ]
+    },
+    {
+      "id": "geometry-foundations-sort",
+      "title": "Geometry Foundations Sort",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/geometry-foundations-sort/",
+      "placements": [
+        {
+          "course": "geometry",
+          "unit": "01",
+          "lesson": "01",
+          "lesson_title": "Points, Lines, Planes & Defined Terms",
+          "mode": "geometry-defined-terms",
+          "query": "?course=geometry&unit=01&lesson=u01-l01"
+        }
+      ]
+    },
+    {
+      "id": "quadrilateral-detective",
+      "title": "Quadrilateral Detective",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/quadrilateral-detective/",
+      "placements": [
+        {
+          "course": "geometry",
+          "unit": "07",
+          "lesson": "02",
+          "lesson_title": "Parallelogram Properties & Tests",
+          "mode": "parallelogram-tests",
+          "query": "?course=geometry&unit=07&lesson=u07-l02"
+        },
+        {
+          "course": "geometry",
+          "unit": "07",
+          "lesson": "03",
+          "lesson_title": "Rectangles, Rhombi & Squares",
+          "mode": "special-quadrilaterals",
+          "query": "?course=geometry&unit=07&lesson=u07-l03"
+        },
+        {
+          "course": "geometry",
+          "unit": "07",
+          "lesson": "04",
+          "lesson_title": "Trapezoids, Kites & Midsegments",
+          "mode": "trapezoids-kites-midsegments",
+          "query": "?course=geometry&unit=07&lesson=u07-l04"
+        },
+        {
+          "course": "geometry",
+          "unit": "07",
+          "lesson": "05",
+          "lesson_title": "Quadrilateral Coordinate Proofs",
+          "mode": "coordinate-quadrilateral-proof",
+          "query": "?course=geometry&unit=07&lesson=u07-l05"
+        }
+      ]
+    },
+    {
+      "id": "polygon-design-lab",
+      "title": "Polygon Design Lab",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/polygon-design-lab/",
+      "placements": [
+        {
+          "course": "geometry",
+          "unit": "07",
+          "lesson": "07",
+          "lesson_title": "Polygon Decomposition & Design Constraints",
+          "mode": "polygon-design-constraints",
+          "query": "?course=geometry&unit=07&lesson=u07-l07"
+        }
+      ]
+    },
+    {
+      "id": "geometric-probability-lab",
+      "title": "Geometric Probability Lab",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/geometric-probability-lab/",
+      "placements": [
+        {
+          "course": "geometry",
+          "unit": "10",
+          "lesson": "06",
+          "lesson_title": "Geometric Probability by Length and Area",
+          "mode": "length-area-probability",
+          "query": "?course=geometry&unit=10&lesson=u10-l06"
+        }
+      ]
+    },
+    {
+      "id": "model-forge",
+      "title": "Model Forge",
+      "type": "game",
+      "category": "mathematics",
+      "status": "canonical-v1",
+      "mastery_target": 80,
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/model-forge/",
+      "placements": [
+        {
+          "course": "algebra-1",
+          "unit": "03",
+          "lesson": "07",
+          "lesson_title": "Rate, Mixture, Distance & Financial Equation Models",
+          "mode": "equation-models",
+          "query": "?course=algebra1&unit=03&lesson=07&mode=equation-models"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "13",
+          "lesson": "01",
+          "lesson_title": "Frame a Complex & Ethical Modelling Question",
+          "mode": "frame",
+          "query": "?course=algebra1&unit=13&lesson=01&mode=frame"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "13",
+          "lesson": "02",
+          "lesson_title": "Choose Variables, Assumptions, Data & Representations",
+          "mode": "design",
+          "query": "?course=algebra1&unit=13&lesson=02&mode=design"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "13",
+          "lesson": "03",
+          "lesson_title": "Build, Calculate, Validate & Revise the Model",
+          "mode": "validate",
+          "query": "?course=algebra1&unit=13&lesson=03&mode=validate"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "13",
+          "lesson": "04",
+          "lesson_title": "Test Sensitivity, Uncertainty & Fairness",
+          "mode": "sensitivity",
+          "query": "?course=algebra1&unit=13&lesson=04&mode=sensitivity"
+        }
+      ]
+    }
+  ],
+  "shared_tools": [
+    {
+      "id": "pro-calculator",
+      "title": "Khaemenes Scientific Calculator",
+      "type": "tool",
+      "category": "calculator",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/Khaemenes_Scientific_Calculator/",
+      "courses": [
+        "pre-algebra",
+        "algebra-1",
+        "geometry",
+        "algebra-2"
+      ]
+    },
+    {
+      "id": "pro-ohmic",
+      "title": "Ohmic CAD Studio",
+      "type": "studio",
+      "category": "geometry-modeling",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/Ohmic_CAD_Studio.html",
+      "courses": [
+        "geometry",
+        "algebra-1",
+        "algebra-2"
+      ]
+    },
+    {
+      "id": "arcade-sudoku",
+      "title": "Jenny's Sudoku",
+      "type": "game",
+      "category": "logic-enrichment",
+      "url": "https://vervenveda.github.io/arcade.github.io/Jenny%27s_Sudoku_index.html",
+      "courses": [
+        "pre-algebra",
+        "algebra-1",
+        "geometry",
+        "algebra-2"
+      ]
+    },
+    {
+      "id": "arcade-six-by-six",
+      "title": "Six by Six",
+      "type": "game",
+      "category": "logic-enrichment",
+      "url": "https://vervenveda.com/arcade.github.io/SixbySix_index.html",
+      "courses": [
+        "pre-algebra",
+        "algebra-1",
+        "geometry",
+        "algebra-2"
+      ]
+    },
+    {
+      "id": "arcade-chess",
+      "title": "Chess Studio",
+      "type": "game",
+      "category": "strategy-enrichment",
+      "url": "https://vervenveda.github.io/arcade.github.io/Chess_Studio_index.html",
+      "courses": [
+        "pre-algebra",
+        "algebra-1",
+        "geometry",
+        "algebra-2"
+      ]
+    },
+    {
+      "id": "arcade-backgammon",
+      "title": "Backgammon",
+      "type": "game",
+      "category": "probability-enrichment",
+      "url": "https://vervenveda.github.io/arcade.github.io/Backgammon_index.html",
+      "courses": [
+        "algebra-1",
+        "geometry",
+        "algebra-2"
+      ]
+    }
+  ]
+}
