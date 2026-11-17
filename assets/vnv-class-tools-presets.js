@@ -1,4 +1,4 @@
-/* Verve N Veda · Class Tools age/course presets v1.1.0
+/* Verve N Veda · Class Tools age/course presets v1.2.0
    Configuration only. Load before vnv-class-tools-toolbar.js when a school needs
    a context other than the canonical High School student-profile default. */
 (()=>{"use strict";
@@ -74,11 +74,11 @@ const linguistics=Object.freeze({
 });
 const highSchool=Object.freeze({
  id:"high-school",
- match:()=>/\/Khaemenes_High\.github\.io\/grades\/grade-(09|10|11|12)\/student-profile\/(?:index\.html)?$/i.test(location.pathname),
+ match:()=>/\/Khaemenes_High\.github\.io\/grades\/grade-(09|10|11|12)\/student-profile\/(?:index\.html)?$/i.test(location.pathname)||/\/Khaemenes_High\.github\.io\/courses\/mathematics\/(?:pre-algebra|algebra-1|geometry|algebra-2)\/units\/unit-\d{1,2}\//i.test(location.pathname),
  toggleLabel:"Tools",
  ariaLabel:"High school class tools",
  tools:[
-  {type:"link",label:"Games",sub:"Practice & logic",href:"games/"},
+  {type:"lesson-games",label:"Games",sub:"Lesson practice",fallbackHref:"games/"},
   {type:"materials",label:"Materials",sub:"Videos & printables"},
   {type:"notes",label:"Notes",sub:"Study workspace"},
   {type:"link",label:"Parent",sub:"Family support",href:PARENT},
