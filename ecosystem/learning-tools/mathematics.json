@@ -6,7 +6,7 @@
   "generated_date": "2026-11-17",
   "purpose": "Canonical discovery index for mathematics lesson companions and shared mathematics tools. Navigation/practice only; no grading or mastery authority.",
   "game_count": 83,
-  "placement_count": 344,
+  "placement_count": 370,
   "games": [
     {
       "id": "number-family",
@@ -311,6 +311,14 @@
           "lesson_title": "Radical Models, Geometry & Measurement Error",
           "mode": "radical-model-measurement-error",
           "query": "?course=algebra2&unit=05&lesson=u05-l06"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "01",
+          "lesson_title": "Measurement Systems, Units & Precision",
+          "mode": "measurement-precision",
+          "query": "?course=prealgebra&unit=11&lesson=01&mode=measurement-precision"
         }
       ]
     },
@@ -663,6 +671,22 @@
           "lesson_title": "Coordinate Intersections and Geometric Systems",
           "mode": "geometry-intersections",
           "query": "?course=geometry&unit=09&lesson=u09-l04"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "08",
+          "lesson_title": "Coordinate Geometry, Design Constraints & Error",
+          "mode": "coordinate-geometry-design",
+          "query": "?course=prealgebra&unit=11&lesson=08&mode=coordinate-geometry-design"
+        },
+        {
+          "course": "geometry",
+          "unit": "09",
+          "lesson": "03",
+          "lesson_title": "Distance from a Point to a Line",
+          "mode": "coordinate-distance",
+          "query": "?course=geometry&unit=09&lesson=u09-l03"
         }
       ]
     },
@@ -936,6 +960,22 @@
           "lesson_title": "Literal Equations & Rearranging Formulas",
           "mode": "literal-formulas",
           "query": "?course=algebra1&unit=03&lesson=05&mode=literal-formulas"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "07",
+          "lesson": "07",
+          "lesson_title": "Formulas & Multivariable Expressions",
+          "mode": "literal-formulas",
+          "query": "?course=prealgebra&unit=07&lesson=07&mode=literal-formulas"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "07",
+          "lesson_title": "Rearranging Formulas & Literal Equations",
+          "mode": "literal-formulas",
+          "query": "?course=prealgebra&unit=08&lesson=07&mode=literal-formulas"
         }
       ]
     },
@@ -1335,6 +1375,14 @@
           "lesson_title": "Linear-Quadratic Systems & Model Comparison",
           "mode": "linear-quadratic-comparison",
           "query": "?course=algebra1&unit=10&lesson=08"
+        },
+        {
+          "course": "geometry",
+          "unit": "09",
+          "lesson": "06",
+          "lesson_title": "Parabolas as Distance Loci",
+          "mode": "parabola",
+          "query": "?course=geometry&unit=09&lesson=u09-l06&mode=parabola"
         }
       ]
     },
@@ -1434,6 +1482,14 @@
           "lesson_title": "Perpendicular Bisectors, Angle Bisectors & Centers",
           "mode": "bisectors-centers-proof",
           "query": "?course=geometry&unit=03&lesson=u03-l07"
+        },
+        {
+          "course": "geometry",
+          "unit": "09",
+          "lesson": "02",
+          "lesson_title": "Perpendicular and Angle Bisector Loci",
+          "mode": "bisectors-centers-proof",
+          "query": "?course=geometry&unit=09&lesson=u09-l02"
         }
       ]
     },
@@ -1683,6 +1739,14 @@
           "lesson_title": "Equation of a Circle & Coordinate Applications",
           "mode": "circle-equation-coordinate",
           "query": "?course=geometry&unit=08&lesson=u08-l08"
+        },
+        {
+          "course": "geometry",
+          "unit": "09",
+          "lesson": "05",
+          "lesson_title": "Circle-Line Intersections and Tangency",
+          "mode": "tangent",
+          "query": "?course=geometry&unit=09&lesson=u09-l05&mode=tangent"
         }
       ]
     },
@@ -3209,6 +3273,14 @@
           "lesson_title": "Multiple Representations & Function Rules",
           "mode": "multiple-representations",
           "query": "?course=algebra1&unit=05&lesson=04"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "04",
+          "lesson_title": "Tables, Graphs, Equations & Words",
+          "mode": "multiple-representations",
+          "query": "?course=prealgebra&unit=10&lesson=04"
         }
       ]
     },
@@ -3271,6 +3343,14 @@
           "lesson_title": "Present, Defend, Revise & Reflect",
           "mode": "advanced-model-defense",
           "query": "?course=algebra2&unit=13&lesson=u13-l05"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "13",
+          "lesson": "05",
+          "lesson_title": "Communicate, Defend, Reflect & Readiness",
+          "mode": "defend-reflect",
+          "query": "?course=prealgebra&unit=13&lesson=05"
         }
       ]
     },
@@ -3500,6 +3580,22 @@
           "lesson_title": "Surface Area Nets Volume",
           "mode": "surface-area-volume",
           "query": "?course=prealgebra&unit=11&lesson=07"
+        },
+        {
+          "course": "geometry",
+          "unit": "11",
+          "lesson": "01",
+          "lesson_title": "Prisms, Cylinders & Cavalieri’s Principle",
+          "mode": "surface-area-volume",
+          "query": "?course=geometry&unit=11&lesson=u11-l01"
+        },
+        {
+          "course": "geometry",
+          "unit": "11",
+          "lesson": "04",
+          "lesson_title": "Nets and Surface Area of Prisms and Pyramids",
+          "mode": "surface-area-volume",
+          "query": "?course=geometry&unit=11&lesson=u11-l04"
         }
       ]
     },
@@ -3670,6 +3766,118 @@
           "lesson_title": "Test Sensitivity, Uncertainty & Fairness",
           "mode": "sensitivity",
           "query": "?course=algebra1&unit=13&lesson=04&mode=sensitivity"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "07",
+          "lesson": "08",
+          "lesson_title": "Structural Modelling, Patterns & Error Analysis",
+          "mode": "validate",
+          "query": "?course=prealgebra&unit=07&lesson=08&mode=validate"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "13",
+          "lesson": "01",
+          "lesson_title": "Frame a Meaningful, Safe & Answerable Question",
+          "mode": "frame",
+          "query": "?course=prealgebra&unit=13&lesson=01&mode=frame"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "13",
+          "lesson": "02",
+          "lesson_title": "Select Variables, Mathematics, Data & Representations",
+          "mode": "design",
+          "query": "?course=prealgebra&unit=13&lesson=02&mode=design"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "13",
+          "lesson": "03",
+          "lesson_title": "Build, Calculate, Verify & Revise the Model",
+          "mode": "validate",
+          "query": "?course=prealgebra&unit=13&lesson=03&mode=validate"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "13",
+          "lesson": "04",
+          "lesson_title": "Test Assumptions, Sensitivity, Uncertainty & Fairness",
+          "mode": "sensitivity",
+          "query": "?course=prealgebra&unit=13&lesson=04&mode=sensitivity"
+        },
+        {
+          "course": "geometry",
+          "unit": "13",
+          "lesson": "01",
+          "lesson_title": "Frame a Geometric Design or Investigation",
+          "mode": "frame",
+          "query": "?course=geometry&unit=13&lesson=01&mode=frame"
+        },
+        {
+          "course": "geometry",
+          "unit": "13",
+          "lesson": "02",
+          "lesson_title": "Develop Constructions, Models and Proof",
+          "mode": "design",
+          "query": "?course=geometry&unit=13&lesson=02&mode=design"
+        },
+        {
+          "course": "geometry",
+          "unit": "13",
+          "lesson": "03",
+          "lesson_title": "Test Measurements, Sensitivity and Limitations",
+          "mode": "sensitivity",
+          "query": "?course=geometry&unit=13&lesson=03&mode=sensitivity"
+        },
+        {
+          "course": "geometry",
+          "unit": "13",
+          "lesson": "05",
+          "lesson_title": "Present, Defend and Revise the Design",
+          "mode": "validate",
+          "query": "?course=geometry&unit=13&lesson=05&mode=validate"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "08",
+          "lesson_title": "Rational Models, Rates & Work Problems",
+          "mode": "equation-models",
+          "query": "?course=algebra2&unit=04&lesson=u04-l08&mode=equation-models"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "13",
+          "lesson": "01",
+          "lesson_title": "Frame a Meaningful, Ethical & Answerable Question",
+          "mode": "frame",
+          "query": "?course=algebra2&unit=13&lesson=01&mode=frame"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "13",
+          "lesson": "02",
+          "lesson_title": "Select Variables, Functions, Data & Assumptions",
+          "mode": "design",
+          "query": "?course=algebra2&unit=13&lesson=02&mode=design"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "13",
+          "lesson": "03",
+          "lesson_title": "Build, Compute, Visualize & Validate the Model",
+          "mode": "validate",
+          "query": "?course=algebra2&unit=13&lesson=03&mode=validate"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "13",
+          "lesson": "04",
+          "lesson_title": "Test Sensitivity, Uncertainty, Fairness & Limitations",
+          "mode": "sensitivity",
+          "query": "?course=algebra2&unit=13&lesson=04&mode=sensitivity"
         }
       ]
     }
