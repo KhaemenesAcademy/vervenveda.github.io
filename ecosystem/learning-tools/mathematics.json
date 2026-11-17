@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "id": "vnv-learning-tools-mathematics",
   "title": "Verve N Veda Mathematics Learning Tools Archive",
   "generated_from": "vervenveda/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/game-registry.json",
@@ -3751,5 +3751,1162 @@
         "algebra-2"
       ]
     }
+  ],
+  "tools": [
+    {
+      "id": "pro-calculator",
+      "title": "Scientific Calculator",
+      "type": "calculator",
+      "status": "active",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/Khaemenes_Scientific_Calculator/",
+      "assessment_note": "Use only when the current assessment permits calculator access.",
+      "placements": [
+        {
+          "course": "algebra-1",
+          "unit": "01",
+          "lesson": "04",
+          "lesson_title": "Units, Rates & Dimensional Analysis"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "01",
+          "lesson": "05",
+          "lesson_title": "Precision, Rounding, Significant Figures & Percent Error"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "02",
+          "lesson": "02",
+          "lesson_title": "Evaluating Expressions & Formula Substitution"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "03",
+          "lesson": "05",
+          "lesson_title": "Literal Equations & Rearranging Formulas"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "03",
+          "lesson": "06",
+          "lesson_title": "Proportions, Direct Variation & Percent Equations"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "03",
+          "lesson": "07",
+          "lesson_title": "Rate, Mixture, Distance & Financial Equation Models"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "05",
+          "lesson": "06",
+          "lesson_title": "Piecewise Functions & Discrete Models"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "01",
+          "lesson_title": "Rate of Change & Slope"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "02",
+          "lesson_title": "Slope from Tables, Graphs & Points"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "03",
+          "lesson_title": "Slope-Intercept Form"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "04",
+          "lesson_title": "Point-Slope & Standard Form"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "07",
+          "lesson_title": "Regression, Residuals & Model Limitations"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "08",
+          "lesson_title": "Linear Modelling, Prediction & Decision-Making"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "07",
+          "lesson": "05",
+          "lesson_title": "Systems from Contexts: Cost, Mixture & Motion"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "08",
+          "lesson": "01",
+          "lesson_title": "Exponent Laws & Equivalent Forms"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "08",
+          "lesson": "02",
+          "lesson_title": "Zero, Negative & Rational Exponents"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "08",
+          "lesson": "03",
+          "lesson_title": "Scientific Notation & Operations"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "08",
+          "lesson": "05",
+          "lesson_title": "Exponential Functions: Growth & Decay"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "08",
+          "lesson": "06",
+          "lesson_title": "Compound Interest, Half-Life & Exponential Modelling"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "09",
+          "lesson": "07",
+          "lesson_title": "Zeros, Factors & Polynomial Modelling"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "01",
+          "lesson_title": "Quadratic Functions, Parabolas & Key Features"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "04",
+          "lesson_title": "Solving Quadratics by Factoring"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "06",
+          "lesson_title": "Quadratic Formula & Discriminant"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "07",
+          "lesson_title": "Quadratic Modelling, Projectiles & Optimization"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "08",
+          "lesson_title": "Linear-Quadratic Systems & Model Comparison"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "11",
+          "lesson": "01",
+          "lesson_title": "Radical Expressions & Principal Roots"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "11",
+          "lesson": "02",
+          "lesson_title": "Simplifying & Operating with Radicals"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "11",
+          "lesson": "03",
+          "lesson_title": "Rational Exponents & Equivalent Radical Forms"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "11",
+          "lesson": "04",
+          "lesson_title": "Pythagorean Theorem & Distance"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "11",
+          "lesson": "06",
+          "lesson_title": "Circle Equations, Radical Models & Verification"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "12",
+          "lesson": "02",
+          "lesson_title": "Distributions, Center, Spread & Standard Deviation"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "12",
+          "lesson": "05",
+          "lesson_title": "Two-Way Tables, Conditional Relative Frequency & Probability"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "12",
+          "lesson": "06",
+          "lesson_title": "Financial Mathematics: Growth, Loans, Taxes & Risk"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "13",
+          "lesson": "01",
+          "lesson_title": "Frame a Complex & Ethical Modelling Question"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "13",
+          "lesson": "03",
+          "lesson_title": "Build, Calculate, Validate & Revise the Model"
+        }
+      ]
+    },
+    {
+      "id": "pro-ohmic",
+      "title": "OHMIC CAD",
+      "type": "cad",
+      "status": "active",
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/Ohmic_CAD_Studio.html",
+      "assessment_note": "Design/practice tool; not an assessment authority.",
+      "placements": [
+        {
+          "course": "algebra-1",
+          "unit": "01",
+          "lesson": "04",
+          "lesson_title": "Units, Rates & Dimensional Analysis"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "01",
+          "lesson": "05",
+          "lesson_title": "Precision, Rounding, Significant Figures & Percent Error"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "08",
+          "lesson_title": "Linear Modelling, Prediction & Decision-Making"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "11",
+          "lesson": "05",
+          "lesson_title": "Midpoint, Coordinate Geometry & Geometric Constraints"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "13",
+          "lesson": "02",
+          "lesson_title": "Choose Variables, Assumptions, Data & Representations"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "13",
+          "lesson": "03",
+          "lesson_title": "Build, Calculate, Validate & Revise the Model"
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "id": "worked-example",
+      "title": "Worked Example",
+      "type": "material-template",
+      "status": "metadata-ready-viewer-pending",
+      "source_url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/worked-example.html",
+      "public_url": null,
+      "placements": [
+        {
+          "course": "algebra-1",
+          "unit": "01",
+          "lesson": "02",
+          "lesson_title": "The Real Number System & Interval Representations"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "02",
+          "lesson": "05",
+          "lesson_title": "Monomials & Introductory Polynomial Classification"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "02",
+          "lesson": "06",
+          "lesson_title": "Adding & Subtracting Polynomials"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "02",
+          "lesson": "07",
+          "lesson_title": "Multiplying Monomials & Factoring the GCF"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "03",
+          "lesson": "02",
+          "lesson_title": "One-Step & Two-Step Linear Equations"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "03",
+          "lesson": "03",
+          "lesson_title": "Multi-Step Equations with Distribution & Like Terms"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "03",
+          "lesson": "05",
+          "lesson_title": "Literal Equations & Rearranging Formulas"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "03",
+          "lesson": "06",
+          "lesson_title": "Proportions, Direct Variation & Percent Equations"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "03",
+          "lesson": "07",
+          "lesson_title": "Rate, Mixture, Distance & Financial Equation Models"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "04",
+          "lesson": "01",
+          "lesson_title": "Inequality Meaning, Number Lines & Interval Notation"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "04",
+          "lesson": "02",
+          "lesson_title": "One-Step & Multi-Step Linear Inequalities"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "04",
+          "lesson": "04",
+          "lesson_title": "Compound Inequalities: AND, OR & Intersections"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "04",
+          "lesson": "05",
+          "lesson_title": "Absolute Value Equations"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "04",
+          "lesson": "06",
+          "lesson_title": "Absolute Value Inequalities & Contextual Constraints"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "07",
+          "lesson": "01",
+          "lesson_title": "Systems as Intersections & Number of Solutions"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "07",
+          "lesson": "02",
+          "lesson_title": "Solving Systems by Graphing"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "07",
+          "lesson": "03",
+          "lesson_title": "Solving Systems by Substitution"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "07",
+          "lesson": "04",
+          "lesson_title": "Solving Systems by Elimination"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "07",
+          "lesson": "05",
+          "lesson_title": "Systems from Contexts: Cost, Mixture & Motion"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "07",
+          "lesson": "06",
+          "lesson_title": "Systems of Linear Inequalities"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "08",
+          "lesson": "01",
+          "lesson_title": "Exponent Laws & Equivalent Forms"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "08",
+          "lesson": "02",
+          "lesson_title": "Zero, Negative & Rational Exponents"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "08",
+          "lesson": "05",
+          "lesson_title": "Exponential Functions: Growth & Decay"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "08",
+          "lesson": "06",
+          "lesson_title": "Compound Interest, Half-Life & Exponential Modelling"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "09",
+          "lesson": "01",
+          "lesson_title": "Polynomial Vocabulary & Standard Form"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "09",
+          "lesson": "02",
+          "lesson_title": "Adding & Subtracting Polynomials"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "09",
+          "lesson": "03",
+          "lesson_title": "Multiplying Monomials & Polynomials"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "09",
+          "lesson": "05",
+          "lesson_title": "Factoring the Greatest Common Factor"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "09",
+          "lesson": "06",
+          "lesson_title": "Factoring Trinomials & Difference of Squares"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "09",
+          "lesson": "07",
+          "lesson_title": "Zeros, Factors & Polynomial Modelling"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "01",
+          "lesson_title": "Quadratic Functions, Parabolas & Key Features"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "04",
+          "lesson_title": "Solving Quadratics by Factoring"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "06",
+          "lesson_title": "Quadratic Formula & Discriminant"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "07",
+          "lesson_title": "Quadratic Modelling, Projectiles & Optimization"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "08",
+          "lesson_title": "Linear-Quadratic Systems & Model Comparison"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "11",
+          "lesson": "01",
+          "lesson_title": "Radical Expressions & Principal Roots"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "11",
+          "lesson": "02",
+          "lesson_title": "Simplifying & Operating with Radicals"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "11",
+          "lesson": "03",
+          "lesson_title": "Rational Exponents & Equivalent Radical Forms"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "11",
+          "lesson": "06",
+          "lesson_title": "Circle Equations, Radical Models & Verification"
+        }
+      ]
+    },
+    {
+      "id": "mathematical-reasoning",
+      "title": "Mathematical Reasoning",
+      "type": "material-template",
+      "status": "metadata-ready-viewer-pending",
+      "source_url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/mathematical-reasoning.html",
+      "public_url": null,
+      "placements": [
+        {
+          "course": "algebra-1",
+          "unit": "01",
+          "lesson": "01",
+          "lesson_title": "Algebraic Habits, Notation & Mathematical Argument"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "02",
+          "lesson": "03",
+          "lesson_title": "Properties, Equivalence & Structural Reasoning"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "03",
+          "lesson": "01",
+          "lesson_title": "Equality, Inverse Operations & Solution Verification"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "03",
+          "lesson": "07",
+          "lesson_title": "Rate, Mixture, Distance & Financial Equation Models"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "04",
+          "lesson": "06",
+          "lesson_title": "Absolute Value Inequalities & Contextual Constraints"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "05",
+          "lesson": "06",
+          "lesson_title": "Piecewise Functions & Discrete Models"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "07",
+          "lesson_title": "Regression, Residuals & Model Limitations"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "08",
+          "lesson_title": "Linear Modelling, Prediction & Decision-Making"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "07",
+          "lesson": "07",
+          "lesson_title": "Feasible Regions, Constraints & Introductory Optimization"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "08",
+          "lesson": "06",
+          "lesson_title": "Compound Interest, Half-Life & Exponential Modelling"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "09",
+          "lesson": "07",
+          "lesson_title": "Zeros, Factors & Polynomial Modelling"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "07",
+          "lesson_title": "Quadratic Modelling, Projectiles & Optimization"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "08",
+          "lesson_title": "Linear-Quadratic Systems & Model Comparison"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "11",
+          "lesson": "05",
+          "lesson_title": "Midpoint, Coordinate Geometry & Geometric Constraints"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "11",
+          "lesson": "06",
+          "lesson_title": "Circle Equations, Radical Models & Verification"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "12",
+          "lesson": "07",
+          "lesson_title": "Evaluating Quantitative Claims & Communicating Evidence"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "13",
+          "lesson": "01",
+          "lesson_title": "Frame a Complex & Ethical Modelling Question"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "13",
+          "lesson": "03",
+          "lesson_title": "Build, Calculate, Validate & Revise the Model"
+        }
+      ]
+    },
+    {
+      "id": "proof-framework",
+      "title": "Proof Framework",
+      "type": "material-template",
+      "status": "metadata-ready-viewer-pending",
+      "source_url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/proof-framework.html",
+      "public_url": null,
+      "placements": [
+        {
+          "course": "algebra-1",
+          "unit": "11",
+          "lesson": "04",
+          "lesson_title": "Pythagorean Theorem & Distance"
+        }
+      ]
+    },
+    {
+      "id": "math-error-analysis",
+      "title": "Mathematics Error Analysis",
+      "type": "material-template",
+      "status": "metadata-ready-viewer-pending",
+      "source_url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/error-analysis.html",
+      "public_url": null,
+      "placements": [
+        {
+          "course": "algebra-1",
+          "unit": "01",
+          "lesson": "05",
+          "lesson_title": "Precision, Rounding, Significant Figures & Percent Error"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "01",
+          "lesson": "06",
+          "lesson_title": "Algebra Readiness Synthesis & Error Analysis"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "03",
+          "lesson": "01",
+          "lesson_title": "Equality, Inverse Operations & Solution Verification"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "07",
+          "lesson_title": "Regression, Residuals & Model Limitations"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "11",
+          "lesson": "06",
+          "lesson_title": "Circle Equations, Radical Models & Verification"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "12",
+          "lesson": "04",
+          "lesson_title": "Bivariate Data, Correlation, Causation & Residuals"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "13",
+          "lesson": "03",
+          "lesson_title": "Build, Calculate, Validate & Revise the Model"
+        }
+      ]
+    },
+    {
+      "id": "graph-data-investigation",
+      "title": "Graph & Data Investigation",
+      "type": "material-template",
+      "status": "metadata-ready-viewer-pending",
+      "source_url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/data-graph-study.html",
+      "public_url": null,
+      "placements": [
+        {
+          "course": "algebra-1",
+          "unit": "03",
+          "lesson": "03",
+          "lesson_title": "Multi-Step Equations with Distribution & Like Terms"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "05",
+          "lesson": "01",
+          "lesson_title": "Relations, Inputs, Outputs & Function Tests"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "05",
+          "lesson": "02",
+          "lesson_title": "Function Notation & Evaluation"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "05",
+          "lesson": "03",
+          "lesson_title": "Domain & Range from Tables, Graphs & Contexts"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "05",
+          "lesson": "04",
+          "lesson_title": "Multiple Representations & Function Rules"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "05",
+          "lesson": "05",
+          "lesson_title": "Transformations of Parent Functions"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "05",
+          "lesson": "06",
+          "lesson_title": "Piecewise Functions & Discrete Models"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "05",
+          "lesson": "07",
+          "lesson_title": "Arithmetic Sequences as Functions & Inverse Thinking"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "02",
+          "lesson_title": "Slope from Tables, Graphs & Points"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "06",
+          "lesson_title": "Scatterplots, Correlation & Lines of Fit"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "07",
+          "lesson_title": "Regression, Residuals & Model Limitations"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "07",
+          "lesson": "02",
+          "lesson_title": "Solving Systems by Graphing"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "08",
+          "lesson": "05",
+          "lesson_title": "Exponential Functions: Growth & Decay"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "01",
+          "lesson_title": "Quadratic Functions, Parabolas & Key Features"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "03",
+          "lesson_title": "Factored Form, Zeros & Graphs"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "12",
+          "lesson": "01",
+          "lesson_title": "Statistical Questions, Study Design & Data Ethics"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "12",
+          "lesson": "02",
+          "lesson_title": "Distributions, Center, Spread & Standard Deviation"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "12",
+          "lesson": "03",
+          "lesson_title": "Box Plots, Histograms & Comparing Groups"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "12",
+          "lesson": "04",
+          "lesson_title": "Bivariate Data, Correlation, Causation & Residuals"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "13",
+          "lesson": "02",
+          "lesson_title": "Choose Variables, Assumptions, Data & Representations"
+        }
+      ]
+    },
+    {
+      "id": "mathematical-modeling-task",
+      "title": "Mathematical Modeling Task",
+      "type": "material-template",
+      "status": "metadata-ready-viewer-pending",
+      "source_url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/math-model-study.html",
+      "public_url": null,
+      "placements": [
+        {
+          "course": "algebra-1",
+          "unit": "03",
+          "lesson": "07",
+          "lesson_title": "Rate, Mixture, Distance & Financial Equation Models"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "05",
+          "lesson": "06",
+          "lesson_title": "Piecewise Functions & Discrete Models"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "07",
+          "lesson_title": "Regression, Residuals & Model Limitations"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "08",
+          "lesson_title": "Linear Modelling, Prediction & Decision-Making"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "07",
+          "lesson": "07",
+          "lesson_title": "Feasible Regions, Constraints & Introductory Optimization"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "08",
+          "lesson": "06",
+          "lesson_title": "Compound Interest, Half-Life & Exponential Modelling"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "09",
+          "lesson": "07",
+          "lesson_title": "Zeros, Factors & Polynomial Modelling"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "07",
+          "lesson_title": "Quadratic Modelling, Projectiles & Optimization"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "08",
+          "lesson_title": "Linear-Quadratic Systems & Model Comparison"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "11",
+          "lesson": "06",
+          "lesson_title": "Circle Equations, Radical Models & Verification"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "12",
+          "lesson": "06",
+          "lesson_title": "Financial Mathematics: Growth, Loans, Taxes & Risk"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "13",
+          "lesson": "01",
+          "lesson_title": "Frame a Complex & Ethical Modelling Question"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "13",
+          "lesson": "03",
+          "lesson_title": "Build, Calculate, Validate & Revise the Model"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "13",
+          "lesson": "04",
+          "lesson_title": "Test Sensitivity, Uncertainty & Fairness"
+        }
+      ]
+    },
+    {
+      "id": "formula-concept-organizer",
+      "title": "Formula & Concept Organizer",
+      "type": "material-template",
+      "status": "metadata-ready-viewer-pending",
+      "source_url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/concept-reference.html",
+      "public_url": null,
+      "placements": [
+        {
+          "course": "algebra-1",
+          "unit": "01",
+          "lesson": "01",
+          "lesson_title": "Algebraic Habits, Notation & Mathematical Argument"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "01",
+          "lesson": "03",
+          "lesson_title": "Operations, Properties & Order of Operations"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "02",
+          "lesson": "02",
+          "lesson_title": "Evaluating Expressions & Formula Substitution"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "02",
+          "lesson": "03",
+          "lesson_title": "Properties, Equivalence & Structural Reasoning"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "03",
+          "lesson": "05",
+          "lesson_title": "Literal Equations & Rearranging Formulas"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "04",
+          "lesson": "01",
+          "lesson_title": "Inequality Meaning, Number Lines & Interval Notation"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "05",
+          "lesson": "01",
+          "lesson_title": "Relations, Inputs, Outputs & Function Tests"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "05",
+          "lesson": "02",
+          "lesson_title": "Function Notation & Evaluation"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "05",
+          "lesson": "04",
+          "lesson_title": "Multiple Representations & Function Rules"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "05",
+          "lesson": "05",
+          "lesson_title": "Transformations of Parent Functions"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "05",
+          "lesson": "06",
+          "lesson_title": "Piecewise Functions & Discrete Models"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "05",
+          "lesson": "07",
+          "lesson_title": "Arithmetic Sequences as Functions & Inverse Thinking"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "04",
+          "lesson_title": "Point-Slope & Standard Form"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "08",
+          "lesson": "03",
+          "lesson_title": "Scientific Notation & Operations"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "08",
+          "lesson": "05",
+          "lesson_title": "Exponential Functions: Growth & Decay"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "09",
+          "lesson": "01",
+          "lesson_title": "Polynomial Vocabulary & Standard Form"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "01",
+          "lesson_title": "Quadratic Functions, Parabolas & Key Features"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "06",
+          "lesson_title": "Quadratic Formula & Discriminant"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "11",
+          "lesson": "04",
+          "lesson_title": "Pythagorean Theorem & Distance"
+        }
+      ]
+    },
+    {
+      "id": "problem-solving-journal",
+      "title": "Problem-Solving Journal",
+      "type": "material-template",
+      "status": "metadata-ready-viewer-pending",
+      "source_url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/problem-solving-journal.html",
+      "public_url": null,
+      "placements": [
+        {
+          "course": "algebra-1",
+          "unit": "01",
+          "lesson": "06",
+          "lesson_title": "Algebra Readiness Synthesis & Error Analysis"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "06",
+          "lesson": "08",
+          "lesson_title": "Linear Modelling, Prediction & Decision-Making"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "07",
+          "lesson": "07",
+          "lesson_title": "Feasible Regions, Constraints & Introductory Optimization"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "08",
+          "lesson": "06",
+          "lesson_title": "Compound Interest, Half-Life & Exponential Modelling"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "09",
+          "lesson": "07",
+          "lesson_title": "Zeros, Factors & Polynomial Modelling"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "10",
+          "lesson": "07",
+          "lesson_title": "Quadratic Modelling, Projectiles & Optimization"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "13",
+          "lesson": "01",
+          "lesson_title": "Frame a Complex & Ethical Modelling Question"
+        }
+      ]
+    },
+    {
+      "id": "math-vocabulary-conjecture",
+      "title": "Mathematical Vocabulary & Conjecture",
+      "type": "material-template",
+      "status": "metadata-ready-viewer-pending",
+      "source_url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/vocabulary-conjecture.html",
+      "public_url": null,
+      "placements": [
+        {
+          "course": "algebra-1",
+          "unit": "02",
+          "lesson": "03",
+          "lesson_title": "Properties, Equivalence & Structural Reasoning"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "05",
+          "lesson": "07",
+          "lesson_title": "Arithmetic Sequences as Functions & Inverse Thinking"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "08",
+          "lesson": "04",
+          "lesson_title": "Arithmetic & Geometric Sequences"
+        },
+        {
+          "course": "algebra-1",
+          "unit": "09",
+          "lesson": "01",
+          "lesson_title": "Polynomial Vocabulary & Standard Form"
+        }
+      ]
+    },
+    {
+      "id": "math-assessment-correction",
+      "title": "Mathematics Assessment Correction",
+      "type": "material-template",
+      "status": "metadata-ready-viewer-pending",
+      "source_url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/assessment-correction.html",
+      "public_url": null,
+      "placements": [
+        {
+          "course": "algebra-1",
+          "unit": "01",
+          "lesson": "06",
+          "lesson_title": "Algebra Readiness Synthesis & Error Analysis"
+        }
+      ]
+    }
+  ],
+  "tool_placement_count": 41,
+  "material_placement_count": 130,
+  "notes": [
+    "Games remain practice-only and do not award mastery.",
+    "Tools are lesson-aware; assessment restrictions remain authoritative.",
+    "Mathematics Core templates are indexed as metadata until a polished public template viewer is available."
   ]
 }
