@@ -8,7 +8,10 @@ const LEGACY_API_KEY="KhaemenesClassToolsToolbarV1";
 const CONFIG_KEY="KhaemenesClassToolsConfigV1";
 const ROOT_ID="vnvClassToolsToolbar";
 const STYLE_ID="vnvClassToolsToolbarStyles";
-const DIRECTORY_URLS=Object.freeze([\n "https://khaemenesacademy.github.io/vervenveda.github.io/ecosystem/master-ecosystem-directory.json",\n "https://vervenveda.com/ecosystem/master-ecosystem-directory.json"\n]);
+const DIRECTORY_URLS=Object.freeze([
+ "https://khaemenesacademy.github.io/vervenveda.github.io/ecosystem/master-ecosystem-directory.json",
+ "https://vervenveda.com/ecosystem/master-ecosystem-directory.json"
+]);
 
 const HIGH_DEFAULT=Object.freeze({
  id:"high-school",
