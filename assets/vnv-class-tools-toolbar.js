@@ -1,4 +1,4 @@
-/* Verve N Veda · Universal Class Tools Toolbar v1.2.0
+/* Verve N Veda · Universal Class Tools Toolbar v1.3.0
    Canonical lower-left learning-tools companion to vnv-ecosystem-toolbar.js.
    Idempotent. Directory-backed. Navigation only; no grading/mastery mutations. */
 (()=>{
@@ -12,17 +12,21 @@ const DIRECTORY_URLS=Object.freeze([
  "https://khaemenesacademy.github.io/vervenveda.github.io/ecosystem/master-ecosystem-directory.json",
  "https://vervenveda.com/ecosystem/master-ecosystem-directory.json"
 ]);
+const MATHEMATICS_ARCHIVE_URLS=Object.freeze([
+ "https://khaemenesacademy.github.io/vervenveda.github.io/ecosystem/learning-tools/mathematics.json",
+ "https://vervenveda.com/ecosystem/learning-tools/mathematics.json"
+]);
 
 const HIGH_DEFAULT=Object.freeze({
  id:"high-school",
- match:/\/grades\/grade-(09|10|11|12)\/student-profile\/(?:index\.html)?$/i,
+ match:()=>/\/grades\/grade-(09|10|11|12)\/student-profile\/(?:index\.html)?$/i.test(location.pathname)||/\/courses\/mathematics\/(?:pre-algebra|algebra-1|geometry|algebra-2)\/units\/unit-\d{1,2}\//i.test(location.pathname),
  toggleLabel:"Tools",
  ariaLabel:"Class tools",
  tools:[
-  {type:"link",label:"Games",sub:"Practice & logic",href:"games/"},
+  {type:"lesson-games",label:"Games",sub:"Lesson practice",fallbackHref:"games/"},
   {type:"materials",label:"Materials",sub:"Videos & printables"},
   {type:"notes",label:"Notes",sub:"Study workspace"},
-  {type:"link",label:"Parent Tools",sub:"Family support",href:"https://vervenveda.com/Khaemenes_Academy.github.io/family/"},
+  {type:"link",label:"Parent",sub:"Family support",href:"https://vervenveda.com/Khaemenes_Academy.github.io/family/"},
   {type:"ecosystem-link",label:"Search",sub:"Search ecosystem",ecosystemId:"plera",fallbackHref:"https://vervenveda.com/PLERASearch.github.io/"},
   {type:"help",label:"Instructions",sub:"How to use tools"}
  ],
@@ -45,6 +49,7 @@ const HIGH_DEFAULT=Object.freeze({
 });
 
 let directoryPromise=null;
+let mathematicsArchivePromise=null;
 let controller=null;
 
 const esc=value=>String(value??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
@@ -73,6 +78,54 @@ async function directory(){
   return [];
  })();
  return directoryPromise;
+}
+async function mathematicsArchive(){
+ if(mathematicsArchivePromise)return mathematicsArchivePromise;
+ mathematicsArchivePromise=(async()=>{
+  let lastError=null;
+  for(const url of MATHEMATICS_ARCHIVE_URLS){
+   try{
+    const r=await fetch(url,{cache:"no-store",credentials:"omit"});
+    if(!r.ok)throw Error("HTTP "+r.status);
+    const data=await r.json();
+    if(Array.isArray(data?.games))return data;
+   }catch(err){lastError=err}
+  }
+  console.warn("VNV mathematics learning-tools archive unavailable; normal fallbacks remain active.",lastError);
+  return {games:[],shared_tools:[]};
+ })();
+ return mathematicsArchivePromise;
+}
+function mathematicsLessonContext(){
+ const path=location.pathname;
+ const courseMatch=path.match(/\/courses\/mathematics\/(pre-algebra|algebra-1|geometry|algebra-2)\//i);
+ if(!courseMatch)return null;
+ const unit=(window.PAGE_REF?.unit)||(path.match(/\/unit-(\d{1,2})\//i)||[])[1];
+ let lesson=(window.PAGE_REF?.lesson)||document.body?.dataset?.lesson||null;
+ if(!lesson){
+  const after=path.split(/\/lessons\//i)[1]||"";
+  lesson=(after.match(/(?:lesson-)?(\d{1,2})(?:[-/.]|$)/i)||[])[1]||null;
+ }
+ if(!unit||!lesson)return null;
+ return {course:courseMatch[1].toLowerCase(),unit:String(unit).padStart(2,"0"),lesson:String(lesson).padStart(2,"0")};
+}
+async function matchingLessonGames(){
+ const context=mathematicsLessonContext();
+ if(!context)return {context:null,links:[]};
+ const archive=await mathematicsArchive(),links=[];
+ for(const game of archive.games||[]){
+  const placement=(game.placements||[]).find(p=>String(p.course).toLowerCase()===context.course&&String(p.unit).padStart(2,"0")===context.unit&&String(p.lesson).padStart(2,"0")===context.lesson);
+  if(!placement||!game.url)continue;
+  const url=new URL(game.url,location.href);
+  const query=new URLSearchParams(String(placement.query||"").replace(/^\?/,""));
+  query.forEach((value,key)=>url.searchParams.set(key,value));
+  if(!url.searchParams.has("course"))url.searchParams.set("course",context.course.replace(/-/g,""));
+  if(!url.searchParams.has("unit"))url.searchParams.set("unit",context.unit);
+  if(!url.searchParams.has("lesson"))url.searchParams.set("lesson",context.lesson);
+  if(placement.mode&&!url.searchParams.has("mode"))url.searchParams.set("mode",placement.mode);
+  links.push({label:game.title||game.id,href:url.href,mode:placement.mode||""});
+ }
+ return {context,links};
 }
 async function resolveEcosystemId(id,fallback=""){
  const entries=await directory();
@@ -142,6 +195,7 @@ async function resolvedTools(c){
 function toolHTML(t,i){
  const body='<strong>'+esc(t.label||"Tool")+'</strong><span>'+esc(t.sub||"")+'</span>';
  if(t.type==="link")return '<a class="vct-tool" href="'+esc(t.href||"#")+'">'+body+'</a>';
+ if(t.type==="lesson-games")return '<button class="vct-tool" type="button" data-vct-lesson-games="'+i+'">'+body+'</button>';
  if(t.type==="materials")return '<button class="vct-tool" type="button" data-vct-materials>'+body+'</button>';
  if(t.type==="notes")return '<button class="vct-tool" type="button" data-vct-notes>'+body+'</button>';
  if(t.type==="help")return '<button class="vct-tool" type="button" data-vct-help>'+body+'</button>';
@@ -163,6 +217,7 @@ async function mount(){
  root.innerHTML='<button id="vnvClassToolsToggle" type="button" aria-expanded="false" aria-controls="vnvClassToolsPanel">'+esc(c.toggleLabel||"Tools")+'</button>'+
   '<section id="vnvClassToolsPanel" hidden aria-label="'+esc(c.ariaLabel||"Class tools")+' menu">'+
    '<div class="vct-grid">'+tools.map(toolHTML).join("")+'</div>'+
+   pop("Lesson Games","Games matched to the mathematics lesson you are currently studying.",'data-vct-lesson-games-panel')+
    pop(c.materials?.title||"Learning Materials",c.materials?.intro||"Open the materials that match your class.",'data-vct-materials-panel')+
    '<div class="vct-pop" data-vct-help-panel hidden><h2>'+esc(c.help?.title||"How Class Tools Work")+'</h2>'+(c.help?.paragraphs||[]).map(p=>'<p>'+String(p)+'</p>').join("")+'</div>'+
    pop("Ecosystem Tools","Approved public tools from the Verve N Veda ecosystem directory.",'data-vct-directory-panel')+
@@ -175,6 +230,23 @@ async function mount(){
  const setOpen=open=>{panel.hidden=!open;toggle.setAttribute("aria-expanded",open?"true":"false");if(!open)hidePops()};
  toggle.addEventListener("click",()=>setOpen(panel.hidden),{signal:controller.signal});
  document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!panel.hidden){setOpen(false);toggle.focus()}},{signal:controller.signal});
+ root.querySelectorAll("[data-vct-lesson-games]").forEach(btn=>btn.addEventListener("click",async()=>{
+  const t=tools[Number(btn.dataset.vctLessonGames)],match=await matchingLessonGames();
+  if(!match.context){
+   if(t?.fallbackHref)location.href=new URL(t.fallbackHref,location.href).href;
+   return;
+  }
+  const p=root.querySelector("[data-vct-lesson-games-panel]"),box=p.querySelector(".vct-links");
+  hidePops();box.replaceChildren();
+  for(const item of match.links){
+   const a=document.createElement("a");a.href=item.href;a.textContent=item.label;box.append(a);
+  }
+  if(!match.links.length){
+   const note=document.createElement("p");note.textContent="No canonical game is registered for this lesson yet.";box.append(note);
+  }
+  p.querySelector("p").textContent="Unit "+Number(match.context.unit)+" · Lesson "+Number(match.context.lesson)+" · matched practice";
+  p.hidden=false;
+ },{signal:controller.signal}));
  root.querySelector("[data-vct-materials]")?.addEventListener("click",()=>{const p=root.querySelector("[data-vct-materials-panel]");const open=p.hidden;hidePops();p.hidden=!open},{signal:controller.signal});
  root.querySelector("[data-vct-help]")?.addEventListener("click",()=>{const p=root.querySelector("[data-vct-help-panel]");const open=p.hidden;hidePops();p.hidden=!open},{signal:controller.signal});
  root.querySelector("[data-vct-notes]")?.addEventListener("click",()=>{
@@ -201,7 +273,7 @@ async function mount(){
  return true;
 }
 function unmount(){if(controller)controller.abort();document.getElementById(ROOT_ID)?.remove();document.documentElement.dataset.vnvClassTools="unmounted";}
-const api=Object.freeze({version:"1.1.0",mount,unmount,isMounted,directory});
+const api=Object.freeze({version:"1.3.0",mount,unmount,isMounted,directory,mathematicsArchive,matchingLessonGames});
 window[API_KEY]=api;window[LEGACY_API_KEY]=api;
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",()=>void mount(),{once:true});
 else void mount();
