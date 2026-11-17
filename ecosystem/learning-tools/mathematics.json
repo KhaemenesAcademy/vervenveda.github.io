@@ -5132,6 +5132,12 @@
           "unit": "13",
           "lesson": "02",
           "lesson_title": "Select Variables Mathematics Data Representations"
+        },
+        {
+          "course": "geometry",
+          "unit": "11",
+          "lesson": "02",
+          "lesson_title": "Pyramids and Cones"
         }
       ]
     },
@@ -5616,6 +5622,30 @@
           "unit": "11",
           "lesson": "08",
           "lesson_title": "Coordinate Geometry Design Constraints Error"
+        },
+        {
+          "course": "geometry",
+          "unit": "09",
+          "lesson": "01",
+          "lesson_title": "Locus as a Set of Points Meeting a Condition"
+        },
+        {
+          "course": "geometry",
+          "unit": "11",
+          "lesson": "06",
+          "lesson_title": "Cross-Sections and Solids of Revolution"
+        },
+        {
+          "course": "geometry",
+          "unit": "12",
+          "lesson": "01",
+          "lesson_title": "CAD Workspace, Units, Grid and Snap"
+        },
+        {
+          "course": "geometry",
+          "unit": "12",
+          "lesson": "03",
+          "lesson_title": "Layers, Objects and Geometric Organization"
         }
       ]
     }
@@ -6366,6 +6396,12 @@
           "unit": "11",
           "lesson": "01",
           "lesson_title": "Measurement Systems Units Precision"
+        },
+        {
+          "course": "geometry",
+          "unit": "11",
+          "lesson": "02",
+          "lesson_title": "Pyramids and Cones"
         }
       ]
     },
@@ -6724,6 +6760,12 @@
           "unit": "13",
           "lesson": "03",
           "lesson_title": "Build Calculate Verify Revise Model"
+        },
+        {
+          "course": "geometry",
+          "unit": "11",
+          "lesson": "06",
+          "lesson_title": "Cross-Sections and Solids of Revolution"
         }
       ]
     },
@@ -8434,8 +8476,8 @@
       ]
     }
   ],
-  "tool_placement_count": 273,
-  "material_placement_count": 452,
+  "tool_placement_count": 278,
+  "material_placement_count": 454,
   "notes": [
     "Games remain practice-only and do not award mastery.",
     "Tools are lesson-aware; assessment restrictions remain authoritative.",
