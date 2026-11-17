@@ -33,7 +33,7 @@
     "studio",
     "network"
   ],
-  "entryCount": 195,
+  "entryCount": 196,
   "entries": [
     {
       "id": "gateway-verve",
@@ -2404,6 +2404,19 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/life-skills/articulation-academy.html"
+    },
+    {
+      "id": "learning-tools-mathematics-archive",
+      "title": "Mathematics Learning Tools Archive",
+      "repository": "KhaemenesAcademy/vervenveda.github.io",
+      "path": "ecosystem/learning-tools/mathematics.json",
+      "type": "archive",
+      "category": "education",
+      "access": "free-public",
+      "status": "active",
+      "directoryVisible": false,
+      "url": "https://khaemenesacademy.github.io/vervenveda.github.io/ecosystem/learning-tools/mathematics.json",
+      "developmentStatus": "live"
     }
   ],
   "pageCatalog": {
