@@ -1,4 +1,4 @@
-/* Verve N Veda · Class Tools age/course presets v1.0.0
+/* Verve N Veda · Class Tools age/course presets v1.1.0
    Configuration only. Load before vnv-class-tools-toolbar.js when a school needs
    a context other than the canonical High School student-profile default. */
 (()=>{"use strict";
@@ -15,13 +15,13 @@ const makeHelp=(audience)=>({
 const elementary=Object.freeze({
  id:"elementary",
  match:()=>/\/Khaemenes_Elementary\.github\.io\/grades\/grade-(01|02|03|04|05)(?:\/|$)/i.test(location.pathname),
- toggleLabel:"Learning Tools",
+ toggleLabel:"Tools",
  ariaLabel:"Elementary learning tools",
  tools:[
   {type:"ecosystem-list",label:"Games",sub:"Practice & play",filter:{category:"games",limit:9}},
   {type:"materials",label:"Materials",sub:"Printables & lessons"},
   {type:"ecosystem-list",label:"Explore",sub:"Learning discoveries",filter:{category:"education",limit:9}},
-  {type:"link",label:"Parent Tools",sub:"Family support",href:PARENT},
+  {type:"link",label:"Parent",sub:"Family support",href:PARENT},
   {type:"ecosystem-link",label:"Search",sub:"Search ecosystem",ecosystemId:"plera",fallbackHref:SEARCH},
   {type:"help",label:"Instructions",sub:"How to use tools"}
  ],
@@ -35,13 +35,13 @@ const elementary=Object.freeze({
 const middle=Object.freeze({
  id:"middle-school",
  match:()=>/\/Khaemenes_Middle\.github\.io\/grades\/grade-(06|07|08)(?:\/|$)/i.test(location.pathname),
- toggleLabel:"Class Tools",
+ toggleLabel:"Tools",
  ariaLabel:"Middle school class tools",
  tools:[
   {type:"ecosystem-list",label:"Games",sub:"Practice & strategy",filter:{category:"games",limit:9}},
   {type:"materials",label:"Materials",sub:"Lessons & printables"},
   {type:"ecosystem-list",label:"Research",sub:"Read & verify",filter:{category:"research",limit:9}},
-  {type:"link",label:"Parent Tools",sub:"Family support",href:PARENT},
+  {type:"link",label:"Parent",sub:"Family support",href:PARENT},
   {type:"ecosystem-link",label:"Search",sub:"Search ecosystem",ecosystemId:"plera",fallbackHref:SEARCH},
   {type:"help",label:"Instructions",sub:"How to use tools"}
  ],
@@ -55,13 +55,13 @@ const middle=Object.freeze({
 const linguistics=Object.freeze({
  id:"linguistics",
  match:()=>/\/Khaemenes_Linguistics\.github\.io\//i.test(location.pathname),
- toggleLabel:"Language Tools",
+ toggleLabel:"Tools",
  ariaLabel:"Language learning tools",
  tools:[
   {type:"ecosystem-list",label:"Practice",sub:"Language activities",filter:{repository:"vervenveda/Khaemenes_Linguistics.github.io",limit:9}},
   {type:"materials",label:"Materials",sub:"Lessons & references"},
   {type:"ecosystem-list",label:"Reference",sub:"Research language",filter:{category:"research",limit:9}},
-  {type:"link",label:"Parent Tools",sub:"Family support",href:PARENT},
+  {type:"link",label:"Parent",sub:"Family support",href:PARENT},
   {type:"ecosystem-link",label:"Search",sub:"Search ecosystem",ecosystemId:"plera",fallbackHref:SEARCH},
   {type:"help",label:"Instructions",sub:"How to use tools"}
  ],
@@ -75,13 +75,13 @@ const linguistics=Object.freeze({
 const highSchool=Object.freeze({
  id:"high-school",
  match:()=>/\/Khaemenes_High\.github\.io\/grades\/grade-(09|10|11|12)\/student-profile\/(?:index\.html)?$/i.test(location.pathname),
- toggleLabel:"Class Tools",
+ toggleLabel:"Tools",
  ariaLabel:"High school class tools",
  tools:[
   {type:"link",label:"Games",sub:"Practice & logic",href:"games/"},
   {type:"materials",label:"Materials",sub:"Videos & printables"},
   {type:"notes",label:"Notes",sub:"Study workspace"},
-  {type:"link",label:"Parent Tools",sub:"Family support",href:PARENT},
+  {type:"link",label:"Parent",sub:"Family support",href:PARENT},
   {type:"ecosystem-link",label:"Search",sub:"Search ecosystem",ecosystemId:"plera",fallbackHref:SEARCH},
   {type:"help",label:"Instructions",sub:"How to use tools"}
  ],
