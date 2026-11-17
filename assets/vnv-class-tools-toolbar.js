@@ -1,4 +1,4 @@
-/* Verve N Veda · Universal Class Tools Toolbar v1.3.0
+/* Verve N Veda · Universal Class Tools Toolbar v1.4.0
    Canonical lower-left learning-tools companion to vnv-ecosystem-toolbar.js.
    Idempotent. Directory-backed. Navigation only; no grading/mastery mutations. */
 (()=>{
@@ -127,6 +127,18 @@ async function matchingLessonGames(){
  }
  return {context,links};
 }
+async function matchingLessonResources(){
+ const context=mathematicsLessonContext();
+ if(!context)return {context:null,tools:[],materials:[]};
+ const archive=await mathematicsArchive();
+ const matches=(records,urlField)=>((records||[]).map(record=>{
+  const placement=(record.placements||[]).find(p=>String(p.course).toLowerCase()===context.course&&String(p.unit).padStart(2,"0")===context.unit&&String(p.lesson).padStart(2,"0")===context.lesson);
+  if(!placement)return null;
+  const href=record[urlField]||record.url||"";
+  return {id:record.id,title:record.title||record.id,type:record.type||"",status:record.status||"",href,placement};
+ }).filter(Boolean));
+ return {context,tools:matches(archive.tools,"url").filter(x=>x.href),materials:matches(archive.materials,"public_url")};
+}
 async function resolveEcosystemId(id,fallback=""){
  const entries=await directory();
  const hit=entries.find(e=>e.id===id);
@@ -180,6 +192,32 @@ async function materialLinks(c){
  }
  return out;
 }
+function appendResourceLink(box,label,href){
+ const a=document.createElement("a");a.href=href;a.textContent=label;box.append(a);return a;
+}
+async function renderLessonMaterials(root,c,mats){
+ const panel=root.querySelector("[data-vct-materials-panel]"),box=panel?.querySelector(".vct-links");
+ if(!panel||!box)return;
+ const matched=await matchingLessonResources();
+ box.replaceChildren();
+ if(!matched.context){
+  mats.forEach(x=>appendResourceLink(box,x.label,x.href));
+  return;
+ }
+ panel.querySelector("p").textContent="Unit "+Number(matched.context.unit)+" · Lesson "+Number(matched.context.lesson)+" · matched tools and materials";
+ for(const item of matched.tools)appendResourceLink(box,"Tool · "+item.title,item.href);
+ const ready=matched.materials.filter(x=>x.href);
+ for(const item of ready)appendResourceLink(box,"Material · "+item.title,item.href);
+ const pending=matched.materials.filter(x=>!x.href);
+ if(pending.length){
+  const note=document.createElement("p");
+  note.textContent="Matched Academy materials: "+pending.map(x=>x.title).join(" · ")+". These are indexed and will open here after the public template viewer is attached.";
+  box.append(note);
+ }
+ if(!matched.tools.length&&!matched.materials.length){
+  const note=document.createElement("p");note.textContent="No additional ProReSources companion is registered for this lesson.";box.append(note);
+ }
+}
 async function resolvedTools(c){
  const out=[];
  for(const tool of (c.tools||[]).slice(0,6)){
@@ -224,8 +262,7 @@ async function mount(){
   '</section>';
  document.body.append(root);
  const toggle=root.querySelector("#vnvClassToolsToggle"),panel=root.querySelector("#vnvClassToolsPanel");
- const matLinks=root.querySelector("[data-vct-materials-panel] .vct-links");
- mats.forEach(x=>{const a=document.createElement("a");a.href=x.href;a.textContent=x.label;matLinks.append(a)});
+ await renderLessonMaterials(root,c,mats);
  const hidePops=()=>root.querySelectorAll(".vct-pop").forEach(p=>p.hidden=true);
  const setOpen=open=>{panel.hidden=!open;toggle.setAttribute("aria-expanded",open?"true":"false");if(!open)hidePops()};
  toggle.addEventListener("click",()=>setOpen(panel.hidden),{signal:controller.signal});
@@ -273,7 +310,7 @@ async function mount(){
  return true;
 }
 function unmount(){if(controller)controller.abort();document.getElementById(ROOT_ID)?.remove();document.documentElement.dataset.vnvClassTools="unmounted";}
-const api=Object.freeze({version:"1.3.0",mount,unmount,isMounted,directory,mathematicsArchive,matchingLessonGames});
+const api=Object.freeze({version:"1.4.0",mount,unmount,isMounted,directory,mathematicsArchive,matchingLessonGames,matchingLessonResources});
 window[API_KEY]=api;window[LEGACY_API_KEY]=api;
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",()=>void mount(),{once:true});
 else void mount();
