@@ -1,4 +1,4 @@
-/* Verve N Veda · Universal Class Tools Toolbar v1.1.0
+/* Verve N Veda · Universal Class Tools Toolbar v1.2.0
    Canonical lower-left learning-tools companion to vnv-ecosystem-toolbar.js.
    Idempotent. Directory-backed. Navigation only; no grading/mastery mutations. */
 (()=>{
@@ -16,7 +16,7 @@ const DIRECTORY_URLS=Object.freeze([
 const HIGH_DEFAULT=Object.freeze({
  id:"high-school",
  match:/\/grades\/grade-(09|10|11|12)\/student-profile\/(?:index\.html)?$/i,
- toggleLabel:"Class Tools",
+ toggleLabel:"Tools",
  ariaLabel:"Class tools",
  tools:[
   {type:"link",label:"Games",sub:"Practice & logic",href:"games/"},
@@ -113,6 +113,7 @@ function installStyle(){
   '#vnvClassToolsPanel .vct-links{display:grid;gap:6px;margin-top:9px}',
   '#vnvClassToolsPanel .vct-links a{display:block;min-height:44px;box-sizing:border-box;padding:10px;border:1px solid #b48b45;border-radius:7px;background:#243038;color:#fff8e9;text-align:center;text-decoration:none;font-size:16px}',
   '#vnvClassToolsToolbar :is(button,a):focus-visible{outline:3px solid #e0bf83;outline-offset:3px}',
+  '#vnvClassToolsToggle,#vnvClassToolsPanel .vct-grid>:is(button,a){white-space:nowrap!important;overflow:hidden;text-overflow:ellipsis}',
   '@media(max-width:620px){#vnvClassToolsToolbar{width:min(294px,calc(100vw - 20px))}#vnvClassToolsPanel .vct-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}',
   '@media print{#vnvClassToolsToolbar{display:none!important}}'
  ].join("");
@@ -159,7 +160,7 @@ async function mount(){
  const tools=await resolvedTools(c);
  const mats=await materialLinks(c);
  const root=document.createElement("aside");root.id=ROOT_ID;root.dataset.vnvClassToolsConfig=String(c.id||"custom");root.setAttribute("aria-label",c.ariaLabel||"Class tools");
- root.innerHTML='<button id="vnvClassToolsToggle" type="button" aria-expanded="false" aria-controls="vnvClassToolsPanel">'+esc(c.toggleLabel||"Class Tools")+'</button>'+
+ root.innerHTML='<button id="vnvClassToolsToggle" type="button" aria-expanded="false" aria-controls="vnvClassToolsPanel">'+esc(c.toggleLabel||"Tools")+'</button>'+
   '<section id="vnvClassToolsPanel" hidden aria-label="'+esc(c.ariaLabel||"Class tools")+' menu">'+
    '<div class="vct-grid">'+tools.map(toolHTML).join("")+'</div>'+
    pop(c.materials?.title||"Learning Materials",c.materials?.intro||"Open the materials that match your class.",'data-vct-materials-panel')+
