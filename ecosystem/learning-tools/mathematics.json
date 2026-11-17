@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "id": "vnv-learning-tools-mathematics",
   "title": "Verve N Veda Mathematics Learning Tools Archive",
   "generated_from": "vervenveda/Khaemenes_High.github.io/courses/mathematics/assets/learning-games/game-registry.json",
@@ -3970,6 +3970,960 @@
           "unit": "13",
           "lesson": "03",
           "lesson_title": "Build, Calculate, Validate & Revise the Model"
+        },
+        {
+          "course": "geometry",
+          "unit": "01",
+          "lesson": "02",
+          "lesson_title": "Segments, Rays, Angles & Notation"
+        },
+        {
+          "course": "geometry",
+          "unit": "01",
+          "lesson": "03",
+          "lesson_title": "Distance, Midpoint & Segment Partition"
+        },
+        {
+          "course": "geometry",
+          "unit": "02",
+          "lesson": "01",
+          "lesson_title": "Translations on the Coordinate Plane"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "01",
+          "lesson_title": "Triangle Classification & Angle Relationships"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "04",
+          "lesson_title": "CPCTC and Multi-Step Triangle Proofs"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "05",
+          "lesson_title": "Isosceles and Equilateral Triangle Theorems"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "06",
+          "lesson_title": "Triangle Inequality & Feasible Construction"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "07",
+          "lesson_title": "Perpendicular Bisectors, Angle Bisectors & Centers"
+        },
+        {
+          "course": "geometry",
+          "unit": "04",
+          "lesson": "02",
+          "lesson_title": "Proving Lines Parallel from Angle Relationships"
+        },
+        {
+          "course": "geometry",
+          "unit": "04",
+          "lesson": "03",
+          "lesson_title": "Slope as Direction and Rate"
+        },
+        {
+          "course": "geometry",
+          "unit": "04",
+          "lesson": "04",
+          "lesson_title": "Parallel and Perpendicular Slopes"
+        },
+        {
+          "course": "geometry",
+          "unit": "04",
+          "lesson": "05",
+          "lesson_title": "Coordinate Proof with Distance, Midpoint & Slope"
+        },
+        {
+          "course": "geometry",
+          "unit": "05",
+          "lesson": "02",
+          "lesson_title": "Similarity Through Transformations"
+        },
+        {
+          "course": "geometry",
+          "unit": "05",
+          "lesson": "03",
+          "lesson_title": "AA Similarity and Triangle Proportions"
+        },
+        {
+          "course": "geometry",
+          "unit": "05",
+          "lesson": "04",
+          "lesson_title": "SSS and SAS Similarity"
+        },
+        {
+          "course": "geometry",
+          "unit": "05",
+          "lesson": "06",
+          "lesson_title": "Scale Drawings, Maps & Models"
+        },
+        {
+          "course": "geometry",
+          "unit": "05",
+          "lesson": "07",
+          "lesson_title": "Indirect Measurement, Shadows & Mirrors"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "01",
+          "lesson_title": "Pythagorean Theorem & Its Converse"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "02",
+          "lesson_title": "Special Right Triangles: 45-45-90"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "03",
+          "lesson_title": "Special Right Triangles: 30-60-90"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "04",
+          "lesson_title": "Geometric Mean & Right-Triangle Altitudes"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "06",
+          "lesson_title": "Inverse Trigonometry & Angle Measure"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "07",
+          "lesson_title": "Angles of Elevation and Depression"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "08",
+          "lesson_title": "Bearings, Vectors & Multi-Step Navigation"
+        },
+        {
+          "course": "geometry",
+          "unit": "07",
+          "lesson": "01",
+          "lesson_title": "Interior and Exterior Angles of Polygons"
+        },
+        {
+          "course": "geometry",
+          "unit": "07",
+          "lesson": "03",
+          "lesson_title": "Rectangles, Rhombi & Squares"
+        },
+        {
+          "course": "geometry",
+          "unit": "07",
+          "lesson": "05",
+          "lesson_title": "Quadrilateral Coordinate Proofs"
+        },
+        {
+          "course": "geometry",
+          "unit": "07",
+          "lesson": "06",
+          "lesson_title": "Regular Polygons, Apothem & Central Angles"
+        },
+        {
+          "course": "geometry",
+          "unit": "07",
+          "lesson": "07",
+          "lesson_title": "Polygon Decomposition & Design Constraints"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "01",
+          "lesson_title": "Circle Vocabulary, Radius, Diameter & Chords"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "02",
+          "lesson_title": "Central Angles, Arcs & Arc Length"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "03",
+          "lesson_title": "Inscribed Angles & Intercepted Arcs"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "04",
+          "lesson_title": "Chords, Perpendicular Bisectors & Distances"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "07",
+          "lesson_title": "Sector Area, Segment Area & Annuli"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "08",
+          "lesson_title": "Equation of a Circle & Coordinate Applications"
+        },
+        {
+          "course": "geometry",
+          "unit": "09",
+          "lesson": "02",
+          "lesson_title": "Perpendicular and Angle Bisector Loci"
+        },
+        {
+          "course": "geometry",
+          "unit": "09",
+          "lesson": "03",
+          "lesson_title": "Distance from a Point to a Line"
+        },
+        {
+          "course": "geometry",
+          "unit": "09",
+          "lesson": "04",
+          "lesson_title": "Coordinate Intersections and Geometric Systems"
+        },
+        {
+          "course": "geometry",
+          "unit": "09",
+          "lesson": "05",
+          "lesson_title": "Circle-Line Intersections and Tangency"
+        },
+        {
+          "course": "geometry",
+          "unit": "09",
+          "lesson": "06",
+          "lesson_title": "Parabolas as Distance Loci"
+        },
+        {
+          "course": "geometry",
+          "unit": "10",
+          "lesson": "01",
+          "lesson_title": "Area of Triangles, Parallelograms & Trapezoids"
+        },
+        {
+          "course": "geometry",
+          "unit": "10",
+          "lesson": "02",
+          "lesson_title": "Area of Regular Polygons and Composite Figures"
+        },
+        {
+          "course": "geometry",
+          "unit": "10",
+          "lesson": "03",
+          "lesson_title": "Heron’s Formula and Coordinate Area"
+        },
+        {
+          "course": "geometry",
+          "unit": "10",
+          "lesson": "04",
+          "lesson_title": "Effects of Scale on Perimeter and Area"
+        },
+        {
+          "course": "geometry",
+          "unit": "10",
+          "lesson": "05",
+          "lesson_title": "Units, Precision, Error & Significant Figures"
+        },
+        {
+          "course": "geometry",
+          "unit": "10",
+          "lesson": "06",
+          "lesson_title": "Geometric Probability by Length and Area"
+        },
+        {
+          "course": "geometry",
+          "unit": "10",
+          "lesson": "07",
+          "lesson_title": "Optimization with Perimeter and Area Constraints"
+        },
+        {
+          "course": "geometry",
+          "unit": "11",
+          "lesson": "03",
+          "lesson_title": "Spheres: Surface Area and Volume"
+        },
+        {
+          "course": "geometry",
+          "unit": "11",
+          "lesson": "04",
+          "lesson_title": "Nets and Surface Area of Prisms and Pyramids"
+        },
+        {
+          "course": "geometry",
+          "unit": "11",
+          "lesson": "05",
+          "lesson_title": "Surface Area of Cylinders and Cones"
+        },
+        {
+          "course": "geometry",
+          "unit": "11",
+          "lesson": "07",
+          "lesson_title": "Similarity, Scale and Volume Relationships"
+        },
+        {
+          "course": "geometry",
+          "unit": "12",
+          "lesson": "02",
+          "lesson_title": "Precision Lines, Angles and Dimensions"
+        },
+        {
+          "course": "geometry",
+          "unit": "12",
+          "lesson": "04",
+          "lesson_title": "Scale Plans, Rooms and Openings"
+        },
+        {
+          "course": "geometry",
+          "unit": "12",
+          "lesson": "05",
+          "lesson_title": "Area, Perimeter and Material Schedules"
+        },
+        {
+          "course": "geometry",
+          "unit": "13",
+          "lesson": "03",
+          "lesson_title": "Test Measurements, Sensitivity and Limitations"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "01",
+          "lesson": "01",
+          "lesson_title": "Function Language, Notation & Evaluation"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "02",
+          "lesson": "01",
+          "lesson_title": "Polynomial Vocabulary, Degree & Structure"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "02",
+          "lesson": "02",
+          "lesson_title": "Polynomial Operations & Equivalent Forms"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "03",
+          "lesson": "01",
+          "lesson_title": "Long Division of Polynomials"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "03",
+          "lesson": "04",
+          "lesson_title": "Rational Root Theorem & Candidate Zeros"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "03",
+          "lesson": "05",
+          "lesson_title": "Solving Higher-Degree Polynomial Equations"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "03",
+          "lesson": "07",
+          "lesson_title": "Polynomial Regression, Interpolation & Model Limits"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "01",
+          "lesson_title": "Simplifying Rational Expressions & Restrictions"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "02",
+          "lesson_title": "Multiplying and Dividing Rational Expressions"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "03",
+          "lesson_title": "Adding and Subtracting Rational Expressions"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "04",
+          "lesson_title": "Solving Rational Equations & Extraneous Solutions"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "06",
+          "lesson_title": "Transformations and Features of Rational Functions"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "08",
+          "lesson_title": "Rational Models, Rates & Work Problems"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "05",
+          "lesson": "01",
+          "lesson_title": "Rational Exponents & Radical Equivalence"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "05",
+          "lesson": "02",
+          "lesson_title": "Simplifying Radical Expressions"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "05",
+          "lesson": "03",
+          "lesson_title": "Operations with Radicals & Rationalizing"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "05",
+          "lesson": "04",
+          "lesson_title": "Solving Radical Equations & Checking Solutions"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "05",
+          "lesson": "05",
+          "lesson_title": "Radical Functions, Domains & Transformations"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "05",
+          "lesson": "06",
+          "lesson_title": "Radical Models, Geometry & Measurement Error"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "01",
+          "lesson_title": "Exponential Function Structure & Parameters"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "02",
+          "lesson_title": "Growth, Decay & Percent Change"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "03",
+          "lesson_title": "Compound Interest & Effective Rates"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "04",
+          "lesson_title": "Continuous Growth, Decay & the Constant e"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "05",
+          "lesson_title": "Solving Exponential Equations by Common Bases"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "06",
+          "lesson_title": "Exponential Regression & Data Modelling"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "07",
+          "lesson_title": "Comparing Linear, Quadratic & Exponential Models"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "07",
+          "lesson": "01",
+          "lesson_title": "Logarithms as Inverses of Exponentials"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "07",
+          "lesson": "02",
+          "lesson_title": "Common, Natural & Other Logarithmic Bases"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "07",
+          "lesson": "04",
+          "lesson_title": "Solving Exponential Equations with Logarithms"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "07",
+          "lesson": "05",
+          "lesson_title": "Solving Logarithmic Equations & Domain Checks"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "07",
+          "lesson": "07",
+          "lesson_title": "Logarithmic Scales, Data & Model Interpretation"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "08",
+          "lesson": "03",
+          "lesson_title": "Polynomial, Rational & Radical Systems"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "08",
+          "lesson": "04",
+          "lesson_title": "Matrix Vocabulary, Dimensions & Operations"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "08",
+          "lesson": "05",
+          "lesson_title": "Matrix Equations, Row Reduction & Systems"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "08",
+          "lesson": "06",
+          "lesson_title": "Determinants, Inverses & Transformation Models"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "09",
+          "lesson": "01",
+          "lesson_title": "Arithmetic Sequences: Explicit & Recursive Forms"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "09",
+          "lesson": "02",
+          "lesson_title": "Geometric Sequences: Growth, Decay & Recursion"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "09",
+          "lesson": "03",
+          "lesson_title": "General Sequences, Patterns & Difference Tables"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "09",
+          "lesson": "04",
+          "lesson_title": "Finite Arithmetic & Geometric Series"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "09",
+          "lesson": "05",
+          "lesson_title": "Infinite Geometric Series & Convergence"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "09",
+          "lesson": "07",
+          "lesson_title": "Pascal’s Triangle & the Binomial Theorem"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "03",
+          "lesson_title": "Exact Trigonometric Values & Reference Angles"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "04",
+          "lesson_title": "Six Trigonometric Functions & Reciprocal Relationships"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "08",
+          "lesson_title": "Inverse Trigonometric Functions & Restricted Domains"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "09",
+          "lesson_title": "Sinusoidal Regression & Periodic Data"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "10",
+          "lesson_title": "Vectors, Bearings & Component Models"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "11",
+          "lesson": "05",
+          "lesson_title": "Solving Trigonometric Equations on Intervals"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "11",
+          "lesson": "08",
+          "lesson_title": "Navigation, Vectors & Multi-Step Triangle Models"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "12",
+          "lesson": "02",
+          "lesson_title": "Probability Rules, Complements & Unions"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "12",
+          "lesson": "03",
+          "lesson_title": "Conditional Probability, Independence & Bayes Reasoning"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "12",
+          "lesson": "04",
+          "lesson_title": "Binomial Experiments & Expected Value"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "12",
+          "lesson": "05",
+          "lesson_title": "Normal Distributions, z-Scores & Percentiles"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "13",
+          "lesson": "02",
+          "lesson_title": "Select Variables, Functions, Data & Assumptions"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "13",
+          "lesson": "03",
+          "lesson_title": "Build, Compute, Visualize & Validate the Model"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "13",
+          "lesson": "04",
+          "lesson_title": "Test Sensitivity, Uncertainty, Fairness & Limitations"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "01",
+          "lesson": "05",
+          "lesson_title": "Order of Operations & Evaluating Expressions"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "02",
+          "lesson": "08",
+          "lesson_title": "Coordinate Plane & Multi-Step Integer Applications"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "03",
+          "lesson": "01",
+          "lesson_title": "Rational Numbers Fraction Meaning"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "03",
+          "lesson": "03",
+          "lesson_title": "Compare Order Rational Numbers"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "03",
+          "lesson": "04",
+          "lesson_title": "Add Subtract Rational Numbers"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "03",
+          "lesson": "07",
+          "lesson_title": "Decimal Operations Repeating Decimals"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "01",
+          "lesson_title": "Ratio Meaning Equivalent Ratios"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "02",
+          "lesson_title": "Ratio Tables & Double Number Lines"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "03",
+          "lesson_title": "Rates, Unit Rates & Fair Comparisons"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "04",
+          "lesson_title": "Proportional Tables, Graphs & Equations"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "05",
+          "lesson_title": "Solving Proportions & Direct Variation"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "06",
+          "lesson_title": "Scale Drawings, Maps & Similar Figures"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "07",
+          "lesson_title": "Proportional vs. Nonproportional Relationships"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "08",
+          "lesson_title": "Conversions & Multistep Proportional Modelling"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "05",
+          "lesson": "01",
+          "lesson_title": "Percent Meaning, Benchmarks & Equivalent Forms"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "05",
+          "lesson": "02",
+          "lesson_title": "Finding Percent of a Quantity"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "05",
+          "lesson": "03",
+          "lesson_title": "Finding Percent, Rate or Whole"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "05",
+          "lesson": "04",
+          "lesson_title": "Percent Increase, Decrease & Relative Change"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "05",
+          "lesson": "07",
+          "lesson_title": "Simple Interest, Fees & Financial Comparisons"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "05",
+          "lesson": "08",
+          "lesson_title": "Percentage Points, Repeated Change & Decisions"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "06",
+          "lesson": "01",
+          "lesson_title": "Exponent Meaning, Powers & Grouping"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "06",
+          "lesson": "04",
+          "lesson_title": "Square & Cube Roots; Perfect Powers"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "06",
+          "lesson": "05",
+          "lesson_title": "Estimating Irrational Roots"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "06",
+          "lesson": "06",
+          "lesson_title": "Scientific Notation & Powers of Ten"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "06",
+          "lesson": "07",
+          "lesson_title": "Operations with Scientific Notation & Applications"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "07",
+          "lesson": "04",
+          "lesson_title": "Properties of Operations & Equivalent Structure"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "07",
+          "lesson": "07",
+          "lesson_title": "Formulas Multivariable Expressions"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "02",
+          "lesson_title": "One-Step Equations: Addition & Subtraction"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "03",
+          "lesson_title": "One-Step Equations: Multiplication & Division"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "04",
+          "lesson_title": "Two-Step Equations & Operation Order"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "05",
+          "lesson_title": "Multi-Step Equations: Distribution & Like Terms"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "07",
+          "lesson_title": "Rearranging Formulas Literal Equations"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "08",
+          "lesson_title": "Context Equations, Verification & Error Analysis"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "09",
+          "lesson": "01",
+          "lesson_title": "Inequality Meaning, Symbols & Solution Sets"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "01",
+          "lesson_title": "Coordinate Plane, Ordered Pairs & Quadrants"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "04",
+          "lesson_title": "Tables Graphs Equations Words"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "05",
+          "lesson_title": "Rate of Change from Tables, Graphs & Contexts"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "06",
+          "lesson_title": "Slope, Intercepts & Linear Equations"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "01",
+          "lesson_title": "Measurement Systems Units Precision"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "04",
+          "lesson_title": "Area Polygons Circles Composite Figures"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "05",
+          "lesson_title": "Scale Drawings, Similarity & Dilations"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "06",
+          "lesson_title": "Right Triangles Pythagorean Distance"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "07",
+          "lesson_title": "Surface Area Nets Volume"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "08",
+          "lesson_title": "Coordinate Geometry Design Constraints Error"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "12",
+          "lesson": "01",
+          "lesson_title": "Data Questions, Variables, Populations & Samples"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "12",
+          "lesson": "06",
+          "lesson_title": "Probability Models, Sample Spaces & Relative Frequency"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "12",
+          "lesson": "07",
+          "lesson_title": "Compound Probability, Tree Diagrams & Simulation"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "13",
+          "lesson": "01",
+          "lesson_title": "Frame Meaningful Safe Answerable Question"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "13",
+          "lesson": "02",
+          "lesson_title": "Select Variables Mathematics Data Representations"
         }
       ]
     },
@@ -4016,6 +4970,444 @@
           "unit": "13",
           "lesson": "03",
           "lesson_title": "Build, Calculate, Validate & Revise the Model"
+        },
+        {
+          "course": "geometry",
+          "unit": "01",
+          "lesson": "04",
+          "lesson_title": "Compass-and-Straightedge Constructions"
+        },
+        {
+          "course": "geometry",
+          "unit": "02",
+          "lesson": "01",
+          "lesson_title": "Translations on the Coordinate Plane"
+        },
+        {
+          "course": "geometry",
+          "unit": "02",
+          "lesson": "02",
+          "lesson_title": "Reflections Across Axes and Lines"
+        },
+        {
+          "course": "geometry",
+          "unit": "02",
+          "lesson": "03",
+          "lesson_title": "Rotations About the Origin and Other Centers"
+        },
+        {
+          "course": "geometry",
+          "unit": "02",
+          "lesson": "06",
+          "lesson_title": "Line, Rotational & Point Symmetry"
+        },
+        {
+          "course": "geometry",
+          "unit": "02",
+          "lesson": "07",
+          "lesson_title": "Tessellations, Frieze Patterns & Design Rules"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "01",
+          "lesson_title": "Triangle Classification & Angle Relationships"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "04",
+          "lesson_title": "CPCTC and Multi-Step Triangle Proofs"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "05",
+          "lesson_title": "Isosceles and Equilateral Triangle Theorems"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "06",
+          "lesson_title": "Triangle Inequality & Feasible Construction"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "07",
+          "lesson_title": "Perpendicular Bisectors, Angle Bisectors & Centers"
+        },
+        {
+          "course": "geometry",
+          "unit": "04",
+          "lesson": "05",
+          "lesson_title": "Coordinate Proof with Distance, Midpoint & Slope"
+        },
+        {
+          "course": "geometry",
+          "unit": "05",
+          "lesson": "01",
+          "lesson_title": "Dilations from a Center"
+        },
+        {
+          "course": "geometry",
+          "unit": "05",
+          "lesson": "02",
+          "lesson_title": "Similarity Through Transformations"
+        },
+        {
+          "course": "geometry",
+          "unit": "05",
+          "lesson": "03",
+          "lesson_title": "AA Similarity and Triangle Proportions"
+        },
+        {
+          "course": "geometry",
+          "unit": "05",
+          "lesson": "04",
+          "lesson_title": "SSS and SAS Similarity"
+        },
+        {
+          "course": "geometry",
+          "unit": "05",
+          "lesson": "06",
+          "lesson_title": "Scale Drawings, Maps & Models"
+        },
+        {
+          "course": "geometry",
+          "unit": "05",
+          "lesson": "07",
+          "lesson_title": "Indirect Measurement, Shadows & Mirrors"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "01",
+          "lesson_title": "Pythagorean Theorem & Its Converse"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "02",
+          "lesson_title": "Special Right Triangles: 45-45-90"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "03",
+          "lesson_title": "Special Right Triangles: 30-60-90"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "04",
+          "lesson_title": "Geometric Mean & Right-Triangle Altitudes"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "06",
+          "lesson_title": "Inverse Trigonometry & Angle Measure"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "08",
+          "lesson_title": "Bearings, Vectors & Multi-Step Navigation"
+        },
+        {
+          "course": "geometry",
+          "unit": "07",
+          "lesson": "01",
+          "lesson_title": "Interior and Exterior Angles of Polygons"
+        },
+        {
+          "course": "geometry",
+          "unit": "07",
+          "lesson": "05",
+          "lesson_title": "Quadrilateral Coordinate Proofs"
+        },
+        {
+          "course": "geometry",
+          "unit": "07",
+          "lesson": "06",
+          "lesson_title": "Regular Polygons, Apothem & Central Angles"
+        },
+        {
+          "course": "geometry",
+          "unit": "07",
+          "lesson": "07",
+          "lesson_title": "Polygon Decomposition & Design Constraints"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "01",
+          "lesson_title": "Circle Vocabulary, Radius, Diameter & Chords"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "02",
+          "lesson_title": "Central Angles, Arcs & Arc Length"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "03",
+          "lesson_title": "Inscribed Angles & Intercepted Arcs"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "04",
+          "lesson_title": "Chords, Perpendicular Bisectors & Distances"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "07",
+          "lesson_title": "Sector Area, Segment Area & Annuli"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "08",
+          "lesson_title": "Equation of a Circle & Coordinate Applications"
+        },
+        {
+          "course": "geometry",
+          "unit": "09",
+          "lesson": "02",
+          "lesson_title": "Perpendicular and Angle Bisector Loci"
+        },
+        {
+          "course": "geometry",
+          "unit": "09",
+          "lesson": "04",
+          "lesson_title": "Coordinate Intersections and Geometric Systems"
+        },
+        {
+          "course": "geometry",
+          "unit": "09",
+          "lesson": "05",
+          "lesson_title": "Circle-Line Intersections and Tangency"
+        },
+        {
+          "course": "geometry",
+          "unit": "09",
+          "lesson": "07",
+          "lesson_title": "Voronoi Thinking, Nearest-Point Regions & Design"
+        },
+        {
+          "course": "geometry",
+          "unit": "10",
+          "lesson": "01",
+          "lesson_title": "Area of Triangles, Parallelograms & Trapezoids"
+        },
+        {
+          "course": "geometry",
+          "unit": "10",
+          "lesson": "02",
+          "lesson_title": "Area of Regular Polygons and Composite Figures"
+        },
+        {
+          "course": "geometry",
+          "unit": "10",
+          "lesson": "03",
+          "lesson_title": "Heron’s Formula and Coordinate Area"
+        },
+        {
+          "course": "geometry",
+          "unit": "10",
+          "lesson": "04",
+          "lesson_title": "Effects of Scale on Perimeter and Area"
+        },
+        {
+          "course": "geometry",
+          "unit": "10",
+          "lesson": "06",
+          "lesson_title": "Geometric Probability by Length and Area"
+        },
+        {
+          "course": "geometry",
+          "unit": "10",
+          "lesson": "07",
+          "lesson_title": "Optimization with Perimeter and Area Constraints"
+        },
+        {
+          "course": "geometry",
+          "unit": "11",
+          "lesson": "03",
+          "lesson_title": "Spheres: Surface Area and Volume"
+        },
+        {
+          "course": "geometry",
+          "unit": "11",
+          "lesson": "04",
+          "lesson_title": "Nets and Surface Area of Prisms and Pyramids"
+        },
+        {
+          "course": "geometry",
+          "unit": "11",
+          "lesson": "05",
+          "lesson_title": "Surface Area of Cylinders and Cones"
+        },
+        {
+          "course": "geometry",
+          "unit": "11",
+          "lesson": "07",
+          "lesson_title": "Similarity, Scale and Volume Relationships"
+        },
+        {
+          "course": "geometry",
+          "unit": "12",
+          "lesson": "04",
+          "lesson_title": "Scale Plans, Rooms and Openings"
+        },
+        {
+          "course": "geometry",
+          "unit": "12",
+          "lesson": "05",
+          "lesson_title": "Area, Perimeter and Material Schedules"
+        },
+        {
+          "course": "geometry",
+          "unit": "12",
+          "lesson": "06",
+          "lesson_title": "Transformations, Repetition and Modular Design"
+        },
+        {
+          "course": "geometry",
+          "unit": "12",
+          "lesson": "07",
+          "lesson_title": "Export, Print/PDF, SVG, DXF and Design Defense"
+        },
+        {
+          "course": "geometry",
+          "unit": "13",
+          "lesson": "01",
+          "lesson_title": "Frame a Geometric Design or Investigation"
+        },
+        {
+          "course": "geometry",
+          "unit": "13",
+          "lesson": "02",
+          "lesson_title": "Develop Constructions, Models and Proof"
+        },
+        {
+          "course": "geometry",
+          "unit": "13",
+          "lesson": "03",
+          "lesson_title": "Test Measurements, Sensitivity and Limitations"
+        },
+        {
+          "course": "geometry",
+          "unit": "13",
+          "lesson": "04",
+          "lesson_title": "Prepare a Printable Technical Portfolio"
+        },
+        {
+          "course": "geometry",
+          "unit": "13",
+          "lesson": "05",
+          "lesson_title": "Present, Defend and Revise the Design"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "05",
+          "lesson": "06",
+          "lesson_title": "Radical Models, Geometry & Measurement Error"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "08",
+          "lesson": "06",
+          "lesson_title": "Determinants, Inverses & Transformation Models"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "09",
+          "lesson": "07",
+          "lesson_title": "Pascal’s Triangle & the Binomial Theorem"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "02",
+          "lesson_title": "The Unit Circle & Coordinate Definitions"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "10",
+          "lesson_title": "Vectors, Bearings & Component Models"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "11",
+          "lesson": "08",
+          "lesson_title": "Navigation, Vectors & Multi-Step Triangle Models"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "02",
+          "lesson": "08",
+          "lesson_title": "Coordinate Plane & Multi-Step Integer Applications"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "06",
+          "lesson_title": "Scale Drawings, Maps & Similar Figures"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "01",
+          "lesson_title": "Coordinate Plane, Ordered Pairs & Quadrants"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "01",
+          "lesson_title": "Measurement Systems Units Precision"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "03",
+          "lesson_title": "Perimeter Circumference Composite Boundaries"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "04",
+          "lesson_title": "Area Polygons Circles Composite Figures"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "05",
+          "lesson_title": "Scale Drawings, Similarity & Dilations"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "06",
+          "lesson_title": "Right Triangles Pythagorean Distance"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "07",
+          "lesson_title": "Surface Area Nets Volume"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "08",
+          "lesson_title": "Coordinate Geometry Design Constraints Error"
         }
       ]
     }
@@ -4262,6 +5654,510 @@
           "unit": "11",
           "lesson": "06",
           "lesson_title": "Circle Equations, Radical Models & Verification"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "06",
+          "lesson_title": "Triangle Inequality & Feasible Construction"
+        },
+        {
+          "course": "geometry",
+          "unit": "04",
+          "lesson": "06",
+          "lesson_title": "Equations of Lines in Geometric Context"
+        },
+        {
+          "course": "geometry",
+          "unit": "05",
+          "lesson": "03",
+          "lesson_title": "AA Similarity and Triangle Proportions"
+        },
+        {
+          "course": "geometry",
+          "unit": "05",
+          "lesson": "05",
+          "lesson_title": "Side-Splitter and Proportional Segments"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "05",
+          "lesson_title": "Sine, Cosine & Tangent Ratios"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "06",
+          "lesson_title": "Inverse Trigonometry & Angle Measure"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "08",
+          "lesson_title": "Equation of a Circle & Coordinate Applications"
+        },
+        {
+          "course": "geometry",
+          "unit": "09",
+          "lesson": "04",
+          "lesson_title": "Coordinate Intersections and Geometric Systems"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "02",
+          "lesson": "01",
+          "lesson_title": "Polynomial Vocabulary, Degree & Structure"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "02",
+          "lesson": "02",
+          "lesson_title": "Polynomial Operations & Equivalent Forms"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "02",
+          "lesson": "05",
+          "lesson_title": "Operations with Complex Numbers"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "02",
+          "lesson": "06",
+          "lesson_title": "Quadratic Equations with Complex Solutions"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "03",
+          "lesson": "01",
+          "lesson_title": "Long Division of Polynomials"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "03",
+          "lesson": "04",
+          "lesson_title": "Rational Root Theorem & Candidate Zeros"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "03",
+          "lesson": "05",
+          "lesson_title": "Solving Higher-Degree Polynomial Equations"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "03",
+          "lesson": "07",
+          "lesson_title": "Polynomial Regression, Interpolation & Model Limits"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "01",
+          "lesson_title": "Simplifying Rational Expressions & Restrictions"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "02",
+          "lesson_title": "Multiplying and Dividing Rational Expressions"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "03",
+          "lesson_title": "Adding and Subtracting Rational Expressions"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "04",
+          "lesson_title": "Solving Rational Equations & Extraneous Solutions"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "06",
+          "lesson_title": "Transformations and Features of Rational Functions"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "08",
+          "lesson_title": "Rational Models, Rates & Work Problems"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "05",
+          "lesson": "01",
+          "lesson_title": "Rational Exponents & Radical Equivalence"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "05",
+          "lesson": "02",
+          "lesson_title": "Simplifying Radical Expressions"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "05",
+          "lesson": "03",
+          "lesson_title": "Operations with Radicals & Rationalizing"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "05",
+          "lesson": "04",
+          "lesson_title": "Solving Radical Equations & Checking Solutions"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "05",
+          "lesson": "05",
+          "lesson_title": "Radical Functions, Domains & Transformations"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "05",
+          "lesson": "06",
+          "lesson_title": "Radical Models, Geometry & Measurement Error"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "01",
+          "lesson_title": "Exponential Function Structure & Parameters"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "05",
+          "lesson_title": "Solving Exponential Equations by Common Bases"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "06",
+          "lesson_title": "Exponential Regression & Data Modelling"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "07",
+          "lesson_title": "Comparing Linear, Quadratic & Exponential Models"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "07",
+          "lesson": "01",
+          "lesson_title": "Logarithms as Inverses of Exponentials"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "07",
+          "lesson": "02",
+          "lesson_title": "Common, Natural & Other Logarithmic Bases"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "07",
+          "lesson": "04",
+          "lesson_title": "Solving Exponential Equations with Logarithms"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "07",
+          "lesson": "05",
+          "lesson_title": "Solving Logarithmic Equations & Domain Checks"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "07",
+          "lesson": "07",
+          "lesson_title": "Logarithmic Scales, Data & Model Interpretation"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "08",
+          "lesson": "01",
+          "lesson_title": "Graphical Solutions of Linear–Nonlinear Systems"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "08",
+          "lesson": "02",
+          "lesson_title": "Solving Nonlinear Systems by Substitution"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "08",
+          "lesson": "03",
+          "lesson_title": "Polynomial, Rational & Radical Systems"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "08",
+          "lesson": "04",
+          "lesson_title": "Matrix Vocabulary, Dimensions & Operations"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "08",
+          "lesson": "05",
+          "lesson_title": "Matrix Equations, Row Reduction & Systems"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "09",
+          "lesson": "01",
+          "lesson_title": "Arithmetic Sequences: Explicit & Recursive Forms"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "09",
+          "lesson": "02",
+          "lesson_title": "Geometric Sequences: Growth, Decay & Recursion"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "09",
+          "lesson": "03",
+          "lesson_title": "General Sequences, Patterns & Difference Tables"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "09",
+          "lesson": "04",
+          "lesson_title": "Finite Arithmetic & Geometric Series"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "09",
+          "lesson": "05",
+          "lesson_title": "Infinite Geometric Series & Convergence"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "03",
+          "lesson_title": "Exact Trigonometric Values & Reference Angles"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "04",
+          "lesson_title": "Six Trigonometric Functions & Reciprocal Relationships"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "08",
+          "lesson_title": "Inverse Trigonometric Functions & Restricted Domains"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "11",
+          "lesson": "05",
+          "lesson_title": "Solving Trigonometric Equations on Intervals"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "01",
+          "lesson": "01",
+          "lesson_title": "Number Families & the Real Number System"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "01",
+          "lesson": "05",
+          "lesson_title": "Order of Operations & Evaluating Expressions"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "03",
+          "lesson": "01",
+          "lesson_title": "Rational Numbers Fraction Meaning"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "03",
+          "lesson": "03",
+          "lesson_title": "Compare Order Rational Numbers"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "03",
+          "lesson": "04",
+          "lesson_title": "Add Subtract Rational Numbers"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "03",
+          "lesson": "07",
+          "lesson_title": "Decimal Operations Repeating Decimals"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "01",
+          "lesson_title": "Ratio Meaning Equivalent Ratios"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "02",
+          "lesson_title": "Ratio Tables & Double Number Lines"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "04",
+          "lesson_title": "Proportional Tables, Graphs & Equations"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "05",
+          "lesson_title": "Solving Proportions & Direct Variation"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "07",
+          "lesson_title": "Proportional vs. Nonproportional Relationships"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "08",
+          "lesson_title": "Conversions & Multistep Proportional Modelling"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "06",
+          "lesson": "01",
+          "lesson_title": "Exponent Meaning, Powers & Grouping"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "06",
+          "lesson": "02",
+          "lesson_title": "Zero & Negative Exponents Through Patterns"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "06",
+          "lesson": "03",
+          "lesson_title": "Exponent Properties & Equivalent Expressions"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "06",
+          "lesson": "05",
+          "lesson_title": "Estimating Irrational Roots"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "06",
+          "lesson": "07",
+          "lesson_title": "Operations with Scientific Notation & Applications"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "07",
+          "lesson": "04",
+          "lesson_title": "Properties of Operations & Equivalent Structure"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "07",
+          "lesson": "05",
+          "lesson_title": "Distributive Property & Factoring"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "02",
+          "lesson_title": "One-Step Equations: Addition & Subtraction"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "03",
+          "lesson_title": "One-Step Equations: Multiplication & Division"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "04",
+          "lesson_title": "Two-Step Equations & Operation Order"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "05",
+          "lesson_title": "Multi-Step Equations: Distribution & Like Terms"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "07",
+          "lesson_title": "Rearranging Formulas Literal Equations"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "08",
+          "lesson_title": "Context Equations, Verification & Error Analysis"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "09",
+          "lesson": "01",
+          "lesson_title": "Inequality Meaning, Symbols & Solution Sets"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "09",
+          "lesson": "03",
+          "lesson_title": "One-Step Inequalities & Order Preservation"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "09",
+          "lesson": "05",
+          "lesson_title": "Multistep Inequalities with Variables on Both Sides"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "09",
+          "lesson": "06",
+          "lesson_title": "Compound Inequalities: AND / OR"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "02",
+          "lesson_title": "Patterns, Sequences & Rules"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "04",
+          "lesson_title": "Tables Graphs Equations Words"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "06",
+          "lesson_title": "Slope, Intercepts & Linear Equations"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "01",
+          "lesson_title": "Measurement Systems Units Precision"
         }
       ]
     },
@@ -4380,6 +6276,246 @@
           "unit": "13",
           "lesson": "03",
           "lesson_title": "Build, Calculate, Validate & Revise the Model"
+        },
+        {
+          "course": "geometry",
+          "unit": "01",
+          "lesson": "05",
+          "lesson_title": "Conditional Statements, Converses & Counterexamples"
+        },
+        {
+          "course": "geometry",
+          "unit": "01",
+          "lesson": "06",
+          "lesson_title": "Two-Column, Flow & Paragraph Proofs"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "04",
+          "lesson_title": "CPCTC and Multi-Step Triangle Proofs"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "05",
+          "lesson_title": "Isosceles and Equilateral Triangle Theorems"
+        },
+        {
+          "course": "geometry",
+          "unit": "04",
+          "lesson": "05",
+          "lesson_title": "Coordinate Proof with Distance, Midpoint & Slope"
+        },
+        {
+          "course": "geometry",
+          "unit": "05",
+          "lesson": "06",
+          "lesson_title": "Scale Drawings, Maps & Models"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "01",
+          "lesson_title": "Pythagorean Theorem & Its Converse"
+        },
+        {
+          "course": "geometry",
+          "unit": "07",
+          "lesson": "05",
+          "lesson_title": "Quadrilateral Coordinate Proofs"
+        },
+        {
+          "course": "geometry",
+          "unit": "07",
+          "lesson": "07",
+          "lesson_title": "Polygon Decomposition & Design Constraints"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "06",
+          "lesson_title": "Secant, Chord & Tangent Power Theorems"
+        },
+        {
+          "course": "geometry",
+          "unit": "10",
+          "lesson": "07",
+          "lesson_title": "Optimization with Perimeter and Area Constraints"
+        },
+        {
+          "course": "geometry",
+          "unit": "13",
+          "lesson": "02",
+          "lesson_title": "Develop Constructions, Models and Proof"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "01",
+          "lesson": "02",
+          "lesson_title": "Domain, Range, Intervals & Constraints"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "02",
+          "lesson": "08",
+          "lesson_title": "Fundamental Theorem of Algebra & Complete Factorization"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "03",
+          "lesson": "03",
+          "lesson_title": "Remainder and Factor Theorems"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "03",
+          "lesson": "04",
+          "lesson_title": "Rational Root Theorem & Candidate Zeros"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "03",
+          "lesson": "07",
+          "lesson_title": "Polynomial Regression, Interpolation & Model Limits"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "08",
+          "lesson_title": "Rational Models, Rates & Work Problems"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "05",
+          "lesson": "06",
+          "lesson_title": "Radical Models, Geometry & Measurement Error"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "06",
+          "lesson_title": "Exponential Regression & Data Modelling"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "07",
+          "lesson_title": "Comparing Linear, Quadratic & Exponential Models"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "07",
+          "lesson": "07",
+          "lesson_title": "Logarithmic Scales, Data & Model Interpretation"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "08",
+          "lesson": "06",
+          "lesson_title": "Determinants, Inverses & Transformation Models"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "09",
+          "lesson": "07",
+          "lesson_title": "Pascal’s Triangle & the Binomial Theorem"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "10",
+          "lesson_title": "Vectors, Bearings & Component Models"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "11",
+          "lesson": "07",
+          "lesson_title": "Law of Cosines & Heron-Type Area Reasoning"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "11",
+          "lesson": "08",
+          "lesson_title": "Navigation, Vectors & Multi-Step Triangle Models"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "12",
+          "lesson": "03",
+          "lesson_title": "Conditional Probability, Independence & Bayes Reasoning"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "12",
+          "lesson": "07",
+          "lesson_title": "Evaluating Statistical Claims & Communicating Uncertainty"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "13",
+          "lesson": "03",
+          "lesson_title": "Build, Compute, Visualize & Validate the Model"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "08",
+          "lesson_title": "Conversions & Multistep Proportional Modelling"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "07",
+          "lesson": "08",
+          "lesson_title": "Structural Modelling Patterns Error Analysis"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "01",
+          "lesson_title": "Equality, Solutions & the Balance Model"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "08",
+          "lesson_title": "Context Equations, Verification & Error Analysis"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "09",
+          "lesson": "07",
+          "lesson_title": "Contextual Constraints & Discrete Solutions"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "08",
+          "lesson_title": "Linear Modelling, Prediction & Residuals"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "08",
+          "lesson_title": "Coordinate Geometry Design Constraints Error"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "12",
+          "lesson": "06",
+          "lesson_title": "Probability Models, Sample Spaces & Relative Frequency"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "12",
+          "lesson": "08",
+          "lesson_title": "Sampling, Bias, Association & Evidence Decisions"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "13",
+          "lesson": "03",
+          "lesson_title": "Build Calculate Verify Revise Model"
         }
       ]
     },
@@ -4396,6 +6532,126 @@
           "unit": "11",
           "lesson": "04",
           "lesson_title": "Pythagorean Theorem & Distance"
+        },
+        {
+          "course": "geometry",
+          "unit": "01",
+          "lesson": "06",
+          "lesson_title": "Two-Column, Flow & Paragraph Proofs"
+        },
+        {
+          "course": "geometry",
+          "unit": "02",
+          "lesson": "05",
+          "lesson_title": "Rigid Motion Definition of Congruence"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "02",
+          "lesson_title": "SSS and SAS Congruence"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "03",
+          "lesson_title": "ASA, AAS and HL Congruence"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "04",
+          "lesson_title": "CPCTC and Multi-Step Triangle Proofs"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "05",
+          "lesson_title": "Isosceles and Equilateral Triangle Theorems"
+        },
+        {
+          "course": "geometry",
+          "unit": "04",
+          "lesson": "05",
+          "lesson_title": "Coordinate Proof with Distance, Midpoint & Slope"
+        },
+        {
+          "course": "geometry",
+          "unit": "05",
+          "lesson": "02",
+          "lesson_title": "Similarity Through Transformations"
+        },
+        {
+          "course": "geometry",
+          "unit": "05",
+          "lesson": "03",
+          "lesson_title": "AA Similarity and Triangle Proportions"
+        },
+        {
+          "course": "geometry",
+          "unit": "05",
+          "lesson": "04",
+          "lesson_title": "SSS and SAS Similarity"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "01",
+          "lesson_title": "Pythagorean Theorem & Its Converse"
+        },
+        {
+          "course": "geometry",
+          "unit": "07",
+          "lesson": "05",
+          "lesson_title": "Quadrilateral Coordinate Proofs"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "06",
+          "lesson_title": "Secant, Chord & Tangent Power Theorems"
+        },
+        {
+          "course": "geometry",
+          "unit": "11",
+          "lesson": "07",
+          "lesson_title": "Similarity, Scale and Volume Relationships"
+        },
+        {
+          "course": "geometry",
+          "unit": "13",
+          "lesson": "02",
+          "lesson_title": "Develop Constructions, Models and Proof"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "02",
+          "lesson": "08",
+          "lesson_title": "Fundamental Theorem of Algebra & Complete Factorization"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "03",
+          "lesson": "03",
+          "lesson_title": "Remainder and Factor Theorems"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "03",
+          "lesson": "04",
+          "lesson_title": "Rational Root Theorem & Candidate Zeros"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "09",
+          "lesson": "07",
+          "lesson_title": "Pascal’s Triangle & the Binomial Theorem"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "05",
+          "lesson_title": "Scale Drawings, Similarity & Dilations"
         }
       ]
     },
@@ -4448,6 +6704,102 @@
           "unit": "13",
           "lesson": "03",
           "lesson_title": "Build, Calculate, Validate & Revise the Model"
+        },
+        {
+          "course": "geometry",
+          "unit": "10",
+          "lesson": "05",
+          "lesson_title": "Units, Precision, Error & Significant Figures"
+        },
+        {
+          "course": "geometry",
+          "unit": "12",
+          "lesson": "02",
+          "lesson_title": "Precision Lines, Angles and Dimensions"
+        },
+        {
+          "course": "geometry",
+          "unit": "13",
+          "lesson": "03",
+          "lesson_title": "Test Measurements, Sensitivity and Limitations"
+        },
+        {
+          "course": "geometry",
+          "unit": "13",
+          "lesson": "05",
+          "lesson_title": "Present, Defend and Revise the Design"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "04",
+          "lesson_title": "Solving Rational Equations & Extraneous Solutions"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "05",
+          "lesson": "06",
+          "lesson_title": "Radical Models, Geometry & Measurement Error"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "12",
+          "lesson": "06",
+          "lesson_title": "Sampling, Bias, Margin of Error & Study Design"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "13",
+          "lesson": "03",
+          "lesson_title": "Build, Compute, Visualize & Validate the Model"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "13",
+          "lesson": "04",
+          "lesson_title": "Test Sensitivity, Uncertainty, Fairness & Limitations"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "13",
+          "lesson": "05",
+          "lesson_title": "Present, Defend, Revise & Reflect"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "07",
+          "lesson": "08",
+          "lesson_title": "Structural Modelling Patterns Error Analysis"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "08",
+          "lesson_title": "Context Equations, Verification & Error Analysis"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "08",
+          "lesson_title": "Linear Modelling, Prediction & Residuals"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "01",
+          "lesson_title": "Measurement Systems Units Precision"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "08",
+          "lesson_title": "Coordinate Geometry Design Constraints Error"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "13",
+          "lesson": "03",
+          "lesson_title": "Build Calculate Verify Revise Model"
         }
       ]
     },
@@ -4578,6 +6930,270 @@
           "unit": "13",
           "lesson": "02",
           "lesson_title": "Choose Variables, Assumptions, Data & Representations"
+        },
+        {
+          "course": "geometry",
+          "unit": "01",
+          "lesson": "06",
+          "lesson_title": "Two-Column, Flow & Paragraph Proofs"
+        },
+        {
+          "course": "geometry",
+          "unit": "02",
+          "lesson": "01",
+          "lesson_title": "Translations on the Coordinate Plane"
+        },
+        {
+          "course": "geometry",
+          "unit": "04",
+          "lesson": "05",
+          "lesson_title": "Coordinate Proof with Distance, Midpoint & Slope"
+        },
+        {
+          "course": "geometry",
+          "unit": "07",
+          "lesson": "05",
+          "lesson_title": "Quadrilateral Coordinate Proofs"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "08",
+          "lesson_title": "Equation of a Circle & Coordinate Applications"
+        },
+        {
+          "course": "geometry",
+          "unit": "09",
+          "lesson": "04",
+          "lesson_title": "Coordinate Intersections and Geometric Systems"
+        },
+        {
+          "course": "geometry",
+          "unit": "10",
+          "lesson": "03",
+          "lesson_title": "Heron’s Formula and Coordinate Area"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "01",
+          "lesson": "01",
+          "lesson_title": "Function Language, Notation & Evaluation"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "01",
+          "lesson": "03",
+          "lesson_title": "Transformations of Parent Functions"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "01",
+          "lesson": "04",
+          "lesson_title": "Function Composition & Decomposition"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "01",
+          "lesson": "05",
+          "lesson_title": "Inverse Functions & One-to-One Relationships"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "01",
+          "lesson": "06",
+          "lesson_title": "Piecewise, Absolute-Value & Step Functions"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "02",
+          "lesson": "03",
+          "lesson_title": "Power Functions & End Behavior"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "03",
+          "lesson": "06",
+          "lesson_title": "Zeros, Multiplicity & Graph Behavior"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "03",
+          "lesson": "07",
+          "lesson_title": "Polynomial Regression, Interpolation & Model Limits"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "05",
+          "lesson_title": "Reciprocal Functions, Asymptotes & Holes"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "06",
+          "lesson_title": "Transformations and Features of Rational Functions"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "05",
+          "lesson": "05",
+          "lesson_title": "Radical Functions, Domains & Transformations"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "01",
+          "lesson_title": "Exponential Function Structure & Parameters"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "06",
+          "lesson_title": "Exponential Regression & Data Modelling"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "07",
+          "lesson": "07",
+          "lesson_title": "Logarithmic Scales, Data & Model Interpretation"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "08",
+          "lesson": "01",
+          "lesson_title": "Graphical Solutions of Linear–Nonlinear Systems"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "02",
+          "lesson_title": "The Unit Circle & Coordinate Definitions"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "04",
+          "lesson_title": "Six Trigonometric Functions & Reciprocal Relationships"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "05",
+          "lesson_title": "Graphs of Sine and Cosine"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "07",
+          "lesson_title": "Graphs of Tangent, Cotangent, Secant & Cosecant"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "08",
+          "lesson_title": "Inverse Trigonometric Functions & Restricted Domains"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "09",
+          "lesson_title": "Sinusoidal Regression & Periodic Data"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "12",
+          "lesson": "05",
+          "lesson_title": "Normal Distributions, z-Scores & Percentiles"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "13",
+          "lesson": "02",
+          "lesson_title": "Select Variables, Functions, Data & Assumptions"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "02",
+          "lesson": "08",
+          "lesson_title": "Coordinate Plane & Multi-Step Integer Applications"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "04",
+          "lesson_title": "Proportional Tables, Graphs & Equations"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "05",
+          "lesson_title": "Multi-Step Equations: Distribution & Like Terms"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "09",
+          "lesson": "02",
+          "lesson_title": "Number-Line Graphs & Interval Descriptions"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "01",
+          "lesson_title": "Coordinate Plane, Ordered Pairs & Quadrants"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "03",
+          "lesson_title": "Relations, Inputs, Outputs & Functions"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "04",
+          "lesson_title": "Tables Graphs Equations Words"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "05",
+          "lesson_title": "Rate of Change from Tables, Graphs & Contexts"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "07",
+          "lesson_title": "Linear / Nonlinear & Function Notation"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "08",
+          "lesson_title": "Coordinate Geometry Design Constraints Error"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "12",
+          "lesson": "01",
+          "lesson_title": "Data Questions, Variables, Populations & Samples"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "12",
+          "lesson": "02",
+          "lesson_title": "Frequency Tables, Dot Plots, Histograms & Box Plots"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "12",
+          "lesson": "05",
+          "lesson_title": "Comparing Distributions & Misleading Displays"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "13",
+          "lesson": "02",
+          "lesson_title": "Select Variables Mathematics Data Representations"
         }
       ]
     },
@@ -4672,6 +7288,276 @@
           "unit": "13",
           "lesson": "04",
           "lesson_title": "Test Sensitivity, Uncertainty & Fairness"
+        },
+        {
+          "course": "geometry",
+          "unit": "02",
+          "lesson": "07",
+          "lesson_title": "Tessellations, Frieze Patterns & Design Rules"
+        },
+        {
+          "course": "geometry",
+          "unit": "04",
+          "lesson": "03",
+          "lesson_title": "Slope as Direction and Rate"
+        },
+        {
+          "course": "geometry",
+          "unit": "05",
+          "lesson": "06",
+          "lesson_title": "Scale Drawings, Maps & Models"
+        },
+        {
+          "course": "geometry",
+          "unit": "07",
+          "lesson": "07",
+          "lesson_title": "Polygon Decomposition & Design Constraints"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "08",
+          "lesson_title": "Equation of a Circle & Coordinate Applications"
+        },
+        {
+          "course": "geometry",
+          "unit": "09",
+          "lesson": "07",
+          "lesson_title": "Voronoi Thinking, Nearest-Point Regions & Design"
+        },
+        {
+          "course": "geometry",
+          "unit": "10",
+          "lesson": "07",
+          "lesson_title": "Optimization with Perimeter and Area Constraints"
+        },
+        {
+          "course": "geometry",
+          "unit": "12",
+          "lesson": "06",
+          "lesson_title": "Transformations, Repetition and Modular Design"
+        },
+        {
+          "course": "geometry",
+          "unit": "12",
+          "lesson": "07",
+          "lesson_title": "Export, Print/PDF, SVG, DXF and Design Defense"
+        },
+        {
+          "course": "geometry",
+          "unit": "13",
+          "lesson": "01",
+          "lesson_title": "Frame a Geometric Design or Investigation"
+        },
+        {
+          "course": "geometry",
+          "unit": "13",
+          "lesson": "02",
+          "lesson_title": "Develop Constructions, Models and Proof"
+        },
+        {
+          "course": "geometry",
+          "unit": "13",
+          "lesson": "03",
+          "lesson_title": "Test Measurements, Sensitivity and Limitations"
+        },
+        {
+          "course": "geometry",
+          "unit": "13",
+          "lesson": "05",
+          "lesson_title": "Present, Defend and Revise the Design"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "03",
+          "lesson": "07",
+          "lesson_title": "Polynomial Regression, Interpolation & Model Limits"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "08",
+          "lesson_title": "Rational Models, Rates & Work Problems"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "05",
+          "lesson": "06",
+          "lesson_title": "Radical Models, Geometry & Measurement Error"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "03",
+          "lesson_title": "Compound Interest & Effective Rates"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "06",
+          "lesson_title": "Exponential Regression & Data Modelling"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "07",
+          "lesson_title": "Comparing Linear, Quadratic & Exponential Models"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "07",
+          "lesson": "07",
+          "lesson_title": "Logarithmic Scales, Data & Model Interpretation"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "08",
+          "lesson": "06",
+          "lesson_title": "Determinants, Inverses & Transformation Models"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "10",
+          "lesson_title": "Vectors, Bearings & Component Models"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "11",
+          "lesson": "06",
+          "lesson_title": "Law of Sines, Ambiguous Case & Applications"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "11",
+          "lesson": "08",
+          "lesson_title": "Navigation, Vectors & Multi-Step Triangle Models"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "12",
+          "lesson": "06",
+          "lesson_title": "Sampling, Bias, Margin of Error & Study Design"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "12",
+          "lesson": "07",
+          "lesson_title": "Evaluating Statistical Claims & Communicating Uncertainty"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "13",
+          "lesson": "03",
+          "lesson_title": "Build, Compute, Visualize & Validate the Model"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "13",
+          "lesson": "04",
+          "lesson_title": "Test Sensitivity, Uncertainty, Fairness & Limitations"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "02",
+          "lesson": "08",
+          "lesson_title": "Coordinate Plane & Multi-Step Integer Applications"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "03",
+          "lesson": "08",
+          "lesson_title": "Conversions Estimation Applications"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "03",
+          "lesson_title": "Rates, Unit Rates & Fair Comparisons"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "08",
+          "lesson_title": "Conversions & Multistep Proportional Modelling"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "05",
+          "lesson": "03",
+          "lesson_title": "Finding Percent, Rate or Whole"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "05",
+          "lesson": "07",
+          "lesson_title": "Simple Interest, Fees & Financial Comparisons"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "05",
+          "lesson": "08",
+          "lesson_title": "Percentage Points, Repeated Change & Decisions"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "06",
+          "lesson": "07",
+          "lesson_title": "Operations with Scientific Notation & Applications"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "07",
+          "lesson": "08",
+          "lesson_title": "Structural Modelling Patterns Error Analysis"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "01",
+          "lesson_title": "Equality, Solutions & the Balance Model"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "05",
+          "lesson_title": "Rate of Change from Tables, Graphs & Contexts"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "08",
+          "lesson_title": "Linear Modelling, Prediction & Residuals"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "11",
+          "lesson": "08",
+          "lesson_title": "Coordinate Geometry Design Constraints Error"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "12",
+          "lesson": "06",
+          "lesson_title": "Probability Models, Sample Spaces & Relative Frequency"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "12",
+          "lesson": "08",
+          "lesson_title": "Sampling, Bias, Association & Evidence Decisions"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "13",
+          "lesson": "03",
+          "lesson_title": "Build Calculate Verify Revise Model"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "13",
+          "lesson": "04",
+          "lesson_title": "Test Assumptions Sensitivity Uncertainty Fairness"
         }
       ]
     },
@@ -4796,6 +7682,252 @@
           "unit": "11",
           "lesson": "04",
           "lesson_title": "Pythagorean Theorem & Distance"
+        },
+        {
+          "course": "geometry",
+          "unit": "01",
+          "lesson": "02",
+          "lesson_title": "Segments, Rays, Angles & Notation"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "01",
+          "lesson_title": "Triangle Classification & Angle Relationships"
+        },
+        {
+          "course": "geometry",
+          "unit": "03",
+          "lesson": "05",
+          "lesson_title": "Isosceles and Equilateral Triangle Theorems"
+        },
+        {
+          "course": "geometry",
+          "unit": "04",
+          "lesson": "02",
+          "lesson_title": "Proving Lines Parallel from Angle Relationships"
+        },
+        {
+          "course": "geometry",
+          "unit": "06",
+          "lesson": "01",
+          "lesson_title": "Pythagorean Theorem & Its Converse"
+        },
+        {
+          "course": "geometry",
+          "unit": "07",
+          "lesson": "02",
+          "lesson_title": "Parallelogram Properties & Tests"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "01",
+          "lesson_title": "Circle Vocabulary, Radius, Diameter & Chords"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "05",
+          "lesson_title": "Tangents and Radius Relationships"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "06",
+          "lesson_title": "Secant, Chord & Tangent Power Theorems"
+        },
+        {
+          "course": "geometry",
+          "unit": "10",
+          "lesson": "03",
+          "lesson_title": "Heron’s Formula and Coordinate Area"
+        },
+        {
+          "course": "geometry",
+          "unit": "11",
+          "lesson": "07",
+          "lesson_title": "Similarity, Scale and Volume Relationships"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "01",
+          "lesson": "01",
+          "lesson_title": "Function Language, Notation & Evaluation"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "01",
+          "lesson": "03",
+          "lesson_title": "Transformations of Parent Functions"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "01",
+          "lesson": "04",
+          "lesson_title": "Function Composition & Decomposition"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "01",
+          "lesson": "05",
+          "lesson_title": "Inverse Functions & One-to-One Relationships"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "01",
+          "lesson": "06",
+          "lesson_title": "Piecewise, Absolute-Value & Step Functions"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "02",
+          "lesson": "01",
+          "lesson_title": "Polynomial Vocabulary, Degree & Structure"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "02",
+          "lesson": "03",
+          "lesson_title": "Power Functions & End Behavior"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "02",
+          "lesson": "08",
+          "lesson_title": "Fundamental Theorem of Algebra & Complete Factorization"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "03",
+          "lesson": "03",
+          "lesson_title": "Remainder and Factor Theorems"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "03",
+          "lesson": "04",
+          "lesson_title": "Rational Root Theorem & Candidate Zeros"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "05",
+          "lesson_title": "Reciprocal Functions, Asymptotes & Holes"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "04",
+          "lesson": "06",
+          "lesson_title": "Transformations and Features of Rational Functions"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "05",
+          "lesson": "05",
+          "lesson_title": "Radical Functions, Domains & Transformations"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "01",
+          "lesson_title": "Exponential Function Structure & Parameters"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "07",
+          "lesson": "03",
+          "lesson_title": "Product, Quotient & Power Properties"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "08",
+          "lesson": "04",
+          "lesson_title": "Matrix Vocabulary, Dimensions & Operations"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "09",
+          "lesson": "06",
+          "lesson_title": "Sigma Notation & Summation Properties"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "09",
+          "lesson": "07",
+          "lesson_title": "Pascal’s Triangle & the Binomial Theorem"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "04",
+          "lesson_title": "Six Trigonometric Functions & Reciprocal Relationships"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "10",
+          "lesson": "08",
+          "lesson_title": "Inverse Trigonometric Functions & Restricted Domains"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "13",
+          "lesson": "02",
+          "lesson_title": "Select Variables, Functions, Data & Assumptions"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "07",
+          "lesson_title": "Proportional vs. Nonproportional Relationships"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "06",
+          "lesson": "03",
+          "lesson_title": "Exponent Properties & Equivalent Expressions"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "06",
+          "lesson": "06",
+          "lesson_title": "Scientific Notation & Powers of Ten"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "06",
+          "lesson": "07",
+          "lesson_title": "Operations with Scientific Notation & Applications"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "07",
+          "lesson": "04",
+          "lesson_title": "Properties of Operations & Equivalent Structure"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "07",
+          "lesson": "07",
+          "lesson_title": "Formulas Multivariable Expressions"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "07",
+          "lesson_title": "Rearranging Formulas Literal Equations"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "03",
+          "lesson_title": "Relations, Inputs, Outputs & Functions"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "07",
+          "lesson_title": "Linear / Nonlinear & Function Notation"
         }
       ]
     },
@@ -4848,6 +7980,90 @@
           "unit": "13",
           "lesson": "01",
           "lesson_title": "Frame a Complex & Ethical Modelling Question"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "08",
+          "lesson_title": "Equation of a Circle & Coordinate Applications"
+        },
+        {
+          "course": "geometry",
+          "unit": "10",
+          "lesson": "07",
+          "lesson_title": "Optimization with Perimeter and Area Constraints"
+        },
+        {
+          "course": "geometry",
+          "unit": "13",
+          "lesson": "01",
+          "lesson_title": "Frame a Geometric Design or Investigation"
+        },
+        {
+          "course": "geometry",
+          "unit": "13",
+          "lesson": "06",
+          "lesson_title": "Final Synthesis, Examination and Completion Record"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "06",
+          "lesson_title": "Exponential Regression & Data Modelling"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "11",
+          "lesson": "06",
+          "lesson_title": "Law of Sines, Ambiguous Case & Applications"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "02",
+          "lesson": "08",
+          "lesson_title": "Coordinate Plane & Multi-Step Integer Applications"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "03",
+          "lesson": "08",
+          "lesson_title": "Conversions Estimation Applications"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "04",
+          "lesson": "08",
+          "lesson_title": "Conversions & Multistep Proportional Modelling"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "05",
+          "lesson": "08",
+          "lesson_title": "Percentage Points, Repeated Change & Decisions"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "06",
+          "lesson": "07",
+          "lesson_title": "Operations with Scientific Notation & Applications"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "07",
+          "lesson": "08",
+          "lesson_title": "Structural Modelling Patterns Error Analysis"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "08",
+          "lesson_title": "Linear Modelling, Prediction & Residuals"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "12",
+          "lesson": "08",
+          "lesson_title": "Sampling, Bias, Association & Evidence Decisions"
         }
       ]
     },
@@ -4882,6 +8098,96 @@
           "unit": "09",
           "lesson": "01",
           "lesson_title": "Polynomial Vocabulary & Standard Form"
+        },
+        {
+          "course": "geometry",
+          "unit": "02",
+          "lesson": "07",
+          "lesson_title": "Tessellations, Frieze Patterns & Design Rules"
+        },
+        {
+          "course": "geometry",
+          "unit": "08",
+          "lesson": "01",
+          "lesson_title": "Circle Vocabulary, Radius, Diameter & Chords"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "02",
+          "lesson": "01",
+          "lesson_title": "Polynomial Vocabulary, Degree & Structure"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "06",
+          "lesson": "01",
+          "lesson_title": "Exponential Function Structure & Parameters"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "08",
+          "lesson": "04",
+          "lesson_title": "Matrix Vocabulary, Dimensions & Operations"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "09",
+          "lesson": "01",
+          "lesson_title": "Arithmetic Sequences: Explicit & Recursive Forms"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "09",
+          "lesson": "02",
+          "lesson_title": "Geometric Sequences: Growth, Decay & Recursion"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "09",
+          "lesson": "03",
+          "lesson_title": "General Sequences, Patterns & Difference Tables"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "11",
+          "lesson": "07",
+          "lesson_title": "Law of Cosines & Heron-Type Area Reasoning"
+        },
+        {
+          "course": "algebra-2",
+          "unit": "12",
+          "lesson": "03",
+          "lesson_title": "Conditional Probability, Independence & Bayes Reasoning"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "01",
+          "lesson": "02",
+          "lesson_title": "Factors, Multiples & Number Structure"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "06",
+          "lesson": "02",
+          "lesson_title": "Zero & Negative Exponents Through Patterns"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "07",
+          "lesson": "04",
+          "lesson_title": "Properties of Operations & Equivalent Structure"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "07",
+          "lesson": "08",
+          "lesson_title": "Structural Modelling Patterns Error Analysis"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "10",
+          "lesson": "02",
+          "lesson_title": "Patterns, Sequences & Rules"
         }
       ]
     },
@@ -4898,15 +8204,34 @@
           "unit": "01",
           "lesson": "06",
           "lesson_title": "Algebra Readiness Synthesis & Error Analysis"
+        },
+        {
+          "course": "geometry",
+          "unit": "13",
+          "lesson": "06",
+          "lesson_title": "Final Synthesis, Examination and Completion Record"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "07",
+          "lesson": "08",
+          "lesson_title": "Structural Modelling Patterns Error Analysis"
+        },
+        {
+          "course": "pre-algebra",
+          "unit": "08",
+          "lesson": "08",
+          "lesson_title": "Context Equations, Verification & Error Analysis"
         }
       ]
     }
   ],
-  "tool_placement_count": 41,
-  "material_placement_count": 130,
+  "tool_placement_count": 273,
+  "material_placement_count": 452,
   "notes": [
     "Games remain practice-only and do not award mastery.",
     "Tools are lesson-aware; assessment restrictions remain authoritative.",
-    "Mathematics Core templates are indexed as metadata until a polished public template viewer is available."
+    "Mathematics Core templates are indexed as metadata until a polished public template viewer is available.",
+    "High School math parity: Pre-Algebra, Algebra I, Geometry and Algebra II now share lesson-aware Games, Tools and Materials metadata."
   ]
 }
