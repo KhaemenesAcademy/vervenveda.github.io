@@ -1,4 +1,4 @@
-/* Verve N Veda · Universal Class Tools Toolbar v1.4.0
+/* Verve N Veda · Universal Class Tools Toolbar v1.5.0
    Canonical lower-left learning-tools companion to vnv-ecosystem-toolbar.js.
    Idempotent. Directory-backed. Navigation only; no grading/mastery mutations. */
 (()=>{
@@ -207,7 +207,18 @@ async function renderLessonMaterials(root,c,mats){
  panel.querySelector("p").textContent="Unit "+Number(matched.context.unit)+" · Lesson "+Number(matched.context.lesson)+" · matched tools and materials";
  for(const item of matched.tools)appendResourceLink(box,"Tool · "+item.title,item.href);
  const ready=matched.materials.filter(x=>x.href);
- for(const item of ready)appendResourceLink(box,"Material · "+item.title,item.href);
+ for(const item of ready){
+  let href=item.href;
+  try{
+   const url=new URL(href,location.href);
+   url.searchParams.set("course",matched.context.course);
+   url.searchParams.set("unit",matched.context.unit);
+   url.searchParams.set("lesson",matched.context.lesson);
+   if(item.placement?.lesson_title)url.searchParams.set("title",item.placement.lesson_title);
+   href=url.href;
+  }catch{}
+  appendResourceLink(box,"Material · "+item.title,href);
+ }
  const pending=matched.materials.filter(x=>!x.href);
  if(pending.length){
   const note=document.createElement("p");
@@ -310,7 +321,7 @@ async function mount(){
  return true;
 }
 function unmount(){if(controller)controller.abort();document.getElementById(ROOT_ID)?.remove();document.documentElement.dataset.vnvClassTools="unmounted";}
-const api=Object.freeze({version:"1.4.0",mount,unmount,isMounted,directory,mathematicsArchive,matchingLessonGames,matchingLessonResources});
+const api=Object.freeze({version:"1.5.0",mount,unmount,isMounted,directory,mathematicsArchive,matchingLessonGames,matchingLessonResources});
 window[API_KEY]=api;window[LEGACY_API_KEY]=api;
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",()=>void mount(),{once:true});
 else void mount();
