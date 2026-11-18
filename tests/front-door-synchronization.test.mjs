@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 const html=fs.readFileSync(new URL("../index.html",import.meta.url),"utf8");
-const HOME="https://vervenveda.com/KhaemenesAcademy_Home.github.io/";
+const HOME="https://vervenveda.com/Khaemenes_Academy.github.io/";
 test("front door displays a minimal Academy welcome with exactly one public action",()=>{
  assert.match(html,/<h1[^>]*>Khaemenes Academy<\/h1>/);
  const actions=[...html.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>/gi)];
