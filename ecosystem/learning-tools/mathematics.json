@@ -5655,9 +5655,9 @@
       "id": "worked-example",
       "title": "Worked Example",
       "type": "material-template",
-      "status": "metadata-ready-viewer-pending",
+      "status": "active",
       "source_url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/worked-example.html",
-      "public_url": null,
+      "public_url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/materials-viewer/?template=worked-example",
       "placements": [
         {
           "course": "algebra-1",
@@ -6409,9 +6409,9 @@
       "id": "mathematical-reasoning",
       "title": "Mathematical Reasoning",
       "type": "material-template",
-      "status": "metadata-ready-viewer-pending",
+      "status": "active",
       "source_url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/mathematical-reasoning.html",
-      "public_url": null,
+      "public_url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/materials-viewer/?template=mathematical-reasoning",
       "placements": [
         {
           "course": "algebra-1",
@@ -6773,9 +6773,9 @@
       "id": "proof-framework",
       "title": "Proof Framework",
       "type": "material-template",
-      "status": "metadata-ready-viewer-pending",
+      "status": "active",
       "source_url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/proof-framework.html",
-      "public_url": null,
+      "public_url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/materials-viewer/?template=proof-framework",
       "placements": [
         {
           "course": "algebra-1",
@@ -6909,9 +6909,9 @@
       "id": "math-error-analysis",
       "title": "Mathematics Error Analysis",
       "type": "material-template",
-      "status": "metadata-ready-viewer-pending",
+      "status": "active",
       "source_url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/error-analysis.html",
-      "public_url": null,
+      "public_url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/materials-viewer/?template=math-error-analysis",
       "placements": [
         {
           "course": "algebra-1",
@@ -7057,9 +7057,9 @@
       "id": "graph-data-investigation",
       "title": "Graph & Data Investigation",
       "type": "material-template",
-      "status": "metadata-ready-viewer-pending",
+      "status": "active",
       "source_url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/data-graph-study.html",
-      "public_url": null,
+      "public_url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/materials-viewer/?template=graph-data-investigation",
       "placements": [
         {
           "course": "algebra-1",
@@ -7451,9 +7451,9 @@
       "id": "mathematical-modeling-task",
       "title": "Mathematical Modeling Task",
       "type": "material-template",
-      "status": "metadata-ready-viewer-pending",
+      "status": "active",
       "source_url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/math-model-study.html",
-      "public_url": null,
+      "public_url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/materials-viewer/?template=mathematical-modeling-task",
       "placements": [
         {
           "course": "algebra-1",
@@ -7815,9 +7815,9 @@
       "id": "formula-concept-organizer",
       "title": "Formula & Concept Organizer",
       "type": "material-template",
-      "status": "metadata-ready-viewer-pending",
+      "status": "active",
       "source_url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/concept-reference.html",
-      "public_url": null,
+      "public_url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/materials-viewer/?template=formula-concept-organizer",
       "placements": [
         {
           "course": "algebra-1",
@@ -8185,9 +8185,9 @@
       "id": "problem-solving-journal",
       "title": "Problem-Solving Journal",
       "type": "material-template",
-      "status": "metadata-ready-viewer-pending",
+      "status": "active",
       "source_url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/problem-solving-journal.html",
-      "public_url": null,
+      "public_url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/materials-viewer/?template=problem-solving-journal",
       "placements": [
         {
           "course": "algebra-1",
@@ -8321,9 +8321,9 @@
       "id": "math-vocabulary-conjecture",
       "title": "Mathematical Vocabulary & Conjecture",
       "type": "material-template",
-      "status": "metadata-ready-viewer-pending",
+      "status": "active",
       "source_url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/vocabulary-conjecture.html",
-      "public_url": null,
+      "public_url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/materials-viewer/?template=math-vocabulary-conjecture",
       "placements": [
         {
           "course": "algebra-1",
@@ -8445,9 +8445,9 @@
       "id": "math-assessment-correction",
       "title": "Mathematics Assessment Correction",
       "type": "material-template",
-      "status": "metadata-ready-viewer-pending",
+      "status": "active",
       "source_url": "https://vervenveda.github.io/proresource_hub.github.io/templates/packs/khaemenes-mathematics-core/assessment-correction.html",
-      "public_url": null,
+      "public_url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/materials-viewer/?template=math-assessment-correction",
       "placements": [
         {
           "course": "algebra-1",
@@ -8481,7 +8481,7 @@
   "notes": [
     "Games remain practice-only and do not award mastery.",
     "Tools are lesson-aware; assessment restrictions remain authoritative.",
-    "Mathematics Core templates are indexed as metadata until a polished public template viewer is available.",
-    "High School math parity: Pre-Algebra, Algebra I, Geometry and Algebra II now share lesson-aware Games, Tools and Materials metadata."
+    "High School math parity: Pre-Algebra, Algebra I, Geometry and Algebra II now share lesson-aware Games, Tools and Materials metadata.",
+    "Mathematics Core templates open through the Khaemenes Mathematics Materials Viewer; raw source fragments remain implementation sources only."
   ]
 }
