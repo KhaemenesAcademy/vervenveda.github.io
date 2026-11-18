@@ -2,6 +2,7 @@
 
 | Date | Type | Topic | Status |
 | --- | --- | --- | --- |
+| 2026-11-18 | architecture · repair | [Single-button Khaemenes Academy front door](logs/2026/11/2026-11-18-single-button-academy-front-door.md) | Source committed; CI/browser delivery verification pending |
 | 2026-11-16 | forensic audit · repair · sync | [Front Door gateway synchronization](logs/2026/11/2026-11-16-vnv-front-door-gateway-synchronization.md) | Mirror committed; automated checks passed on prior commit; final live browser testing and DNS migration on HOLD |
 | 2026-11-16 | setup | Workflow documentation established | Ready |
 
