@@ -1,0 +1,59 @@
+name: VNV Gateway Cutover Inventory (Read Only)
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/vnv-gateway-cutover-audit.py'
+      - 'tests/test_vnv_gateway_cutover.py'
+      - '.github/workflows/vnv-gateway-cutover-inventory.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect-front-door:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Offline dependency and routing regression checks
+        run: |
+          python3 -m unittest discover -s tests -p 'test_vnv_gateway_cutover.py' -v
+          python3 -m py_compile scripts/vnv-gateway-cutover-audit.py
+      - name: Download public VNV master tree without write permissions
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --silent --show-error --location \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/vervenveda/vervenveda.github.io/git/trees/main?recursive=1" \
+            -o "$RUNNER_TEMP/vnv-master-tree.json"
+      - name: Preserve factual HOLD/REVIEW readiness evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/vnv-gateway-cutover-audit.py \
+            --gateway . --master-tree-json "$RUNNER_TEMP/vnv-master-tree.json" \
+            > "$RUNNER_TEMP/vnv-cutover-readiness.json"
+          python3 - "$RUNNER_TEMP/vnv-cutover-readiness.json" <<'PY'
+          import json,sys
+          data=json.load(open(sys.argv[1]))
+          assert data["cutoverReady"] is False
+          assert data["indexOnlySyncContract"] is True
+          print("DECISION="+data["decision"])
+          print("MISSING_GATEWAY_DEPENDENCIES="+str(data["missingGatewayDependencyCount"]))
+          print("CROSS_ACCOUNT_ROUTES="+str(data["crossAccountProjectRouteCount"]))
+          print("DOMAIN_CUTOVER=NOT_AUTHORIZED")
+          PY
+      - name: Upload read-only inventory receipt
+        uses: actions/upload-artifact@v4
+        with:
+          name: vnv-gateway-cutover-inventory
+          path: ${{ runner.temp }}/vnv-cutover-readiness.json
+          retention-days: 30

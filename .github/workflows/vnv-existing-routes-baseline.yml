@@ -1,0 +1,42 @@
+name: VNV Existing Routes Baseline (Read Only)
+
+on:
+  pull_request:
+    paths:
+      - "scripts/audit_live_project_routes.py"
+      - ".github/workflows/vnv-existing-routes-baseline.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-current-public-routes:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Compile read-only route probe
+        run: python3 -m py_compile scripts/audit_live_project_routes.py
+      - name: Observe current routes without changing hosting or DNS
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/audit_live_project_routes.py > "$RUNNER_TEMP/vnv-current-route-observations.json"
+          python3 - "$RUNNER_TEMP/vnv-current-route-observations.json" <<'PY'
+          import json, sys
+          o=json.load(open(sys.argv[1]))
+          assert o["domainMigrationApproved"] is False
+          assert o["routingAfterDomainMove"] == "UNVERIFIED"
+          for r in o["routes"]:
+              print(r["name"], r["observation"], r.get("status", "unverified"))
+          print("DOMAIN_CUTOVER=HOLD")
+          PY
+      - name: Archive current-routing observations only
+        uses: actions/upload-artifact@v4
+        with:
+          name: vnv-existing-routes-baseline
+          path: ${{ runner.temp }}/vnv-current-route-observations.json
+          retention-days: 14
