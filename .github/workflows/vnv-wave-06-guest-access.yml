@@ -1,0 +1,70 @@
+name: VNV Wave 06 — Guest Access Boundary Browser Audit
+on:
+  pull_request:
+    paths:
+      - 'tests/wave-06-guest-access-browser.mjs'
+      - '.github/workflows/vnv-wave-06-guest-access.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-owner-guest-audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: vervenveda/Khaemenes_Academy.github.io
+          ref: 7653569a18b40d5a2a0265aa9ddad0951070656f
+          path: source-academy
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: vervenveda/Khaemenes_High.github.io
+          ref: a945a3c0e0047743346d2937856640d8751e0449
+          path: source-high
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: vervenveda/Khaemenes_Higher_Learning.github.io
+          ref: 0122d61702f625600c03ddd23afa4e9ee1825df2
+          path: source-higher
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify frozen public source snapshots
+        run: |
+          test "$(git -C source-academy rev-parse HEAD)" = "7653569a18b40d5a2a0265aa9ddad0951070656f"
+          test "$(git -C source-high rev-parse HEAD)" = "a945a3c0e0047743346d2937856640d8751e0449"
+          test "$(git -C source-higher rev-parse HEAD)" = "0122d61702f625600c03ddd23afa4e9ee1825df2"
+          test "$(git -C source-academy hash-object teacher-admin/index.html)" = "c492881c882ea770fbaded1155127d31a8e67aff"
+          test "$(git -C source-high hash-object courses/mathematics/evidence-vault/index.html)" = "6eaf13d2c3918447a2db8b48baa5b4cb855372cf"
+          test "$(git -C source-higher hash-object courses/mathematics/evidence-vault/index.html)" = "fbf1b5c9ee4716edb94ddd5914f32755fdd1a753"
+      - name: Install pinned Chromium
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Test synthetic guest/forged-browser-state behavior
+        run: |
+          node --check tests/wave-06-guest-access-browser.mjs
+          node tests/wave-06-guest-access-browser.mjs
+      - name: Retain limited anonymized evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vnv-wave-06-guest-access-synthetic-evidence
+          path: wave-06-guest-access-evidence.json
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Unchanged public access decision
+        if: always()
+        run: |
+          echo "ONLY_SYNTHETIC_TEST_RECORDS=YES"
+          echo "PUBLIC_DISCOVERY_APPROVAL=HOLD"
+          echo "LIVE_DATA_ACCESS=NONE"
+          echo "DOMAIN_CHANGE=NONE"
+          echo "STOS_WRITE=NONE"

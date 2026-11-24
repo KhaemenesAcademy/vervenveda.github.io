@@ -1,0 +1,73 @@
+name: VNV Wave 06 — Isolated Vercel Handoff Audit (No Deployment)
+on:
+  pull_request:
+    paths:
+      - 'scripts/wave-06-vercel-handoff.mjs'
+      - 'tests/wave-06-vercel-handoff-acceptance.mjs'
+      - '.github/workflows/vnv-wave-06-vercel-handoff.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  export-and-verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: vervenveda/vervenveda.github.io
+          ref: 836bdb78769f70b255e5c0bc7773b6f6de61a28d
+          path: source-pinned
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: vervenveda/Khaemenes_Linguistics.github.io
+          ref: ebd5e8053a9fa07c3a3ca0865501ced339621916
+          path: source-linguistics
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate original commits
+        run: |
+          test "$(git -C source-pinned rev-parse HEAD)" = "836bdb78769f70b255e5c0bc7773b6f6de61a28d"
+          test "$(git -C source-linguistics rev-parse HEAD)" = "ebd5e8053a9fa07c3a3ca0865501ced339621916"
+      - name: Assemble source-pinned restricted preview and quarantine
+        run: |
+          node scripts/wave-06-atomic-candidate.mjs
+          node scripts/wave-06-restricted-preview.mjs
+          node tests/wave-06-restricted-preview-acceptance.mjs
+          node scripts/wave-06-quarantined-staging-bundle.mjs
+      - name: Prepare staging host handoff without contacting hosting provider
+        run: |
+          node --check scripts/wave-06-vercel-handoff.mjs
+          node scripts/wave-06-vercel-handoff.mjs
+          node --check tests/wave-06-vercel-handoff-acceptance.mjs
+          node tests/wave-06-vercel-handoff-acceptance.mjs
+      - name: Save operator-controlled handoff only
+        uses: actions/upload-artifact@v4
+        with:
+          name: vnv-wave-06-vercel-handoff-NOT-DEPLOYED
+          path: wave-06-vercel-handoff/
+          if-no-files-found: error
+          retention-days: 30
+      - name: Save compact verification report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vnv-wave-06-vercel-handoff-evidence
+          path: wave-06-vercel-handoff-evidence.json
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Explicit no deployment
+        if: always()
+        run: |
+          echo "HOSTING_PROJECT=NOT_CREATED"
+          echo "PUBLIC_SITE=NOT_DEPLOYED"
+          echo "PRIVATE_STUDENT_DATA=NOT_INCLUDED"
+          echo "DNS_CHANGE=NONE"
+          echo "STOS_WRITE=NONE"
+          echo "PR_MERGE=HOLD"

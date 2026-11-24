@@ -1,0 +1,55 @@
+name: VNV Wave 06 — Canonical Registry Forensic Audit
+on:
+  pull_request:
+    paths:
+      - 'scripts/wave-06-registry-forensic.mjs'
+      - '.github/workflows/vnv-wave-06-registry-audit.yml'
+      - 'WAVE_06_REGISTRY_AUDIT.md'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  registry-audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - name: Checkout simplified public gateway
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Checkout immutable original public source — read only
+        uses: actions/checkout@v4
+        with:
+          repository: vervenveda/vervenveda.github.io
+          ref: 836bdb78769f70b255e5c0bc7773b6f6de61a28d
+          path: source-pinned
+          persist-credentials: false
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify exact source checkout
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git -C source-pinned rev-parse HEAD)" = "836bdb78769f70b255e5c0bc7773b6f6de61a28d"
+      - name: Run bounded source-only registry forensic audit
+        run: |
+          node --check scripts/wave-06-registry-forensic.mjs
+          node scripts/wave-06-registry-forensic.mjs
+      - name: Preserve evidence, never source assets
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vnv-wave-06-registry-evidence
+          path: wave-06-registry-evidence.json
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Confirm promotion boundary
+        if: always()
+        run: |
+          echo "FULL_SOURCE_REGISTRY=READ_ONLY"
+          echo "SOURCE_REPOSITORY_VISIBILITY=UNCHANGED"
+          echo "PUBLIC_GATEWAY_ASSET_PROMOTION=HOLD"
+          echo "NATIVE_STOS_IMPORT=NOT_STARTED"
+          echo "DOMAIN_TRANSFER=NOT_STARTED"

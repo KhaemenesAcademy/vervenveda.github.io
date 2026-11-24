@@ -1,0 +1,54 @@
+name: VNV Wave 06 — Real Directory Browser Canary
+on:
+  pull_request:
+    paths:
+      - 'tests/wave-06-directory-browser.mjs'
+      - '.github/workflows/vnv-wave-06-directory-browser.yml'
+      - 'scripts/wave-06-atomic-candidate.mjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  isolated-directory-browser:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: vervenveda/vervenveda.github.io
+          ref: 836bdb78769f70b255e5c0bc7773b6f6de61a28d
+          path: source-pinned
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Confirm immutable source
+        run: test "$(git -C source-pinned rev-parse HEAD)" = "836bdb78769f70b255e5c0bc7773b6f6de61a28d"
+      - name: Install isolated Chromium
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Build nonpublished registry candidate
+        run: node scripts/wave-06-atomic-candidate.mjs
+      - name: Test actual directory controls and fail-closed missing shard
+        run: |
+          node --check tests/wave-06-directory-browser.mjs
+          node tests/wave-06-directory-browser.mjs
+      - name: Retain browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vnv-wave-06-directory-browser-evidence
+          path: wave-06-browser-report.json
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Explicit hold
+        if: always()
+        run: |
+          echo "PUBLIC_REGISTRY_ASSETS=NOT_PUBLISHED"
+          echo "ACTIVE_MANIFEST=UNCHANGED"
+          echo "STOS_WRITE=NONE"
+          echo "DOMAIN_CUTOVER=HOLD"

@@ -1,0 +1,56 @@
+name: VNV Wave 06 — Restricted Directory Browser Canary
+on:
+  pull_request:
+    paths:
+      - 'tests/wave-06-restricted-preview-browser.mjs'
+      - 'scripts/wave-06-restricted-preview.mjs'
+      - '.github/workflows/vnv-wave-06-restricted-browser.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  restricted-chromium:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: vervenveda/vervenveda.github.io
+          ref: 836bdb78769f70b255e5c0bc7773b6f6de61a28d
+          path: source-pinned
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned browser
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Build original and restricted candidates
+        run: |
+          node scripts/wave-06-atomic-candidate.mjs
+          node scripts/wave-06-restricted-preview.mjs
+          node tests/wave-06-restricted-preview-acceptance.mjs
+      - name: Verify complete restricted gateway interaction in Chromium
+        run: |
+          node --check tests/wave-06-restricted-preview-browser.mjs
+          node tests/wave-06-restricted-preview-browser.mjs
+      - name: Preserve restricted browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vnv-wave-06-restricted-browser-evidence
+          path: wave-06-browser-report.json
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Release HOLD
+        if: always()
+        run: |
+          echo "RESTRICTED_CANDIDATE=ARTIFACT_ONLY"
+          echo "PUBLIC_DEPLOYMENT=NO"
+          echo "SOURCE_OWNER_REVIEW=PENDING"
+          echo "STOS_WRITE=NONE"
+          echo "CUTOVER=HOLD"
