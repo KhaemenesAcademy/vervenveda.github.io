@@ -1,0 +1,38 @@
+name: VNV Wave 05 — Full Gateway Chromium Canary
+on:
+  pull_request:
+    paths:
+      - 'tests/wave-05-full-gateway-browser.mjs'
+      - 'tests/fixtures/**'
+      - 'assets/khaemenes-interlingual-core.js'
+      - '.github/workflows/vnv-wave-05-full-gateway-browser.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  full-gateway:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned Playwright / Chromium
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Check test source
+        run: node --check tests/wave-05-full-gateway-browser.mjs
+      - name: Run original homepage under isolated localhost with pinned asset fixtures
+        run: node tests/wave-05-full-gateway-browser.mjs
+      - name: Keep activation on hold
+        if: always()
+        run: |
+          echo "PUBLIC_DOMAIN_CHANGE=NONE"
+          echo "SOURCE_REPO_VISIBILITY=UNCHANGED"
+          echo "STOS_WRITE=NONE"
+          echo "LIVE_GATEWAY=UNTOUCHED"
+          echo "CUTOVER=HOLD"
