@@ -33,7 +33,7 @@
     "studio",
     "network"
   ],
-  "entryCount": 196,
+  "entryCount": 198,
   "entries": [
     {
       "id": "gateway-verve",
@@ -46,7 +46,12 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.com/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Verve N Veda Public Gateway — gateway in the Verve N Veda gateway collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "gateway"
+      ]
     },
     {
       "id": "gateway-beta",
@@ -58,7 +63,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/beta/"
+      "url": "https://vervenveda.com/beta/",
+      "description": "Verve N Veda Beta Program — portal in the Verve N Veda civic collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "civic",
+        "portal"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "network-333",
@@ -71,7 +83,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.github.io/333.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Network in the Verve N Veda communication ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "communication",
+        "network"
+      ]
     },
     {
       "id": "333-bazaar",
@@ -83,7 +101,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html"
+      "url": "https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html",
+      "description": "App in the Verve N Veda communication ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "communication",
+        "app"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "333-bunya",
@@ -95,7 +120,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/333.github.io/app/Bunya_digital_infrastructure_index.html"
+      "url": "https://vervenveda.github.io/333.github.io/app/Bunya_digital_infrastructure_index.html",
+      "description": "Tool in the Verve N Veda communication ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "communication",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "333-even",
@@ -107,7 +139,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/333.github.io/app/EVen_mail_index.html"
+      "url": "https://vervenveda.github.io/333.github.io/app/EVen_mail_index.html",
+      "description": "App in the Verve N Veda communication ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "communication",
+        "app"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "333-hollo",
@@ -119,7 +158,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html"
+      "url": "https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html",
+      "description": "App in the Verve N Veda communication ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "communication",
+        "app"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "333-kansee",
@@ -131,7 +177,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html"
+      "url": "https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html",
+      "description": "App in the Verve N Veda communication ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "communication",
+        "app"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "333-site",
@@ -143,7 +196,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/333.github.io/app/SIte_builder_index.html"
+      "url": "https://vervenveda.github.io/333.github.io/app/SIte_builder_index.html",
+      "description": "Tool in the Verve N Veda communication ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "communication",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "333-weal",
@@ -155,7 +215,14 @@
       "access": "free-public",
       "status": "stub",
       "directoryVisible": false,
-      "url": "https://vervenveda.github.io/333.github.io/app/WEAL_domain_hosting_index.html"
+      "url": "https://vervenveda.github.io/333.github.io/app/WEAL_domain_hosting_index.html",
+      "description": "WEAL Domain Hosting — tool in the Verve N Veda communication collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "communication",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "academy",
@@ -168,7 +235,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.com/KhaemenesAcademy_Home.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Gateway in the Verve N Veda education ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "education",
+        "gateway"
+      ]
     },
     {
       "id": "academy-life-skills",
@@ -181,7 +254,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.com/Khaemenes_Academy_Life_Skills.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Khaemenes Academy Life Skills — gateway in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "gateway"
+      ]
     },
     {
       "id": "academy-yearbook",
@@ -194,7 +273,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.com/Academy-Yearbook.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Khaemenes Academy Yearbook Studio — studio in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "studio"
+      ]
     },
     {
       "id": "academy-adult",
@@ -206,7 +291,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Academy.github.io/adult/enroll/"
+      "url": "https://vervenveda.com/Khaemenes_Academy.github.io/adult/enroll/",
+      "description": "Portal in the Verve N Veda education ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "education",
+        "portal"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "academy-health",
@@ -218,7 +310,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Academy.github.io/Health_learning/Health_is_wealth_6weeks_index.html"
+      "url": "https://vervenveda.github.io/Khaemenes_Academy.github.io/Health_learning/Health_is_wealth_6weeks_index.html",
+      "description": "Health Is Wealth · 6 Weeks — course in the Verve N Veda health collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "health",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "academy-wellness",
@@ -230,7 +329,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Academy.github.io/Health_learning/wellness_workshop_index.html"
+      "url": "https://vervenveda.github.io/Khaemenes_Academy.github.io/Health_learning/wellness_workshop_index.html",
+      "description": "Wellness Workshop — workshop in the Verve N Veda health collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "health",
+        "workshop"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "academy-workout",
@@ -242,7 +348,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Academy.github.io/Health_learning/workout_builder_index.html"
+      "url": "https://vervenveda.github.io/Khaemenes_Academy.github.io/Health_learning/workout_builder_index.html",
+      "description": "Workout Builder — tool in the Verve N Veda health collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "health",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "academy-diploma",
@@ -254,7 +367,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Academy.github.io/Parent_resources/Diploma_generator_index.html"
+      "url": "https://vervenveda.github.io/Khaemenes_Academy.github.io/Parent_resources/Diploma_generator_index.html",
+      "description": "Diploma Generator — tool in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "academy-homeschool",
@@ -266,7 +386,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Academy.github.io/Parent_resources/Homeschool_compass_index.html"
+      "url": "https://vervenveda.github.io/Khaemenes_Academy.github.io/Parent_resources/Homeschool_compass_index.html",
+      "description": "Homeschool Compass — tool in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "academy-transcript",
@@ -278,7 +405,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Academy.github.io/Parent_resources/Transcript_generator_index.html"
+      "url": "https://vervenveda.github.io/Khaemenes_Academy.github.io/Parent_resources/Transcript_generator_index.html",
+      "description": "Transcript Generator — tool in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "preschool",
@@ -290,7 +424,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Preschool.github.io/"
+      "url": "https://vervenveda.com/Khaemenes_Preschool.github.io/",
+      "description": "Khaemenes Preschool · Crechè — gateway in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "gateway"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "preschool-abc",
@@ -302,7 +443,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Preschool.github.io/apps/ABC_Alphabet_Adventure_index.html"
+      "url": "https://vervenveda.github.io/Khaemenes_Preschool.github.io/apps/ABC_Alphabet_Adventure_index.html",
+      "description": "Game in the Verve N Veda education ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "education",
+        "game"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "preschool-story",
@@ -314,7 +462,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Preschool.github.io/apps/ABC_Story_Time/"
+      "url": "https://vervenveda.github.io/Khaemenes_Preschool.github.io/apps/ABC_Story_Time/",
+      "description": "App in the Verve N Veda education ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "education",
+        "app"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "preschool-math",
@@ -326,7 +481,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Preschool.github.io/apps/math_cloud_index.html"
+      "url": "https://vervenveda.github.io/Khaemenes_Preschool.github.io/apps/math_cloud_index.html",
+      "description": "App in the Verve N Veda education ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "education",
+        "app"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "preschool-shapes",
@@ -338,7 +500,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Preschool.github.io/apps/shapes_game_index.html"
+      "url": "https://vervenveda.github.io/Khaemenes_Preschool.github.io/apps/shapes_game_index.html",
+      "description": "Game in the Verve N Veda education ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "education",
+        "game"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "preschool-feelings",
@@ -350,7 +519,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Preschool.github.io/apps/feelings_game_index.html"
+      "url": "https://vervenveda.github.io/Khaemenes_Preschool.github.io/apps/feelings_game_index.html",
+      "description": "Game in the Verve N Veda education ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "education",
+        "game"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "preschool-art",
@@ -362,7 +538,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Preschool.github.io/apps/art_drawing_tool_index.html"
+      "url": "https://vervenveda.github.io/Khaemenes_Preschool.github.io/apps/art_drawing_tool_index.html",
+      "description": "Tool in the Verve N Veda creative ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "creative",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "kinder",
@@ -374,7 +557,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/"
+      "url": "https://vervenveda.com/Khaemenes_KinderGarden.github.io/",
+      "description": "Khaemenes Kinder Garden — gateway in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "gateway"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "kinder-letter",
@@ -386,7 +576,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/apps/ABC_letter-lab.index.html"
+      "url": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/apps/ABC_letter-lab.index.html",
+      "description": "App in the Verve N Veda education ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "education",
+        "app"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "kinder-spelling",
@@ -398,7 +595,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/apps/ABC_spelling_soup_index.html"
+      "url": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/apps/ABC_spelling_soup_index.html",
+      "description": "Game in the Verve N Veda education ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "education",
+        "game"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "kinder-math",
@@ -410,7 +614,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/apps/kindergarten_math_cloud_index.html"
+      "url": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/apps/kindergarten_math_cloud_index.html",
+      "description": "App in the Verve N Veda education ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "education",
+        "app"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "kinder-garden",
@@ -422,7 +633,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/apps/math-garden_index.html"
+      "url": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/apps/math-garden_index.html",
+      "description": "Game in the Verve N Veda education ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "education",
+        "game"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "kinder-weather",
@@ -434,7 +652,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/apps/Weather_planetarium_index.html"
+      "url": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/apps/Weather_planetarium_index.html",
+      "description": "App in the Verve N Veda weather ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "weather",
+        "app"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "kinder-sink",
@@ -446,7 +671,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/apps/sink-or-float_index.html"
+      "url": "https://vervenveda.github.io/Khaemenes_KinderGarden.github.io/apps/sink-or-float_index.html",
+      "description": "Game in the Verve N Veda education ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "education",
+        "game"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "elementary",
@@ -458,7 +690,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Elementary.github.io/"
+      "url": "https://vervenveda.com/Khaemenes_Elementary.github.io/",
+      "description": "Khaemenes Elementary — gateway in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "gateway"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "middle",
@@ -470,7 +709,17 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Middle.github.io/"
+      "url": "https://vervenveda.com/Khaemenes_Middle.github.io/",
+      "description": "Grades 6–8 middle-school learning hub with grade pathways, academic subjects, assessments, projects, and family navigation.",
+      "descriptionSource": "mentor-resource-registry",
+      "keywords": [
+        "education",
+        "gateway",
+        "middle-school",
+        "course-navigation",
+        "navigation"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high",
@@ -482,7 +731,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/",
+      "description": "Khaemenes Academy High School — gateway in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "gateway"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-course-directory",
@@ -494,7 +750,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/",
+      "description": "High School Course Directory — portal in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "portal"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-grade-09",
@@ -506,7 +769,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/grades/grade-09/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/grades/grade-09/",
+      "description": "High School · Grade 9 — portal in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "portal"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-grade-10",
@@ -518,7 +788,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/grades/grade-10/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/grades/grade-10/",
+      "description": "High School · Grade 10 — portal in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "portal"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-grade-11",
@@ -530,7 +807,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/grades/grade-11/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/grades/grade-11/",
+      "description": "High School · Grade 11 — portal in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "portal"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-grade-12",
@@ -542,7 +826,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/grades/grade-12/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/grades/grade-12/",
+      "description": "High School · Grade 12 — portal in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "portal"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-language-arts",
@@ -554,7 +845,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/language-arts/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/language-arts/",
+      "description": "High School Language Arts — hall in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "hall"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-english-9",
@@ -566,7 +864,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/language-arts/english-9/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/language-arts/english-9/",
+      "description": "English 9 · Language Arts & Literature — course in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-english-10",
@@ -578,7 +883,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/language-arts/english-10/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/language-arts/english-10/",
+      "description": "English II · Grade 10 Language Arts — course in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-english-11",
@@ -590,7 +902,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/language-arts/english-11/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/language-arts/english-11/",
+      "description": "English III · Grade 11 Language Arts — course in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-english-12",
@@ -602,7 +921,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/language-arts/english-12/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/language-arts/english-12/",
+      "description": "English IV · Grade 12 Language Arts — course in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-mathematics",
@@ -614,7 +940,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/",
+      "description": "High School Mathematics — hall in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "hall"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-prealgebra",
@@ -626,7 +959,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/pre-algebra/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/pre-algebra/",
+      "description": "Pre-Algebra — course in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-algebra-1",
@@ -638,7 +978,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/algebra-1/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/algebra-1/",
+      "description": "Algebra I — course in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-geometry",
@@ -650,7 +997,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/geometry/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/geometry/",
+      "description": "Geometry & Spatial Design — course in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-algebra-2",
@@ -662,7 +1016,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/algebra-2/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/algebra-2/",
+      "description": "Algebra II & Advanced Functions — course in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-precalculus",
@@ -674,7 +1035,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/precalculus-trigonometry/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/precalculus-trigonometry/",
+      "description": "Precalculus & Trigonometry — course in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-calculus-1",
@@ -686,7 +1054,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/calculus-1/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/mathematics/calculus-1/",
+      "description": "Calculus I — course in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-science",
@@ -698,7 +1073,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/science/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/science/",
+      "description": "High School Science Department — hall in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "hall"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-science-9",
@@ -710,7 +1092,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/science/integrated-science-9/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/science/integrated-science-9/",
+      "description": "International Integrated Science 9 — course in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-biology-10",
@@ -722,7 +1111,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/science/biology-10/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/science/biology-10/",
+      "description": "International Biology & Biotechnology 10 — course in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-chemistry-11",
@@ -734,7 +1130,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/science/chemistry-11/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/science/chemistry-11/",
+      "description": "International Chemistry & Materials Science 11 — course in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-physics-12",
@@ -746,7 +1149,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/science/physics-engineering-12/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/science/physics-engineering-12/",
+      "description": "International Physics & Engineering 12 — course in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-social-studies",
@@ -758,7 +1168,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/social-studies/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/social-studies/",
+      "description": "High School Social Studies — hall in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "hall"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-global-studies-9",
@@ -770,7 +1187,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/social-studies/grade-09/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/social-studies/grade-09/",
+      "description": "Global Studies Honors · Grade 9 — course in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-us-history-10",
@@ -782,7 +1206,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/social-studies/grade-10/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/social-studies/grade-10/",
+      "description": "United States History Honors · Grade 10 — course in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-government-economics-11",
@@ -794,7 +1225,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/social-studies/grade-11/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/social-studies/grade-11/",
+      "description": "Government, Law & Economics Honors · Grade 11 — course in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-global-politics-12",
@@ -806,7 +1244,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/social-studies/grade-12/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/social-studies/grade-12/",
+      "description": "Global Politics & Senior Research · Grade 12 — course in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-personal-finance",
@@ -818,7 +1263,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/social-studies/grade-11/personal-finance/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/social-studies/grade-11/personal-finance/",
+      "description": "Personal Financial Literacy & Money Management Honors — course in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-electives",
@@ -830,7 +1282,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/electives/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/electives/",
+      "description": "High School Electives Hall — hall in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "hall"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-physical-education",
@@ -842,7 +1301,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/physical-education/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/courses/physical-education/",
+      "description": "Khaemenes Physical Education 9–12 — course in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "high-psychology-101",
@@ -854,7 +1320,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_High.github.io/electives/grades/grade-09/psych-101/"
+      "url": "https://vervenveda.com/Khaemenes_High.github.io/electives/grades/grade-09/psych-101/",
+      "description": "Psychology 101 · Foundations of Human Behavior — course in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "higher",
@@ -866,7 +1339,37 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/"
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
+      "description": "Central university campus, student entry point, academic pathways, university catalog, and federated campus navigation.",
+      "descriptionSource": "mentor-resource-registry",
+      "keywords": [
+        "education",
+        "gateway",
+        "higher-learning",
+        "university",
+        "federated-campus",
+        "navigation"
+      ],
+      "developmentStatus": "unassessed"
+    },
+    {
+      "id": "higher-associates",
+      "title": "Khaemenes Higher Learning · Associate-Level Certificate",
+      "repository": "vervenveda/Khaemenes_HL_Associates-Level.github.io",
+      "path": "index.html",
+      "type": "gateway",
+      "category": "education",
+      "access": "free-public",
+      "status": "active",
+      "directoryVisible": true,
+      "url": "https://vervenveda.com/Khaemenes_HL_Associates-Level.github.io/",
+      "developmentStatus": "partial",
+      "description": "Khaemenes Higher Learning · Associate-Level Certificate — gateway in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "gateway"
+      ]
     },
     {
       "id": "higher-career",
@@ -878,7 +1381,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/Career/"
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/Career/",
+      "description": "Career Portal — portal in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "portal"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "higher-career-assess",
@@ -890,7 +1400,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/Career/apps/career-assessment_index.html"
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/Career/apps/career-assessment_index.html",
+      "description": "Career Assessment — assessment in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "assessment"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "higher-career-mentor",
@@ -902,7 +1419,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/Career/apps/career-mentor-hub_index.html"
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/Career/apps/career-mentor-hub_index.html",
+      "description": "Career Mentor Hub — mentor in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "mentor"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "higher-directory-agi",
@@ -914,7 +1438,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/Career/directory-agi/"
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/Career/directory-agi/",
+      "description": "Career Directory AGI — tool in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "higher-ged",
@@ -926,7 +1457,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/GED/portal_index.html"
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/GED/portal_index.html",
+      "description": "GED Portal — portal in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "portal"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "higher-science",
@@ -938,7 +1476,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/Science/"
+      "url": "https://vervenveda.github.io/Khaemenes_Higher_Learning.github.io/Science/",
+      "description": "Higher Learning Science — course in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "linguistics",
@@ -950,7 +1495,33 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/"
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/",
+      "description": "Gateway in the Verve N Veda education ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "education",
+        "gateway"
+      ],
+      "developmentStatus": "unassessed"
+    },
+    {
+      "id": "ling-sovereign-translator",
+      "title": "Sovereign Translator",
+      "repository": "vervenveda/Khaemenes_Linguistics.github.io",
+      "path": "apps/translator-entry.html",
+      "type": "tool",
+      "category": "education",
+      "access": "free-public",
+      "status": "active",
+      "directoryVisible": true,
+      "url": "https://vervenveda.com/Khaemenes_Linguistics.github.io/apps/translator-entry.html",
+      "developmentStatus": "live",
+      "description": "Sovereign Translator — tool in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "tool"
+      ]
     },
     {
       "id": "ling-halls",
@@ -962,7 +1533,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/Halls/"
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/Halls/",
+      "description": "Hall in the Verve N Veda education ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "education",
+        "hall"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "ling-language",
@@ -974,7 +1552,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/Halls/language-learning-v3_index.html"
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/Halls/language-learning-v3_index.html",
+      "description": "Hall in the Verve N Veda education ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "education",
+        "hall"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "ling-arabic365",
@@ -986,7 +1571,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/electives/Arabic/Daily-language/index.html"
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/electives/Arabic/Daily-language/index.html",
+      "description": "Daily Arabic language practice in the Verve N Veda education ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "education",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "ling-quran-root",
@@ -998,7 +1590,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/faith/Arabic/Quran_root_explorer/index.html"
+      "url": "https://vervenveda.github.io/Khaemenes_Linguistics.github.io/apps/faith/Arabic/Quran_root_explorer/index.html",
+      "description": "Tool in the Verve N Veda education ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "education",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "arshif",
@@ -1011,7 +1610,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.github.io/Arshif.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Archive in the Verve N Veda research ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "research",
+        "archive"
+      ]
     },
     {
       "id": "arshif-faith",
@@ -1023,7 +1628,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Arshif.github.io/Faith/"
+      "url": "https://vervenveda.github.io/Arshif.github.io/Faith/",
+      "description": "Hall in the Verve N Veda research ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "research",
+        "hall"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "arshif-bible",
@@ -1035,7 +1647,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Arshif.github.io/Faith/apps/Bible-context_index.html"
+      "url": "https://vervenveda.github.io/Arshif.github.io/Faith/apps/Bible-context_index.html",
+      "description": "Resource in the Verve N Veda research ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "research",
+        "resource"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "arshif-yahushua",
@@ -1047,7 +1666,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Arshif.github.io/Faith/apps/Yahushua_Study_index.html"
+      "url": "https://vervenveda.github.io/Arshif.github.io/Faith/apps/Yahushua_Study_index.html",
+      "description": "Course in the Verve N Veda research ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "research",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "arshif-directory",
@@ -1059,7 +1685,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/Arshif.github.io/Faith/apps/biblical_web_directory_index.html"
+      "url": "https://vervenveda.github.io/Arshif.github.io/Faith/apps/biblical_web_directory_index.html",
+      "description": "Resource in the Verve N Veda research ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "research",
+        "resource"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "verifier",
@@ -1072,7 +1705,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.github.io/theverifier.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Gateway in the Verve N Veda news ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "news",
+        "gateway"
+      ]
     },
     {
       "id": "verifier-modern",
@@ -1084,7 +1723,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/theverifier.github.io/apps/Modern_News_Engine_index.html"
+      "url": "https://vervenveda.github.io/theverifier.github.io/apps/Modern_News_Engine_index.html",
+      "description": "App in the Verve N Veda news ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "news",
+        "app"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "verifier-global",
@@ -1096,7 +1742,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/theverifier.github.io/apps/global_news_digest_index.html"
+      "url": "https://vervenveda.github.io/theverifier.github.io/apps/global_news_digest_index.html",
+      "description": "App in the Verve N Veda news ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "news",
+        "app"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "verifier-kids",
@@ -1108,7 +1761,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/theverifier.github.io/apps/kids_news_network_index.html"
+      "url": "https://vervenveda.github.io/theverifier.github.io/apps/kids_news_network_index.html",
+      "description": "App in the Verve N Veda news ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "news",
+        "app"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "verifier-science",
@@ -1120,7 +1780,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/theverifier.github.io/apps/science_news_index.html"
+      "url": "https://vervenveda.github.io/theverifier.github.io/apps/science_news_index.html",
+      "description": "App in the Verve N Veda news ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "news",
+        "app"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "verifier-world",
@@ -1132,7 +1799,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/theverifier.github.io/apps/world_wire_index.html"
+      "url": "https://vervenveda.github.io/theverifier.github.io/apps/world_wire_index.html",
+      "description": "App in the Verve N Veda news ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "news",
+        "app"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "verifier-ultimate",
@@ -1144,7 +1818,14 @@
       "access": "free-public",
       "status": "stub",
       "directoryVisible": false,
-      "url": "https://vervenveda.github.io/theverifier.github.io/apps/ultimate_news_index.html"
+      "url": "https://vervenveda.github.io/theverifier.github.io/apps/ultimate_news_index.html",
+      "description": "Ultimate News — app in the Verve N Veda news collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "news",
+        "app"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "plera",
@@ -1157,7 +1838,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.github.io/PLERASearch.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Gateway in the Verve N Veda research ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "research",
+        "gateway"
+      ]
     },
     {
       "id": "plera-gate",
@@ -1169,7 +1856,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/PLERASearch.github.io/apps/PLERA_Search_Gate_index.html"
+      "url": "https://vervenveda.github.io/PLERASearch.github.io/apps/PLERA_Search_Gate_index.html",
+      "description": "Tool in the Verve N Veda research ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "research",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "plera-pro",
@@ -1181,7 +1875,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/PLERASearch.github.io/apps/PLERA_search_pro_index.html"
+      "url": "https://vervenveda.github.io/PLERASearch.github.io/apps/PLERA_search_pro_index.html",
+      "description": "Tool in the Verve N Veda research ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "research",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "solanar",
@@ -1194,7 +1895,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.github.io/solanar.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Gateway in the Verve N Veda weather ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "weather",
+        "gateway"
+      ]
     },
     {
       "id": "solanar-live",
@@ -1206,7 +1913,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/solanar.github.io/apps/Solanar_Live_Weather_index.html"
+      "url": "https://vervenveda.github.io/solanar.github.io/apps/Solanar_Live_Weather_index.html",
+      "description": "App in the Verve N Veda weather ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "weather",
+        "app"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "solanar-planetarium",
@@ -1218,7 +1932,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/solanar.github.io/apps/Solanar_Planetarium_index.html"
+      "url": "https://vervenveda.github.io/solanar.github.io/apps/Solanar_Planetarium_index.html",
+      "description": "App in the Verve N Veda weather ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "weather",
+        "app"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "solanar-trace",
@@ -1230,7 +1951,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/solanar.github.io/apps/Solanar-TraceLab/"
+      "url": "https://vervenveda.github.io/solanar.github.io/apps/Solanar-TraceLab/",
+      "description": "Tool in the Verve N Veda weather ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "weather",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "solanar-kids",
@@ -1242,7 +1970,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/solanar.github.io/apps/Solanar_kids_skylab_index.html"
+      "url": "https://vervenveda.github.io/solanar.github.io/apps/Solanar_kids_skylab_index.html",
+      "description": "App in the Verve N Veda weather ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "weather",
+        "app"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "river-road",
@@ -1255,7 +1990,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.github.io/river_to_road.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Gateway in the Verve N Veda environmental ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "environmental",
+        "gateway"
+      ]
     },
     {
       "id": "river-quiz",
@@ -1267,7 +2008,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/river_to_road.github.io/apps/lawn_care_quiz_index.html"
+      "url": "https://vervenveda.github.io/river_to_road.github.io/apps/lawn_care_quiz_index.html",
+      "description": "Game in the Verve N Veda environmental ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "environmental",
+        "game"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "river-mower",
@@ -1279,7 +2027,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/river_to_road.github.io/apps/virtual_lawn_mower_index.html"
+      "url": "https://vervenveda.github.io/river_to_road.github.io/apps/virtual_lawn_mower_index.html",
+      "description": "Game in the Verve N Veda environmental ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "environmental",
+        "game"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "bazaar",
@@ -1292,7 +2047,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.github.io/bazaarart.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Gateway in the Verve N Veda creative ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "creative",
+        "gateway"
+      ]
     },
     {
       "id": "bazaar-art-hall",
@@ -1304,7 +2065,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Class_art_hall_index.html"
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Class_art_hall_index.html",
+      "description": "Hall in the Verve N Veda creative ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "creative",
+        "hall"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "bazaar-music-hall",
@@ -1316,7 +2084,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Class_music_hall_index.html"
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Class_music_hall_index.html",
+      "description": "Hall in the Verve N Veda creative ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "creative",
+        "hall"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "bazaar-art101",
@@ -1328,7 +2103,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Class_art_101_index.html"
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Class_art_101_index.html",
+      "description": "Course in the Verve N Veda creative ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "creative",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "bazaar-photo",
@@ -1340,7 +2122,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Photo_Album_Studio/"
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/Photo_Album_Studio/",
+      "description": "Studio in the Verve N Veda creative ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "creative",
+        "studio"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "bazaar-spinspire",
@@ -1352,7 +2141,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/SpinSpire_Art_Prompt_Generator_index.html"
+      "url": "https://vervenveda.github.io/bazaarart.github.io/apps/SpinSpire_Art_Prompt_Generator_index.html",
+      "description": "Tool in the Verve N Veda creative ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "creative",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "refrain",
@@ -1365,7 +2161,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.github.io/the_refrain.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Gateway in the Verve N Veda creative ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "creative",
+        "gateway"
+      ]
     },
     {
       "id": "refrain-101",
@@ -1377,7 +2179,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/the_refrain.github.io/education/Music%20101%20Workshop_index.html"
+      "url": "https://vervenveda.github.io/the_refrain.github.io/education/Music%20101%20Workshop_index.html",
+      "description": "Workshop in the Verve N Veda creative ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "creative",
+        "workshop"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "refrain-201",
@@ -1389,7 +2198,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/the_refrain.github.io/education/Music%20201%20Workshop_index.html"
+      "url": "https://vervenveda.github.io/the_refrain.github.io/education/Music%20201%20Workshop_index.html",
+      "description": "Workshop in the Verve N Veda creative ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "creative",
+        "workshop"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "refrain-composer",
@@ -1401,7 +2217,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/the_refrain.github.io/apps/composer_studio_index.html"
+      "url": "https://vervenveda.github.io/the_refrain.github.io/apps/composer_studio_index.html",
+      "description": "Studio in the Verve N Veda creative ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "creative",
+        "studio"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "aurora",
@@ -1414,7 +2237,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.github.io/aurora.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Gateway in the Verve N Veda creative ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "creative",
+        "gateway"
+      ]
     },
     {
       "id": "aurora-inspiration",
@@ -1426,7 +2255,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/aurora.github.io/apps/Aurora_Inspiration_index.html"
+      "url": "https://vervenveda.github.io/aurora.github.io/apps/Aurora_Inspiration_index.html",
+      "description": "App in the Verve N Veda creative ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "creative",
+        "app"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "gallery",
@@ -1439,7 +2275,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.github.io/myartgallery.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Page in the Verve N Veda creative ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "creative",
+        "page"
+      ]
     },
     {
       "id": "arcade",
@@ -1452,7 +2294,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.github.io/arcade.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Gateway in the Verve N Veda games ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "games",
+        "gateway"
+      ]
     },
     {
       "id": "arcade-chess",
@@ -1464,7 +2312,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/arcade.github.io/Chess_Studio_index.html"
+      "url": "https://vervenveda.github.io/arcade.github.io/Chess_Studio_index.html",
+      "description": "Game in the Verve N Veda games ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "games",
+        "game"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "arcade-checkers",
@@ -1476,7 +2331,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/arcade.github.io/Checkers_Variant_Lab_index.html"
+      "url": "https://vervenveda.github.io/arcade.github.io/Checkers_Variant_Lab_index.html",
+      "description": "Game in the Verve N Veda games ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "games",
+        "game"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "arcade-backgammon",
@@ -1488,7 +2350,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/arcade.github.io/Backgammon_index.html"
+      "url": "https://vervenveda.github.io/arcade.github.io/Backgammon_index.html",
+      "description": "Game in the Verve N Veda games ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "games",
+        "game"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "arcade-sudoku",
@@ -1500,7 +2369,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/arcade.github.io/Jenny%27s_Sudoku_index.html"
+      "url": "https://vervenveda.github.io/arcade.github.io/Jenny%27s_Sudoku_index.html",
+      "description": "Game in the Verve N Veda games ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "games",
+        "game"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "arcade-word",
@@ -1512,7 +2388,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/arcade.github.io/Learn_a_New_Word_index.html"
+      "url": "https://vervenveda.github.io/arcade.github.io/Learn_a_New_Word_index.html",
+      "description": "Game in the Verve N Veda games ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "games",
+        "game"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "arcade-mandala",
@@ -1524,7 +2407,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/arcade.github.io/Geometry/mandala_rings_game_index.html"
+      "url": "https://vervenveda.github.io/arcade.github.io/Geometry/mandala_rings_game_index.html",
+      "description": "Game in the Verve N Veda games ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "games",
+        "game"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "arcade-sacred",
@@ -1536,7 +2426,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/arcade.github.io/Geometry/sacred_geometry_game_index.html"
+      "url": "https://vervenveda.github.io/arcade.github.io/Geometry/sacred_geometry_game_index.html",
+      "description": "Game in the Verve N Veda games ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "games",
+        "game"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "proresources",
@@ -1548,7 +2445,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/proresource_hub.github.io/ProReSources_updated_index.html"
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/ProReSources_updated_index.html",
+      "description": "Gateway in the Verve N Veda professional ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "professional",
+        "gateway"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "pro-dailyspark",
@@ -1560,7 +2464,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/DailySpark%E2%84%A2_task_studio_index.html"
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/DailySpark%E2%84%A2_task_studio_index.html",
+      "description": "Tool in the Verve N Veda professional ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "professional",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "pro-citation",
@@ -1572,7 +2483,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/Evidence_Citation_Studio/"
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/Evidence_Citation_Studio/",
+      "description": "Studio in the Verve N Veda professional ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "professional",
+        "studio"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "pro-cloud",
@@ -1584,7 +2502,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/Evidence_Citation_Studio/lab-resource-cloud.html"
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/Evidence_Citation_Studio/lab-resource-cloud.html",
+      "description": "Resource in the Verve N Veda professional ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "professional",
+        "resource"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "pro-khaeclean",
@@ -1596,7 +2521,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/KhaeClean%E2%84%A2_index.html"
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/KhaeClean%E2%84%A2_index.html",
+      "description": "Tool in the Verve N Veda professional ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "professional",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "pro-khaezip",
@@ -1608,7 +2540,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/KhaeZip%E2%84%A2_index.html"
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/KhaeZip%E2%84%A2_index.html",
+      "description": "Tool in the Verve N Veda professional ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "professional",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "pro-calculator",
@@ -1620,7 +2559,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/Khaemenes_Scientific_Calculator/"
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/Khaemenes_Scientific_Calculator/",
+      "description": "Tool in the Verve N Veda professional ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "professional",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "pro-ohmic",
@@ -1632,7 +2578,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/Ohmic_CAD_Studio.html"
+      "url": "https://vervenveda.github.io/proresource_hub.github.io/Protools/Ohmic_CAD_Studio.html",
+      "description": "Studio in the Verve N Veda professional ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "professional",
+        "studio"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "finance",
@@ -1645,7 +2598,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.github.io/finance.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Gateway in the Verve N Veda finance ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "finance",
+        "gateway"
+      ]
     },
     {
       "id": "finance-hall",
@@ -1657,7 +2616,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/finance.github.io/financial-hall/"
+      "url": "https://vervenveda.github.io/finance.github.io/financial-hall/",
+      "description": "Hall in the Verve N Veda finance ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "finance",
+        "hall"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "finance-nonprofit",
@@ -1669,7 +2635,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/finance.github.io/nonprofit-hall/"
+      "url": "https://vervenveda.github.io/finance.github.io/nonprofit-hall/",
+      "description": "Hall in the Verve N Veda finance ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "finance",
+        "hall"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "finance-budget",
@@ -1681,7 +2654,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/finance.github.io/apps/budget_planner_index.html"
+      "url": "https://vervenveda.github.io/finance.github.io/apps/budget_planner_index.html",
+      "description": "Tool in the Verve N Veda finance ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "finance",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "finance-business",
@@ -1693,7 +2673,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/finance.github.io/apps/small-business-budget_index.html"
+      "url": "https://vervenveda.github.io/finance.github.io/apps/small-business-budget_index.html",
+      "description": "Tool in the Verve N Veda finance ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "finance",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "finance-workshop",
@@ -1705,7 +2692,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/finance.github.io/workshops/6-week-personal-finance_index.html"
+      "url": "https://vervenveda.github.io/finance.github.io/workshops/6-week-personal-finance_index.html",
+      "description": "Workshop in the Verve N Veda finance ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "finance",
+        "workshop"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "finance-invest",
@@ -1717,7 +2711,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/finance.github.io/workshops/investment-foundations_index.html"
+      "url": "https://vervenveda.github.io/finance.github.io/workshops/investment-foundations_index.html",
+      "description": "Workshop in the Verve N Veda finance ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "finance",
+        "workshop"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "medicament",
@@ -1730,7 +2731,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.github.io/medicament-hub.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Gateway in the Verve N Veda health ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "health",
+        "gateway"
+      ]
     },
     {
       "id": "medicament-pe",
@@ -1742,7 +2749,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/medicament-hub.github.io/academy/high-school-health/High_School_Physical_Education_42week_index.html"
+      "url": "https://vervenveda.github.io/medicament-hub.github.io/academy/high-school-health/High_School_Physical_Education_42week_index.html",
+      "description": "Course in the Verve N Veda health ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "health",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "medicament-grade9",
@@ -1754,7 +2768,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/medicament-hub.github.io/academy/high-school-health/courses/health-wellness/grade-09/"
+      "url": "https://vervenveda.github.io/medicament-hub.github.io/academy/high-school-health/courses/health-wellness/grade-09/",
+      "description": "Course in the Verve N Veda health ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "health",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "firmament",
@@ -1767,7 +2788,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.github.io/firmament.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Gateway in the Verve N Veda civic ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "civic",
+        "gateway"
+      ]
     },
     {
       "id": "firmament-family",
@@ -1779,7 +2806,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/firmament.github.io/apps/Family_Hub_index.html"
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/Family_Hub_index.html",
+      "description": "Portal in the Verve N Veda civic ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "civic",
+        "portal"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "firmament-law",
@@ -1791,7 +2825,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/firmament.github.io/apps/Law_Governance_hall_index.html"
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/Law_Governance_hall_index.html",
+      "description": "Hall in the Verve N Veda civic ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "civic",
+        "hall"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "firmament-vet-us",
@@ -1803,7 +2844,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/firmament.github.io/apps/Veterans_Hub_National_index.html"
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/Veterans_Hub_National_index.html",
+      "description": "Portal in the Verve N Veda civic ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "civic",
+        "portal"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "firmament-vet-fl",
@@ -1815,7 +2863,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/firmament.github.io/apps/Veterans_Hub_Florida_index.html"
+      "url": "https://vervenveda.github.io/firmament.github.io/apps/Veterans_Hub_Florida_index.html",
+      "description": "Portal in the Verve N Veda civic ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "civic",
+        "portal"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "homeless",
@@ -1828,7 +2883,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.github.io/Homeless.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Homeless Resource Hub — portal in the Verve N Veda civic collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "civic",
+        "portal"
+      ]
     },
     {
       "id": "veterans",
@@ -1841,7 +2902,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.github.io/veterans.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Portal in the Verve N Veda civic ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "civic",
+        "portal"
+      ]
     },
     {
       "id": "one-nation",
@@ -1854,7 +2921,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.github.io/onenationforall.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Gateway in the Verve N Veda civic ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "civic",
+        "gateway"
+      ]
     },
     {
       "id": "one-us-voter",
@@ -1866,7 +2939,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/US_VOTER_HUB_index.html"
+      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/US_VOTER_HUB_index.html",
+      "description": "Portal in the Verve N Veda civic ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "civic",
+        "portal"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "one-fl-voter",
@@ -1878,7 +2958,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/Florida_Voter_Hub_index.html"
+      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/Florida_Voter_Hub_index.html",
+      "description": "Portal in the Verve N Veda civic ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "civic",
+        "portal"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "one-global",
@@ -1890,7 +2977,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/Global_Voter_Portal_index.html"
+      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/Global_Voter_Portal_index.html",
+      "description": "Portal in the Verve N Veda civic ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "civic",
+        "portal"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "one-pulse",
@@ -1902,7 +2996,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/Pulse/"
+      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/Pulse/",
+      "description": "App in the Verve N Veda civic ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "civic",
+        "app"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "one-policy",
@@ -1914,7 +3015,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/National_Policy_Proposals_index.html"
+      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/National_Policy_Proposals_index.html",
+      "description": "Resource in the Verve N Veda civic ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "civic",
+        "resource"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "one-revolution",
@@ -1926,7 +3034,14 @@
       "access": "free-public",
       "status": "stub",
       "directoryVisible": false,
-      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/revolution_index.html"
+      "url": "https://vervenveda.github.io/onenationforall.github.io/apps/revolution_index.html",
+      "description": "ReVeda Revolution — page in the Verve N Veda civic collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "civic",
+        "page"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "one-reveda-pulse",
@@ -1938,7 +3053,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/onenationforall.github.io/apps/Pulse/reveda_pulse_poll_index.html"
+      "url": "https://vervenveda.com/onenationforall.github.io/apps/Pulse/reveda_pulse_poll_index.html",
+      "description": "ReVeda Pulse Poll — app in the Verve N Veda civic collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "civic",
+        "app"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "one-elementary-kids-vote",
@@ -1950,7 +3072,17 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/onenationforall.github.io/apps/Elementary_Kids_Vote_index.html"
+      "url": "https://vervenveda.com/onenationforall.github.io/apps/Elementary_Kids_Vote_index.html",
+      "description": "Elementary Kids Vote — game in the Verve N Veda civic collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "civic",
+        "game",
+        "civics",
+        "voting",
+        "educational"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "one-middle-school-vote",
@@ -1962,7 +3094,16 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/onenationforall.github.io/apps/MiddleSchool_Voting_Portal_index.html"
+      "url": "https://vervenveda.com/onenationforall.github.io/apps/MiddleSchool_Voting_Portal_index.html",
+      "description": "Middle School Voting Portal — portal in the Verve N Veda civic collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "civic",
+        "portal",
+        "civics",
+        "voting"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "one-high-school-vote",
@@ -1974,7 +3115,16 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/onenationforall.github.io/apps/High_School_voter_portal_index.html"
+      "url": "https://vervenveda.com/onenationforall.github.io/apps/High_School_voter_portal_index.html",
+      "description": "High School Voter Portal — portal in the Verve N Veda civic collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "civic",
+        "portal",
+        "civics",
+        "voting"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "one-voter-compass",
@@ -1986,7 +3136,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/onenationforall.github.io/apps/voter_concerns_compass_index.html"
+      "url": "https://vervenveda.com/onenationforall.github.io/apps/voter_concerns_compass_index.html",
+      "description": "Voter Concerns Compass — app in the Verve N Veda civic collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "civic",
+        "app"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "one-we-the-people",
@@ -1998,7 +3155,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/onenationforall.github.io/apps/we_the_people_index.html"
+      "url": "https://vervenveda.com/onenationforall.github.io/apps/we_the_people_index.html",
+      "description": "We the People Learning Lab — app in the Verve N Veda civic collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "civic",
+        "app"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "one-we-the-people-v2",
@@ -2010,7 +3174,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/onenationforall.github.io/apps/we_the_people_2_index.html"
+      "url": "https://vervenveda.com/onenationforall.github.io/apps/we_the_people_2_index.html",
+      "description": "We the People Learning Lab v2 — app in the Verve N Veda civic collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "civic",
+        "app"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "one-reveda-resources",
@@ -2022,7 +3193,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/onenationforall.github.io/apps/reveda_resources_index.html"
+      "url": "https://vervenveda.com/onenationforall.github.io/apps/reveda_resources_index.html",
+      "description": "ReVeda Resource Library — resource in the Verve N Veda civic collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "civic",
+        "resource"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "one-lightbearers",
@@ -2034,7 +3212,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/onenationforall.github.io/apps/lightbearers_index.html"
+      "url": "https://vervenveda.com/onenationforall.github.io/apps/lightbearers_index.html",
+      "description": "Lightbearers — app in the Verve N Veda civic collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "civic",
+        "app"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "elementary-junior-city-council",
@@ -2046,7 +3231,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_Elementary.github.io/games/jr-city-council/"
+      "url": "https://vervenveda.com/Khaemenes_Elementary.github.io/games/jr-city-council/",
+      "description": "Junior City Council — game in the Verve N Veda civic collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "civic",
+        "game"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "elementary-kids-voting",
@@ -2058,7 +3250,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_Elementary.github.io/games/kids-voting-app/"
+      "url": "https://vervenveda.com/Khaemenes_Elementary.github.io/games/kids-voting-app/",
+      "description": "Kids Voting App — game in the Verve N Veda civic collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "civic",
+        "game"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "elementary-kindness-quest",
@@ -2070,7 +3269,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_Elementary.github.io/games/kindness_quest/"
+      "url": "https://vervenveda.com/Khaemenes_Elementary.github.io/games/kindness_quest/",
+      "description": "Kindness Quest Academy — game in the Verve N Veda civic collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "civic",
+        "game"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "campaign-2028",
@@ -2082,7 +3288,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.github.io/JenniferPearl2028.github.io/"
+      "url": "https://vervenveda.github.io/JenniferPearl2028.github.io/",
+      "description": "Page in the Verve N Veda civic ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "civic",
+        "page"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "admin-gateway",
@@ -2094,7 +3307,14 @@
       "access": "free-public",
       "status": "admin",
       "directoryVisible": false,
-      "url": "https://vervenveda.com/admin/2index.html"
+      "url": "https://vervenveda.com/admin/2index.html",
+      "description": "Verve N Veda Admin Surface — page in the Verve N Veda gateway collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "gateway",
+        "page"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "verve-404",
@@ -2106,7 +3326,14 @@
       "access": "free-public",
       "status": "internal",
       "directoryVisible": false,
-      "url": "https://vervenveda.com/404.html"
+      "url": "https://vervenveda.com/404.html",
+      "description": "Page Not Found — page in the Verve N Veda gateway collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "gateway",
+        "page"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "verve-agent-demo",
@@ -2118,7 +3345,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/assessment-engine/agents/demos/"
+      "url": "https://vervenveda.com/assessment-engine/agents/demos/",
+      "description": "Local problem-solving demonstration tool for structured reasoning practice.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "education",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "verve-career-assessment",
@@ -2130,7 +3364,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/assessment-engine/apps/career_assessment_index.html"
+      "url": "https://vervenveda.com/assessment-engine/apps/career_assessment_index.html",
+      "description": "300-question career assessment in the Verve N Veda education ecosystem.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "education",
+        "assessment"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "verve-career-star",
@@ -2142,7 +3383,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/assessment-engine/apps/career_star_index.html"
+      "url": "https://vervenveda.com/assessment-engine/apps/career_star_index.html",
+      "description": "Career shortlisting and comparison tool for learners.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "education",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "verve-mentor-review",
@@ -2154,7 +3402,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/assessment-engine/apps/mentor_review_index.html"
+      "url": "https://vervenveda.com/assessment-engine/apps/mentor_review_index.html",
+      "description": "Mentor review workspace for learner evidence and progress reflection.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "education",
+        "mentor"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "verve-assessment-engine",
@@ -2166,7 +3421,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/assessment-engine/"
+      "url": "https://vervenveda.com/assessment-engine/",
+      "description": "Assessment gateway for Khaemenes Academy progress review and evidence-aware learning.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "education",
+        "assessment"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "verve-mentor-matrix",
@@ -2178,7 +3440,14 @@
       "access": "free-public",
       "status": "internal",
       "directoryVisible": false,
-      "url": "https://vervenveda.com/assessment-engine/mentor/matrix/"
+      "url": "https://vervenveda.com/assessment-engine/mentor/matrix/",
+      "description": "Mentor Matrix Validator — tool in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "verve-objective-map-diagnostics-mentor",
@@ -2190,7 +3459,14 @@
       "access": "free-public",
       "status": "internal",
       "directoryVisible": false,
-      "url": "https://vervenveda.com/assessment-engine/mentor/registry/objective-map-diagnostics.html"
+      "url": "https://vervenveda.com/assessment-engine/mentor/registry/objective-map-diagnostics.html",
+      "description": "Objective Map Diagnostics — tool in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "verve-cloud",
@@ -2202,7 +3478,13 @@
       "access": "free-public",
       "status": "internal",
       "directoryVisible": false,
-      "url": "https://vervenveda.com/cloud/"
+      "url": "https://vervenveda.com/cloud/",
+      "description": "Verve N Veda Public Cloud Gateway — gateway in the Verve N Veda gateway collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "gateway"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "verve-directory-agi",
@@ -2214,7 +3496,14 @@
       "access": "free-public",
       "status": "internal",
       "directoryVisible": false,
-      "url": "https://vervenveda.com/core/directory-agi/"
+      "url": "https://vervenveda.com/core/directory-agi/",
+      "description": "VNV Directory AGI — tool in the Verve N Veda gateway collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "gateway",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "verve-matrix-alias",
@@ -2226,7 +3515,14 @@
       "access": "free-public",
       "status": "alias",
       "directoryVisible": false,
-      "url": "https://vervenveda.com/matrix/"
+      "url": "https://vervenveda.com/matrix/",
+      "description": "Matrix Validator Alias — tool in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "verve-privacy",
@@ -2238,7 +3534,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/privacy-policy.html"
+      "url": "https://vervenveda.com/privacy-policy.html",
+      "description": "Public privacy policy for Verve N Veda visitors and users.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "civic",
+        "resource"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "verve-privacy-alias",
@@ -2250,7 +3553,14 @@
       "access": "free-public",
       "status": "alias",
       "directoryVisible": false,
-      "url": "https://vervenveda.com/privacy_policy.html"
+      "url": "https://vervenveda.com/privacy_policy.html",
+      "description": "Privacy Policy Alias — resource in the Verve N Veda civic collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "civic",
+        "resource"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "verve-objective-map-diagnostics",
@@ -2262,7 +3572,14 @@
       "access": "free-public",
       "status": "alias",
       "directoryVisible": false,
-      "url": "https://vervenveda.com/registry/objective-map-diagnostics.html"
+      "url": "https://vervenveda.com/registry/objective-map-diagnostics.html",
+      "description": "Objective Map Diagnostics Alias — tool in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "tool"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "plera-haven",
@@ -2275,7 +3592,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.com/PLERA.github.io/",
-      "developmentStatus": "landing-ready"
+      "developmentStatus": "landing-ready",
+      "description": "PLERA · Hope's Haven — archive in the Verve N Veda creative collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "creative",
+        "archive"
+      ]
     },
     {
       "id": "country-saudi-arabia",
@@ -2288,7 +3611,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.com/Saudi_Arabia.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Source-led bilingual country and cultural guide to Saudi history, regions, heritage, society, and learning resources.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "diplomacy",
+        "gateway"
+      ]
     },
     {
       "id": "country-palestine",
@@ -2301,7 +3630,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.com/Palestine.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Source-led bilingual country and cultural guide with archives, documentary history, Gaza, and Academy learning.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "diplomacy",
+        "gateway"
+      ]
     },
     {
       "id": "country-iran",
@@ -2314,7 +3649,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://vervenveda.com/Iran.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Source-led Iranian cultural gateway for art, music, Persian script, heritage, innovation, primary sources, and Academy research tools.",
+      "descriptionSource": "gateway-presentation-fallback",
+      "keywords": [
+        "diplomacy",
+        "gateway"
+      ]
     },
     {
       "id": "mentor-zelle",
@@ -2327,7 +3668,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://artist1970.github.io/Zelle.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Zelle · Creative Guide — gateway in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "gateway"
+      ]
     },
     {
       "id": "mentor-archaemenes",
@@ -2340,7 +3687,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://artist1970.github.io/Archaemenes.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Archaemenes · Principal & Educational Mentor — gateway in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "gateway"
+      ]
     },
     {
       "id": "mentor-eiren",
@@ -2353,7 +3706,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://artist1970.github.io/Eiren.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Eiren · Poet & Literary Gem — gateway in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "gateway"
+      ]
     },
     {
       "id": "mentor-hope",
@@ -2366,7 +3725,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://artist1970.github.io/Hope.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Hope · Counseling & Student Support — gateway in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "gateway"
+      ]
     },
     {
       "id": "mentor-aurora",
@@ -2379,7 +3744,13 @@
       "status": "active",
       "directoryVisible": true,
       "url": "https://artist1970.github.io/Aurora.github.io/",
-      "developmentStatus": "live"
+      "developmentStatus": "live",
+      "description": "Aurora · Restorative Wellness — gateway in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "gateway"
+      ]
     },
     {
       "id": "higher-life-skills",
@@ -2391,7 +3762,14 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/life-skills/index.html"
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/life-skills/index.html",
+      "description": "Life Skills & Practical Independence — hub in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "hub"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "higher-articulation-academy",
@@ -2403,27 +3781,40 @@
       "access": "free-public",
       "status": "active",
       "directoryVisible": true,
-      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/life-skills/articulation-academy.html"
+      "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/life-skills/articulation-academy.html",
+      "description": "Articulation Academy · Thoughtful Communication — course in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "course"
+      ],
+      "developmentStatus": "unassessed"
     },
     {
       "id": "learning-tools-mathematics-archive",
       "title": "Mathematics Learning Tools Archive",
-      "repository": "KhaemenesAcademy/vervenveda.github.io",
+      "repository": "vervenveda/vervenveda.github.io",
       "path": "ecosystem/learning-tools/mathematics.json",
       "type": "archive",
       "category": "education",
       "access": "free-public",
       "status": "active",
       "directoryVisible": false,
-      "url": "https://khaemenesacademy.github.io/vervenveda.github.io/ecosystem/learning-tools/mathematics.json",
-      "developmentStatus": "live"
+      "url": "https://vervenveda.com/ecosystem/learning-tools/mathematics.json",
+      "developmentStatus": "live",
+      "description": "Mathematics Learning Tools Archive — archive in the Verve N Veda education collection.",
+      "descriptionSource": "registry-label-derived",
+      "keywords": [
+        "education",
+        "archive"
+      ]
     }
   ],
   "pageCatalog": {
     "version": 2,
     "purpose": "Complete searchable catalog of current public HTML surfaces across the connected Verve N Veda ecosystem.",
-    "publicPageCount": 11121,
-    "repositoryCount": 35,
+    "publicPageCount": 12205,
+    "repositoryCount": 36,
     "parts": [
       "/registry/ecosystem-pages-a.json",
       "/registry/ecosystem-pages-b.json"
@@ -2441,13 +3832,13 @@
       ],
       "note": "STOS remains dormant future-migration infrastructure; GitHub is the current functional public environment. New repositories remain under review until explicitly approved in the canonical master directory."
     },
-    "lastForensicRefresh": "2026-11-16",
+    "lastForensicRefresh": "2026-11-24",
     "autoSync": {
       "enabled": true,
       "mode": "approved-repositories-only",
       "newRepositoryPolicy": "discover-under-review",
       "stos": "dormant-excluded",
-      "generatedAt": "2026-11-16T07:17:08Z"
+      "generatedAt": "2026-11-24T17:11:28Z"
     }
   },
   "developmentStatusValues": [
@@ -2456,7 +3847,8 @@
     "landing-ready",
     "blueprint",
     "under-construction",
-    "internal"
+    "internal",
+    "unassessed"
   ],
   "developmentStatusPurpose": "Tracks implementation maturity separately from routing availability. The existing status field remains authoritative for public routing and visibility.",
   "diplomacy": {
@@ -2464,5 +3856,11 @@
     "label": "World & Diplomacy",
     "purpose": "Source-led country and cultural gateways that connect public history, heritage, language, civic understanding, and Khaemenes Academy learning.",
     "publishingRule": "Country gateways remain under review until explicitly approved here; active entries must use source-led factual presentation and maintain a visible education pathway."
+  },
+  "searchMetadata": {
+    "version": 1,
+    "updated": "2026-11-24",
+    "descriptionPolicy": "Exact normalized URL matches only; mentor descriptions are historical source metadata, fallback descriptions are presentation metadata, derived descriptions identify title/type/category only. No maturity inferred from route status.",
+    "developmentPolicy": "Unassessed means implementation maturity not yet independently reviewed."
   }
 }
